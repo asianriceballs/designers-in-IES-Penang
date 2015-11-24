@@ -191,7 +191,20 @@
 	}
 
 
-	function changePage() {
+	function openFirstPage() {
+		var pageid = 0;
+
+		var newPage = pageid + 1;
+
+		if (isMenuOpen == false || isMenuOpen == true) {
+			var pageid = page.getAttribute('id');
+			page.addEventListener('click', function(ev) {
+				if( isMenuOpen ) {
+					ev.preventDefault();
+					openPage(pageid);
+				}
+			});
+		}
 	}
 
 	// gets the current stack pages indexes. If any of them is the excludePage then this one is not part of the returned array

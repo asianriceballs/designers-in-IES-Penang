@@ -253,6 +253,13 @@ a:hover {
 	margin: 15% auto;
 }
 
+/* Morph Button */
+.morph-button{
+	position: absolute !important;
+	top: 30px;
+	right: 270px;
+}
+
 @media screen and (max-width: 40em) {
 	.bp-header {
 		padding: 50px 20px 1em;

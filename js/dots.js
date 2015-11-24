@@ -37,9 +37,10 @@
 					dots[ current ].className = '';
 
 					// special case
-					if( hop && idx < current ) {
+					/* if( hop && idx < current ) {
 						dot.className += ' current-from-right';
-					}
+					} */ //Not sure I want to use this.
+
 
 					setTimeout( function() {
 						dot.className += ' current';
