@@ -3,7 +3,7 @@
 .icon-close {
 	z-index: 100;
 	display: block;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	width: 3em;
 	height: 3em;
 	text-align: center;
