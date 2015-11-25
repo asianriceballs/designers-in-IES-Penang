@@ -430,16 +430,6 @@
 	line-height: 40px;
 }
 
-.controls::after {
-	content: '';
-	position: absolute;
-	height: 7px;
-	left: 100px;
-	right: 70px;
-	bottom: 16px;
-	background: #aaa;
-}
-
 .content-style-sidebar h2 {
 	font-weight: 300;
 	font-size: 2em;

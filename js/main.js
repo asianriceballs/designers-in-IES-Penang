@@ -40,8 +40,13 @@
 		nav = document.querySelector('.pages-nav'),
 		// the menu nav items
 		navItems = [].slice.call(nav.querySelectorAll('.link--page')),
+		//other items I want to keep an eye on 
+		presentTag = document.querySelector('.bp-header__present'),
+		header = document.querySelector('.bp-header__title'),
+		paragragh = document.querySelector('.info'),
 		// check if menu is open
 		isMenuOpen = false;
+		
 
 	function init() {
 		buildStack();
@@ -182,9 +187,9 @@
 		// close menu..
 		classie.remove(menuCtrl, 'menu-button--open');
 		classie.remove(nav, 'pages-nav--open');
+		//Transition the content
 		onEndTransition(futurePage, function() {
 			classie.remove(stack, 'pages-stack--open');
-			// reorganize stack
 			buildStack();
 			isMenuOpen = false;
 		});

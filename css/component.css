@@ -1241,7 +1241,7 @@ html.js,
 .simform .error-message {
 	padding: 0.4em 3.5em 0 0;
 	width: 100%;
-	color: rgba(0,0,0,0.7);
+	color: #ffffff;
 	font-style: italic;
 	font-size: 0.4em;
 }
