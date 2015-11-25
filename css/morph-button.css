@@ -34,7 +34,7 @@
 /* Common styles for overlay and modal type (fixed morph) */
 .morph-button-fixed,
 .morph-button-fixed .morph-content {
-	width: 300px;
+	width: 10em;
 	height: 80px;
 }
 
@@ -175,12 +175,17 @@
 	background-color: #553445;
 }
 
-.morph-button-modal-2 > button,
+.morph-button-modal-2 > button {
+	background: transparent;
+	color: #ffffff;
+	cursor: pointer;
+}
+
 .morph-button-modal-2 .morph-content,
 .morph-button-modal-3 > button,
 .morph-button-modal-3 .morph-content {
-	background-color: #fef0e3;
-	color: #e75854;
+	background-color: #ffffff;
+	color: #6f6f6f;
 }
 
 .morph-button-modal-4 {

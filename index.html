@@ -317,8 +317,8 @@
 									<span class="icon icon-close">Close the dialog</span>
 									<h2>Login</h2>
 									<form>
-										<p><label>Email</label><input type="text" /></p>
-										<p><label>Password</label><input type="password" /></p>
+										<p><label>Username</label><input type="text" placeholder="mike@ies" /></p>
+										<p><label>Password</label><input type="password" placeholder="123..." /></p>
 										<p><button>Login</button></p>
 									</form>
 								</div>
@@ -439,7 +439,7 @@
 					} );
 				} );
 
-				// for demo purposes only
+				// 
 				[].slice.call( document.querySelectorAll( 'form button' ) ).forEach( function( bttn ) { 
 					bttn.addEventListener( 'click', function( ev ) { ev.preventDefault(); } );
 				} );

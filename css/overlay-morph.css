@@ -1,4 +1,45 @@
-/* Styles for dummy content */
+/* Icon */
+
+.icon-close {
+	z-index: 100;
+	display: block;
+	overflow: hidden;
+	width: 3em;
+	height: 3em;
+	text-align: center;
+	line-height: 3;
+	cursor: pointer;
+}
+
+.icon-close::before {
+	content: "\e601";
+}
+
+.icon-close {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	z-index: 2;
+}
+
+.icon:before {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-transform: none;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-family: 'icomoon';
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-close:hover {
+	color: #a50a05;
+}
 
 /* Style for overlay */
 
@@ -79,7 +120,7 @@
 	padding: 0.4em 0 0.3em;
 	text-align: center;
 	font-weight: 300;
-	font-size: 3.5em;
+	font-size: 2.5em;
 }
 
 .content-style-form form {
@@ -94,27 +135,30 @@
 .content-style-form label {
 	display: block;
 	padding: 10px 0 0;
-	color: #d5bba4;
+	color: #a6a6a6;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	font-weight: bold;
+	/*font-weight: bold;*/
 }
 
 .content-style-form input[type="text"],
 .content-style-form input[type="password"] {
 	padding: 10px;
 	width: 100%;
-	border: 2px solid #ebd3bd;
+	border: 2px solid #e6e6e6;
+	border-left: none;
+	border-right: none;
+	border-top: none;
 	background: transparent;
-	color: #b09a86;
+	color: #96bd8b;
 	font-weight: 300;
 	font-size: 2.2em;
 }
 
 .content-style-form input[type="text"]:focus,
 .content-style-form input[type="password"]:focus {
-	border-color: #e75854;
-	color: #e75854;
+	border-color: #6a7666;
+	color: #000000;
 }
 
 .content-style-form input:focus {
@@ -127,11 +171,11 @@
 	padding: 1.5em;
 	width: 100%;
 	border: none;
-	background: #e75854;
-	color: #f9f6e5;
+	background: #71c957;
+	color: #ffffff;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	font-weight: 800;
+	font-weight: 600;
 	font-size: 1.25em;
 }
 
@@ -401,7 +445,7 @@
 	font-size: 2em;
 	padding: 0.75em 0 0.75em 1em;
 	margin: 0;
-	color: #bb4445;
+	color: #000000;
 }
 
 .content-style-sidebar .icon-close {
