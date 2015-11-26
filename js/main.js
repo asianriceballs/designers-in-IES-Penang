@@ -41,9 +41,7 @@
 		// the menu nav items
 		navItems = [].slice.call(nav.querySelectorAll('.link--page')),
 		//other items I want to keep an eye on 
-		presentTag = document.querySelector('.bp-header__present'),
-		header = document.querySelector('.bp-header__title'),
-		paragragh = document.querySelector('.info'),
+		header = document.querySelectorAll('.bp-header'),
 		// check if menu is open
 		isMenuOpen = false;
 		
@@ -63,7 +61,8 @@
 
 			if( current !== i ) {
 				classie.add(page, 'page--inactive');
-
+				header[i].style.display ="none";
+				
 				if( posIdx !== -1 ) {
 					// visible pages in the stack
 					page.style.WebkitTransform = 'translate3d(0,100%,0)';
@@ -72,11 +71,12 @@
 				else {
 					// invisible pages in the stack
 					page.style.WebkitTransform = 'translate3d(0,75%,-300px)';
-					page.style.transform = 'translate3d(0,75%,-300px)';		
+					page.style.transform = 'translate3d(0,75%,-300px)';
 				}
 			}
 			else {
 				classie.remove(page, 'page--inactive');
+				header[i].style.display ="inherit";
 			}
 
 			page.style.zIndex = i < current ? parseInt(current - i) : parseInt(pagesTotal + current - i);
@@ -145,6 +145,8 @@
 		classie.add(stack, 'pages-stack--open');
 		// reveal the menu
 		classie.add(nav, 'pages-nav--open');
+		//add a hide class to reload the animation
+		//classie.add(head, 'hide');
 
 		// now set the page transforms
 		var stackPagesIdxs = getStackPagesIdxs();
@@ -182,6 +184,7 @@
 		// set current
 		if( id ) {
 			current = futureCurrent;
+
 		}
 		
 		// close menu..
@@ -202,7 +205,9 @@
 		var newPage = pageid + 1;
 
 		if (isMenuOpen == false || isMenuOpen == true) {
+
 			var pageid = page.getAttribute('id');
+			
 			page.addEventListener('click', function(ev) {
 				if( isMenuOpen ) {
 					ev.preventDefault();

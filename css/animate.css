@@ -8,11 +8,95 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 Copyright (c) 2015 Daniel Eden
 */
 
+/* Animation Speeds and Delays */
+.animf {
+    -webkit-animation-duration: 1.5s; /* Chrome, Safari, Opera */
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: .3s; /* Chrome, Safari, Opera */
+    animation-delay: .3s;
+}
+
+.anims {
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: .4s; /* Chrome, Safari, Opera */
+    animation-delay: .4s;
+}
+
+.anims1 {
+    -webkit-animation-duration: 0.6s; /* Chrome, Safari, Opera */
+    animation-duration: 0.6s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: .4s; /* Chrome, Safari, Opera */
+    animation-delay: .4s;
+}
+
+.sanim1 {
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: .5s; /* Chrome, Safari, Opera */
+    animation-delay: .5s;
+}
+
+.sanim2 {
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: .6s; /* Chrome, Safari, Opera */
+    animation-delay: .6s;
+}
+
+.sanim3 {
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: .7s; /* Chrome, Safari, Opera */
+    animation-delay: .7s;
+}
+
+.sanim4 {
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: .8s; /* Chrome, Safari, Opera */
+    animation-delay: .8s;
+}
+
+.sanim5 {
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: 1.2s; /* Chrome, Safari, Opera */
+    animation-delay: 1.2s;
+}
+
+.sanim6 {
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: 1.6s; /* Chrome, Safari, Opera */
+    animation-delay: 1.6s;
+}
+
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-animation-delay: .1s; /* Chrome, Safari, Opera */
+    animation-delay: .1s;
 }
 
 .animated.infinite {
@@ -1176,8 +1260,8 @@ Copyright (c) 2015 Daniel Eden
 @-webkit-keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
+    -webkit-transform: translate3d(0, -10%, 0);
+    transform: translate3d(0, -10%, 0);
   }
 
   to {
@@ -1190,8 +1274,8 @@ Copyright (c) 2015 Daniel Eden
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
+    -webkit-transform: translate3d(0, -10%, 0);
+    transform: translate3d(0, -10%, 0);
   }
 
   to {
@@ -3028,12 +3112,13 @@ Copyright (c) 2015 Daniel Eden
   from {
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
-    visibility: visible;
+    visibility: hidden;
   }
 
   to {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+    visibility: visible;
   }
 }
 
@@ -3041,12 +3126,13 @@ Copyright (c) 2015 Daniel Eden
   from {
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
-    visibility: visible;
+    visibility: hidden;
   }
 
   to {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+    visibility: visible;
   }
 }
 
@@ -3057,8 +3143,8 @@ Copyright (c) 2015 Daniel Eden
 
 @-webkit-keyframes slideInLeft {
   from {
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(-170%, 0, 0);
+    transform: translate3d(-170%, 0, 0);
     visibility: visible;
   }
 
@@ -3070,8 +3156,8 @@ Copyright (c) 2015 Daniel Eden
 
 @keyframes slideInLeft {
   from {
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(-170%, 0, 0);
+    transform: translate3d(-170%, 0, 0);
     visibility: visible;
   }
 
@@ -3088,27 +3174,29 @@ Copyright (c) 2015 Daniel Eden
 
 @-webkit-keyframes slideInRight {
   from {
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-    visibility: visible;
+    -webkit-transform: translate3d(170%, 0, 0);
+    transform: translate3d(170%, 0, 0);
+    visibility: hidden;
   }
 
   to {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+    visibility: visible;
   }
 }
 
 @keyframes slideInRight {
   from {
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-    visibility: visible;
+    -webkit-transform: translate3d(170%, 0, 0);
+    transform: translate3d(170%, 0, 0);
+    visibility: hidden;
   }
 
   to {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+    visibility: visible;
   }
 }
 
@@ -3119,27 +3207,29 @@ Copyright (c) 2015 Daniel Eden
 
 @-webkit-keyframes slideInUp {
   from {
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-    visibility: visible;
+    -webkit-transform: translate3d(0, 200%, 0);
+    transform: translate3d(0, 200%, 0);
+    visibility: hidden;
   }
 
   to {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+    visibility: visible;
   }
 }
 
 @keyframes slideInUp {
   from {
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-    visibility: visible;
+    -webkit-transform: translate3d(0, 200%, 0);
+    transform: translate3d(0, 200%, 0);
+    visibility: hidden;
   }
 
   to {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+    visibility: visible;
   }
 }
 

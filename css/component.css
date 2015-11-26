@@ -179,6 +179,14 @@ html.js,
 	opacity: 0;
 }
 
+.js .hide {
+	display: none;
+}
+
+.js .show {
+	display: inherit;
+}
+
 /* page content */
 
 .info {
