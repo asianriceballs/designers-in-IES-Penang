@@ -40,8 +40,19 @@
 		nav = document.querySelector('.pages-nav'),
 		// the menu nav items
 		navItems = [].slice.call(nav.querySelectorAll('.link--page')),
+		//All the Dot Sidebar Items
+		dotnav = document.querySelector('.dotNav'),
+		// All the individual dots
+		sideNavItems = [].slice.call(dotnav.querySelectorAll('.dNav')),
+		//other items I want to keep an eye on 
+		header = document.querySelectorAll('.bp-header'),
+		//Get the down arrow
+		dwnarrow = document.querySelector('.dwn-arrow'),
+		//the logo
+		logo = document.querySelector('.ies-logo'),
 		// check if menu is open
 		isMenuOpen = false;
+		
 
 	function init() {
 		buildStack();
@@ -58,7 +69,8 @@
 
 			if( current !== i ) {
 				classie.add(page, 'page--inactive');
-
+				header[i].style.display ="none";
+				
 				if( posIdx !== -1 ) {
 					// visible pages in the stack
 					page.style.WebkitTransform = 'translate3d(0,100%,0)';
@@ -67,11 +79,12 @@
 				else {
 					// invisible pages in the stack
 					page.style.WebkitTransform = 'translate3d(0,75%,-300px)';
-					page.style.transform = 'translate3d(0,75%,-300px)';		
+					page.style.transform = 'translate3d(0,75%,-300px)';
 				}
 			}
 			else {
 				classie.remove(page, 'page--inactive');
+				header[i].style.display ="inherit";
 			}
 
 			page.style.zIndex = i < current ? parseInt(current - i) : parseInt(pagesTotal + current - i);
@@ -100,6 +113,17 @@
 			});
 		});
 
+		// navigation dot clicks
+		sideNavItems.forEach(function(item) {
+			var i = 0;
+			// which page to open?
+			var pageid = item.getAttribute('href').slice(1);
+			item.addEventListener('click', function(ev) {
+				ev.preventDefault();
+				openPage(pageid);
+			});
+		});
+
 		// clicking on a page when the menu is open triggers the menu to close again and open the clicked page
 		pages.forEach(function(page) {
 			var pageid = page.getAttribute('id');
@@ -111,6 +135,8 @@
 			});
 		});
 
+		//
+
 		// keyboard navigation events
 		document.addEventListener( 'keydown', function( ev ) {
 			var keyCode = ev.keyCode || ev.which;
@@ -119,6 +145,12 @@
 				changePage();
 			}
 		} );
+
+		// Click on Down arrow
+		dwnarrow.addEventListener( 'click', function( ev ) {
+			openNextPage();
+		} );
+
 	}
 
 	// toggle menu fn
@@ -140,6 +172,8 @@
 		classie.add(stack, 'pages-stack--open');
 		// reveal the menu
 		classie.add(nav, 'pages-nav--open');
+		//add a hide class to reload the animation
+		//classie.add(head, 'hide');
 
 		// now set the page transforms
 		var stackPagesIdxs = getStackPagesIdxs();
@@ -158,6 +192,9 @@
 
 	// opens a page
 	function openPage(id) {
+
+		openMenu();
+
 		var futurePage = id ? document.getElementById(id) : pages[current],
 			futureCurrent = pages.indexOf(futurePage),
 			stackPagesIdxs = getStackPagesIdxs(futureCurrent);
@@ -166,6 +203,7 @@
 		futurePage.style.WebkitTransform = 'translate3d(0, 0, 0)';
 		futurePage.style.transform = 'translate3d(0, 0, 0)';
 		futurePage.style.opacity = 1;
+		
 
 		// set transforms for the other items in the stack
 		for(var i = 0, len = stackPagesIdxs.length; i < len; ++i) {
@@ -178,21 +216,56 @@
 		if( id ) {
 			current = futureCurrent;
 		}
+
+
 		
 		// close menu..
 		classie.remove(menuCtrl, 'menu-button--open');
 		classie.remove(nav, 'pages-nav--open');
+		//Transition the content
 		onEndTransition(futurePage, function() {
 			classie.remove(stack, 'pages-stack--open');
-			// reorganize stack
 			buildStack();
+			changeNextArrow();
 			isMenuOpen = false;
 		});
 	}
 
 
-	function changePage() {
+	function openFirstPage() {
+
+		var firstPage = document.querySelector(".page").getattribute('id');
+		
+			logo.addEventListener('click', function(ev) {
+				ev.preventDefault();
+				openPage(indexOf(firstPage));
+			});
+			console.log(pageid);
 	}
+	
+
+	function openNextPage() {
+		page.addEventListener('click', function(ev) {
+				ev.preventDefault();
+				openPage(pageid);
+		});
+	}
+
+	//hidethedownArrow
+	function changeNextArrow() {
+		var i = 0;
+		var page = pages[i];
+
+		var pageid = page.getAttribute('id');
+
+		if (pageid == 'page-last') {	
+			classie.add(dwnarrow, 'ld');
+		}
+		else {
+			classie.remove(dwnarrow, 'ld');
+		}
+
+	} 
 
 	// gets the current stack pages indexes. If any of them is the excludePage then this one is not part of the returned array
 	function getStackPagesIdxs(excludePageIdx) {

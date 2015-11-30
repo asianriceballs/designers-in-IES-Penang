@@ -9,21 +9,8 @@
 }
 
 
-/* Made with http://icomoon.io/ */
-
-@font-face {
-	font-weight: normal;
-	font-style: normal;
-	font-family: 'icomoon';
-	src:url('../fonts/icomoon/icomoon.eot?-9heso');
-	src:url('../fonts/icomoon/icomoon.eot?#iefix-9heso') format('embedded-opentype'),
-		url('../fonts/icomoon/icomoon.woff?-9heso') format('woff'),
-		url('../fonts/icomoon/icomoon.ttf?-9heso') format('truetype'),
-		url('../fonts/icomoon/icomoon.svg?-9heso#icomoon') format('svg');
-}
-
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900,900italic);
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic);
 
 
 /* Resets */
@@ -47,12 +34,25 @@
 	clear: both;
 }
 
+.ov {
+    overflow: scroll;
+    overflow-x: hidden;
+     }
+::-webkit-scrollbar{
+  width:0px;   // here actuall it exist but width is 0 so no one can see it 
+  background:transparent;
+} //end of the code here
+// this code for further customization of thumbs
+::-webkit-scrollbar-thumb{
+   background-color: rgba(0,0,0,0);
+}
 
 /* Main styles */
 
 body {
 	font-family: 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
 	margin: 0;
+	font-weight: 300;
 	color: #cecece;
 	background: #1d1e21;
 	-webkit-font-smoothing: antialiased;
@@ -81,7 +81,8 @@ a:hover {
 
 .bp-header__title {
 	font-size: 3em;
-	font-weight: 700;
+	/*font-weight: 700;*/
+	font-weight: 300;
 	line-height: 1.1;
 	margin: 1.2em 0 0 0;
 	color: #fff;
@@ -92,10 +93,10 @@ a:hover {
 
 .bp-headersmtitle {
 	font-size: 2em;
-	font-weight: 700;
+	font-weight: 400;
 	/*line-height: 1.1;*/
 	margin: 1em 0;
-	letter-spacing: -1px;
+	letter-spacing: 1px;
 	color: #fff;
 	text-align: left;
 	/* text shadow */
@@ -113,8 +114,8 @@ a:hover {
 
 
 .bp-header__desc {
-	font-family: 'Playfair Display', Georgia, serif;
-	font-size: 1.3em;
+	font-size: 1.2em;
+	font-weight: 300;
 	line-height: 1.5em;
 	margin: 0.5em 0 1em;
 	padding: 0;
@@ -133,8 +134,8 @@ a:hover {
 }
 
 .bp-header__title em {
-	font-family: 'Playfair Display', Georgia, serif;
-	font-weight: 100;
+	font-family: 'Merriweather', serif;
+	font-weight: 500;
 	letter-spacing: 0;
 	font-style: initial;
 }
@@ -250,7 +251,14 @@ a:hover {
 
 .wr {
 	width: 90%;
-	margin: 15% auto;
+	margin: 10% auto 5% auto;
+}
+
+/* Morph Button */
+.morph-button{
+	position: absolute !important;
+	top: -3px;
+	right: 250px;
 }
 
 @media screen and (max-width: 40em) {

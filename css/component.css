@@ -1,3 +1,9 @@
+/* Fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic);
+
+
 html.js,
 .js body {
 	overflow: hidden;
@@ -88,6 +94,7 @@ html.js,
 
 .link--page {
 	display: block;
+	font-weight: 300;/* Font weight smallest */
 	color: #cecece;
 }
 
@@ -179,19 +186,27 @@ html.js,
 	opacity: 0;
 }
 
+.js .hide {
+	display: none;
+}
+
+.js .show {
+	display: inherit;
+}
+
 /* page content */
 
 .info {
-	font-size: 1.25em;
-	line-height: 1.2em;
+	font-size: 1em;
+	line-height: 1.6em;
 	max-width: 50%;
-	margin-top: 1.5em;
+	margin-top: 3em;
 	margin-left: auto;
     margin-right: auto;
 }
 
 .l-info {
-	font-family: 'Playfair Display', Georgia, serif;
+	font-family: 'Merriweather', serif;
 	font-size: 1.25em;
 	max-width: 65%;
 	margin-top: 1.5em;
@@ -214,8 +229,8 @@ html.js,
 
 .smaller-image {
 	position: absolute;
-	bottom: 10%;
-	margin: 0 36%;
+	bottom: -5%;
+	margin: 0 26%;
 	height: auto;
 	display: block;
 }
@@ -353,16 +368,28 @@ html.js,
 	color: #000;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	background: #e8ea40;
+	background-color: #e8ea40;
 	/* border radius */
 	-webkit-border-radius: 18px;
 	-moz-border-radius: 18px;
 	border-radius: 18px;
+	/* Animation for the hover */
+	-webkit-transition: background-color 300ms linear;
+    -moz-transition: background-color 300ms linear;
+    -o-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
 }
 
 .free-trial:hover {
-	background: #5a9249;
+	background-color: #5a9249;
 	color: #ffffff;
+	/* Animation for the hover */
+	-webkit-transition: background-color 300ms linear;
+    -moz-transition: background-color 300ms linear;
+    -o-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
 }
 
 /* Down Arrow */
@@ -370,12 +397,18 @@ html.js,
 	position: absolute;
 	z-index: 1000;
 	bottom: 2vh;
-	margin: 0 44.4%;
+	margin: 0 47.5%;
 	width: 72px;
 	height: 72px;
 	cursor: pointer;
 	border: none;
 	background: url(../images/d-arrow.png) no-repeat;
+}
+
+.ld {
+	-ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
 }
 
 .ies-logo {
@@ -395,7 +428,7 @@ html.js,
 .dotstyle {	
 	position: absolute;
 	z-index: 1000;
-	bottom: 50%;
+	bottom: 33%;
 	right: 3px;
 }
 
@@ -498,6 +531,37 @@ html.js,
 	transform: translateY(870%);
 }
 
+.dotstyle-dotmove li.current:nth-child(7) ~ li:last-child {
+	-webkit-transform: translateY(1060%);
+	transform: translateY(1060%);
+}
+
+.dotstyle-dotmove li.current:nth-child(8) ~ li:last-child {
+	-webkit-transform: translateY(1230%);
+	transform: translateY(1230%);
+}
+
+.dotstyle-dotmove li.current:nth-child(9) ~ li:last-child {
+	-webkit-transform: translateY(1400%);
+	transform: translateY(1400%);
+}
+
+.dotstyle-dotmove li.current:nth-child(10) ~ li:last-child {
+	-webkit-transform: translateY(1570%);
+	transform: translateY(1570%);
+}
+
+.dotstyle-dotmove li.current:nth-child(11) ~ li:last-child {
+	-webkit-transform: translateY(1740%);
+	transform: translateY(1740%);
+}
+
+.dotstyle-dotmove li.current:nth-child(12) ~ li:last-child {
+	-webkit-transform: translateY(1910%);
+	transform: translateY(1910%);
+}
+
+
 .dotstyle-dotmove li a {
 	-webkit-transition: background-color 0.3s ease;
 	transition: background-color 0.3s ease;
@@ -593,7 +657,7 @@ html.js,
 }
 
 .grid__item p {
-	font-family: 'Playfair Display', Georgia, serif;
+	font-family: 'Merriweather', serif;
 	color: #6f6f6f;
 	font-size: 1em;
     line-height: 1.5em;
@@ -640,7 +704,7 @@ html.js,
 }
 
 .par-left p, .par-right p {
-	font-family: 'Playfair Display', Georgia, serif;
+	font-family: 'Merriweather', serif;
 	line-height: 1.5em;
 	color: #6f6f6f;
 }
@@ -730,7 +794,7 @@ html.js,
 #page-software .left-list li p {
 	display: flex;
 	color: #939393;
-	font-family: 'Playfair Display', Georgia, serif;
+	font-family: 'Merriweather', serif;
 	font-size: 0.8em;
 	line-height: 1.5em;
 }
@@ -773,7 +837,7 @@ html.js,
 #page-software .right-list li p {
 	display: flex;
 	color: #939393;
-	font-family: 'Playfair Display', Georgia, serif;
+	font-family: 'Merriweather', serif;
 	font-size: 0.8em;
 	line-height: 1.5em;
 }
@@ -908,9 +972,10 @@ html.js,
 } 
 
 .grid-item p { 
-	font-family: 'Playfair Display', Georgia, serif;
+	font-family: 'Merriweather', serif;
 	z-index: 2;
 	color: #e4fcdd;
+	font-size: 0.8em;
 	line-height: 1.4;
 }
 
@@ -923,13 +988,14 @@ html.js,
 
 /* page-custom */
 .fp { 
-	font-family: 'Playfair Display', Georgia, serif;
+	font-family: 'Merriweather', serif;
 }
 
 /* page-blog */
 #page-blog .article-icon {	
 	color: #ffffff;
-	border-color: #ffffff; 
+	background: rgba(255,255,255,0.2);
+	border: none; 
 	position: relative;
 	z-index: 2;
 }
@@ -986,13 +1052,18 @@ html.js,
 	margin: 1.5em auto;
 }
 
-#page-questions .learn-more {
+#page-questions .learn-more, #page-last .learn-more {
 	padding: 1.8em 9em;
     font-size: 0.8em;
 	/* Border radius */
     -webkit-border-radius: 32px;
 	-moz-border-radius: 32px;
 	border-radius: 32px;
+}
+
+.ml {
+	display: block;
+	margin-bottom: 4em;
 }
 
 .simform {
@@ -1240,7 +1311,7 @@ html.js,
 .simform .error-message {
 	padding: 0.4em 3.5em 0 0;
 	width: 100%;
-	color: rgba(0,0,0,0.7);
+	color: #ffffff;
 	font-style: italic;
 	font-size: 0.4em;
 }
@@ -1295,6 +1366,28 @@ html.js,
 .no-js .simform .controls {
 	display: none;
 }
+/* Margins to be used to space things up */
+.mt1 { margin-top: 1em; }
+.mt2 { margin-top: 2em; }
+.mt3 { margin-top: 3em; }
+.mt4 { margin-top: 4em; }
+.mt5 { margin-top: 5em; }
+.mt6 { margin-top: 6em; }
+.mt7 { margin-top: 7em; }
+.mt8 { margin-top: 8em; }
+.mt9 { margin-top: 9em; }
+.mb1 { margin-bottom: 1em; }
+.mb2 { margin-bottom: 2em; }
+.mb3 { margin-bottom: 3em; }
+.mb4 { margin-bottom: 4em; }
+.mb5 { margin-bottom: 5em; }
+.mb6 { margin-bottom: 6em; }
+.mb7 { margin-bottom: 7em; }
+.mb8 { margin-bottom: 8em; }
+.mb9 { margin-bottom: 9em; }
+
+
+
 @media screen and (max-width: 60em) {
 	.info {
 		max-width: 100%;
