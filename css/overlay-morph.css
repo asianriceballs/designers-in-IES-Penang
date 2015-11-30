@@ -1,4 +1,69 @@
+/* Fonts made with http://icomoon.io/ */
+
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon/icomoon.eot?i64fx9');
+	src:url('../fonts/icomoon/icomoon.eot?#iefixi64fx9') format('embedded-opentype'),
+		url('../fonts/icomoon/icomoon.woff?i64fx9') format('woff'),
+		url('../fonts/icomoon/icomoon.ttf?i64fx9') format('truetype'),
+		url('../fonts/icomoon/icomoon.svg?i64fx9#icomoon') format('svg');
+}
+
 /* Icon */
+
+.icon-camera:before {
+	content: "\e017";
+}
+
+.icon-server:before {
+	content: "\e022";
+}
+
+.icon-heart:before {
+	content: "\e024";
+}
+
+.icon-zoom-in:before {
+	content: "\e037";
+}
+
+.icon-microphone:before {
+	content: "\e048";
+}
+
+.icon-cloud:before {
+	content: "\e066";
+}
+
+.icon-user:before {
+	content: "\e074";
+}
+
+.icon-briefcase:before {
+	content: "\e075";
+}
+
+.icon-globe:before {
+	content: "\e078";
+}
+
+.icon-cog::before {
+	content: "\e600";
+}
+
+.icon-play::before {
+	content: "\e602";
+}
+
+.icon-pause::before {
+	content: "\e603";
+}
+
+.icon-close::before {
+	content: "\e601";
+}
 
 .icon-close {
 	z-index: 100;
@@ -9,10 +74,6 @@
 	text-align: center;
 	line-height: 3;
 	cursor: pointer;
-}
-
-.icon-close::before {
-	content: "\e601";
 }
 
 .icon-close {

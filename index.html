@@ -33,6 +33,7 @@
 		<div class="pages-nav__item"><a class="link link--page" href="#page-showcase">Showcase</a></div>
 		<div class="pages-nav__item"><a class="link link--page" href="#page-questions">Questions</a></div>
 		<div class="pages-nav__item"><a class="link link--page" href="#page-question-1">Question 1</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#page-last">Question 1</a></div>
 		<!--<div class="pages-nav__item pages-nav__item--social">
 			<a class="link link--social link--faded" href="#"><i class="fa fa-twitter"></i><span class="text-hidden">Twitter</span></a>
 			<a class="link link--social link--faded" href="#"><i class="fa fa-linkedin"></i><span class="text-hidden">LinkedIn</span></a>
@@ -49,7 +50,7 @@
 				<span class="bp-header__present animf slideInDown">A product of Esolved</span>
 				<h1 class="bp-header__title anims slideInUp"><em>Throughout the years,</em><br /> we’ve helped ample brands <em>achieve successful business growth</em></h1>
 			</header>
-			<img class="bg-image" src="images/1st-slide-bg.jpg" alt="1stslide" />
+			<img class="bg-image animated ZoomIn" src="images/1st-slide-bg.jpg" alt="1stslide" />
 		</div>
 		<!-- /page -->
 		<div class="page" id="page-ingredients">
@@ -85,7 +86,7 @@
 			<img class="bg-image" src="images/2nd-slide-bg.jpg" alt="2ndslide" />
 		</div>
 		<div class="page" id="page-first">
-			<header class="bp-header cf">
+			<header class="bp-header cf ov">
 					<div class="par-left anims slideInLeft">
 						<span class="article-icon"><i class="fa fa-desktop"></i></span>
 						<h3>SEO Traffic</h3>
@@ -103,8 +104,13 @@
 						<h3>Create a traffic stampede with Google Shopping integration.</h3>
 						<p>Our built-in integration with Google Shopping allows you to list your products with just a few clicks. Listings are automatically updated daily, driving a huge amount of targeted shoppers back to your store. It's just another way we help you reach more customers with less effort.</p>
 					</div>
-				
-				<button class="learn-more sanim5 slideInUp">Learn More</button>
+					<span class="separator sanim4 slideInLeft"></span>
+					<div class="par-left sanim5 slideInRight">
+						<h3>Advanced SEO tools for all</h3>
+						<p>Bigcommerce includes everything you need to rank highly in search engines like Google, Yahoo and Bing. Optimizing your site is easy — simply point, click and type.</p>
+						<img src="images/page-content/google-search.png" alt="" />
+					</div>
+				<button class="learn-more sanim6 slideInUp">Learn More</button>
 			</header>
 			<!--/*No need for image here*/<img class="bg-image" src="images/2.jpg" alt="img02" />-->
 		</div>
@@ -145,8 +151,9 @@
 						<p>Everything you need to rank highly in search engines like Google, Yahoo and Bing.</p>
 					</li>
 				</ul>
+				<img class="smaller-image sanim2 slideInUp" src="images/page-content/browser.png" alt="img03" />
 			</header>
-			<img class="smaller-image anims1 slideInDown" src="images/page-content/browser.png" alt="img03" />
+			
 		</div>
 		<div class="page" id="page-custom">
 			<header class="bp-header cf">
@@ -302,12 +309,21 @@
 			</header>
 			<img class="bg-image" src="images/shoe.jpg" alt="img04" />
 		</div>
+		<div class="page" id="page-last">
+			<header class="bp-header cf">
+				<h1 class="bp-header__title animated slideInDown">Thanks for answering our questions.</h1>
+				<button class="learn-more sanim2 slideInDown mt8">Growing your store</button>
+				<span class="ml sanim4 slideInDown">Don't worry you can change your settings inside.</span>
+				<span class="bp-header__desc rp sanim6 slideInUp mt6"><a href="#">Sign Up</a> Now and we will give & extra 30 days credit.</span>
+			</header>
+			<img class="bg-image" src="images/last-pg.jpg" alt="img04" />
+		</div>
 	</div>
 	<!-- /pages-stack -->
-	<div class="ies-logo animated fadeIn"><a href="" onClick="openFirstPage();"><img src="images/logo.png" alt="" /></a></div>
+	<div class="ies-logo animated fadeIn"><a href="#"><img src="images/logo.png" alt="" /></a></div> <!--onClick="openFirstPage();"-->
 	<!--<span class="login">Login</span>-->
 				<div class="morph-button morph-button-modal morph-button-modal-2 morph-button-fixed animated fadeIn">
-					<button type="button">Login</button>
+					<button type="button" id="ieslogin">Login</button>
 						<div class="morph-content">
 							<div>
 								<div class="content-style-form content-style-form-1">
@@ -327,17 +343,24 @@
 
 	<!-- Dots on the side -->
 	<div class="dotstyle dotstyle-dotmove">
-				<ul>
-					<li class="current"><a href="#page-home">Home</a></li>
-					<li><a href="#page-docu">About</a></li>
-					<li><a href="#page-manuals">Products</a></li>
-					<li><a href="#page-software">Portfolio</a></li>
-					<li><a href="#page-custom">Blog</a></li>
-					<li><a href="#page-training">Showcase</a></li>
+				<ul class="dotNav">
+					<li><a class="dNav" href="#page-home">Home</a></li>
+					<li><a class="dNav" href="#page-ingredients">About</a></li>
+					<li><a class="dNav" href="#page-first">Products</a></li>
+					<li><a class="dNav" href="#page-software">Portfolio</a></li>
+					<li><a class="dNav" href="#page-custom">Blog</a></li>
+					<li><a class="dNav" href="#page-training">Showcase</a></li>
+					<li><a class="dNav" href="#page-buy">Home</a></li>
+					<li><a class="dNav" href="#page-blog">About</a></li>
+					<li><a class="dNav" href="#page-showcase">Products</a></li>
+					<li><a class="dNav" href="#page-questions">Portfolio</a></li>
+					<li><a class="dNav" href="#page-question-1">Blog</a></li>
+					<li><a class="dNav" href="#page-last">Showcase</a></li>
 					<li><!-- dummy dot --></li>
 				</ul>
+
 	</div>
-	<button class="dwn-arrow sanim1 slideInUp"></button>
+	<a href="" class="dwn-arrow sanim1 slideInUp"></a>
 
 	<script src="js/classie.js"></script>
 	<script src="js/dots.js"></script>

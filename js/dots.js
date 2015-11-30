@@ -31,7 +31,7 @@
 		var dots = [].slice.call( this.nav.querySelectorAll( 'li' ) ), current = 0, self = this;
 
 		dots.forEach( function( dot, idx ) {
-			dot.addEventListener( 'mouseover', function( ev ) {
+			dot.addEventListener( 'click', function( ev ) {
 				ev.preventDefault();
 				if( idx !== current ) {
 					dots[ current ].className = '';
