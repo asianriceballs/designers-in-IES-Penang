@@ -135,13 +135,24 @@
 			});
 		});
 
+		//make the Down Arrow shake
+		dwnarrow.addEventListener('mouseover', function(ev) {
+			classie.remove(this, 'slideInUp');
+			classie.add(this, 'shake');
+		});
+
+		dwnarrow.addEventListener('mouseout', function(ev) {
+			classie.remove(this, 'shake');
+			classie.add(this, 'slideInUp');
+		});
+
 		//
 
 		// keyboard navigation events
 		document.addEventListener( 'keydown', function( ev ) {
 			var keyCode = ev.keyCode || ev.which;
 			if( keyCode === 40 ) {
-				/*ev.preventDefault();*/
+				ev.preventDefault();
 				changePage();
 			}
 		} );
@@ -233,14 +244,11 @@
 
 
 	function openFirstPage() {
-
 		var firstPage = document.querySelector(".page").getattribute('id');
-		
 			logo.addEventListener('click', function(ev) {
 				ev.preventDefault();
 				openPage(indexOf(firstPage));
 			});
-			console.log(pageid);
 	}
 	
 
