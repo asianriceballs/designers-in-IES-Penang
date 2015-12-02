@@ -168,7 +168,13 @@ html.js,
 }
 
 .js #page-first {
-	background: #eaf9e3;
+	background: #eeeded;
+	overflow-y: scroll;
+}
+
+.js #page-second {
+	background: #eeeded;
+	overflow-y: scroll;
 }
 
 .js .pages-stack--open .page {
@@ -649,6 +655,13 @@ html.js,
   	border-radius: 50px 50px 50px 50px;
 }
 
+.fa-space-shuttle {
+	-ms-transform: rotate(-20deg); 
+    -webkit-transform: rotate(-20deg); 
+    transform: rotate(-20deg); 
+
+}
+
 .grid__item h2 {
 	font-size: 0.8em;
 	letter-spacing: 0.2em;
@@ -719,6 +732,7 @@ html.js,
     position:relative;
     margin-top: -7em;
     margin-bottom: 2em;
+    margin-right: 15px;
 }
 
 .par-right img {
