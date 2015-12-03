@@ -50,6 +50,8 @@
 		dwnarrow = document.querySelector('.dwn-arrow'),
 		//the logo
 		logo = document.querySelector('.ies-logo'),
+		// the header
+		bghead = document.querySelector('.header'),
 		// check if menu is open
 		isMenuOpen = false;
 		
@@ -146,8 +148,6 @@
 			classie.add(this, 'slideInUp');
 		});
 
-		//
-
 		// keyboard navigation events
 		document.addEventListener( 'keydown', function( ev ) {
 			var keyCode = ev.keyCode || ev.which;
@@ -183,7 +183,9 @@
 		classie.add(stack, 'pages-stack--open');
 		// reveal the menu
 		classie.add(nav, 'pages-nav--open');
-		//add a hide class to reload the animation
+		//hide the background of the header
+		classie.add(bghead, 'bhck');
+
 		//classie.add(head, 'hide');
 
 		// now set the page transforms
@@ -233,6 +235,8 @@
 		// close menu..
 		classie.remove(menuCtrl, 'menu-button--open');
 		classie.remove(nav, 'pages-nav--open');
+		classie.remove(bghead, 'bhck');
+
 		//Transition the content
 		onEndTransition(futurePage, function() {
 			classie.remove(stack, 'pages-stack--open');
