@@ -46,8 +46,12 @@
 		sideNavItems = [].slice.call(dotnav.querySelectorAll('.dNav')),
 		//other items I want to keep an eye on 
 		header = document.querySelectorAll('.bp-header'),
-		//Get the down arrow
-		dwnarrow = document.querySelector('.dwn-arrow'),
+		// All the individual dots
+		arrowItems = document.querySelectorAll('.dwn-arrow'),
+		// the grid
+		grid = document.querySelector('.grid'),
+		// the grid items
+		gridItems = [].slice.call(grid.querySelectorAll('.grid__item')),
 		//the logo
 		logo = document.querySelector('.ies-logo'),
 		// the header
@@ -68,6 +72,7 @@
 		for(var i = 0; i < pagesTotal; ++i) {
 			var page = pages[i],
 				posIdx = stackPagesIdxs.indexOf(i);
+			var arrow = arrowItems[i];
 
 			if( current !== i ) {
 				classie.add(page, 'page--inactive');
@@ -126,6 +131,16 @@
 			});
 		});
 
+		// Clicking the Grid Items and opening the corresponding page
+		gridItems.forEach(function(item) {
+			// which page to open?
+			var pageid = item.getAttribute('href').slice(1);
+			item.addEventListener('click', function(ev) {
+				ev.preventDefault();
+				openPage(pageid);
+			});
+		});
+
 		// clicking on a page when the menu is open triggers the menu to close again and open the clicked page
 		pages.forEach(function(page) {
 			var pageid = page.getAttribute('id');
@@ -137,15 +152,28 @@
 			});
 		});
 
-		//make the Down Arrow shake
-		dwnarrow.addEventListener('mouseover', function(ev) {
-			classie.remove(this, 'slideInUp');
-			classie.add(this, 'shake');
-		});
+		// navigation dot clicks
+		pages.forEach(function(page) {
+			// which page to open?
+			var i = 0;
+			var pageid = arrowItems[i].getAttribute('href').slice(1);
+			var item = arrowItems[i];
 
-		dwnarrow.addEventListener('mouseout', function(ev) {
-			classie.remove(this, 'shake');
-			classie.add(this, 'slideInUp');
+			item.addEventListener('click', function(ev) {
+				ev.preventDefault();
+				openPage(pageid);
+			});
+
+			//make the Down Arrow shake
+			item.addEventListener('mouseover', function(ev) {
+				classie.remove(this, 'slideInUp');
+				classie.add(this, 'shake');
+			});
+
+			item.addEventListener('mouseout', function(ev) {
+				classie.remove(this, 'shake');
+				classie.add(this, 'slideInUp');
+			});
 		});
 
 		// keyboard navigation events
@@ -155,13 +183,11 @@
 				ev.preventDefault();
 				changePage();
 			}
-		} );
+		});
 
 		// Click on Down arrow
-		dwnarrow.addEventListener( 'click', function( ev ) {
-			openNextPage();
-		} );
-
+		/*dwnarrow.addEventListener('click', function( ev ) {
+		});*/
 	}
 
 	// toggle menu fn
@@ -229,8 +255,6 @@
 		if( id ) {
 			current = futureCurrent;
 		}
-
-
 		
 		// close menu..
 		classie.remove(menuCtrl, 'menu-button--open');
@@ -241,43 +265,20 @@
 		onEndTransition(futurePage, function() {
 			classie.remove(stack, 'pages-stack--open');
 			buildStack();
-			changeNextArrow();
 			isMenuOpen = false;
 		});
 	}
 
 
 	function openFirstPage() {
-		var firstPage = document.querySelector(".page").getattribute('id');
-			logo.addEventListener('click', function(ev) {
-				ev.preventDefault();
-				openPage(indexOf(firstPage));
-			});
-	}
-	
-
-	function openNextPage() {
-		page.addEventListener('click', function(ev) {
-				ev.preventDefault();
-				openPage(pageid);
+		logo.addEventListener('click', function(ev) {
+			var pageid = pages[1].getAttribute('href').slice(1);
+			openPage(pageid);
 		});
 	}
 
-	//hidethedownArrow
-	function changeNextArrow() {
-		var i = 0;
-		var page = pages[i];
-
-		var pageid = page.getAttribute('id');
-
-		if (pageid == 'page-last') {	
-			classie.add(dwnarrow, 'ld');
-		}
-		else {
-			classie.remove(dwnarrow, 'ld');
-		}
-
-	} 
+	function openNextPage() {
+	}
 
 	// gets the current stack pages indexes. If any of them is the excludePage then this one is not part of the returned array
 	function getStackPagesIdxs(excludePageIdx) {

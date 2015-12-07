@@ -678,6 +678,7 @@ html.js,
   position: relative;
   color: inherit;
   background: #ffffff;
+  border: 1px solid #c9c9c9;
   min-height: 300px;
   cursor: pointer;
   text-align: center;
@@ -694,7 +695,9 @@ html.js,
   width: 23%; /* Might remove if it doesn't work */
   /* Border radius */
   -webkit-border-radius: 8px 8px 8px 8px;
-  border-radius: 8px 8px 8px 8px;
+  border-radius: 8px 8px 8px 8px;	
+  /* transition */
+  transition: all 0.3 ease;
 }
 
 /* Grid item "border" */
@@ -710,6 +713,12 @@ html.js,
 
 .grid__item * {
   	z-index: 10;
+}
+
+.grid__item:hover {
+	margin: -2px 0;
+	border: 2px solid #599149;
+	transition: all 0.3 ease;
 }
 
 .article-icon {
@@ -945,6 +954,26 @@ html.js,
 
 #page-software .right-list li:hover .article-icon {
 	color: #87b279;
+}
+
+/* Page Showcase */
+#page-showcase {
+	background: #DD8E64;
+	color: #ffffff;
+}
+
+#page-showcase .bp-header__title {
+	color: #ffffff;
+}
+
+#page-question-1 {
+	background: #44153C;
+	color: #ffffff;
+}
+
+/* Page Ingredients */
+#page-ingredients {
+	background: #ffffff;
 }
 
 /* dG */
