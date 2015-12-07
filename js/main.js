@@ -271,8 +271,8 @@
 
 
 	function openFirstPage() {
-		logo.addEventListener('click', function(ev) {
-			var pageid = pages[1].getAttribute('href').slice(1);
+			logo.addEventListener('click', function(ev) {
+			pageid = logo.getAttribute('id').slice(1);
 			openPage(pageid);
 		});
 	}
