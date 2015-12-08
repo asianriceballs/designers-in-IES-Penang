@@ -53,7 +53,7 @@
 		// the grid items
 		gridItems = [].slice.call(grid.querySelectorAll('.grid__item')),
 		//the logo
-		logo = document.querySelector('.ies-logo'),
+		logo = document.querySelector('#logo'),
 		// the header
 		bghead = document.querySelector('.header'),
 		// check if menu is open
@@ -78,11 +78,17 @@
 				classie.add(page, 'page--inactive');
 				header[i].style.display ="none";
 				
-				if( posIdx !== -1 ) {
-					// visible pages in the stack
-					page.style.WebkitTransform = 'translate3d(0,100%,0)';
-					page.style.transform = 'translate3d(0,100%,0)';
-				}
+					if( posIdx !== -1 ) {
+						// visible pages in the stack
+						page.style.WebkitTransform = 'translate3d(0,100%,0)';
+						page.style.transform = 'translate3d(0,100%,0)';
+					}
+					/*
+					page.style.transitionDuration = '0.6s';
+						page.style.WebkitTransitionDuration= '0.6s';
+						page.style.TransitionTimingFunction ='ease-in-out';
+						page.style.WebkitTransitionTimingFunction = 'ease-in-out';
+					*/
 				else {
 					// invisible pages in the stack
 					page.style.WebkitTransform = 'translate3d(0,75%,-300px)';
@@ -185,6 +191,13 @@
 			}
 		});
 
+		//opening the first page
+		logo.addEventListener('click', function(ev) {
+			var pageid = logo.getAttribute('href').slice(1);
+				ev.preventDefault();
+				openPage(pageid);
+		});
+
 		// Click on Down arrow
 		/*dwnarrow.addEventListener('click', function( ev ) {
 		});*/
@@ -223,6 +236,8 @@
 		}
 	}
 
+	// function for the animation of the pages when transitioning the page
+
 	// closes the menu
 	function closeMenu() {
 		// same as opening the current page again
@@ -243,12 +258,14 @@
 		futurePage.style.transform = 'translate3d(0, 0, 0)';
 		futurePage.style.opacity = 1;
 		
-
+	
 		// set transforms for the other items in the stack
 		for(var i = 0, len = stackPagesIdxs.length; i < len; ++i) {
 			var page = pages[stackPagesIdxs[i]];
 			page.style.WebkitTransform = 'translate3d(0,100%,0)';
 			page.style.transform = 'translate3d(0,100%,0)';
+			page.style.WebkitTransitionDelay = '0.8s';
+			page.style.TransitionDelay = '0.8s';
 		}
 
 		// set current
@@ -263,19 +280,12 @@
 
 		//Transition the content
 		onEndTransition(futurePage, function() {
-			classie.remove(stack, 'pages-stack--open');
 			buildStack();
+			classie.remove(stack, 'pages-stack--open');
 			isMenuOpen = false;
 		});
 	}
 
-
-	function openFirstPage() {
-			logo.addEventListener('click', function(ev) {
-			pageid = logo.getAttribute('id').slice(1);
-			openPage(pageid);
-		});
-	}
 
 	function openNextPage() {
 	}
