@@ -211,12 +211,20 @@ html.js,
 }
 
 .right-section .info {
-	font-size: 1.5em;
+	font-size: 1.3em;
 	max-width: 70%;
 	margin-top: 10em;
 	color: #ffffff;
 	position: relative;
 	z-index: 10;
+}
+
+.right-section .info em {
+	font-size: 1em;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
 }
 
 .left-section {
@@ -238,12 +246,20 @@ html.js,
 }
 
 .left-section .info {
-	font-size: 1.5em;
+	font-size: 1.3em;
 	max-width: 70%;
 	margin-top: 10em;
 	color: #ffffff;
 	position: relative;
 	z-index: 10;
+}
+
+.left-section .info em {
+	font-size: 1em;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
 }
 
 .js .pages-stack--open .page {
@@ -673,7 +689,7 @@ html.js,
 
 /* Grid item */
 .grid__item {
-  padding: 45px 25px 30px;
+  padding: 45px 15px 20px;
   margin: 0 6px;
   position: relative;
   color: inherit;
@@ -697,7 +713,7 @@ html.js,
   -webkit-border-radius: 8px 8px 8px 8px;
   border-radius: 8px 8px 8px 8px;	
   /* transition */
-  transition: all 0.3 ease;
+  transition: all 0.3 ease-in-out;
 }
 
 /* Grid item "border" */
@@ -716,9 +732,8 @@ html.js,
 }
 
 .grid__item:hover {
-	margin: -2px 0;
-	border: 2px solid #599149;
-	transition: all 0.3 ease;
+	background: rgba(255, 255, 255, 0.7) !important;
+	border: 2px solid #ffffff;
 }
 
 .article-icon {
@@ -973,7 +988,11 @@ html.js,
 
 /* Page Ingredients */
 #page-ingredients {
-	background: #ffffff;
+	background: #5b934b;
+}
+
+#page-ingredients .bp-header__title, #page-ingredients .bp-header__desc {
+	color: #ffffff;
 }
 
 /* dG */
