@@ -796,7 +796,7 @@ html.js,
 	font-size: 0.6em;
 	font-weight: 700;
 	letter-spacing: 0.2em;
-	margin: 3em auto 0 auto;
+	margin: 9em auto 0 auto;
     padding: 1.4em 6em;
 	text-transform: uppercase;
 	border: none;
@@ -828,6 +828,7 @@ html.js,
 	float: left;
 	text-align: center;
 	margin-right: 30px;
+	margin-bottom: 10px;
 }
 
 .par-left h3, .par-right h3 {
@@ -842,21 +843,28 @@ html.js,
 	color: #6f6f6f;
 }
 
+.top-intro {
+	font-size: 20px;
+	width: 100% !important;
+}
+
 .par-left p {
-	width: 75%;
+	width: 60%;
 }
 
 .par-left img {
 	display: block;
     float:right;
     position:relative;
-    margin-top: -7em;
-    margin-bottom: 2em;
-    margin-right: 15px;
+    margin-top: -11.5em;
+    /*margin-bottom: 2em;
+    margin-right: 15px;*/
 }
 
 .par-right img {
 	float: left;
+	margin-right: 2%;
+	margin-top: -1em;
 }
 
 /* Page First */
