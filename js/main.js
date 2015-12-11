@@ -47,7 +47,7 @@
 		//other items I want to keep an eye on 
 		header = document.querySelectorAll('.bp-header'),
 		// All the individual dots
-		arrowItems = document.querySelectorAll('.click-to-learn-more'),
+		arrow = document.querySelector('.click-to-learn-more'),
 		// the grid
 		grid = document.querySelector('.grid'),
 		// the grid items
@@ -72,7 +72,6 @@
 		for(var i = 0; i < pagesTotal; ++i) {
 			var page = pages[i],
 				posIdx = stackPagesIdxs.indexOf(i);
-			var arrow = arrowItems[i];
 
 			if( current !== i ) {
 				classie.add(page, 'page--inactive');
@@ -161,14 +160,7 @@
 		// navigation dot clicks
 		pages.forEach(function(page) {
 			// which page to open?
-			var i = 0;
-			var pageid = arrowItems[i].getAttribute('href').slice(1);
-			var item = arrowItems[i];
-
-			item.addEventListener('click', function(ev) {
-				ev.preventDefault();
-				openPage(pageid);
-			});
+			var item = arrow;
 
 			//make the Down Arrow shake
 			item.addEventListener('mouseover', function(ev) {
@@ -187,7 +179,7 @@
 			var keyCode = ev.keyCode || ev.which;
 			if( keyCode === 40 ) {
 				ev.preventDefault();
-				changePage();
+				openNextPage();
 			}
 		});
 
@@ -199,8 +191,10 @@
 		});
 
 		// Click on Down arrow
-		/*dwnarrow.addEventListener('click', function( ev ) {
-		});*/
+		arrow.addEventListener('click', function( ev ) {
+			ev.preventDefault();
+			openNextPage();
+		});
 	}
 
 	// toggle menu fn
@@ -217,7 +211,7 @@
 	// opens the menu
 	function openMenu() {
 		// toggle the menu button
-		classie.add(menuCtrl, 'menu-button--open')
+		classie.add(menuCtrl, 'menu-button--open');
 		// stack gets the class "pages-stack--open" to add the transitions
 		classie.add(stack, 'pages-stack--open');
 		// reveal the menu
@@ -236,6 +230,23 @@
 		}
 	}
 
+	function openAnim(id) {
+		// now set the page transforms
+		var stackPagesIdxs = getStackPagesIdxs();
+		for(var i = 0, len = stackPagesIdxs.length; i < len; ++i) {
+			var page = pages[stackPagesIdxs[i]];
+			page.style.WebkitTransform = 'translate3d(0, 75%, ' + parseInt(-1 * 200 - 50*i) + 'px)'; // -200px, -230px, -260px
+			page.style.transform = 'translate3d(0, 75%, ' + parseInt(-1 * 200 - 50*i) + 'px)';
+			page.style.WebkitTransitionDelay = '0.3s';
+			page.style.TransitionDelay = '0.3s';
+			page.style.WebkitTransitionDuration = '1.2s';
+			page.style.TransitionDuration = '1.2s';
+			/*
+			-webkit-transition-duration: '1.2s';
+    		transition-duration: '1.2s'; */
+		}
+	}
+
 	// function for the animation of the pages when transitioning the page
 
 	// closes the menu
@@ -247,7 +258,7 @@
 	// opens a page
 	function openPage(id) {
 
-		openMenu();
+		openAnim();
 
 		var futurePage = id ? document.getElementById(id) : pages[current],
 			futureCurrent = pages.indexOf(futurePage),
@@ -288,6 +299,10 @@
 
 
 	function openNextPage() {
+		var i = current+1;
+		var page = pages[i];
+		var pageid = page.getAttribute('id');
+		openPage(pageid);
 	}
 
 	// gets the current stack pages indexes. If any of them is the excludePage then this one is not part of the returned array
