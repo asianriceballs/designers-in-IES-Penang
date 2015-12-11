@@ -184,6 +184,84 @@ html.js,
 	overflow-y: scroll;
 }
 
+/* the page with the right and left split  */
+#page-custom .bp-header {
+	padding: 8em 0 2em;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+
+.right-section {
+	position: absolute;
+	right: 0;
+	top: 5em;
+	min-height: 100vh;
+	max-width: 50%;
+}
+
+.right-section .bg-image {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	min-width: 100%;
+	max-height: 100%;
+	z-index: 1;
+}
+
+.right-section .info {
+	font-size: 1.3em;
+	max-width: 70%;
+	margin-top: 10em;
+	color: #ffffff;
+	position: relative;
+	z-index: 10;
+}
+
+.right-section .info em {
+	font-size: 1em;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.left-section {
+	position: absolute;
+	left: 0;
+	top: 5em;
+	min-height: 100vh;
+	max-width: 50%;
+}
+
+.left-section .bg-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	min-width: 100%;
+	max-height: 100%;
+	z-index: 1;
+}
+
+.left-section .info {
+	font-size: 1.3em;
+	max-width: 70%;
+	margin-top: 10em;
+	color: #ffffff;
+	position: relative;
+	z-index: 10;
+}
+
+.left-section .info em {
+	font-size: 1em;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
 .js .pages-stack--open .page {
 	cursor: pointer;
 	-webkit-transition: -webkit-transform 0.45s, opacity 0.45s;
@@ -219,7 +297,7 @@ html.js,
 }
 
 .l-info {
-	font-family: 'Merriweather', serif;
+	font-family: 'Lato', serif;
 	font-size: 1.25em;
 	max-width: 65%;
 	margin-top: 1.5em;
@@ -407,15 +485,29 @@ html.js,
 
 /* Down Arrow */
 .dwn-arrow {	
+	margin: 0 46%;
+	display: block;
+	background-image: url(../images/icon-down-arrow.svg);
+	background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 16px 8px;
+    width: 16px;
+    height: 8px;
+}
+
+.click-to-learn-more {	
 	position: absolute;
 	z-index: 1000;
 	bottom: 2vh;
-	margin: 0 47.5%;
-	width: 72px;
-	height: 72px;
-	cursor: pointer;
-	border: none;
-	background: url(../images/d-arrow.png) no-repeat;
+	margin: 0 45.6%;
+	width: 7em;
+	text-align: center;
+}
+
+.click-to-learn-more p {
+	font-size: 0.8em;
+    line-height: 1em;
+    color: #ffffff;
 }
 
 .ld {
@@ -611,11 +703,12 @@ html.js,
 
 /* Grid item */
 .grid__item {
-  padding: 45px 25px 30px;
+  padding: 45px 15px 20px;
   margin: 0 6px;
   position: relative;
   color: inherit;
   background: #ffffff;
+  border: 1px solid #c9c9c9;
   min-height: 300px;
   cursor: pointer;
   text-align: center;
@@ -632,7 +725,9 @@ html.js,
   width: 23%; /* Might remove if it doesn't work */
   /* Border radius */
   -webkit-border-radius: 8px 8px 8px 8px;
-  border-radius: 8px 8px 8px 8px;
+  border-radius: 8px 8px 8px 8px;	
+  /* transition */
+  transition: all 0.3 ease-in-out;
 }
 
 /* Grid item "border" */
@@ -648,6 +743,11 @@ html.js,
 
 .grid__item * {
   	z-index: 10;
+}
+
+.grid__item:hover {
+	background: rgba(255, 255, 255, 0.7) !important;
+	border: 2px solid #ffffff;
 }
 
 .article-icon {
@@ -671,16 +771,22 @@ html.js,
 
 .grid__item h2 {
 	font-size: 0.8em;
+	font-weight: 800;
 	letter-spacing: 0.2em;
 	color: #578f47;
 	text-transform: uppercase;
 }
 
 .grid__item p {
-	font-family: 'Merriweather', serif;
+	font-family: 'Lato', sans-serif;
 	color: #6f6f6f;
 	font-size: 1em;
-    line-height: 1.5em;
+	font-weight: 400;
+    line-height: 1.4em;
+    text-align: justify;
+    /*Rough hacks*/
+    max-height: 175px;
+    overflow: hidden; 
 }
 
 /* learn more */
@@ -731,7 +837,7 @@ html.js,
 }
 
 .par-left p, .par-right p {
-	font-family: 'Merriweather', serif;
+	font-family: 'Lato', serif;
 	line-height: 1.5em;
 	color: #6f6f6f;
 }
@@ -821,7 +927,7 @@ html.js,
 #page-software .left-list li p {
 	display: flex;
 	color: #939393;
-	font-family: 'Merriweather', serif;
+	font-family: 'Lato', serif;
 	font-size: 0.8em;
 	line-height: 1.5em;
 }
@@ -864,7 +970,7 @@ html.js,
 #page-software .right-list li p {
 	display: flex;
 	color: #939393;
-	font-family: 'Merriweather', serif;
+	font-family: 'Lato', serif;
 	font-size: 0.8em;
 	line-height: 1.5em;
 }
@@ -885,6 +991,30 @@ html.js,
 	color: #87b279;
 }
 
+/* Page Showcase */
+#page-showcase {
+	background: #DD8E64;
+	color: #ffffff;
+}
+
+#page-showcase .bp-header__title {
+	color: #ffffff;
+}
+
+#page-question-1 {
+	background: #44153C;
+	color: #ffffff;
+}
+
+/* Page Ingredients */
+#page-ingredients {
+	background: #5b934b;
+}
+
+#page-ingredients .bp-header__title, #page-ingredients .bp-header__desc {
+	color: #ffffff;
+}
+
 /* dG */
 .dg {
 	display: inline;
@@ -900,6 +1030,8 @@ html.js,
 	-webkit-border-radius: 36px;
 	-moz-border-radius: 36px;
 	border-radius: 36px;
+	position: relative;
+	z-index: 10;
 }
 
 /* lG */
@@ -917,6 +1049,8 @@ html.js,
 	-webkit-border-radius: 36px;
 	-moz-border-radius: 36px;
 	border-radius: 36px;
+	position: relative;
+	z-index: 10;
 }
 
 .g-list {
@@ -998,7 +1132,7 @@ html.js,
 } 
 
 .grid-item p { 
-	font-family: 'Merriweather', serif;
+	font-family: 'Lato', serif;
 	z-index: 2;
 	color: #e4fcdd;
 	font-size: 0.8em;
@@ -1014,7 +1148,7 @@ html.js,
 
 /* page-custom */
 .fp { 
-	font-family: 'Merriweather', serif;
+	font-family: 'Lato', serif;
 }
 
 /* page-blog */
