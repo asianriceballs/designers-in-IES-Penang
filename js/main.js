@@ -47,7 +47,7 @@
 		//other items I want to keep an eye on 
 		header = document.querySelectorAll('.bp-header'),
 		// All the individual dots
-		arrowItems = document.querySelectorAll('.dwn-arrow'),
+		arrowItems = document.querySelectorAll('.click-to-learn-more'),
 		// the grid
 		grid = document.querySelector('.grid'),
 		// the grid items

@@ -297,7 +297,7 @@ html.js,
 }
 
 .l-info {
-	font-family: 'Merriweather', serif;
+	font-family: 'Lato', serif;
 	font-size: 1.25em;
 	max-width: 65%;
 	margin-top: 1.5em;
@@ -485,15 +485,29 @@ html.js,
 
 /* Down Arrow */
 .dwn-arrow {	
+	margin: 0 46%;
+	display: block;
+	background-image: url(../images/icon-down-arrow.svg);
+	background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 16px 8px;
+    width: 16px;
+    height: 8px;
+}
+
+.click-to-learn-more {	
 	position: absolute;
 	z-index: 1000;
 	bottom: 2vh;
-	margin: 0 46.5%;
-	width: 72px;
-	height: 72px;
-	cursor: pointer;
-	border: none;
-	background: url(../images/d-arrow.png) no-repeat;
+	margin: 0 45.6%;
+	width: 7em;
+	text-align: center;
+}
+
+.click-to-learn-more p {
+	font-size: 0.8em;
+    line-height: 1em;
+    color: #ffffff;
 }
 
 .ld {
@@ -757,16 +771,22 @@ html.js,
 
 .grid__item h2 {
 	font-size: 0.8em;
+	font-weight: 800;
 	letter-spacing: 0.2em;
 	color: #578f47;
 	text-transform: uppercase;
 }
 
 .grid__item p {
-	font-family: 'Merriweather', serif;
+	font-family: 'Lato', sans-serif;
 	color: #6f6f6f;
 	font-size: 1em;
-    line-height: 1.5em;
+	font-weight: 400;
+    line-height: 1.4em;
+    text-align: justify;
+    /*Rough hacks*/
+    max-height: 175px;
+    overflow: hidden; 
 }
 
 /* learn more */
@@ -817,7 +837,7 @@ html.js,
 }
 
 .par-left p, .par-right p {
-	font-family: 'Merriweather', serif;
+	font-family: 'Lato', serif;
 	line-height: 1.5em;
 	color: #6f6f6f;
 }
@@ -907,7 +927,7 @@ html.js,
 #page-software .left-list li p {
 	display: flex;
 	color: #939393;
-	font-family: 'Merriweather', serif;
+	font-family: 'Lato', serif;
 	font-size: 0.8em;
 	line-height: 1.5em;
 }
@@ -950,7 +970,7 @@ html.js,
 #page-software .right-list li p {
 	display: flex;
 	color: #939393;
-	font-family: 'Merriweather', serif;
+	font-family: 'Lato', serif;
 	font-size: 0.8em;
 	line-height: 1.5em;
 }
@@ -1112,7 +1132,7 @@ html.js,
 } 
 
 .grid-item p { 
-	font-family: 'Merriweather', serif;
+	font-family: 'Lato', serif;
 	z-index: 2;
 	color: #e4fcdd;
 	font-size: 0.8em;
@@ -1128,7 +1148,7 @@ html.js,
 
 /* page-custom */
 .fp { 
-	font-family: 'Merriweather', serif;
+	font-family: 'Lato', serif;
 }
 
 /* page-blog */
