@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="18px" height="11px" viewBox="0 0 18 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>down arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="body" sketch:type="MSArtboardGroup" transform="translate(-941.000000, -959.000000)" stroke-linecap="square" stroke="#D4DEDF" stroke-width="2">
+            <g id="section:hero" sketch:type="MSLayerGroup" transform="translate(23.000000, 20.000000)">
+                <g id="content:left:light" transform="translate(0.000000, 117.000000)" sketch:type="MSShapeGroup">
+                    <g id="scroll-to-learn-more" transform="translate(865.000000, 785.000000)">
+                        <g id="down-arrow" transform="translate(54.000000, 38.000000)">
+                            <path d="M0.5,0.5 L7.78010988,7.78010988" id="Line"></path>
+                            <path d="M15.5,0.5 L8.21989012,7.78010988" id="Line-Copy-3"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

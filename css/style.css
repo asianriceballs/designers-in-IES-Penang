@@ -134,7 +134,7 @@ a:hover {
 .bp-header__desc {
 	font-size: 1.2em;
 	font-weight: 300;
-	line-height: 1.5em;
+	line-height: 1.2em;
 	margin: 0.5em 0 1em;
 	padding: 0;
 }
@@ -152,8 +152,8 @@ a:hover {
 }
 
 .bp-header__title em {
-	font-family: 'Merriweather', serif;
-	font-weight: 500;
+	font-family: 'Lato', serif;
+	font-weight: 600;
 	letter-spacing: 0;
 	font-style: initial;
 }

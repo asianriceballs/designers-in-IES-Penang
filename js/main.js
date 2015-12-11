@@ -46,10 +46,14 @@
 		sideNavItems = [].slice.call(dotnav.querySelectorAll('.dNav')),
 		//other items I want to keep an eye on 
 		header = document.querySelectorAll('.bp-header'),
-		//Get the down arrow
-		dwnarrow = document.querySelector('.dwn-arrow'),
+		// All the individual dots
+		arrowItems = document.querySelectorAll('.click-to-learn-more'),
+		// the grid
+		grid = document.querySelector('.grid'),
+		// the grid items
+		gridItems = [].slice.call(grid.querySelectorAll('.grid__item')),
 		//the logo
-		logo = document.querySelector('.ies-logo'),
+		logo = document.querySelector('#logo'),
 		// the header
 		bghead = document.querySelector('.header'),
 		// check if menu is open
@@ -68,16 +72,23 @@
 		for(var i = 0; i < pagesTotal; ++i) {
 			var page = pages[i],
 				posIdx = stackPagesIdxs.indexOf(i);
+			var arrow = arrowItems[i];
 
 			if( current !== i ) {
 				classie.add(page, 'page--inactive');
 				header[i].style.display ="none";
 				
-				if( posIdx !== -1 ) {
-					// visible pages in the stack
-					page.style.WebkitTransform = 'translate3d(0,100%,0)';
-					page.style.transform = 'translate3d(0,100%,0)';
-				}
+					if( posIdx !== -1 ) {
+						// visible pages in the stack
+						page.style.WebkitTransform = 'translate3d(0,100%,0)';
+						page.style.transform = 'translate3d(0,100%,0)';
+					}
+					/*
+					page.style.transitionDuration = '0.6s';
+						page.style.WebkitTransitionDuration= '0.6s';
+						page.style.TransitionTimingFunction ='ease-in-out';
+						page.style.WebkitTransitionTimingFunction = 'ease-in-out';
+					*/
 				else {
 					// invisible pages in the stack
 					page.style.WebkitTransform = 'translate3d(0,75%,-300px)';
@@ -126,6 +137,16 @@
 			});
 		});
 
+		// Clicking the Grid Items and opening the corresponding page
+		gridItems.forEach(function(item) {
+			// which page to open?
+			var pageid = item.getAttribute('href').slice(1);
+			item.addEventListener('click', function(ev) {
+				ev.preventDefault();
+				openPage(pageid);
+			});
+		});
+
 		// clicking on a page when the menu is open triggers the menu to close again and open the clicked page
 		pages.forEach(function(page) {
 			var pageid = page.getAttribute('id');
@@ -137,15 +158,28 @@
 			});
 		});
 
-		//make the Down Arrow shake
-		dwnarrow.addEventListener('mouseover', function(ev) {
-			classie.remove(this, 'slideInUp');
-			classie.add(this, 'shake');
-		});
+		// navigation dot clicks
+		pages.forEach(function(page) {
+			// which page to open?
+			var i = 0;
+			var pageid = arrowItems[i].getAttribute('href').slice(1);
+			var item = arrowItems[i];
 
-		dwnarrow.addEventListener('mouseout', function(ev) {
-			classie.remove(this, 'shake');
-			classie.add(this, 'slideInUp');
+			item.addEventListener('click', function(ev) {
+				ev.preventDefault();
+				openPage(pageid);
+			});
+
+			//make the Down Arrow shake
+			item.addEventListener('mouseover', function(ev) {
+				classie.remove(this, 'slideInUp');
+				classie.add(this, 'shake');
+			});
+
+			item.addEventListener('mouseout', function(ev) {
+				classie.remove(this, 'shake');
+				classie.add(this, 'slideInUp');
+			});
 		});
 
 		// keyboard navigation events
@@ -155,13 +189,18 @@
 				ev.preventDefault();
 				changePage();
 			}
-		} );
+		});
+
+		//opening the first page
+		logo.addEventListener('click', function(ev) {
+			var pageid = logo.getAttribute('href').slice(1);
+				ev.preventDefault();
+				openPage(pageid);
+		});
 
 		// Click on Down arrow
-		dwnarrow.addEventListener( 'click', function( ev ) {
-			openNextPage();
-		} );
-
+		/*dwnarrow.addEventListener('click', function( ev ) {
+		});*/
 	}
 
 	// toggle menu fn
@@ -197,6 +236,8 @@
 		}
 	}
 
+	// function for the animation of the pages when transitioning the page
+
 	// closes the menu
 	function closeMenu() {
 		// same as opening the current page again
@@ -217,20 +258,20 @@
 		futurePage.style.transform = 'translate3d(0, 0, 0)';
 		futurePage.style.opacity = 1;
 		
-
+	
 		// set transforms for the other items in the stack
 		for(var i = 0, len = stackPagesIdxs.length; i < len; ++i) {
 			var page = pages[stackPagesIdxs[i]];
 			page.style.WebkitTransform = 'translate3d(0,100%,0)';
 			page.style.transform = 'translate3d(0,100%,0)';
+			page.style.WebkitTransitionDelay = '0.8s';
+			page.style.TransitionDelay = '0.8s';
 		}
 
 		// set current
 		if( id ) {
 			current = futureCurrent;
 		}
-
-
 		
 		// close menu..
 		classie.remove(menuCtrl, 'menu-button--open');
@@ -239,45 +280,15 @@
 
 		//Transition the content
 		onEndTransition(futurePage, function() {
-			classie.remove(stack, 'pages-stack--open');
 			buildStack();
-			changeNextArrow();
+			classie.remove(stack, 'pages-stack--open');
 			isMenuOpen = false;
 		});
 	}
 
 
-	function openFirstPage() {
-		var firstPage = document.querySelector(".page").getattribute('id');
-			logo.addEventListener('click', function(ev) {
-				ev.preventDefault();
-				openPage(indexOf(firstPage));
-			});
-	}
-	
-
 	function openNextPage() {
-		page.addEventListener('click', function(ev) {
-				ev.preventDefault();
-				openPage(pageid);
-		});
 	}
-
-	//hidethedownArrow
-	function changeNextArrow() {
-		var i = 0;
-		var page = pages[i];
-
-		var pageid = page.getAttribute('id');
-
-		if (pageid == 'page-last') {	
-			classie.add(dwnarrow, 'ld');
-		}
-		else {
-			classie.remove(dwnarrow, 'ld');
-		}
-
-	} 
 
 	// gets the current stack pages indexes. If any of them is the excludePage then this one is not part of the returned array
 	function getStackPagesIdxs(excludePageIdx) {
