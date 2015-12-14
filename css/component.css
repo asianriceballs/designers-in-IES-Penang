@@ -547,8 +547,10 @@ html.js,
 .dotstyle {	
 	position: absolute;
 	z-index: 1000;
-	bottom: 25%;
-	right: 3px;
+	bottom: 27%;
+	right: 0;
+	background: rgba(255,255,255,0.05);
+    padding: 1em 0;
 }
 
 .dotstyle ul {
@@ -586,7 +588,7 @@ html.js,
 	border-radius: 50%;
 	/* background-color: #fff;
 	background-color: rgba(255, 255, 255, 0.3); */
-	border: 2px solid rgba(0, 0, 0, .6);
+	border: 2px solid rgba(255, 255, 255, .6);
 	text-indent: -999em; /* make the text accessible to screen readers */
 	cursor: pointer;
 	position: absolute;
@@ -615,7 +617,7 @@ html.js,
 	width: 18px;
 	height: 18px;
 	border-radius: 50%;
-	background: #000;
+	background: #ffffff;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
@@ -1290,7 +1292,7 @@ html.js,
 
 .ml {
 	display: block;
-	margin-bottom: 4em;
+	margin-bottom: 1em;
 }
 
 .simform {
@@ -1613,7 +1615,29 @@ html.js,
 .mb8 { margin-bottom: 8em; }
 .mb9 { margin-bottom: 9em; }
 
+/* Last Page */
+.lst-pg {
+	background: rgba(10,96,96,0.9);
+    width: 18em;
+    margin: 2em auto 0 auto;
+    padding: 1em 0.5em;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.5em;
+}
 
+.lst-pg .learn-more {
+	padding: 1em 2em !important;
+	font-size: 0.6em !important;
+	margin: 0 auto !important;
+	display: block;
+}
+
+.lst-pg .sml {
+	font-size: 0.8em;
+}
 
 @media screen and (max-width: 60em) {
 	.info {
