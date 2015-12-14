@@ -297,7 +297,6 @@
 		});
 	}
 
-
 	function openNextPage() {
 		var i = current+1;
 		var page = pages[i];
