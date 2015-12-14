@@ -237,10 +237,10 @@
 			var page = pages[stackPagesIdxs[i]];
 			page.style.WebkitTransform = 'translate3d(0, 75%, ' + parseInt(-1 * 200 - 50*i) + 'px)'; // -200px, -230px, -260px
 			page.style.transform = 'translate3d(0, 75%, ' + parseInt(-1 * 200 - 50*i) + 'px)';
-			page.style.WebkitTransitionDelay = '0.3s';
-			page.style.TransitionDelay = '0.3s';
-			page.style.WebkitTransitionDuration = '1.2s';
-			page.style.TransitionDuration = '1.2s';
+			page.style.WebkitTransitionDelay = '0.2s';
+			page.style.TransitionDelay = '0.2s';
+			page.style.WebkitTransitionDuration = '1s';
+			page.style.TransitionDuration = '1s';
 			/*
 			-webkit-transition-duration: '1.2s';
     		transition-duration: '1.2s'; */
@@ -296,6 +296,7 @@
 			isMenuOpen = false;
 		});
 	}
+
 
 	function openNextPage() {
 		var i = current+1;

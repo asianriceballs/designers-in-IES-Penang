@@ -82,6 +82,7 @@ a:hover {
 	width: 100%;
 	border-bottom: 1px solid #DEDFE0;
 	transition: all 0.2s ease;
+	z-index: 100;
 }
 
 .bhck {

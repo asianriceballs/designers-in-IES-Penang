@@ -172,6 +172,7 @@ html.js,
 
 .js #page-home .bp-header__title { 
 	color: #fff;
+	line-height: 1.1em;
 }
 
 .js #page-first {
@@ -182,6 +183,14 @@ html.js,
 .js #page-second {
 	background: #eeeded;
 	overflow-y: scroll;
+}
+
+.js #page-last {
+	color: #ffffff;
+}
+
+.js #page-last .bp-header__title {
+	color: #ffffff !important;
 }
 
 /* the page with the right and left split  */
@@ -495,17 +504,21 @@ html.js,
     height: 8px;
 }
 
-.click-to-learn-more {	
+.click-to-learn-more {
+	background: #000000;
 	position: absolute;
 	z-index: 1000;
-	bottom: 2vh;
-	margin: 0 45.6%;
-	width: 7em;
+	bottom: 0vh;
+	margin: 0 44.6%;
+	padding: 0.1em 0.5em 1em;
+	width: 9em;
 	text-align: center;
+	opacity: 0.5;
 }
 
 .click-to-learn-more p {
 	font-size: 0.8em;
+	font-weight: 600;
     line-height: 1em;
     color: #ffffff;
 }
@@ -533,7 +546,7 @@ html.js,
 .dotstyle {	
 	position: absolute;
 	z-index: 1000;
-	bottom: 15%;
+	bottom: 25%;
 	right: 3px;
 }
 
@@ -703,7 +716,7 @@ html.js,
 
 /* Grid item */
 .grid__item {
-  padding: 45px 15px 20px;
+  padding: 45px 15px 35px;
   margin: 0 6px;
   position: relative;
   color: inherit;
@@ -747,7 +760,6 @@ html.js,
 
 .grid__item:hover {
 	background: rgba(255, 255, 255, 0.7) !important;
-	border: 2px solid #ffffff;
 }
 
 .article-icon {
@@ -770,11 +782,12 @@ html.js,
 }
 
 .grid__item h2 {
-	font-size: 0.8em;
-	font-weight: 800;
-	letter-spacing: 0.2em;
-	color: #578f47;
-	text-transform: uppercase;
+	font-size: 1.2em;
+    font-weight: 500;
+    /* letter-spacing: 0.2em; */
+	margin: 0.8em 0 0.3em 0;
+    color: #000000;
+    /* text-transform: uppercase; */
 }
 
 .grid__item p {
@@ -785,8 +798,25 @@ html.js,
     line-height: 1.4em;
     text-align: justify;
     /*Rough hacks*/
-    max-height: 175px;
+    max-height: 180px;
+	margin: 0.1em 0;
     overflow: hidden; 
+}
+
+.grid__item .expand-btn {
+	background: #2e7d18;
+    color: #ffffff;
+	cursor: pointer;
+    font-weight: 400;
+    margin: 1em auto 0 auto;
+    padding: .4em 1.8em;
+    border: none;
+    -webkit-border-radius: 19px;
+    -moz-border-radius: 19px;
+    border-radius: 19px;
+    transition: all 0.3s ease;
+    position: absolute;
+    margin: 1.7em 25%;
 }
 
 /* learn more */
@@ -856,7 +886,8 @@ html.js,
 	display: block;
     float:right;
     position:relative;
-    margin-top: -11.5em;
+	margin-top: -10.5em;
+    margin-bottom: 1em;
     /*margin-bottom: 2em;
     margin-right: 15px;*/
 }
@@ -1001,12 +1032,16 @@ html.js,
 
 /* Page Showcase */
 #page-showcase {
-	background: #DD8E64;
+	background: #44153C;
 	color: #ffffff;
 }
 
 #page-showcase .bp-header__title {
 	color: #ffffff;
+}
+
+#page-showcase .bp-header__desc {
+	color: #e1bcdb;
 }
 
 #page-question-1 {
@@ -1016,11 +1051,15 @@ html.js,
 
 /* Page Ingredients */
 #page-ingredients {
-	background: #5b934b;
+	background: #161616;
 }
 
 #page-ingredients .bp-header__title, #page-ingredients .bp-header__desc {
 	color: #ffffff;
+}
+
+#page-ingredients .bg-image {
+	opacity: 0.1;
 }
 
 /* dG */
@@ -1205,6 +1244,16 @@ html.js,
   justify-content: center;
   width: 28%; 
   overflow: hidden;
+}
+
+.lgd-item p {
+	color: #e1bcdb;
+}
+
+.lgd-item em {
+	color: #ffffff;
+	font-weight: bold;
+	padding: 0 0.2em;
 }
 
 /* lgd thumb */
