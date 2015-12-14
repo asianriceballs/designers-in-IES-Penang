@@ -166,8 +166,9 @@ html.js,
 	width: 100%;
 	height: 100vh;
 	pointer-events: auto;
-	background: #eaeaea;
+	background: #eeeded;
 	box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
+	overflow-y: scroll;
 }
 
 .js #page-home .bp-header__title { 
@@ -857,6 +858,15 @@ html.js,
     float:right;
     position:relative;
     margin-top: -11.5em;
+    /*margin-bottom: 2em;
+    margin-right: 15px;*/
+}
+
+#sale {
+	display: block;
+    float:right;
+    position:relative;
+    margin-top: -6.5em !important;
     /*margin-bottom: 2em;
     margin-right: 15px;*/
 }
