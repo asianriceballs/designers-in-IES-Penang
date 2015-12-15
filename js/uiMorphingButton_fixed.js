@@ -59,13 +59,16 @@
 
 	UIMorphingButton.prototype._initEvents = function() {
 		var self = this;
+		var header = document.querySelector('.header');
+		
 		// open
-		this.button.addEventListener( 'click', function() { self.toggle(); } );
+		this.button.addEventListener( 'click', function() { self.toggle(); header.style.height = '100%'; } );
 		// close
 		if( this.options.closeEl !== '' ) {
 			var closeEl = this.el.querySelector( this.options.closeEl );
 			if( closeEl ) {
-				closeEl.addEventListener( 'click', function() { self.toggle(); } );
+				closeEl.addEventListener( 'click', function() { self.toggle(); header.style.height = '5em';} );
+				
 			}
 		}
 	}
@@ -126,7 +129,7 @@
 		this.contentEl.style.left = 'auto';
 		this.contentEl.style.top = 'auto';
 		
-		// add/remove class "open" to the button wraper
+		// add/remove class "open" to the button wrapper
 		setTimeout( function() { 
 			self.contentEl.style.left = buttonPos.left + 'px';
 			self.contentEl.style.top = buttonPos.top + 'px';

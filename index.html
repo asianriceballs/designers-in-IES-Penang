@@ -300,7 +300,7 @@
 				<h1 class="bp-header__title animated slideInDown">So are you ready to write<br />your own eCommerce success story?</h1>
 				<div class="lst-pg animated slideInDown ">
 					<span class="ml sanim4 fadeInDown">Your InstanteStore is waiting for you right now. Click the FREE TRIAL button<br /> to see what it looks like so far.</span>
-					<button class="learn-more sanim2 fadeInDown">Growing your store</button>
+					<button class="learn-more sanim2 fadeInUp">Growing your store</button>
 					<span class="bp-header__desc rp sml sanim6 fadeInUp">Sign Up. Now and we will give & extra 30 days credit.</span>
 				</div>
 			</header>
@@ -395,7 +395,7 @@
 	</div>
 
 	<a href="#" class="click-to-learn-more animated slideInUp">
-		<p class="anims1 fadeInUp">Scroll Down to see more</p>
+		<p class="anims1 fadeInUp">Scroll down to see more</p>
 		<span class="dwn-arrow sanim1 fadeInUp"></span>
 	</a>
 
@@ -413,28 +413,6 @@
 					}
 				} );
 			} );
-
-			/* Form Animation */
-			var theForm = document.getElementById( 'theForm' );
-
-			new stepsForm( theForm, {
-				onSubmit : function( form ) {
-					// hide form
-					classie.addClass( theForm.querySelector( '.simform-inner' ), 'hide' );
-
-					/*
-					form.submit()
-					or
-					AJAX request (maybe show loading indicator while we don't have an answer..)
-					*/
-
-					// let's just simulate something...
-					var messageEl = theForm.querySelector( '.final-message' );
-					messageEl.innerHTML = 'Thank you, please click \'Next\' to proceed to the next page';
-					classie.addClass( messageEl, 'show' );
-				}
-			} );
-			/* End Form Animation */
 	</script>
 
 	<script>
