@@ -771,8 +771,9 @@ html.js,
 	height: 100px;
 	width: 100px;
 	font-size: 2.5em;
-	color: #578f47;
-	border: 2px solid #578f47;
+	color: #474747;
+	background-color: #fae86e;
+	border: 2px solid #599149;
 	-webkit-border-radius: 50px 50px 50px 50px;
   	border-radius: 50px 50px 50px 50px;
   	-webkit-box-shadow: 2px 2px 10px 0px rgba(153,153,153,1);
@@ -1567,6 +1568,14 @@ html.js,
 .final-message.show {
 	-webkit-transition-delay: 0.5s;
 	transition-delay: 0.5s;
+}
+
+/*Video*/
+.bg-video {
+	top: 0;
+	left: 0;
+	z-index: -10;
+	position: absolute;
 }
 
 /* Final hiding of form / showing message */
