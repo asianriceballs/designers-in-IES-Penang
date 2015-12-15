@@ -241,10 +241,6 @@
 			var page = pages[stackPagesIdxs[i]];
 			page.style.WebkitTransform = 'translate3d(0, 75%, ' + parseInt(-1 * 200 - 50*i) + 'px)'; // -200px, -230px, -260px
 			page.style.transform = 'translate3d(0, 75%, ' + parseInt(-1 * 200 - 50*i) + 'px)';
-			page.style.WebkitTransitionDelay = '0.1s';
-			page.style.TransitionDelay = '0.1s';
-			page.style.WebkitTransitionDuration = '0.4s';
-			page.style.TransitionDuration = '0.4s';
 			/*
 			-webkit-transition-duration: '1.2s';
     		transition-duration: '1.2s'; */
