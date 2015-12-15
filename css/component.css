@@ -775,6 +775,9 @@ html.js,
 	border: 2px solid #578f47;
 	-webkit-border-radius: 50px 50px 50px 50px;
   	border-radius: 50px 50px 50px 50px;
+  	-webkit-box-shadow: 2px 2px 10px 0px rgba(153,153,153,1);
+    -moz-box-shadow: 2px 2px 10px 0px rgba(153,153,153,1);
+    box-shadow: 2px 2px 10px 0px rgba(153,153,153,1);1);
 }
 
 .fa-space-shuttle {
