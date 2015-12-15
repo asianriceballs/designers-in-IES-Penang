@@ -165,6 +165,7 @@
 		pages.forEach(function(page) {
 			// which page to open?
 			var item = arrow;
+			var i = current;
 
 			//make the Down Arrow shake
 			item.addEventListener('mouseover', function(ev) {
@@ -176,6 +177,15 @@
 				classie.remove(this, 'shake');
 				classie.add(this, 'slideInUp');
 			});
+			
+			if (i === pagesTotal) {
+				item.style.Display = "none";
+			}
+			
+			else {
+				item.style.Display = "inherit";
+			}
+			
 		});
 
 		// keyboard navigation events
@@ -296,7 +306,6 @@
 			isMenuOpen = false;
 		});
 	}
-
 
 	function openNextPage() {
 		var i = current+1;
