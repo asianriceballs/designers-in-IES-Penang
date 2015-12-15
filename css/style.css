@@ -85,6 +85,10 @@ a:hover {
 	z-index: 100;
 }
 
+.header a:hover {
+	color: #599149;
+}
+
 .bhck {
 	background: transparent !important;
 	border-bottom:none !important;
