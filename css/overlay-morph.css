@@ -758,7 +758,7 @@
 .content-style-form input[type="password"] {
 	padding: 10px;
 	width: 100%;
-	border: 2px solid #ebd3bd;
+	border: 2px solid #ebebeb;
 	background: transparent;
 	color: #b09a86;
 	font-weight: 300;
@@ -767,8 +767,8 @@
 
 .content-style-form input[type="text"]:focus,
 .content-style-form input[type="password"]:focus {
-	border-color: #e75854;
-	color: #e75854;
+	border-color: #eeeeee;
+	color: #000000;
 }
 
 .content-style-form input:focus {
@@ -781,7 +781,7 @@
 	padding: 1.5em;
 	width: 100%;
 	border: none;
-	background: #e75854;
+	background: #599149;
 	color: #f9f6e5;
 	text-transform: uppercase;
 	letter-spacing: 1px;
