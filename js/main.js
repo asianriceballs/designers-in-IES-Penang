@@ -81,6 +81,8 @@
 						// visible pages in the stack
 						page.style.WebkitTransform = 'translate3d(0,100%,0)';
 						page.style.transform = 'translate3d(0,100%,0)';
+						page.style.transitionDuration = '0.5s';
+						page.style.WebkitTransitionDuration= '0.5.s';
 					}
 					/*
 					page.style.transitionDuration = '0.6s';
@@ -92,6 +94,8 @@
 					// invisible pages in the stack
 					page.style.WebkitTransform = 'translate3d(0,75%,-300px)';
 					page.style.transform = 'translate3d(0,75%,-300px)';
+					page.style.transitionDuration = '0.5s';
+					page.style.WebkitTransitionDuration= '0.5.s';
 				}
 			}
 			else {
@@ -237,10 +241,10 @@
 			var page = pages[stackPagesIdxs[i]];
 			page.style.WebkitTransform = 'translate3d(0, 75%, ' + parseInt(-1 * 200 - 50*i) + 'px)'; // -200px, -230px, -260px
 			page.style.transform = 'translate3d(0, 75%, ' + parseInt(-1 * 200 - 50*i) + 'px)';
-			page.style.WebkitTransitionDelay = '0.2s';
-			page.style.TransitionDelay = '0.2s';
-			page.style.WebkitTransitionDuration = '1s';
-			page.style.TransitionDuration = '1s';
+			page.style.WebkitTransitionDelay = '0.1s';
+			page.style.TransitionDelay = '0.1s';
+			page.style.WebkitTransitionDuration = '0.4s';
+			page.style.TransitionDuration = '0.4s';
 			/*
 			-webkit-transition-duration: '1.2s';
     		transition-duration: '1.2s'; */

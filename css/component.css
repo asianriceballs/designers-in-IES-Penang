@@ -549,7 +549,7 @@ html.js,
 	z-index: 1000;
 	bottom: 27%;
 	right: 0;
-	background: rgba(255,255,255,0.05);
+	background: rgba(0,0,0,0.2);
     padding: 1em 0;
 }
 
