@@ -179,6 +179,7 @@ html.js,
 	color: #fff;
 	font-size: 4em;
 	line-height: 0.9em;
+	text-shadow: 2px 2px 5px #747474;
 }
 
 .js #page-first {
@@ -1679,8 +1680,8 @@ html.js,
 /* Last Page */
 .lst-pg {
 	background: rgba(10,96,96,0.9);
-    width: 18em;
-    margin: 2em auto 0 auto;
+    width: 22em;
+    margin: 1em auto 0 auto;
     padding: 1em 0.5em;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
