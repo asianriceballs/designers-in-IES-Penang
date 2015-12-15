@@ -99,6 +99,33 @@ Copyright (c) 2015 Daniel Eden
     animation-delay: 1.6s;
 }
 
+.sanim7 {
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: 1.6s; /* Chrome, Safari, Opera */
+    animation-delay: 2.0s;
+}
+
+.sanim8 {
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: 1.6s; /* Chrome, Safari, Opera */
+    animation-delay: 2.4s;
+}
+
+.sanim9 {
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: 1.6s; /* Chrome, Safari, Opera */
+    animation-delay: 2.6s;
+}
+
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
