@@ -65,7 +65,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: #5c5edc;
+	color: #e8ea40;
 	outline: none;
 }
 
@@ -104,7 +104,7 @@ a:hover {
 	/*font-weight: 700;*/
 	font-weight: 300;
 	line-height: 1.1;
-	margin: 1.2em 0 0 0;
+	margin: 0.2em 0 0 0;
 	color: #000;
 	/*letter-spacing: -1px;*/
 	/* text shadow */
@@ -260,6 +260,48 @@ a:hover {
 .wr {
 	width: 90%;
 	margin: 10% auto 5% auto;
+}
+
+/*Footer Section*/
+
+footer {
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	position: absolute;
+	background: #2a2a2a;
+	display: inline-block;
+	z-index: 500;
+	padding: 10px 15% 15px 15%;
+}
+
+.footer-stuff {
+	width: 25%;
+	color: #fff;
+	float: left;
+}
+
+.footer-stuff h5 {
+	-webkit-margin-after: .5em;
+	color: #a6a6a6;
+}
+
+.footer-links li {
+	list-style-type: none;
+	line-height: 1.7em;
+	font-size: .85em;
+	color: #8e8e8e;
+}
+
+.footer-links li a {
+	list-style-type: none;
+	color: #8e8e8e;
+	line-height: 1.7em;
+	font-size: .85em;
+}
+
+#page-last .click-to-learn-more {
+	display: hidden !important;
 }
 
 /* Morph Button */

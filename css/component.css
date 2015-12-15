@@ -1281,7 +1281,7 @@ html.js,
 	margin: 1.5em auto;
 }
 
-#page-questions .learn-more, #page-last .learn-more {
+#page-questions .learn-more, .learn-more {
 	padding: 1.8em 9em;
     font-size: 0.8em;
 	/* Border radius */
@@ -1603,7 +1603,7 @@ html.js,
 .mt5 { margin-top: 5em; }
 .mt6 { margin-top: 6em; }
 .mt7 { margin-top: 7em; }
-.mt8 { margin-top: 8em; }
+.mt8 { margin-top: 3em; }
 .mt9 { margin-top: 9em; }
 .mb1 { margin-bottom: 1em; }
 .mb2 { margin-bottom: 2em; }
