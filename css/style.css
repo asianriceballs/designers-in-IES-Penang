@@ -164,6 +164,14 @@ a:hover {
 	font-style: initial;
 }
 
+/* hpg header */
+.hpg header {
+	padding: 8em 8vw 2em;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+
 .bp-tooltip:after {
 	font-size: 50%;
 	font-size: 75%;
