@@ -199,6 +199,16 @@ a:hover {
 	background: #5c5edc;
 }
 
+.tooltip-dot {
+	background: #ffffff;
+	width: 2em;
+	height: 2em;
+	/* Border radius */
+	-webkit-border-radius: 2em;
+	-moz-border-radius: 2em;
+	border-radius: 2em;
+}
+
 .bp-nav {
 	margin: 0 0 0 -0.75em;
 }
