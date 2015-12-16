@@ -222,6 +222,25 @@ html.js,
     line-height: 1.5em;
 }
 
+/* The ingredients horizontally placed */
+.hpg {
+	display: none;
+}
+
+#1g {
+	
+}
+#2g {
+	
+}
+#3g {
+	
+}
+#4g {
+	
+}
+
+
 .right-section {
 	position: absolute;
 	right: 0;

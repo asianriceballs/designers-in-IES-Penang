@@ -207,7 +207,13 @@
 				ev.preventDefault();
 				openNextPage();
 			}
+			if( keyCode === 38 ) {
+				ev.preventDefault();
+				openPreviousPage();
+			}
 		});
+		
+		
 
 		//opening the first page
 		logo.addEventListener('click', function(ev) {
@@ -321,6 +327,13 @@
 
 	function openNextPage() {
 		var i = current+1;
+		var page = pages[i];
+		var pageid = page.getAttribute('id');
+		openPage(pageid);
+	}
+	
+	function openPreviousPage(){
+		var i = current-1;
 		var page = pages[i];
 		var pageid = page.getAttribute('id');
 		openPage(pageid);
