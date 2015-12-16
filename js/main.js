@@ -42,6 +42,8 @@
 		navItems = [].slice.call(nav.querySelectorAll('.link--page')),
 		//All the Dot Sidebar Items
 		dotnav = document.querySelector('.dotNav'),
+		// All the list elements
+		liItems = [].slice.call(dotnav.querySelectorAll('li')),
 		// All the individual dots
 		sideNavItems = [].slice.call(dotnav.querySelectorAll('.dNav')),
 		//other items I want to keep an eye on 
@@ -131,13 +133,23 @@
 
 		// navigation dot clicks
 		sideNavItems.forEach(function(item) {
-			var i = 0;
+			var i = current;
+			var page = pages[i];
+			var pg = page.getAttribute('id');
+			var dt = item.getAttribute('href').slice(1);
 			// which page to open?
 			var pageid = item.getAttribute('href').slice(1);
 			item.addEventListener('click', function(ev) {
 				ev.preventDefault();
 				openPage(pageid);
 			});
+			
+			if (pg == dt) {
+				classie.add(item, 'current');
+			}
+			else {
+				classie.remove(item, 'current');
+			}
 		});
 
 		// Clicking the Grid Items and opening the corresponding page
@@ -161,11 +173,10 @@
 			});
 		});
 
-		// navigation dot clicks
 		pages.forEach(function(page) {
-			// which page to open?
+			var pageid = page.getAttribute('id');
+			
 			var item = arrow;
-			var i = current;
 
 			//make the Down Arrow shake
 			item.addEventListener('mouseover', function(ev) {
@@ -178,13 +189,12 @@
 				classie.add(this, 'slideInUp');
 			});
 			
-			if (i === pagesTotal) {
-				item.style.Display = "none";
+			/*if (toString(curpg) === 'page-last') {
+				page.style.display = "none";
 			}
-			
 			else {
-				item.style.Display = "inherit";
-			}
+				page.style.display = "inherit";
+			}*/
 			
 		});
 
@@ -269,7 +279,7 @@
 	function openPage(id) {
 
 		openAnim();
-
+	
 		var futurePage = id ? document.getElementById(id) : pages[current],
 			futureCurrent = pages.indexOf(futurePage),
 			stackPagesIdxs = getStackPagesIdxs(futureCurrent);
