@@ -158,7 +158,9 @@
 			var pageid = item.getAttribute('href').slice(1);
 			item.addEventListener('click', function(ev) {
 				ev.preventDefault();
-				openPage(pageid);
+				classie.remove(item,'fadeInRight');
+				classie.add(item,'fadeOutLeft');
+				//openPage(pageid);
 			});
 		});
 
