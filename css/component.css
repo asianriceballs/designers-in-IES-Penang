@@ -80,11 +80,11 @@ html.js,
 }
 
 .link {
-	font-size: 1.5em;
+	font-size: 1.1em;
 	position: relative;
 	letter-spacing: 0.05em;
 	/*font-weight: bold;*/
-	/*text-transform: uppercase;*/
+	text-transform: uppercase;
 }
 
 .link:hover,
@@ -163,7 +163,7 @@ html.js,
 	position: relative;
 	z-index: 5;
 	overflow-x: hidden;
-	with: 100%;
+	width: 100%;
 	height: 100vh;
 	pointer-events: auto;
 	background: #eeeded;
@@ -173,11 +173,12 @@ html.js,
 
 .js #page-home .bp-header{ 
 	margin-top: 4em;
-}
+} 
 
 .js #page-home .bp-header__title { 
 	color: #fff;
 	font-size: 4em;
+	font-weight: 300 !important;
 	line-height: 0.9em;
 	text-shadow: 2px 2px 5px #747474;
 }
@@ -209,8 +210,9 @@ html.js,
 }
 
 /*the team section */
-#page-team {
-	color: #ffffff;
+#page-team {																
+	color: #ffffff;																																													
+	overflow-y: hidden !important;	
 }
 
 #page-team .bp-header__title {
@@ -221,6 +223,14 @@ html.js,
 	font-size: 1.6em;
     line-height: 1.5em;
 }
+
+/* Page Team */																																						
+#page-team .bg-image {
+	top: 0;
+	padding-top: 3em;
+	min-width: 100%;
+	max-height: 140% !important; 
+}													
 
 /* The ingredients horizontally placed */
 .hpg {
@@ -244,7 +254,7 @@ html.js,
 .right-section {
 	position: absolute;
 	right: 0;
-	top: 5em;
+	top: 0;
 	min-height: 100vh;
 	max-width: 50%;
 }
@@ -279,7 +289,7 @@ html.js,
 .left-section {
 	position: absolute;
 	left: 0;
-	top: 5em;
+	top: 0;
 	min-height: 100vh;
 	max-width: 50%;
 }
@@ -324,14 +334,6 @@ html.js,
 	z-index: 0;
 	top: 0;
 	opacity: 0;
-}
-
-.js .hide {
-	display: none;
-}
-
-.js .show {
-	display: inherit;
 }
 
 /* page content */
@@ -1718,6 +1720,90 @@ html.js,
 
 .lst-pg .sml {
 	font-size: 0.6em;
+}
+
+/* The newer box for the names */
+#page-team .morph-button-modal.open .morph-content {
+    top: 50% !important;
+    left: 50% !important;
+    margin: -210px 0 0 -220px;
+    width: 440px;
+    height: 160px;
+    -webkit-transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
+    transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
+}
+
+#page-team .team-dot {
+	float: left;
+	position: absolute;
+}
+
+#page-team .single > button {
+	line-height: 1.5em;
+	font-weight: 800;
+}
+
+#page-team .single > button em {
+	font-size: 0.8em;
+	font-weight: 600;
+	letter-spacing: 0;
+	text-transform: capitalize;
+	font-style: normal;
+}
+
+/* using the team names */
+#leefong {
+	margin-left: 5em;
+}
+
+#suisim {
+	margin-left: 19em;
+    margin-top: 7em;
+}
+
+#charles { 
+	margin-left: 28em;
+    margin-top: 2em;
+}
+
+#michael {
+	margin-top: 4em;
+    margin-left: 40em;
+}
+
+#terry {
+	margin-top: 3em;
+	margin-left: 53em;
+}
+
+#ryan {
+	margin-top: 6em;
+    margin-left: 62em;
+}
+
+#desmond {
+	margin-top: 29em;
+	margin-left: 60em;
+}
+
+#nilo {
+	margin-top: 34em;
+    margin-left: 48em;
+}
+
+#waihong {
+	margin-top: 30em;
+    margin-left: 28em;
+}
+
+#jacky {
+	margin-top: 28em;
+    margin-left: 14em;
+}
+
+#lisa {
+	margin-top: 30em;
+    margin-left: 2em;
 }
 
 @media screen and (max-width: 60em) {

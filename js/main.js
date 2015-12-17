@@ -58,10 +58,22 @@
 		logo = document.querySelector('#logo'),
 		// the header
 		bghead = document.querySelector('.header'),
+		//the dot in the team section 
+		team = document.querySelector('.team'),
+		// team dots
+		teamdots = [].slice.call(team.querySelectorAll('.team-dot')),
+		// tooltip dot
+		tooltip = document.querySelectorAll('.tooltip-dot'),
+		// the close button in the login box icon-close
+		teamsingle = document.querySelectorAll('.team-dot.single'),	
+		//the login button
+		loginbtn = document.querySelector('.login-btn'),
+		// the close button in the login box icon-close
+		closebtn = document.querySelector('#iclose'),
 		// check if menu is open
 		isMenuOpen = false;
-		
-
+	
+	
 	function init() {
 		buildStack();
 		initEvents();
@@ -190,14 +202,6 @@
 				classie.remove(this, 'shake');
 				classie.add(this, 'slideInUp');
 			});
-			
-			/*if (toString(curpg) === 'page-last') {
-				page.style.display = "none";
-			}
-			else {
-				page.style.display = "inherit";
-			}*/
-			
 		});
 
 		// keyboard navigation events
@@ -213,8 +217,6 @@
 			}
 		});
 		
-		
-
 		//opening the first page
 		logo.addEventListener('click', function(ev) {
 			var pageid = logo.getAttribute('href').slice(1);
@@ -226,6 +228,33 @@
 		arrow.addEventListener('click', function( ev ) {
 			ev.preventDefault();
 			openNextPage();
+		});
+		
+		// the rotating dots
+		teamdots.forEach(function(item) {
+			for(var i = 0; i < 11; ++i) {
+			
+				tooltip[i].addEventListener('mouseover' , function( ev ) {
+					classie.remove (this, 'rtipbk');
+					classie.add (this, 'rtip90');
+					teamsingle[i].style.display = 'inherit';
+				});
+				
+				tooltip[i].addEventListener('mouseout', function(ev) {
+					classie.remove (this, 'rtip90');
+					classie.add (this, 'rtipbk');
+					teamsingle[i].style.display = 'none';
+				});
+			}
+		});
+		
+		/* loginbutton interaction */
+		loginbtn.addEventListener('click', function(ev) {
+			bghead.style.height = '100%';
+		});
+		/* Close button */
+		closebtn.addEventListener('click', function(ev) {
+			bghead.style.height = '5em';
 		});
 	}
 
@@ -274,7 +303,7 @@
     		transition-duration: '1.2s'; */
 		}
 	}
-
+	
 	// function for the animation of the pages when transitioning the page
 
 	// closes the menu
@@ -332,7 +361,7 @@
 		openPage(pageid);
 	}
 	
-	function openPreviousPage(){
+	function openPreviousPage() {
 		var i = current-1;
 		var page = pages[i];
 		var pageid = page.getAttribute('id');

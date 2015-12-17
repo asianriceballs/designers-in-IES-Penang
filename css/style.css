@@ -105,8 +105,8 @@ a:hover {
 
 .bp-header__title {
 	font-size: 3em;
-	/*font-weight: 700;*/
-	font-weight: 300;
+	font-weight: 700;
+	/*font-weight: 300;*/
 	line-height: 1.1;
 	margin: 0.2em 0 0 0;
 	color: #000;
@@ -200,6 +200,9 @@ a:hover {
 }
 
 .tooltip-dot {
+	display: block;
+	position: relative;
+	z-index: 2000;
 	background: #ffffff;
 	width: 2em;
 	height: 2em;
@@ -207,6 +210,33 @@ a:hover {
 	-webkit-border-radius: 2em;
 	-moz-border-radius: 2em;
 	border-radius: 2em;
+	/* Transitions */
+	-webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.tooltip-dot .fa {
+	color: #000000;
+	padding: 0.5em;
+}
+
+.rtip90 {
+	-webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.rtipbk {
+	/* Transforms */
+	-webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
 }
 
 .bp-nav {
@@ -327,11 +357,37 @@ footer {
 }
 
 /* Morph Button */
-.morph-button{
+.login-btn{
 	position: absolute !important;
 	top: -3px;
 	right: 250px;
 }
+
+/* Page Team */
+#page-team .single {
+	display: none;
+	margin-top: -16px;
+	margin-left: 16px;
+}
+
+#page-team .hide {
+	opacity: 0;
+	-webkit-transition: -webkit-transform 1.2s, opacity 1.2s;
+	transition: transform 1.2s, opacity 1.2s;
+	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	-webkit-transform: translate3d(0, 20px, 0);
+	transform: translate3d(0, 20px, 0);
+}
+
+#page-team .show {
+	opacity: 1;
+	-webkit-transition-delay: 0.35s;
+	transition-delay: 0.35s;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
 
 @media screen and (max-width: 40em) {
 	.bp-header {
