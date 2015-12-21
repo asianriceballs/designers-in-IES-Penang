@@ -230,6 +230,8 @@ html.js,
 	padding-top: 3em;
 	min-width: 100%;
 	max-height: 140% !important; 
+	width: 100%;
+	min-height: 910px;
 }													
 
 /* The ingredients horizontally placed */
@@ -1122,16 +1124,16 @@ html.js,
 
 /* Page Showcase */
 #page-showcase {
-	background: #44153C;
+	background: #00897B;
 	color: #ffffff;
 }
 
 #page-showcase .bp-header__title {
-	color: #ffffff;
+	color: #E0F2F1;
 }
 
 #page-showcase .bp-header__desc {
-	color: #e1bcdb;
+	color: #E0F2F1;
 }
 
 #page-question-1 {
@@ -1337,13 +1339,21 @@ html.js,
 }
 
 .lgd-item p {
-	color: #e1bcdb;
+	color: #E0F2F1;
 }
 
 .lgd-item em {
 	color: #ffffff;
 	font-weight: bold;
 	padding: 0 0.2em;
+}
+
+.lgd-item img {
+	width: 100%;
+}
+
+.lgd-item a {
+	color: #ececec;
 }
 
 /* lgd thumb */
