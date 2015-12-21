@@ -65,11 +65,21 @@
 		// tooltip dot
 		tooltip = document.querySelectorAll('.tooltip-dot'),
 		// the close button in the login box icon-close
-		teamsingle = document.querySelectorAll('.team-dot.single'),	
+		teamsingle = [].slice.call(team.querySelectorAll('.team-dot.single')),	
 		//the login button
 		loginbtn = document.querySelector('.login-btn'),
 		// the close button in the login box icon-close
 		closebtn = document.querySelector('#iclose'),
+		og = document.querySelector('#og'),
+		ag = document.querySelector('#oneg'),
+		bg = document.querySelector('#twog'),
+		cg = document.querySelector('#threeg'),
+		dg = document.querySelector('#fourg'),
+		//ingredients
+		ione = document.querySelector('#ingredient1'),
+		itwo = document.querySelector('#ingredient2'),
+		ithree = document.querySelector('#ingredient3'),
+		ifour = document.querySelector('#ingredient4'),
 		// check if menu is open
 		isMenuOpen = false;
 	
@@ -233,17 +243,14 @@
 		// the rotating dots
 		teamdots.forEach(function(item) {
 			for(var i = 0; i < 11; ++i) {
-			
 				tooltip[i].addEventListener('mouseover' , function( ev ) {
 					classie.remove (this, 'rtipbk');
 					classie.add (this, 'rtip90');
-					teamsingle[i].style.display = 'inherit';
 				});
 				
 				tooltip[i].addEventListener('mouseout', function(ev) {
 					classie.remove (this, 'rtip90');
 					classie.add (this, 'rtipbk');
-					teamsingle[i].style.display = 'none';
 				});
 			}
 		});
@@ -256,6 +263,33 @@
 		closebtn.addEventListener('click', function(ev) {
 			bghead.style.height = '5em';
 		});
+		
+		/* Trying the Horizontal Scroll thingy */
+			
+		ione.addEventListener('click', function(ev) {
+			og.style.display = "none";
+			ag.style.MarginRight = "0";
+			ag.style.display ="inherit";
+		});
+		
+		itwo.addEventListener('click', function(ev) {
+			og.style.display = "none";
+			bg.style.MarginRight = "0";
+			bg.style.display ="inherit";
+		});
+		
+		ithree.addEventListener('click', function(ev) {
+			og.style.display = "none";
+			cg.style.MarginRight = "0";
+			cg.style.display ="inherit";
+		});
+		
+		ifour.addEventListener('click', function(ev) {
+			og.style.display = "none";
+			dg.style.MarginRight = "0";
+			dg.style.display ="inherit";
+		});
+		
 	}
 
 	// toggle menu fn
@@ -388,7 +422,7 @@
 
 		return idxs;
 	}
-
+	
 	init();
 
 })(window);
