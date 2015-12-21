@@ -69,7 +69,7 @@
 		//the login button
 		loginbtn = document.querySelector('.login-btn'),
 		// the close button in the login box icon-close
-		closebtn = document.querySelector('#iclose'),
+		closebtn = document.querySelector('.icon-close'),
 		og = document.querySelector('#og'),
 		ag = document.querySelector('#oneg'),
 		bg = document.querySelector('#twog'),
@@ -255,13 +255,14 @@
 			}
 		});
 		
-		/* loginbutton interaction */
-		loginbtn.addEventListener('click', function(ev) {
-			bghead.style.height = '100%';
-		});
 		/* Close button */
 		closebtn.addEventListener('click', function(ev) {
 			bghead.style.height = '5em';
+		});
+		
+		/* loginbutton interaction */
+		loginbtn.addEventListener('click', function(ev) {
+			bghead.style.height = '100%';
 		});
 		
 		/* Trying the Horizontal Scroll thingy */
