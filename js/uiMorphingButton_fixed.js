@@ -59,13 +59,14 @@
 
 	UIMorphingButton.prototype._initEvents = function() {
 		var self = this;
+		var bghead = document.querySelector('.header');
 		// open
-		this.button.addEventListener( 'click', function() { self.toggle(); } );
+		this.button.addEventListener( 'click', function() { self.toggle(); classie.addClass(bghead, 'heightfix')} );
 		// close
 		if( this.options.closeEl !== '' ) {
 			var closeEl = this.el.querySelector( this.options.closeEl );
 			if( closeEl ) {
-				closeEl.addEventListener( 'click', function() { self.toggle(); });	
+				closeEl.addEventListener( 'click', function() { self.toggle(); classie.removeClass(bghead, 'heightfix') });	
 			}
 		}
 	}

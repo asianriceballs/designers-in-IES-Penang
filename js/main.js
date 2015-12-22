@@ -54,6 +54,10 @@
 		grid = document.querySelector('.grid'),
 		// the grid items
 		gridItems = [].slice.call(grid.querySelectorAll('.grid__item')),
+		// the page ingredients
+		ingredients = document.querySelector('#page-ingredients'),
+		// Page Ingredients individual ones
+		hpg = [].slice.call(ingredients.querySelectorAll('.hpg')),
 		//the logo
 		logo = document.querySelector('#logo'),
 		// the header
@@ -69,7 +73,9 @@
 		//the login button
 		loginbtn = document.querySelector('.login-btn'),
 		// the close button in the login box icon-close
-		closebtn = document.querySelector('.icon-close'),
+		closebtn = document.querySelector('#iclose'),
+		// the close ingredients button
+		closeingredients = document.querySelector('.close-ingredients'),
 		og = document.querySelector('#og'),
 		ag = document.querySelector('#oneg'),
 		bg = document.querySelector('#twog'),
@@ -180,8 +186,7 @@
 			var pageid = item.getAttribute('href').slice(1);
 			item.addEventListener('click', function(ev) {
 				ev.preventDefault();
-				classie.remove(item,'fadeInRight');
-				classie.add(item,'fadeOutLeft');
+				og.style.marginLeft ="-100%";
 				//openPage(pageid);
 			});
 		});
@@ -255,15 +260,17 @@
 			}
 		});
 		
-		/* Close button */
-		closebtn.addEventListener('click', function(ev) {
-			bghead.style.height = '5em';
+		/* loginbutton interaction 
+		loginbtn.addEventListener('click', function(ev) {
+			classie.add(bghead, 'heightfix');
 		});
 		
-		/* loginbutton interaction */
-		loginbtn.addEventListener('click', function(ev) {
-			bghead.style.height = '100%';
+		/* Close button 
+		closebtn.addEventListener('click', function(ev) {
+			classie.remove(bghead, 'heightfix');
 		});
+		*/
+	
 		
 		/* Trying the Horizontal Scroll thingy */
 			
@@ -271,26 +278,33 @@
 			og.style.display = "none";
 			ag.style.MarginRight = "0";
 			ag.style.display ="inherit";
+			closeingredients.style.display = "block !important";
 		});
 		
 		itwo.addEventListener('click', function(ev) {
 			og.style.display = "none";
 			bg.style.MarginRight = "0";
 			bg.style.display ="inherit";
+			closeingredients.style.display = "block !important";
 		});
 		
 		ithree.addEventListener('click', function(ev) {
 			og.style.display = "none";
 			cg.style.MarginRight = "0";
 			cg.style.display ="inherit";
+			closeingredients.style.display = "block !important";
 		});
 		
 		ifour.addEventListener('click', function(ev) {
 			og.style.display = "none";
 			dg.style.MarginRight = "0";
 			dg.style.display ="inherit";
+			closeingredients.style.display = "block !important";
 		});
 		
+		closeingredients.addEventListener('click', function(ev) {
+			closeIngredients();
+		});
 	}
 
 	// toggle menu fn
@@ -401,6 +415,28 @@
 		var page = pages[i];
 		var pageid = page.getAttribute('id');
 		openPage(pageid);
+	}
+	
+	function openNextIngredient() {
+		var i = -1;
+		var page = pages[i];
+		var pageid = page.getAttribute('id');
+		openPage(pageid);
+	}
+	
+	function closeIngredients () {
+		og.style.display = "inherit";
+		og.style.marginLeft = "0";
+		ag.style.MarginRight = "200%";
+		ag.style.display ="none";
+		bg.style.MarginRight = "300%";
+		bg.style.display ="none";
+		cg.style.MarginRight = "400%";
+		cg.style.display ="none";
+		dg.style.MarginRight = "500%";
+		dg.style.display ="none";
+		// the close icon 
+		closeingredients.style.opacity ="0";
 	}
 
 	// gets the current stack pages indexes. If any of them is the excludePage then this one is not part of the returned array

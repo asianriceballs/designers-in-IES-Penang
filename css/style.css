@@ -1,14 +1,13 @@
 
 /* General Style */
 
-@font-face {
+/*@font-face {
 	font-family: 'bpicons';
 	font-weight: normal;
 	font-style: normal;
 	src: url('../fonts/bpicons/bpicons.eot');
 	src: url('../fonts/bpicons/bpicons.eot?#iefix') format('embedded-opentype'), url('../fonts/bpicons/bpicons.woff') format('woff'), url('../fonts/bpicons/bpicons.ttf') format('truetype'), url('../fonts/bpicons/bpicons.svg#bpicons') format('svg');
-}
-
+}*/
 
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic);
@@ -88,6 +87,10 @@ a:hover {
 .header a:hover {
 	color: #599149;
 }
+
+.heightfix {
+	height: 100% !important;
+} 
 
 .bhck {
 	background: transparent !important;
