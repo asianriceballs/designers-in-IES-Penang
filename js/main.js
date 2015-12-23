@@ -69,13 +69,17 @@
 		// tooltip dot
 		tooltip = document.querySelectorAll('.tooltip-dot'),
 		// the close button in the login box icon-close
-		teamsingle = [].slice.call(team.querySelectorAll('.team-dot.single')),	
+		teamsingle = [].slice.call(team.querySelectorAll('.single')),	
 		//the login button
 		loginbtn = document.querySelector('.login-btn'),
 		// the close button in the login box icon-close
 		closebtn = document.querySelector('#iclose'),
 		// the close ingredients button
 		closeingredients = document.querySelector('.close-ingredients'),
+		// click next button
+		clicknext = document.querySelector('.click-next'),
+		// click prev
+		clickprev = document.querySelector('.click-prev'),
 		og = document.querySelector('#og'),
 		ag = document.querySelector('#oneg'),
 		bg = document.querySelector('#twog'),
@@ -247,17 +251,138 @@
 		
 		// the rotating dots
 		teamdots.forEach(function(item) {
-			for(var i = 0; i < 11; ++i) {
-				tooltip[i].addEventListener('mouseover' , function( ev ) {
+			
+				tooltip[0].addEventListener('mouseover' , function( ev ) {
 					classie.remove (this, 'rtipbk');
 					classie.add (this, 'rtip90');
+					teamsingle[0].style.display = "inherit";
 				});
 				
-				tooltip[i].addEventListener('mouseout', function(ev) {
+				tooltip[0].addEventListener('mouseout', function(ev) {
 					classie.remove (this, 'rtip90');
 					classie.add (this, 'rtipbk');
+					teamsingle[0].style.display = "none";
 				});
-			}
+				//
+				tooltip[1].addEventListener('mouseover' , function( ev ) {
+					classie.remove (this, 'rtipbk');
+					classie.add (this, 'rtip90');
+					teamsingle[1].style.display = "inherit";
+				});
+				
+				tooltip[1].addEventListener('mouseout', function(ev) {
+					classie.remove (this, 'rtip90');
+					classie.add (this, 'rtipbk');
+					teamsingle[1].style.display = "none";
+				});
+				//
+				tooltip[2].addEventListener('mouseover' , function( ev ) {
+					classie.remove (this, 'rtipbk');
+					classie.add (this, 'rtip90');
+					teamsingle[2].style.display = "inherit";
+				});
+				
+				tooltip[2].addEventListener('mouseout', function(ev) {
+					classie.remove (this, 'rtip90');
+					classie.add (this, 'rtipbk');
+					teamsingle[2].style.display = "none";
+				});
+				//
+				tooltip[3].addEventListener('mouseover' , function( ev ) {
+					classie.remove (this, 'rtipbk');
+					classie.add (this, 'rtip90');
+					teamsingle[3].style.display = "inherit";
+				});
+				
+				tooltip[3].addEventListener('mouseout', function(ev) {
+					classie.remove (this, 'rtip90');
+					classie.add (this, 'rtipbk');
+					teamsingle[3].style.display = "none";
+				});
+				//
+				tooltip[4].addEventListener('mouseover' , function( ev ) {
+					classie.remove (this, 'rtipbk');
+					classie.add (this, 'rtip90');
+					teamsingle[4].style.display = "inherit";
+				});
+				
+				tooltip[4].addEventListener('mouseout', function(ev) {
+					classie.remove (this, 'rtip90');
+					classie.add (this, 'rtipbk');
+					teamsingle[4].style.display = "none";
+				});
+				//
+				tooltip[5].addEventListener('mouseover' , function( ev ) {
+					classie.remove (this, 'rtipbk');
+					classie.add (this, 'rtip90');
+					teamsingle[5].style.display = "inherit";
+				});
+				
+				tooltip[5].addEventListener('mouseout', function(ev) {
+					classie.remove (this, 'rtip90');
+					classie.add (this, 'rtipbk');
+					teamsingle[5].style.display = "none";
+				});
+				//
+				tooltip[6].addEventListener('mouseover' , function( ev ) {
+					classie.remove (this, 'rtipbk');
+					classie.add (this, 'rtip90');
+					teamsingle[6].style.display = "inherit";
+				});
+				
+				tooltip[6].addEventListener('mouseout', function(ev) {
+					classie.remove (this, 'rtip90');
+					classie.add (this, 'rtipbk');
+					teamsingle[6].style.display = "none";
+				});
+				//
+				tooltip[7].addEventListener('mouseover' , function( ev ) {
+					classie.remove (this, 'rtipbk');
+					classie.add (this, 'rtip90');
+					teamsingle[7].style.display = "inherit";
+				});
+				
+				tooltip[7].addEventListener('mouseout', function(ev) {
+					classie.remove (this, 'rtip90');
+					classie.add (this, 'rtipbk');
+					teamsingle[7].style.display = "none";
+				});
+				//
+				tooltip[8].addEventListener('mouseover' , function( ev ) {
+					classie.remove (this, 'rtipbk');
+					classie.add (this, 'rtip90');
+					teamsingle[8].style.display = "inherit";
+				});
+				
+				tooltip[8].addEventListener('mouseout', function(ev) {
+					classie.remove (this, 'rtip90');
+					classie.add (this, 'rtipbk');
+					teamsingle[8].style.display = "none";
+				});
+				//
+				tooltip[9].addEventListener('mouseover' , function( ev ) {
+					classie.remove (this, 'rtipbk');
+					classie.add (this, 'rtip90');
+					teamsingle[9].style.display = "inherit";
+				});
+				
+				tooltip[9].addEventListener('mouseout', function(ev) {
+					classie.remove (this, 'rtip90');
+					classie.add (this, 'rtipbk');
+					teamsingle[9].style.display = "none";
+				});
+				//
+				tooltip[10].addEventListener('mouseover' , function( ev ) {
+					classie.remove (this, 'rtipbk');
+					classie.add (this, 'rtip90');
+					teamsingle[10].style.display = "inherit";
+				});
+				
+				tooltip[10].addEventListener('mouseout', function(ev) {
+					classie.remove (this, 'rtip90');
+					classie.add (this, 'rtipbk');
+					teamsingle[10].style.display = "none";
+				});
 		});
 		
 		/* loginbutton interaction 
@@ -270,36 +395,43 @@
 			classie.remove(bghead, 'heightfix');
 		});
 		*/
-	
-		
+
 		/* Trying the Horizontal Scroll thingy */
 			
 		ione.addEventListener('click', function(ev) {
 			og.style.display = "none";
 			ag.style.MarginRight = "0";
 			ag.style.display ="inherit";
-			closeingredients.style.display = "block !important";
+			classie.remove(closeingredients, 'cdisnone');
+			classie.remove(clicknext, 'cdisnone');
+			classie.remove(clickprev, 'cdisnone');
 		});
 		
 		itwo.addEventListener('click', function(ev) {
 			og.style.display = "none";
 			bg.style.MarginRight = "0";
 			bg.style.display ="inherit";
-			closeingredients.style.display = "block !important";
+			classie.remove(closeingredients, 'cdisnone');
+			classie.remove(clicknext, 'cdisnone');
+			classie.remove(clickprev, 'cdisnone');
 		});
 		
 		ithree.addEventListener('click', function(ev) {
 			og.style.display = "none";
 			cg.style.MarginRight = "0";
 			cg.style.display ="inherit";
-			closeingredients.style.display = "block !important";
+			classie.remove(closeingredients, 'cdisnone');
+			classie.remove(clicknext, 'cdisnone');
+			classie.remove(clickprev, 'cdisnone');
 		});
 		
 		ifour.addEventListener('click', function(ev) {
 			og.style.display = "none";
 			dg.style.MarginRight = "0";
 			dg.style.display ="inherit";
-			closeingredients.style.display = "block !important";
+			classie.remove(closeingredients, 'cdisnone');
+			classie.remove(clicknext, 'cdisnone');
+			classie.remove(clickprev, 'cdisnone');
 		});
 		
 		closeingredients.addEventListener('click', function(ev) {
@@ -436,7 +568,9 @@
 		dg.style.MarginRight = "500%";
 		dg.style.display ="none";
 		// the close icon 
-		closeingredients.style.opacity ="0";
+		classie.add(closeingredients, 'cdisnone');
+		classie.add(clicknext, 'cdisnone');
+		classie.add(clickprev, 'cdisnone');
 	}
 
 	// gets the current stack pages indexes. If any of them is the excludePage then this one is not part of the returned array
