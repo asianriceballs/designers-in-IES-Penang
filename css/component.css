@@ -221,6 +221,12 @@ html.js,
 #page-team .bp-header__desc {
 	font-size: 1.6em;
     line-height: 1.5em;
+	/* A hack to make the paragraph stick to the bottom; */
+	background: #000;
+	bottom: -65vh;
+	margin: 0;
+    position: relative;
+    /*width: 85%;*/
 }
 
 /* Page Team */																																						
@@ -369,6 +375,16 @@ html.js,
 .card-block {	
 	max-width: 80%;
 	margin: 0.5em auto 0 auto; 
+}
+
+.darkblur {
+	background: rgba( 0,0,0,0.7 );
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
 }
 
 .bg-image {
@@ -1843,6 +1859,10 @@ html.js,
 	font-size: 0.6em;
 }
 
+.lst-pg span {
+	letter-spacing: 1px;
+}
+
 /* The newer box for the names */
 #page-team .morph-button-modal.open .morph-content {
     top: 50% !important;
@@ -1874,6 +1894,7 @@ html.js,
 
 /* using the team names */
 #leefong {
+	margin-top: 4em;
 	margin-left: 5em;
 }
 
@@ -1894,7 +1915,7 @@ html.js,
 
 #terry {
 	margin-top: 3em;
-	margin-left: 53em;
+	margin-left: 50em;
 }
 
 #ryan {
