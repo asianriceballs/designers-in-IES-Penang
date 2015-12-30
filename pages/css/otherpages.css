@@ -156,7 +156,7 @@ aside {
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: #f05f40;
+    color: #599149 !important;
 }
 
 .navbar-default .nav > li.active>a,
@@ -309,8 +309,8 @@ footer {
 	min-width: 1344px;
 	width: 100%;
 	min-height: 400px;
-	margin-left: -130px;
-    margin-right: -130px;
+	margin-left: -90px;
+    margin-right: -90px;
 }
 
 /* Contact Form Fix */
@@ -706,7 +706,7 @@ img::selection {
     color: #fff;
     background: 0 0;
 }
-
+ 
 img::-moz-selection {
     color: #fff;
     background: 0 0;
