@@ -26,6 +26,8 @@
 				onEndCallbackFn();
 			}
 		},
+		//Body Tag
+		bd = document.getElementsByTagName("body"),
 		// the pages wrapper
 		stack = document.querySelector('.pages-stack'),
 		// the page elements
@@ -437,6 +439,20 @@
 		closeingredients.addEventListener('click', function(ev) {
 			closeIngredients();
 		});
+		
+		document.addEventListener("mousewheel", mouseWheeling, false);
+		document.addEventListener("DOMMouseScroll", mouseWheeling, false);
+		
+		function mouseWheeling(e) {
+			var scrollDirection = e.wheelDelta || -1 * e.detail;
+		 
+			if (scrollDirection > 0) {
+				openPreviousPage();
+			} else {
+				openNextPage();
+			}
+		}
+ 
 	}
 
 	// toggle menu fn
