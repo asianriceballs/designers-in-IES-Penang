@@ -161,13 +161,12 @@ html.js,
 .js .page {
 	position: relative;
 	z-index: 5;
-	overflow-x: hidden;
+	overflow: hidden;
 	width: 100%;
 	height: 100vh;
 	pointer-events: auto;
 	background: #eeeded;
 	box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
-	overflow-y: scroll;
 }
 
 .js #page-home .bp-header{ 
@@ -956,7 +955,7 @@ html.js,
 .close-ingredients {
 	position: absolute;
 	top: 15%;
-	right: 3%;
+	right: 9%;
 	margin: 0 auto;
 	padding: 0.5em;
 	height: 50px;
@@ -976,8 +975,12 @@ html.js,
 	display: inline-block;
 }
 
+.close-ingredients span:hover{
+	background: #8bbd5c;
+}
+
 .close-ingredients:hover {
-	color: ;
+	color: #ffffff;
 }
 
 .cdisnone{

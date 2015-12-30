@@ -152,9 +152,9 @@
 
 	// event binding
 	function initEvents() {
+		
 		// menu button click
 		menuCtrl.addEventListener('click', toggleMenu);
-
 		/*  navigation menu clicks
 		navItems.forEach(function(item) {
 			// which page to open?
@@ -175,15 +175,9 @@
 			var pageid = item.getAttribute('href').slice(1);
 			item.addEventListener('click', function(ev) {
 				ev.preventDefault();
+				classie.add(this, 'current');
 				openPage(pageid);
 			});
-			
-			if (pg == dt) {
-				classie.add(item, 'current');
-			}
-			else {
-				classie.remove(item, 'current');
-			}
 		});
 
 		// Clicking the Grid Items and opening the corresponding page
@@ -253,7 +247,6 @@
 		
 		// the rotating dots
 		teamdots.forEach(function(item) {
-			
 				tooltip[0].addEventListener('mouseover' , function( ev ) {
 					classie.remove (this, 'rtipbk');
 					classie.add (this, 'rtip90');
@@ -391,7 +384,6 @@
 		loginbtn.addEventListener('click', function(ev) {
 			classie.add(bghead, 'heightfix');
 		});
-		
 		/* Close button 
 		closebtn.addEventListener('click', function(ev) {
 			classie.remove(bghead, 'heightfix');
@@ -399,7 +391,6 @@
 		*/
 
 		/* Trying the Horizontal Scroll thingy */
-			
 		ione.addEventListener('click', function(ev) {
 			og.style.display = "none";
 			ag.style.MarginRight = "0";
@@ -452,7 +443,6 @@
 				openNextPage();
 			}
 		}
- 
 	}
 
 	// toggle menu fn
