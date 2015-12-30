@@ -153,7 +153,7 @@
 		// menu button click
 		menuCtrl.addEventListener('click', toggleMenu);
 
-		// navigation menu clicks
+		/*  navigation menu clicks
 		navItems.forEach(function(item) {
 			// which page to open?
 			var pageid = item.getAttribute('href').slice(1);
@@ -161,7 +161,7 @@
 				ev.preventDefault();
 				openPage(pageid);
 			});
-		});
+		});*/
 
 		// navigation dot clicks
 		sideNavItems.forEach(function(item) {
