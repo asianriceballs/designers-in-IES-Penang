@@ -536,6 +536,7 @@
 		//Transition the content
 		onEndTransition(futurePage, function() {
 			buildStack();
+			showArrow();
 			classie.remove(stack, 'pages-stack--open');
 			isMenuOpen = false;
 		});
@@ -548,6 +549,13 @@
 			openPage(pageid);
 			classie.add(arrow, 'hide');
 		}	
+	}
+	
+	function showArrow() {
+		var i;
+		if (i == 1) {
+			classie.remove (arrow,'hide');
+		}
 	}
 	
 	function openPreviousPage() {
