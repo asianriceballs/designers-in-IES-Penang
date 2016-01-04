@@ -12,10 +12,9 @@
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<link rel="stylesheet" type="text/css" href="css/component.css" />
-	<link rel="stylesheet" type="text/css" href="css/morph-button.css" />
 	<link rel="stylesheet" type="text/css" href="css/overlay-morph.css" />
 	<link rel="stylesheet" type="text/css" href="css/animate.css" />
+	<link rel="stylesheet" type="text/css" href="css/javascript.fullPage.css" />
 	<script src="js/modernizr-custom.js"></script>
 </head>
 
@@ -35,166 +34,168 @@
 	</nav>
 	<!-- /navigation-->
 	<!-- pages stack -->
-	<div class="pages-stack">
+	<div class="pages-stack" id="fullpage">
 		<!-- page -->
 		<div class="page section" id="page-home">
-			<header class="bp-header cf wr">
-				<h1 class="bp-header__title anims fadeInUp">Get the <em>online store</em> <br/>that<em> fits </em>your<em><br>business needs</em></h1>
-			</header>
-			<video class="bg-video" width="120%" poster="images/videos/introbg.jpg" preload autoplay loop muted>
-			  <source src="images/videos/00322.mp4" type="video/mp4">
-              <source src="images/videos/00322.mov" type="video/mov">	
-              <source src="images/videos/00322.wmv" type="video/wmv">	
-	        </video> 
+			<div class="content">
+				<header class="bp-header cf wr">
+					<h1 class="bp-header__title anims fadeInUp">Get the <em>online store</em> <br/>that<em> fits </em>your<em><br>business needs</em></h1>
+				</header>
+				<video class="bg-video" width="120%" poster="images/videos/introbg.jpg" preload autoplay loop muted>
+				  <source src="images/videos/00322.mp4" type="video/mp4">
+				  <source src="images/videos/00322.mov" type="video/mov">	
+				  <source src="images/videos/00322.wmv" type="video/wmv">	
+				</video> 
+			</div>
 		</div>
 		<!-- /page -->
 		<div class="page section" id="page-ingredients">
-			<div id="og">
-			<header class="bp-header cf">
-				<h1 class="bp-header__title animf slideInDown">InstanteStore provides you the platform and tools that will make your store a success.</h1>
-				<p class="bp-header__desc anims slideInDown">A successful online business is built on 4 Pillars:</p>
-					<div class="theGrid mt3" class="main">
-						<section class="grid">
-							<a class="grid__item sanim1 fadeInRight" id="ingredient1" href="#page-first">
-								<span class="article-icon"><i class="fa fa-flag"></i></span>
-								<h2 class="title title--preview">Bring In Visitors</h2>
-								<p class="top-intro">Having great products isn't enough. Getting traffic from potential customers is crucial. Good use of SEO and inbound and outbound marketing will increase your chances of being found by your target audience.</p>
-								<button class="expand-btn">Expand</button>
-							</a>
-							<a class="grid__item sanim2 fadeInRight" id="ingredient2" href="#page-second">
-								<span class="article-icon"><i class="fa fa-space-shuttle"></i></span>
-								<h2 class="title title--preview">Convert Visitors into paying Customers</h2>
-								<p>Every visitor is a potential customer. You just need to show them the right content at the right time to get them to buy. The higher your conversion rate, the higher your revenue. Even small increases in your conversion rate can lead to a significant boost in revenue.</p>
-								<button class="expand-btn">Expand</button>
-							</a>
-							<a class="grid__item sanim3 fadeInRight" id="ingredient3" href="#page-third">
-								<span class="article-icon"><i class="fa fa-bus"></i></span>
-								<h2 class="title title--preview">Increase Customer Order Value</h2>
-								<p>Once customers have already decided to buy your products, offer them deals and show them other products they'll be interested in so that they buy more from you, maximizing each customer's value to your store.</p>
-								<button class="expand-btn">Expand</button>
-							</a>
-							<a class="grid__item sanim4 fadeInRight" id="ingredient4" href="#page-fourth">
-								<span class="article-icon"><i class="fa fa-mobile"></i></span>
-								<h2 class="title title--preview">Customer Repeat Orders</h2>
-								<p>Your customers are your greatest resource - unlike completely new visitors, you don't have to pay to get them to come to your store again. Previous customers are also more likely to shop with you again. Keep them coming back for more and your business will continue to grow.</p>
-								<button class="expand-btn">Expand</button>
-							</a>
-						</section>
-					</div>
-			</header>
+			<div id="og" class="slide">
+				<header class="bp-header cf content">
+					<h1 class="bp-header__title animf slideInDown">InstanteStore provides you the platform and tools that will make your store a success.</h1>
+					<p class="bp-header__desc anims slideInDown">A successful online business is built on 4 Pillars:</p>
+						<div class="theGrid mt3" class="main">
+							<section class="grid">
+								<a class="grid__item sanim1 fadeInRight" id="ingredient1" href="#page-first">
+									<span class="article-icon"><i class="fa fa-flag"></i></span>
+									<h2 class="title title--preview">Bring In Visitors</h2>
+									<p class="top-intro">Having great products isn't enough. Getting traffic from potential customers is crucial. Good use of SEO and inbound and outbound marketing will increase your chances of being found by your target audience.</p>
+									<button class="expand-btn">Expand</button>
+								</a>
+								<a class="grid__item sanim2 fadeInRight" id="ingredient2" href="#page-second">
+									<span class="article-icon"><i class="fa fa-space-shuttle"></i></span>
+									<h2 class="title title--preview">Convert Visitors into paying Customers</h2>
+									<p>Every visitor is a potential customer. You just need to show them the right content at the right time to get them to buy. The higher your conversion rate, the higher your revenue. Even small increases in your conversion rate can lead to a significant boost in revenue.</p>
+									<button class="expand-btn">Expand</button>
+								</a>
+								<a class="grid__item sanim3 fadeInRight" id="ingredient3" href="#page-third">
+									<span class="article-icon"><i class="fa fa-bus"></i></span>
+									<h2 class="title title--preview">Increase Customer Order Value</h2>
+									<p>Once customers have already decided to buy your products, offer them deals and show them other products they'll be interested in so that they buy more from you, maximizing each customer's value to your store.</p>
+									<button class="expand-btn">Expand</button>
+								</a>
+								<a class="grid__item sanim4 fadeInRight" id="ingredient4" href="#page-fourth">
+									<span class="article-icon"><i class="fa fa-mobile"></i></span>
+									<h2 class="title title--preview">Customer Repeat Orders</h2>
+									<p>Your customers are your greatest resource - unlike completely new visitors, you don't have to pay to get them to come to your store again. Previous customers are also more likely to shop with you again. Keep them coming back for more and your business will continue to grow.</p>
+									<button class="expand-btn">Expand</button>
+								</a>
+							</section>
+						</div>
+				</header>
 			</div>
 			<!-- First Ingredient -->
-			<div class="hpg" id="oneg">
-			<header>
-				<div class="ov">
-					<div class="par-left anims slideInUp">
-						<span class="article-icon"><i class="fa fa-flag"></i></span>
-						<h3>Bring In Visitors</h3>
-						<p class="top-intro">InstanteStore has a variety of tools to help you analyze, test, and optimize your store to bring in visitors.</p>
+			<div class="hpg slide">
+				<header class="content">
+					<div class="ov">
+						<div class="par-left anims slideInUp">
+							<span class="article-icon"><i class="fa fa-flag"></i></span>
+							<h3>Bring In Visitors</h3>
+							<p class="top-intro">InstanteStore has a variety of tools to help you analyze, test, and optimize your store to bring in visitors.</p>
+						</div>
+						<span class="separator anims slideInUp"></span>
+						<div class="par-left sanim1 slideInUp">
+							<h3>Google Analytics Integration</h3>
+							<p>Easily integrate with Google's Universal Analytics (with eCommerce Tracking) so that you can see who your visitors are and where they're coming from. This will enable you to optimize your store to meet their needs.</p>
+							<img src="images/page-content/analytics.png" alt="" />
+						</div>
+						<span class="separator sanim2 slideInUp"></span>
+						<div class="par-right sanim3 slideInUp">
+							<img src="images/page-content/google-search-2.png" alt="" />
+							<h3>SEO Wizard</h3>
+							<p>Our SEO Wizard will guide you as you set up your product, category, and page content to best optimize your pages for search engines.</p>
+						</div>
+						<span class="separator sanim4 slideInUp"></span>
+						<div class="par-left sanim5 slideInUp">
+							<h3>Google Shopping &<br>Other Marketplace Integration</h3>
+							<p>InstanteStore is integrated with Google Shopping (and the XML Schema) and other marketplaces such as Shopzilla, Shopping.com and more. This provides you with alternative ways for potential customers to discover your products and your store.</p>
+							<img src="images/page-content/google-search.png" alt="" />
+						</div>
+						<span class="separator sanim6 slideInUp"></span>
+						<div class="par-right sanim7 slideInUp">
+							<img src="images/page-content/socialbuttons.png" alt="" />
+							<h3>Facebook, Twitter, Pinterest, and Social Bookmarking</h3>
+							<p>Our product pages are integrated with social buttons to make it easy for your customers to let their friends know about your products.</p>
+						</div>
+						<div class="par-left sanim8 slideInUp">
+							<button class="learn-more sanim9 slideInUp">Learn More</button>
+						</div>
 					</div>
-					<span class="separator anims slideInUp"></span>
-					<div class="par-left sanim1 slideInUp">
-						<h3>Google Analytics Integration</h3>
-						<p>Easily integrate with Google's Universal Analytics (with eCommerce Tracking) so that you can see who your visitors are and where they're coming from. This will enable you to optimize your store to meet their needs.</p>
-						<img src="images/page-content/analytics.png" alt="" />
-					</div>
-					<span class="separator sanim2 slideInUp"></span>
-					<div class="par-right sanim3 slideInUp">
-						<img src="images/page-content/google-search-2.png" alt="" />
-						<h3>SEO Wizard</h3>
-						<p>Our SEO Wizard will guide you as you set up your product, category, and page content to best optimize your pages for search engines.</p>
-					</div>
-					<span class="separator sanim4 slideInUp"></span>
-					<div class="par-left sanim5 slideInUp">
-						<h3>Google Shopping &<br>Other Marketplace Integration</h3>
-						<p>InstanteStore is integrated with Google Shopping (and the XML Schema) and other marketplaces such as Shopzilla, Shopping.com and more. This provides you with alternative ways for potential customers to discover your products and your store.</p>
-						<img src="images/page-content/google-search.png" alt="" />
-					</div>
-					<span class="separator sanim6 slideInUp"></span>
-					<div class="par-right sanim7 slideInUp">
-						<img src="images/page-content/socialbuttons.png" alt="" />
-						<h3>Facebook, Twitter, Pinterest, and Social Bookmarking</h3>
-						<p>Our product pages are integrated with social buttons to make it easy for your customers to let their friends know about your products.</p>
-					</div>
-					<div class="par-left sanim8 slideInUp">
-						<button class="learn-more sanim9 slideInUp">Learn More</button>
-					</div>
-				</div>
-			</header>
+				</header>
 			</div>
 			<!-- Second Ingredient -->
-			<div class="hpg" id="twog">
-			<header>
-					<div class="ov">
-					<div class="par-left anims slideInUp">
-						<span class="article-icon"><i class="fa fa-space-shuttle"></i></span>
-						<h3>Convert Visitors Into Paying Customers</h3>
-						<p class="top-intro">All visitors to your store are potential customers!</p>
+			<div class="hpg slide">
+				<header class="content">
+						<div class="ov">
+						<div class="par-left anims slideInUp">
+							<span class="article-icon"><i class="fa fa-space-shuttle"></i></span>
+							<h3>Convert Visitors Into Paying Customers</h3>
+							<p class="top-intro">All visitors to your store are potential customers!</p>
+						</div>
+						<span class="separator anims slideInUp"></span>
+						<div class="par-left sanim1 slideInUp">
+							<h3>Split Tests</h3>
+							<p>The most successful sales funnels are a product of continuous testing and optimization. Our template split test feature lets you try out different variations of your store templates (a different color, perhaps, or a different banner on the left side, etc.) so that you can compare how each variation performs. You can then keep testing the "winning" split tests and keep improving your store's conversion rates.</p>
+							<img src="images/page-content/split.png" alt="" />
+						</div>
+						<span class="separator sanim2 slideInUp"></span>
+						<div class="par-right sanim3 slideInUp">
+							<img src="images/page-content/discount.png" alt="" />
+							<h3>Discount Coupons</h3>
+							<p>If price is a factor, then discount coupons could give your potential customer just enough of an incentive to get them buying.</p>
+						</div>
+						<span class="separator anims slideInUp"></span>
+						<div class="par-left sanim1 slideInUp">
+							<h3>Sales</h3>
+							<p>The right sale at the right time could entice a customer to make a purchase.</p>
+							<img id="sale" src="images/page-content/sale.png" alt="" />
+						</div>
+						<span class="separator sanim2 slideInUp"></span>
+						<div class="par-right sanim3 slideInUp">
+							<img src="images/page-content/abort.png" alt="" />
+							<h3>Aborted Order Handling</h3>
+							<p>If a customer adds one of your products to their shopping cart and goes through checkout, but stops short of buying, there's likely a good reason for it, and more importantly, a compelling deal that you could offer to get them to change their minds. Our Aborted Order Handling feature lets you easily get in touch with almost-customers like these to make them offers they can't refuse.</p>
+						</div>
+						<span class="separator anims slideInUp"></span>
+						<div class="par-left sanim1 slideInUp">
+							<h3>Retaily Integration!</h3>
+							<p>Beyond all of the many features that InstanteStore already provides, if you're looking for an extra edge, here it is: Retaily integration. Retaily provides all the tools you need to optimize your store's conversion and retention. Retaily uses product recommendations, urgency and scarcity messages, remarketing via ads and email, and much more to boost your store's conversion both before and even after a potential customer has left your store.</p>
+							<img src="images/page-content/retaily_logo_250.png" alt="" />
+						</div>
+					<button class="learn-more sanim5 slideInUp">Learn More</button>
 					</div>
-					<span class="separator anims slideInUp"></span>
-					<div class="par-left sanim1 slideInUp">
-						<h3>Split Tests</h3>
-						<p>The most successful sales funnels are a product of continuous testing and optimization. Our template split test feature lets you try out different variations of your store templates (a different color, perhaps, or a different banner on the left side, etc.) so that you can compare how each variation performs. You can then keep testing the "winning" split tests and keep improving your store's conversion rates.</p>
-						<img src="images/page-content/split.png" alt="" />
-					</div>
-					<span class="separator sanim2 slideInUp"></span>
-					<div class="par-right sanim3 slideInUp">
-						<img src="images/page-content/discount.png" alt="" />
-						<h3>Discount Coupons</h3>
-						<p>If price is a factor, then discount coupons could give your potential customer just enough of an incentive to get them buying.</p>
-					</div>
-					<span class="separator anims slideInUp"></span>
-					<div class="par-left sanim1 slideInUp">
-						<h3>Sales</h3>
-						<p>The right sale at the right time could entice a customer to make a purchase.</p>
-						<img id="sale" src="images/page-content/sale.png" alt="" />
-					</div>
-					<span class="separator sanim2 slideInUp"></span>
-					<div class="par-right sanim3 slideInUp">
-						<img src="images/page-content/abort.png" alt="" />
-						<h3>Aborted Order Handling</h3>
-						<p>If a customer adds one of your products to their shopping cart and goes through checkout, but stops short of buying, there's likely a good reason for it, and more importantly, a compelling deal that you could offer to get them to change their minds. Our Aborted Order Handling feature lets you easily get in touch with almost-customers like these to make them offers they can't refuse.</p>
-					</div>
-					<span class="separator anims slideInUp"></span>
-					<div class="par-left sanim1 slideInUp">
-						<h3>Retaily Integration!</h3>
-						<p>Beyond all of the many features that InstanteStore already provides, if you're looking for an extra edge, here it is: Retaily integration. Retaily provides all the tools you need to optimize your store's conversion and retention. Retaily uses product recommendations, urgency and scarcity messages, remarketing via ads and email, and much more to boost your store's conversion both before and even after a potential customer has left your store.</p>
-						<img src="images/page-content/retaily_logo_250.png" alt="" />
-					</div>
-				<button class="learn-more sanim5 slideInUp">Learn More</button>
-				</div>
-			</header>
+				</header>
 			</div>
 			<!-- 3rd ingredient -->
-			<div class="hpg" id="threeg">
-			<header>
-				<div class="ov">
-					<div class="par-left anims slideInUp">
-						<span class="article-icon"><i class="fa fa-bus"></i></span>
-						<h3>Increase Customer Value</h3>
-						<p class="top-intro">It's simple: the more each customer buys, the more value you'll get out of your traffic spending.</p>
+			<div class="hpg slide">
+				<header class="content">
+					<div class="ov">
+						<div class="par-left anims slideInUp">
+							<span class="article-icon"><i class="fa fa-bus"></i></span>
+							<h3>Increase Customer Value</h3>
+							<p class="top-intro">It's simple: the more each customer buys, the more value you'll get out of your traffic spending.</p>
+						</div>
+						<span class="separator anims slideInUp"></span>
+						<div class="par-left sanim1 slideInUp">
+							<h3>Cross-sell</h3>
+							<p>Some products lend themselves naturally to being cross-sold: if you buy a pair of shoes, you're likely to also be interested in some comfortable matching socks. Offering related products that make sense to a customer increases the chances of them making a larger order.</p>
+							<img src="images/page-content/cross.png" alt="" />
+						</div>
+						<span class="separator sanim2 slideInUp"></span>
+						<div class="par-right sanim3 slideInUp">
+							<img src="images/page-content/bulk.png" alt="" />
+							<h3>Cross-sell on Final Payment</h3>
+							<p>Whether it's for customers with preferential pricing or bulk buyers, our wholesale features have you covered. You can easily set our wholesale module up to offer volume discounts or tiered discounts, giving customers an easy incentive to buy multiple units of your products.</p>
+						</div>
+						<div class="par-left sanim8 slideInUp">
+							<button class="learn-more sanim9 slideInUp">Learn More</button>
+						</div>
 					</div>
-					<span class="separator anims slideInUp"></span>
-					<div class="par-left sanim1 slideInUp">
-						<h3>Cross-sell</h3>
-						<p>Some products lend themselves naturally to being cross-sold: if you buy a pair of shoes, you're likely to also be interested in some comfortable matching socks. Offering related products that make sense to a customer increases the chances of them making a larger order.</p>
-						<img src="images/page-content/cross.png" alt="" />
-					</div>
-					<span class="separator sanim2 slideInUp"></span>
-					<div class="par-right sanim3 slideInUp">
-						<img src="images/page-content/bulk.png" alt="" />
-						<h3>Cross-sell on Final Payment</h3>
-						<p>Whether it's for customers with preferential pricing or bulk buyers, our wholesale features have you covered. You can easily set our wholesale module up to offer volume discounts or tiered discounts, giving customers an easy incentive to buy multiple units of your products.</p>
-					</div>
-					<div class="par-left sanim8 slideInUp">
-						<button class="learn-more sanim9 slideInUp">Learn More</button>
-					</div>
-				</div>
-			</header>
+				</header>
 			</div>
 			<!-- 4th ingredients -->
-			<div class="hpg" id="fourg">
-				<header>
+			<div class="hpg slide">
+				<header class="content">
 					<div class="ov">
 						<div class="par-left anims slideInUp">
 							<span class="article-icon"><i class="fa fa-mobile"></i></span>
@@ -217,18 +218,6 @@
 					</div>
 				</header>
 			</div>
-			<a href="#" class="click-prev cdisnone animated slideInLeft">
-				<span class="left-arrow sanim1 fadeInLeft"></span>
-				<p class="anims1 fadeInLeft">Previous</p>
-			</a>
-			<a href="#" class="click-next cdisnone animated slideInRight">
-				<p class="anims1 fadeInRight">Next</p>
-				<span class="right-arrow sanim1 fadeInRight"></span>
-			</a>
-			<a href="#" class="close-ingredients cdisnone animated fadeInDown">
-				<span class="closeingredients"><i class="fa fa-times"></i><p>Back</p></span>
-			</a>
-			<img class="bg-image animated ZoomIn" src="images/ingredients.jpg" alt="ingredients" />
 		</div>
 		<!-- 1st ingredient
 		<div class="page" id="page-first">
@@ -274,7 +263,7 @@
 		<!-- end BusinessCurve -->
 		<!-- Team -->
 		<div class="page section" id="page-team">
-			<header class="bp-header cf">
+			<header class="bp-header cf content">
 				<!--<h1 class="bp-header__title animated slideInDown">Our Team</h1>-->
 				<div class="team">
 				<div id="leefong" class="team-dot animated fadeInDown">
@@ -482,34 +471,17 @@
 		<button class="menu-button animated fadeIn"><span>Menu</span></button>
 	</div>
 	<!-- Header end -->
-
-	<!-- Dots on the side -->
-	<div class="dotstyle dotstyle-dotmove">
-				<ul class="dotNav">
-					<li><a class="dNav" href="#page-home">Home</a></li>
-					<li><a class="dNav" href="#page-ingredients">About</a></li>
-					<!--<li><a class="dNav" href="#page-first">Blog</a></li>
-					<li><a class="dNav" href="#page-second">Showcase</a></li>
-					<li><a class="dNav" href="#page-third">Home</a></li>
-					<li><a class="dNav" href="#page-fourth">About</a></li>-->	
-					<li><a class="dNav" href="#page-custom">Products</a></li>
-					<li><a class="dNav" href="#page-team">Portfolio</a></li>
-					<li><a class="dNav" href="#page-showcase">Blog</a></li>
-					<li><a class="dNav" href="#page-last">Showcase</a></li>
-					<li><!-- dummy dot --></li>
-				</ul>
-	</div>
-
+	
 	<a href="#" class="click-to-learn-more animated slideInUp">
 		<p class="anims1 fadeInUp">Click to view next page</p>
 		<span class="dwn-arrow sanim1 fadeInUp"></span>
 	</a>
 
 	<script src="js/classie.js"></script>
-	<script src="js/dots.js"></script>
 	<script src="js/main.js"></script>
-	<script src="js/stepsForm.js"></script>
+	<!--<script src="js/dots.js"></script>-->
 	<script src="js/uiMorphingButton_fixed.js"></script>
+	<script type="text/javascript" src="js/javascript.fullPage.js"></script>
 
 	<script>
 			[].slice.call( document.querySelectorAll( '.dotstyle > ul' ) ).forEach( function( nav ) {
@@ -517,8 +489,57 @@
 					callback : function( idx ) {
 						//console.log( idx )
 					}
-				} );
+				});
 			} );
+	</script>
+	
+	<script type="text/javascript">
+		fullpage.initialize('#fullpage', {
+			css3:true,
+			//Accessibility
+			keyboardScrolling: true,
+			animateAnchor: true,
+			    //Navigation
+			lockAnchors: false,
+			navigation: true,
+			navigationTooltips: ['firstSlide', 'secondSlide', 'firstSlide', 'secondSlide', 'firstSlide', 'secondSlide'],
+			navigationPosition: 'right',
+			slidesNavigation: true,
+			showActiveTooltip: true,
+
+			'afterLoad': function(anchorLink, index){
+					if (index == 1) {
+						document.body.querySelector('.page').addClass('show');
+					}
+					if (index == 2) {
+						document.body.querySelector('.page').addClass('show');
+					}
+					if (index == 3) {
+						document.body.querySelector('.page').addClass('show');
+					}
+					if (index == 4) {
+						document.body.querySelector('.page').addClass('show');
+					}
+					if (index == 5) {
+						document.body.querySelector('.page').addClass('show');
+					}
+					if (index == 6) {
+						document.body.querySelector('.page').addClass('show');
+					}
+					if (index == 7) {
+						document.body.querySelector('.page').addClass('show');
+					}
+					if (index == 8) {
+						document.body.querySelector('.page').addClass('show');
+					}
+					if (index == 9) {
+						document.body.querySelector('.page').addClass('show');
+					}
+					if (index == 10) {
+						document.body.querySelector('.page').addClass('show');
+					}
+			},
+		});
 	</script>
 	<script>
 			(function() {

@@ -42,12 +42,6 @@
 		nav = document.querySelector('.pages-nav'),
 		// the menu nav items
 		navItems = [].slice.call(nav.querySelectorAll('.link--page')),
-		//All the Dot Sidebar Items
-		dotnav = document.querySelector('.dotNav'),
-		// All the list elements
-		liItems = [].slice.call(dotnav.querySelectorAll('li')),
-		// All the individual dots
-		sideNavItems = [].slice.call(dotnav.querySelectorAll('.dNav')),
 		//other items I want to keep an eye on 
 		header = document.querySelectorAll('.bp-header'),
 		// All the individual dots
@@ -97,7 +91,7 @@
 	
 	
 	function init() {
-		buildStack();
+		//buildStack();
 		initEvents();
 	}
 
@@ -111,7 +105,6 @@
 
 			if( current !== i ) {
 				classie.add(page, 'page--inactive');
-				header[i].style.display ="none";
 				
 					if( posIdx !== -1 ) {
 						// visible pages in the stack
@@ -120,12 +113,7 @@
 						page.style.transitionDuration = '0.5s';
 						page.style.WebkitTransitionDuration= '0.5.s';
 					}
-					/*
-					page.style.transitionDuration = '0.6s';
-						page.style.WebkitTransitionDuration= '0.6s';
-						page.style.TransitionTimingFunction ='ease-in-out';
-						page.style.WebkitTransitionTimingFunction = 'ease-in-out';
-					*/
+					
 				else {
 					// invisible pages in the stack
 					page.style.WebkitTransform = 'translate3d(0,75%,-300px)';
@@ -136,7 +124,6 @@
 			}
 			else {
 				classie.remove(page, 'page--inactive');
-				header[i].style.display ="inherit";
 			}
 
 			page.style.zIndex = i < current ? parseInt(current - i) : parseInt(pagesTotal + current - i);
@@ -165,23 +152,8 @@
 			});
 		});*/
 
-		// navigation dot clicks
-		sideNavItems.forEach(function(item) {
-			var i = current;
-			var page = pages[i];
-			var pg = page.getAttribute('id');
-			var dt = item.getAttribute('href').slice(1);
-			// which page to open?
-			var pageid = item.getAttribute('href').slice(1);
-			item.addEventListener('click', function(ev) {
-				ev.preventDefault();
-				classie.add(this, 'current');
-				openPage(pageid);
-			});
-		});
-
 		// Clicking the Grid Items and opening the corresponding page
-		gridItems.forEach(function(item) {
+		/*gridItems.forEach(function(item) {
 			// which page to open?
 			var pageid = item.getAttribute('href').slice(1);
 			item.addEventListener('click', function(ev) {
@@ -189,10 +161,10 @@
 				og.style.marginLeft ="-100%";
 				//openPage(pageid);
 			});
-		});
+		});*/
 
 		// clicking on a page when the menu is open triggers the menu to close again and open the clicked page
-		pages.forEach(function(page) {
+		/*pages.forEach(function(page) {
 			var pageid = page.getAttribute('id');
 			page.addEventListener('click', function(ev) {
 				if( isMenuOpen ) {
@@ -200,9 +172,9 @@
 					openPage(pageid);
 				}
 			});
-		});
+		});*/
 
-		pages.forEach(function(page) {
+		/*pages.forEach(function(page) {
 			var pageid = page.getAttribute('id');
 			
 			var item = arrow;
@@ -217,10 +189,10 @@
 				classie.remove(this, 'shake');
 				classie.add(this, 'slideInUp');
 			});
-		});
+		});*/
 
 		// keyboard navigation events
-		document.addEventListener( 'keydown', function( ev ) {
+		/*document.addEventListener( 'keydown', function( ev ) {
 			var keyCode = ev.keyCode || ev.which;
 			if( keyCode === 40 ) {
 				ev.preventDefault();
@@ -230,7 +202,7 @@
 				ev.preventDefault();
 				openPreviousPage();
 			}
-		});
+		});*/
 		
 		//opening the first page
 		logo.addEventListener('click', function(ev) {
@@ -391,7 +363,7 @@
 		*/
 
 		/* Trying the Horizontal Scroll thingy */
-		ione.addEventListener('click', function(ev) {
+		/*ione.addEventListener('click', function(ev) {
 			og.style.display = "none";
 			ag.style.MarginRight = "0";
 			ag.style.display ="inherit";
@@ -429,12 +401,12 @@
 		
 		closeingredients.addEventListener('click', function(ev) {
 			closeIngredients();
-		});
+		});*/
 		
-		document.addEventListener("mousewheel", mouseWheeling, false);
-		document.addEventListener("DOMMouseScroll", mouseWheeling, false);
+		/*document.addEventListener("mousewheel", mouseWheeling, false);
+		document.addEventListener("DOMMouseScroll", mouseWheeling, false);*/
 		
-		function mouseWheeling(e) {
+		/*function mouseWheeling(e) {
 			var scrollDirection = e.wheelDelta || -1 * e.detail;
 		 
 			if (scrollDirection > 0) {
@@ -442,7 +414,7 @@
 			} else {
 				openNextPage();
 			}
-		}
+		}*/
 	}
 
 	// toggle menu fn
@@ -501,8 +473,6 @@
 
 	// opens a page
 	function openPage(id) {
-
-		openAnim();
 	
 		var futurePage = id ? document.getElementById(id) : pages[current],
 			futureCurrent = pages.indexOf(futurePage),
@@ -535,18 +505,18 @@
 
 		//Transition the content
 		onEndTransition(futurePage, function() {
-			buildStack();
+			//buildStack();
 			showArrow();
 			classie.remove(stack, 'pages-stack--open');
 			isMenuOpen = false;
 		});
 	}
-
+	
+	
 	function openNextPage() {
 		for(var i = 0; i < 2; ++i) {
 			var page = pages[i];
 			var pageid = page.getAttribute('id');
-			openPage(pageid);
 			classie.add(arrow, 'hide');
 		}	
 	}
@@ -558,21 +528,21 @@
 		}
 	}
 	
-	function openPreviousPage() {
+	/*function openPreviousPage() {
 		var i = current-1;
 		var page = pages[i];
 		var pageid = page.getAttribute('id');
 		openPage(pageid);
-	}
+	}*/
 	
-	function openNextIngredient() {
+	/*function openNextIngredient() {
 		var i = -1;
 		var page = pages[i];
 		var pageid = page.getAttribute('id');
 		openPage(pageid);
-	}
+	}*/
 	
-	function closeIngredients () {
+	/*function closeIngredients () {
 		og.style.display = "inherit";
 		og.style.marginLeft = "0";
 		ag.style.MarginRight = "200%";
@@ -587,7 +557,7 @@
 		classie.add(closeingredients, 'cdisnone');
 		classie.add(clicknext, 'cdisnone');
 		classie.add(clickprev, 'cdisnone');
-	}
+	}*/
 
 	// gets the current stack pages indexes. If any of them is the excludePage then this one is not part of the returned array
 	function getStackPagesIdxs(excludePageIdx) {
