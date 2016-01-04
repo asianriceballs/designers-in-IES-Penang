@@ -542,10 +542,12 @@
 	}
 
 	function openNextPage() {
-		var i = current+1;
-		var page = pages[i];
-		var pageid = page.getAttribute('id');
-		openPage(pageid);
+		for(var i = 0; i < 2; ++i) {
+			var page = pages[i];
+			var pageid = page.getAttribute('id');
+			openPage(pageid);
+			classie.add(arrow, 'hide');
+		}	
 	}
 	
 	function openPreviousPage() {
