@@ -927,8 +927,16 @@ html.js,
 	padding-bottom: 3.5em;
 }
 
+#ingredient3 .less-info {
+	margin-top: 3.5em !important;
+}
+
 #ingredient2 {
-	padding-bottom: 3.5em;
+	padding-bottom: 2.2em;
+}
+
+#ingredient2 .less-info {
+    margin-top: 1.7em !important;
 }
 
 /* Grid item "border" */
@@ -1000,7 +1008,7 @@ html.js,
 .fa-space-shuttle {
 	-ms-transform: rotate(-20deg); 
     -webkit-transform: rotate(-20deg); 
-    transform: rotate(-20deg); 
+    transform: rotate(-20deg) !important; 
 
 }
 
@@ -1040,10 +1048,6 @@ html.js,
     transition: all 0.3s ease;
     position: absolute;
     margin: 1.7em 25%;
-}
-
-.less-info {
-	margin-top: 3.5em !important;
 }
 
 /* learn more */
