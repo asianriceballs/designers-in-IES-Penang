@@ -220,13 +220,18 @@ html.js,
 
 #page-team .bp-header__desc {
 	font-size: 1.6em;
-    line-height: 1.5em;
+    line-height: 1.1em;
 	/* A hack to make the paragraph stick to the bottom; */
-	background: rgba(0,0,0,.7);
-	bottom: -36vh;
+	/*background: rgba(0,0,0,.7);*/
+	bottom: -28vh;
 	margin: 0;
     position: relative;
     /*width: 85%;*/
+}
+
+#page-team .bp-header__desc p {
+    text-shadow: rgb(20, 20, 20) 6px 2px 13px;
+    line-height: .2em;
 }
 
 /* Page Team */																																						
@@ -1894,28 +1899,28 @@ html.js,
 
 /* using the team names */
 #leefong {
-	margin-top: 9em;
+	margin-top: 7em;
 	margin-left: 4em;
 }
 
 #suisim {
-	margin-left: 16em;
-    margin-top: 9em;
+	margin-left: 14em;
+    margin-top: 6em;
 }
 
 #charles { 
 	margin-left: 25em;
-    margin-top: 8em;
+    margin-top: 6em;
 }
 
 #michael {
-	margin-top: 8em;
-    margin-left: 38em;
+	margin-top: 6em;
+    margin-left: 36em;
 }
 
 #terry {
-	margin-top: 9em;
-	margin-left: 50em;
+	margin-top: 6em;
+	margin-left: 49em;
 }
 
 #ryan {
@@ -1925,12 +1930,12 @@ html.js,
 
 #desmond {
 	margin-top: 27em;
-	margin-left: 59em;
+	margin-left: 57em;
 }
 
 #nilo {
 	margin-top: 27em;
-    margin-left: 44em;
+    margin-left: 42em;
 }
 
 #waihong {
