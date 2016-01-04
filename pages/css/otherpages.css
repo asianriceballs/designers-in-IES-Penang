@@ -179,7 +179,7 @@ footer {
 	position: absolute;
 	display: inline-block;
 	z-index: 500;
-	padding: 0px 15% 15px 15%;
+	padding: 15px 15% 15px 15%;
 }
 
 .footer-stuff {
@@ -337,6 +337,10 @@ footer {
 /* Featured Stories */
 .thumbnail {
 	border: none;
+}
+
+.thumbnail blockquote {
+	border-left: 0;
 }
 
 @media(min-width:768px) {
