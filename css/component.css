@@ -954,9 +954,9 @@ html.js,
   	z-index: 10;
 }
 
-.grid__item:hover {
+/*.grid__item:hover {
 	background: rgba(0, 0, 0, 0.4) !important;
-}
+}*/
 
 .article-icon {
 	margin: 0 auto;
@@ -972,6 +972,11 @@ html.js,
   	/*-webkit-box-shadow: 2px 2px 10px 0px rgba(153,153,153,1);
     -moz-box-shadow: 2px 2px 10px 0px rgba(153,153,153,1);
     box-shadow: 2px 2px 10px 0px rgba(153,153,153,1);1);*/
+    display:none;
+}
+
+.ingredient-anime img {
+	width: 70%;
 }
 
 .close-ingredients {
@@ -1292,11 +1297,15 @@ html.js,
 
 /* Page Ingredients */
 #page-ingredients {
-	background: #161616;
+	background: #0093af;
 }
 
 #page-ingredients .bp-header__title, #page-ingredients .bp-header__desc {
 	color: #ffffff;
+}
+
+#page-ingredients .bp-header h5 {
+	font-size: .95em;
 }
 
 #page-ingredients .bg-image {
