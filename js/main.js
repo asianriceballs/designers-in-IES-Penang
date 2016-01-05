@@ -26,6 +26,8 @@
 				onEndCallbackFn();
 			}
 		},
+		//Body Tag
+		bd = document.getElementsByTagName("body"),
 		// the pages wrapper
 		stack = document.querySelector('.pages-stack'),
 		// the page elements
@@ -40,10 +42,6 @@
 		nav = document.querySelector('.pages-nav'),
 		// the menu nav items
 		navItems = [].slice.call(nav.querySelectorAll('.link--page')),
-		//All the Dot Sidebar Items
-		dotnav = document.querySelector('.dotNav'),
-		// All the individual dots
-		sideNavItems = [].slice.call(dotnav.querySelectorAll('.dNav')),
 		//other items I want to keep an eye on 
 		header = document.querySelectorAll('.bp-header'),
 		// All the individual dots
@@ -52,16 +50,48 @@
 		grid = document.querySelector('.grid'),
 		// the grid items
 		gridItems = [].slice.call(grid.querySelectorAll('.grid__item')),
+		// the page ingredients
+		ingredients = document.querySelector('#page-ingredients'),
+		// Page Ingredients individual ones
+		hpg = [].slice.call(ingredients.querySelectorAll('.hpg')),
 		//the logo
 		logo = document.querySelector('#logo'),
 		// the header
 		bghead = document.querySelector('.header'),
+		//the dot in the team section 
+		team = document.querySelector('.team'),
+		// team dots
+		teamdots = [].slice.call(team.querySelectorAll('.team-dot')),
+		// tooltip dot
+		tooltip = document.querySelectorAll('.tooltip-dot'),
+		// the close button in the login box icon-close
+		teamsingle = [].slice.call(team.querySelectorAll('.single')),	
+		//the login button
+		loginbtn = document.querySelector('.login-btn'),
+		// the close button in the login box icon-close
+		closebtn = document.querySelector('#iclose'),
+		// the close ingredients button
+		closeingredients = document.querySelector('.close-ingredients'),
+		// click next button
+		clicknext = document.querySelector('.click-next'),
+		// click prev
+		clickprev = document.querySelector('.click-prev'),
+		og = document.querySelector('#og'),
+		ag = document.querySelector('#oneg'),
+		bg = document.querySelector('#twog'),
+		cg = document.querySelector('#threeg'),
+		dg = document.querySelector('#fourg'),
+		//ingredients
+		ione = document.querySelector('#ingredient1'),
+		itwo = document.querySelector('#ingredient2'),
+		ithree = document.querySelector('#ingredient3'),
+		ifour = document.querySelector('#ingredient4'),
 		// check if menu is open
 		isMenuOpen = false;
-		
-
+	
+	
 	function init() {
-		buildStack();
+		//buildStack();
 		initEvents();
 	}
 
@@ -75,7 +105,6 @@
 
 			if( current !== i ) {
 				classie.add(page, 'page--inactive');
-				header[i].style.display ="none";
 				
 					if( posIdx !== -1 ) {
 						// visible pages in the stack
@@ -84,12 +113,7 @@
 						page.style.transitionDuration = '0.5s';
 						page.style.WebkitTransitionDuration= '0.5.s';
 					}
-					/*
-					page.style.transitionDuration = '0.6s';
-						page.style.WebkitTransitionDuration= '0.6s';
-						page.style.TransitionTimingFunction ='ease-in-out';
-						page.style.WebkitTransitionTimingFunction = 'ease-in-out';
-					*/
+					
 				else {
 					// invisible pages in the stack
 					page.style.WebkitTransform = 'translate3d(0,75%,-300px)';
@@ -100,7 +124,6 @@
 			}
 			else {
 				classie.remove(page, 'page--inactive');
-				header[i].style.display ="inherit";
 			}
 
 			page.style.zIndex = i < current ? parseInt(current - i) : parseInt(pagesTotal + current - i);
@@ -116,10 +139,10 @@
 
 	// event binding
 	function initEvents() {
+		
 		// menu button click
 		menuCtrl.addEventListener('click', toggleMenu);
-
-		// navigation menu clicks
+		/*  navigation menu clicks
 		navItems.forEach(function(item) {
 			// which page to open?
 			var pageid = item.getAttribute('href').slice(1);
@@ -127,31 +150,21 @@
 				ev.preventDefault();
 				openPage(pageid);
 			});
-		});
-
-		// navigation dot clicks
-		sideNavItems.forEach(function(item) {
-			var i = 0;
-			// which page to open?
-			var pageid = item.getAttribute('href').slice(1);
-			item.addEventListener('click', function(ev) {
-				ev.preventDefault();
-				openPage(pageid);
-			});
-		});
+		});*/
 
 		// Clicking the Grid Items and opening the corresponding page
-		gridItems.forEach(function(item) {
+		/*gridItems.forEach(function(item) {
 			// which page to open?
 			var pageid = item.getAttribute('href').slice(1);
 			item.addEventListener('click', function(ev) {
 				ev.preventDefault();
-				openPage(pageid);
+				og.style.marginLeft ="-100%";
+				//openPage(pageid);
 			});
-		});
+		});*/
 
 		// clicking on a page when the menu is open triggers the menu to close again and open the clicked page
-		pages.forEach(function(page) {
+		/*pages.forEach(function(page) {
 			var pageid = page.getAttribute('id');
 			page.addEventListener('click', function(ev) {
 				if( isMenuOpen ) {
@@ -159,13 +172,12 @@
 					openPage(pageid);
 				}
 			});
-		});
+		});*/
 
-		// navigation dot clicks
-		pages.forEach(function(page) {
-			// which page to open?
+		/*pages.forEach(function(page) {
+			var pageid = page.getAttribute('id');
+			
 			var item = arrow;
-			var i = current;
 
 			//make the Down Arrow shake
 			item.addEventListener('mouseover', function(ev) {
@@ -177,26 +189,21 @@
 				classie.remove(this, 'shake');
 				classie.add(this, 'slideInUp');
 			});
-			
-			if (i === pagesTotal) {
-				item.style.Display = "none";
-			}
-			
-			else {
-				item.style.Display = "inherit";
-			}
-			
-		});
+		});*/
 
 		// keyboard navigation events
-		document.addEventListener( 'keydown', function( ev ) {
+		/*document.addEventListener( 'keydown', function( ev ) {
 			var keyCode = ev.keyCode || ev.which;
 			if( keyCode === 40 ) {
 				ev.preventDefault();
 				openNextPage();
 			}
-		});
-
+			if( keyCode === 38 ) {
+				ev.preventDefault();
+				openPreviousPage();
+			}
+		});*/
+		
 		//opening the first page
 		logo.addEventListener('click', function(ev) {
 			var pageid = logo.getAttribute('href').slice(1);
@@ -209,6 +216,205 @@
 			ev.preventDefault();
 			openNextPage();
 		});
+		
+		// the rotating dots
+		teamdots.forEach(function(item) {
+				tooltip[0].addEventListener('mouseover' , function( ev ) {
+					classie.remove (this, 'rtipbk');
+					classie.add (this, 'rtip90');
+					teamsingle[0].style.display = "inherit";
+				});
+				
+				tooltip[0].addEventListener('mouseout', function(ev) {
+					classie.remove (this, 'rtip90');
+					classie.add (this, 'rtipbk');
+					teamsingle[0].style.display = "none";
+				});
+				//
+				tooltip[1].addEventListener('mouseover' , function( ev ) {
+					classie.remove (this, 'rtipbk');
+					classie.add (this, 'rtip90');
+					teamsingle[1].style.display = "inherit";
+				});
+				
+				tooltip[1].addEventListener('mouseout', function(ev) {
+					classie.remove (this, 'rtip90');
+					classie.add (this, 'rtipbk');
+					teamsingle[1].style.display = "none";
+				});
+				//
+				tooltip[2].addEventListener('mouseover' , function( ev ) {
+					classie.remove (this, 'rtipbk');
+					classie.add (this, 'rtip90');
+					teamsingle[2].style.display = "inherit";
+				});
+				
+				tooltip[2].addEventListener('mouseout', function(ev) {
+					classie.remove (this, 'rtip90');
+					classie.add (this, 'rtipbk');
+					teamsingle[2].style.display = "none";
+				});
+				//
+				tooltip[3].addEventListener('mouseover' , function( ev ) {
+					classie.remove (this, 'rtipbk');
+					classie.add (this, 'rtip90');
+					teamsingle[3].style.display = "inherit";
+				});
+				
+				tooltip[3].addEventListener('mouseout', function(ev) {
+					classie.remove (this, 'rtip90');
+					classie.add (this, 'rtipbk');
+					teamsingle[3].style.display = "none";
+				});
+				//
+				tooltip[4].addEventListener('mouseover' , function( ev ) {
+					classie.remove (this, 'rtipbk');
+					classie.add (this, 'rtip90');
+					teamsingle[4].style.display = "inherit";
+				});
+				
+				tooltip[4].addEventListener('mouseout', function(ev) {
+					classie.remove (this, 'rtip90');
+					classie.add (this, 'rtipbk');
+					teamsingle[4].style.display = "none";
+				});
+				//
+				tooltip[5].addEventListener('mouseover' , function( ev ) {
+					classie.remove (this, 'rtipbk');
+					classie.add (this, 'rtip90');
+					teamsingle[5].style.display = "inherit";
+				});
+				
+				tooltip[5].addEventListener('mouseout', function(ev) {
+					classie.remove (this, 'rtip90');
+					classie.add (this, 'rtipbk');
+					teamsingle[5].style.display = "none";
+				});
+				//
+				tooltip[6].addEventListener('mouseover' , function( ev ) {
+					classie.remove (this, 'rtipbk');
+					classie.add (this, 'rtip90');
+					teamsingle[6].style.display = "inherit";
+				});
+				
+				tooltip[6].addEventListener('mouseout', function(ev) {
+					classie.remove (this, 'rtip90');
+					classie.add (this, 'rtipbk');
+					teamsingle[6].style.display = "none";
+				});
+				//
+				tooltip[7].addEventListener('mouseover' , function( ev ) {
+					classie.remove (this, 'rtipbk');
+					classie.add (this, 'rtip90');
+					teamsingle[7].style.display = "inherit";
+				});
+				
+				tooltip[7].addEventListener('mouseout', function(ev) {
+					classie.remove (this, 'rtip90');
+					classie.add (this, 'rtipbk');
+					teamsingle[7].style.display = "none";
+				});
+				//
+				tooltip[8].addEventListener('mouseover' , function( ev ) {
+					classie.remove (this, 'rtipbk');
+					classie.add (this, 'rtip90');
+					teamsingle[8].style.display = "inherit";
+				});
+				
+				tooltip[8].addEventListener('mouseout', function(ev) {
+					classie.remove (this, 'rtip90');
+					classie.add (this, 'rtipbk');
+					teamsingle[8].style.display = "none";
+				});
+				//
+				tooltip[9].addEventListener('mouseover' , function( ev ) {
+					classie.remove (this, 'rtipbk');
+					classie.add (this, 'rtip90');
+					teamsingle[9].style.display = "inherit";
+				});
+				
+				tooltip[9].addEventListener('mouseout', function(ev) {
+					classie.remove (this, 'rtip90');
+					classie.add (this, 'rtipbk');
+					teamsingle[9].style.display = "none";
+				});
+				//
+				tooltip[10].addEventListener('mouseover' , function( ev ) {
+					classie.remove (this, 'rtipbk');
+					classie.add (this, 'rtip90');
+					teamsingle[10].style.display = "inherit";
+				});
+				
+				tooltip[10].addEventListener('mouseout', function(ev) {
+					classie.remove (this, 'rtip90');
+					classie.add (this, 'rtipbk');
+					teamsingle[10].style.display = "none";
+				});
+		});
+		
+		/* loginbutton interaction 
+		loginbtn.addEventListener('click', function(ev) {
+			classie.add(bghead, 'heightfix');
+		});
+		/* Close button 
+		closebtn.addEventListener('click', function(ev) {
+			classie.remove(bghead, 'heightfix');
+		});
+		*/
+
+		/* Trying the Horizontal Scroll thingy */
+		/*ione.addEventListener('click', function(ev) {
+			og.style.display = "none";
+			ag.style.MarginRight = "0";
+			ag.style.display ="inherit";
+			classie.remove(closeingredients, 'cdisnone');
+			classie.remove(clicknext, 'cdisnone');
+			classie.remove(clickprev, 'cdisnone');
+		});
+		
+		itwo.addEventListener('click', function(ev) {
+			og.style.display = "none";
+			bg.style.MarginRight = "0";
+			bg.style.display ="inherit";
+			classie.remove(closeingredients, 'cdisnone');
+			classie.remove(clicknext, 'cdisnone');
+			classie.remove(clickprev, 'cdisnone');
+		});
+		
+		ithree.addEventListener('click', function(ev) {
+			og.style.display = "none";
+			cg.style.MarginRight = "0";
+			cg.style.display ="inherit";
+			classie.remove(closeingredients, 'cdisnone');
+			classie.remove(clicknext, 'cdisnone');
+			classie.remove(clickprev, 'cdisnone');
+		});
+		
+		ifour.addEventListener('click', function(ev) {
+			og.style.display = "none";
+			dg.style.MarginRight = "0";
+			dg.style.display ="inherit";
+			classie.remove(closeingredients, 'cdisnone');
+			classie.remove(clicknext, 'cdisnone');
+			classie.remove(clickprev, 'cdisnone');
+		});
+		
+		closeingredients.addEventListener('click', function(ev) {
+			closeIngredients();
+		});*/
+		
+		/*document.addEventListener("mousewheel", mouseWheeling, false);
+		document.addEventListener("DOMMouseScroll", mouseWheeling, false);*/
+		
+		/*function mouseWheeling(e) {
+			var scrollDirection = e.wheelDelta || -1 * e.detail;
+		 
+			if (scrollDirection > 0) {
+				openPreviousPage();
+			} else {
+				openNextPage();
+			}
+		}*/
 	}
 
 	// toggle menu fn
@@ -256,7 +462,7 @@
     		transition-duration: '1.2s'; */
 		}
 	}
-
+	
 	// function for the animation of the pages when transitioning the page
 
 	// closes the menu
@@ -267,9 +473,7 @@
 
 	// opens a page
 	function openPage(id) {
-
-		openAnim();
-
+	
 		var futurePage = id ? document.getElementById(id) : pages[current],
 			futureCurrent = pages.indexOf(futurePage),
 			stackPagesIdxs = getStackPagesIdxs(futureCurrent);
@@ -301,18 +505,59 @@
 
 		//Transition the content
 		onEndTransition(futurePage, function() {
-			buildStack();
+			//buildStack();
+			showArrow();
 			classie.remove(stack, 'pages-stack--open');
 			isMenuOpen = false;
 		});
 	}
-
+	
+	
 	function openNextPage() {
-		var i = current+1;
+		for(var i = 0; i < 2; ++i) {
+			var page = pages[i];
+			var pageid = page.getAttribute('id');
+			classie.add(arrow, 'hide');
+		}	
+	}
+	
+	function showArrow() {
+		var i;
+		if (i == 1) {
+			classie.remove (arrow,'hide');
+		}
+	}
+	
+	/*function openPreviousPage() {
+		var i = current-1;
 		var page = pages[i];
 		var pageid = page.getAttribute('id');
 		openPage(pageid);
-	}
+	}*/
+	
+	/*function openNextIngredient() {
+		var i = -1;
+		var page = pages[i];
+		var pageid = page.getAttribute('id');
+		openPage(pageid);
+	}*/
+	
+	/*function closeIngredients () {
+		og.style.display = "inherit";
+		og.style.marginLeft = "0";
+		ag.style.MarginRight = "200%";
+		ag.style.display ="none";
+		bg.style.MarginRight = "300%";
+		bg.style.display ="none";
+		cg.style.MarginRight = "400%";
+		cg.style.display ="none";
+		dg.style.MarginRight = "500%";
+		dg.style.display ="none";
+		// the close icon 
+		classie.add(closeingredients, 'cdisnone');
+		classie.add(clicknext, 'cdisnone');
+		classie.add(clickprev, 'cdisnone');
+	}*/
 
 	// gets the current stack pages indexes. If any of them is the excludePage then this one is not part of the returned array
 	function getStackPagesIdxs(excludePageIdx) {
@@ -334,7 +579,7 @@
 
 		return idxs;
 	}
-
+	
 	init();
 
 })(window);
