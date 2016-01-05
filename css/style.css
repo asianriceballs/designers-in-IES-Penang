@@ -2281,6 +2281,7 @@ html.js,
 /* Last Page */
 .lst-pg {
 	background: rgba(10,96,96,0.9);
+	color: #ffffff;
     width: 22em;
     margin: 1em auto 0 auto;
     padding: 1em 0.5em;
