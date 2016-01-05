@@ -131,12 +131,12 @@ a:hover {
 }
 
 .bp-header__title {
-	font-size: 3em;
+	font-size: 2.3em;
 	font-weight: 700;
 	/*font-weight: 300;*/
 	line-height: 1.1;
 	margin: 0.2em 0 0 0;
-	color: #000;
+	color: #fff;
 	/*letter-spacing: -1px;*/
 	/* text shadow */
 	/* text-shadow: 1px 1px 2px #3b3d3b; */
@@ -185,10 +185,7 @@ a:hover {
 }
 
 .bp-header__title em {
-	font-family: 'Lato', serif;
-	font-weight: 600;
-	letter-spacing: 0;
-	font-style: initial;
+	color: #ffffff;
 }
 
 /* hpg header */
@@ -576,6 +573,7 @@ html.js,
 }
 
 .js .page {
+	display: none; /* this is just a test to get the animations to show up */
 	position: relative;
 	z-index: 5;
 	overflow: hidden;
@@ -591,11 +589,19 @@ html.js,
 } 
 
 .js #page-home .bp-header__title { 
-	color: #fff;
-	font-size: 4em;
-	font-weight: 300 !important;
-	line-height: 0.9em;
+	color: #ffffff;
+	font-size: 4.5em;
+	font-weight: 700;
+	line-height: 1em;
 	text-shadow: 2px 2px 5px #747474;
+}
+
+.js #page-home .lg {
+	font-size: 0.7em;
+	font-weight: 600;
+	letter-spacing: 0.4em;
+	margin: 4em 1em 0;
+	padding: 1.2em 3.6em;
 }
 
 .js #page-first {
@@ -626,8 +632,8 @@ html.js,
 
 /*the team section */
 #page-team {																
-	color: #ffffff;																						
-	overflow-y: hidden !important;	
+	color: #ffffff;																
+	/*overflow-y: hidden !important;*/	
 }
 
 #page-team .bp-header__title {
@@ -636,10 +642,10 @@ html.js,
 
 #page-team .bp-header__desc {
 	font-size: 1.6em;
-    line-height: 1.5em;
+    line-height: 0.5em;
 	/* A hack to make the paragraph stick to the bottom; */
-	background: rgba(0,0,0,.7);
-	bottom: -36vh;
+	/*background: rgba(0,0,0,.7);*/
+	bottom: -25vh;
 	margin: 0;
     position: relative;
     /*width: 85%;*/
@@ -766,6 +772,11 @@ html.js,
 	z-index: 0;
 	top: 0;
 	opacity: 0;
+}
+
+/* a fix to show the animations using the active class */
+.active {
+	display: inherit !important;
 }
 
 /* page content */
@@ -1022,7 +1033,6 @@ html.js,
 }
 
 .click-to-learn-more {
-	background: #000000;
 	position: absolute;
 	z-index: 1000;
 	bottom: 0vh;
@@ -1030,7 +1040,6 @@ html.js,
 	padding: 0.1em 0.5em 1em;
 	width: 9em;
 	text-align: center;
-	opacity: 0.5;
 }
 
 .click-to-learn-more p {
@@ -1672,7 +1681,7 @@ html.js,
 }
 
 #page-showcase .bp-header__title {
-	color: #E0F2F1;
+	color: #FFFFFF;
 }
 
 #page-showcase .bp-header__desc {

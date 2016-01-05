@@ -36,10 +36,11 @@
 	<!-- pages stack -->
 	<div class="pages-stack" id="fullpage">
 		<!-- page -->
-		<div class="page section" id="page-home">
+		<div class="page" id="page-home" data-anchor="home">
 			<div class="content">
 				<header class="bp-header cf wr">
-					<h1 class="bp-header__title anims fadeInUp">Get the <em>online store</em> <br/>that<em> fits </em>your<em><br>business needs</em></h1>
+					<h1 class="bp-header__title anims fadeInDown">Get the <em>online store</em> <br/>that<em> fits </em>your<em><br>business needs</em></h1>
+					<button class="lg sanim4 fadeInDown">Scroll to learn more</button>
 				</header>
 				<video class="bg-video" width="120%" poster="images/videos/introbg.jpg" preload autoplay loop muted>
 				  <source src="images/videos/00322.mp4" type="video/mp4">
@@ -49,7 +50,7 @@
 			</div>
 		</div>
 		<!-- /page -->
-		<div class="page section" id="page-ingredients">
+		<div class="page" id="page-ingredients" data-anchor="ingredients">
 			<div id="og" class="slide">
 				<header class="bp-header cf content">
 				<h5 class="bp-header__desc anims slideInDown">You don't need a shopping cart that can do everything. What you do want is one that fits what your business needs.</h5>
@@ -222,8 +223,8 @@ marketing will increase your chances of being found.</p>
 			</div>
 		</div>
 		<!-- BusinessCurve -->
-		<div class="page section" id="page-custom">
-			<header class="bp-header cf">
+		<div class="page" id="page-custom" data-anchor="business curve">
+			<header class="bp-header cf content">
 				<div class="left-section">
 					<p class="info fp sanim4 slideInUp">
 						<em>A young, growing venture</em><br><br>
@@ -249,7 +250,7 @@ marketing will increase your chances of being found.</p>
 		</div>
 		<!-- end BusinessCurve -->
 		<!-- Team -->
-		<div class="page section" id="page-team">
+		<div class="page" id="page-team" data-anchor="team">
 			<header class="bp-header cf content">
 				<!--<h1 class="bp-header__title animated slideInDown">Our Team</h1>-->
 				<div class="team">
@@ -342,17 +343,17 @@ marketing will increase your chances of being found.</p>
 					</div>
 				</div>
 				</div>
-				<div class="bp-header__desc anims slideInDown"><p>When you get in touch with us, no matter the system or method,  </p>
-				<p>it’s a real person with years of </p>
-				<p>experience in the eCommerce industry who you'll be communicating with</p>
+				<div class="bp-header__desc anims fadeInDown"><p>When you get in touch with us, no matter the system or method,  </p>
+					<p>it’s a real person with years of </p>
+					<p>experience in the eCommerce industry who you'll be communicating with</p>
 				</div>
 			</header>
 			<img class="bg-image" src="images/team.jpg" alt="teampic" />
 		</div>
 		<!-- end Team -->
 		<!-- Show Showcase -->
-		<div class="page section" id="page-showcase">
-			<header class="bp-header cf">
+		<div class="page" id="page-showcase" data-anchor="showcase">
+			<header class="bp-header cf content">
 				<h1 class="bp-header__title animated slideInDown">Success Stories</h1>
 				<p class="bp-header__desc animf slideInDown">InstanteStore has helped thousands of businesses over the years. <br/>Here are some of our top success stories and great friends and supporters:</p>
 				<ul class="showcase-grid">
@@ -377,7 +378,7 @@ marketing will increase your chances of being found.</p>
 		</div>
 		<!-- end Show Showcase -->
 		<!-- Last Page -->
-		<div class="page section" id="page-last">
+		<div class="page" id="page-last data-anchor="contact">
 			<header class="bp-header cf">
 				<h1 class="bp-header__title animated slideInDown">Write your own eCommerce success story</h1>
 				<div class="lst-pg animated slideInDown">
@@ -460,13 +461,14 @@ marketing will increase your chances of being found.</p>
 	<!-- Header end -->
 	
 	<a href="#" class="click-to-learn-more animated slideInUp">
-		<p class="anims1 fadeInUp">Click to view next page</p>
-		<span class="dwn-arrow sanim1 fadeInUp"></span>
+		<p class="sanim5 fadeInDown">Scroll Down</p>
+		<span class="dwn-arrow sanim4 slideInDown"></span>
+		<span class="dwn-arrow sanim1 slideInDown"></span>
 	</a>
 
 	<script src="js/classie.js"></script>
 	<script src="js/main.js"></script>
-	<!--<script src="js/dots.js"></script>-->
+	<script src="js/dots.js"></script>
 	<script src="js/uiMorphingButton_fixed.js"></script>
 	<script type="text/javascript" src="js/javascript.fullPage.js"></script>
 
@@ -481,51 +483,37 @@ marketing will increase your chances of being found.</p>
 	</script>
 	
 	<script type="text/javascript">
+		var arrow =  document.querySelector('.click-to-learn-more'); 
+		
 		fullpage.initialize('#fullpage', {
 			css3:true,
 			//Accessibility
 			keyboardScrolling: true,
 			animateAnchor: true,
-			    //Navigation
+			//Scrolling 
+			scrollingSpeed: 1000,
+			easing: 'easeInOut',
+			easingcss3: 'ease',
+			scrollOverflow: true,
+			//Custom selectors
+			sectionSelector: '.page',
+			slideSelector: '.slide',
+			//Navigation
 			lockAnchors: false,
 			navigation: true,
-			navigationTooltips: ['firstSlide', 'secondSlide', 'firstSlide', 'secondSlide', 'firstSlide', 'secondSlide'],
+			anchors: ['home', 'ingredients', 'business curve', 'team', 'showcase', 'contact'],
+			navigationTooltips: ['Home', 'Ingredients', 'Business Curve', 'Team', 'Showcase', 'Contact'],
 			navigationPosition: 'right',
-			slidesNavigation: true,
-			showActiveTooltip: true,
+			showActiveTooltip: true
 
-			/*'afterLoad': function(anchorLink, index){
-					if (index == 1) {
-						document.body.querySelector('.page').addClass('show');
-					}
-					if (index == 2) {
-						document.body.querySelector('.page').addClass('show');
-					}
-					if (index == 3) {
-						document.body.querySelector('.page').addClass('show');
-					}
-					if (index == 4) {
-						document.body.querySelector('.page').addClass('show');
-					}
-					if (index == 5) {
-						document.body.querySelector('.page').addClass('show');
-					}
-					if (index == 6) {
-						document.body.querySelector('.page').addClass('show');
-					}
-					if (index == 7) {
-						document.body.querySelector('.page').addClass('show');
-					}
-					if (index == 8) {
-						document.body.querySelector('.page').addClass('show');
-					}
-					if (index == 9) {
-						document.body.querySelector('.page').addClass('show');
-					}
-					if (index == 10) {
-						document.body.querySelector('.page').addClass('show');
-					}
-			},*/
+			/*afterLoad: function(anchorLink, index){
+				var loadedSection = $(this);
+
+				//using index
+				if(index == 1){
+					arrow.addClass('hide');
+				}
+			}*/
 		});
 	</script>
 	<script>
