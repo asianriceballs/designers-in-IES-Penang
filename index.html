@@ -528,6 +528,7 @@
 				}
 
 				var el = document.querySelector('.click-to-learn-more');
+				var logo = document.querySelector('#logo');
 				
 				var loadedSection = this;
 
@@ -541,6 +542,10 @@
 				
 				el.addEventListener('click', function(ev) {
 					fullpage.moveTo(2);
+				});
+				
+				logo.addEventListener('click', function(ev){
+					fullpage.moveTo(1);
 				});
 				
 			}, 
