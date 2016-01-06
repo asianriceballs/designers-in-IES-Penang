@@ -1,0 +1,616 @@
+[33mcommit eb95197ba07d839c8a7b9c2d1fd2d504218a8f07[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Tue Jan 5 17:47:38 2016 +0800
+
+    merge
+
+[33mcommit b792534b439ebd41c74b11284e4a5e6f67678d61[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Tue Jan 5 17:28:21 2016 +0800
+
+    merge
+
+[33mcommit 928e6f470c21e6dd07acac266192f6f683c4fb32[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Tue Jan 5 17:16:35 2016 +0800
+
+    merge
+
+[33mcommit 20e0374d565b983f730835685ad626779dd93a7c[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Tue Jan 5 11:42:41 2016 +0800
+
+    Merge
+    
+    Fixing conflicts from last commit ...
+
+[33mcommit 86cba2c30a1c68fe063c5985f2213dcd4dba917b[m
+Merge: cc2ff1d 59e2150
+Author: Nilo <niloufer@logo-design-studio.com>
+Date:   Tue Jan 5 09:42:09 2016 +0800
+
+    coerced merge
+    
+    pls work
+
+[33mcommit cc2ff1d7b4c4f265955397099707ac62d6e7a1b7[m
+Author: Nilo <niloufer@logo-design-studio.com>
+Date:   Mon Jan 4 18:53:59 2016 +0800
+
+    some stuff
+    
+    merged
+
+[33mcommit 59e215060fa5fb2a89af0ff3dc034c5fd625b9f2[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Mon Jan 4 18:24:39 2016 +0800
+
+    merge
+
+[33mcommit 99e0be368d06595f5398295765e16fffc2764c89[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Mon Jan 4 14:23:23 2016 +0800
+
+    merge
+
+[33mcommit 55069b412000ff833ef0f6dc1e757882cd898ca5[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Mon Jan 4 14:12:57 2016 +0800
+
+    merge
+
+[33mcommit bb6666f69e59a70e418c711efdf028774734930c[m
+Author: Nilo <niloufer@logo-design-studio.com>
+Date:   Mon Jan 4 11:23:00 2016 +0800
+
+    some changes
+    
+    ok
+
+[33mcommit 96d6124d66b30d39adbbf46cf164a7647e34f894[m
+Author: Nilo <niloufer@logo-design-studio.com>
+Date:   Mon Jan 4 11:04:38 2016 +0800
+
+    tiny change
+    
+    tiny
+
+[33mcommit 3c552bcbcb48494110f62dc80f5e78704b25c8c6[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Mon Jan 4 11:02:05 2016 +0800
+
+    merge
+
+[33mcommit a8fb9248098c2ed28093b4841a6de480348f25ce[m
+Author: Nilo <niloufer@logo-design-studio.com>
+Date:   Mon Jan 4 11:00:43 2016 +0800
+
+    4 pillars
+    
+    changes
+
+[33mcommit 6a68caab781a551c84b3fad89fc7ab0b1b12ccbe[m
+Author: Nilo <niloufer@logo-design-studio.com>
+Date:   Mon Jan 4 09:46:46 2016 +0800
+
+    coerced merge
+    
+    small changes
+
+[33mcommit c4a08944e5cb5ddfa043962f799bf7efe2076554[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Wed Dec 30 17:58:49 2015 +0800
+
+    merge
+
+[33mcommit d3bff1cc3d36fcbce6b08651f050d5cab44c19e7[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Wed Dec 30 16:12:09 2015 +0800
+
+    merge
+
+[33mcommit 47954223dfe29c18258a0ef5409808313379154d[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Wed Dec 30 14:41:00 2015 +0800
+
+    merge
+    
+    Scrolling up and down using the mousewheel.
+
+[33mcommit 7aed239332bf594cf640d3aff29eecdf01024a26[m
+Author: Nilo <niloufer@logo-design-studio.com>
+Date:   Wed Dec 30 14:11:53 2015 +0800
+
+    minor changes
+    
+    other pages
+
+[33mcommit 564fa6e765add8e9b861a898b99920e4a907c2ab[m
+Author: Nilo <niloufer@logo-design-studio.com>
+Date:   Wed Dec 30 13:53:58 2015 +0800
+
+    minor changes
+    
+    other pages
+
+[33mcommit 018cc37e61d4ed8f5c684f6ec4d20b187a819079[m
+Author: Nilo <niloufer@logo-design-studio.com>
+Date:   Wed Dec 30 12:42:51 2015 +0800
+
+    team page
+    
+    buttons
+
+[33mcommit 925fa06b7c37c72885c0439a800a590b8f9ab2c9[m
+Author: Nilo <niloufer@logo-design-studio.com>
+Date:   Wed Dec 30 12:29:45 2015 +0800
+
+    changes to team section
+    
+    buttons
+
+[33mcommit c0b5eebc49fac21eaf1e28fce4c61693ea8218fd[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Wed Dec 30 12:11:25 2015 +0800
+
+    merge
+
+[33mcommit 0a9e37935afbe4c0e6a250193ad16ab8735d221f[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Wed Dec 30 12:00:43 2015 +0800
+
+    merge
+    
+    New Pages and HTML CSS STUFF.
+
+[33mcommit dcbe273365cf149caa6b812d90637f5e2d07e1c8[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Mon Dec 28 18:02:59 2015 +0800
+
+    merge
+
+[33mcommit e04a727c48142b59c9a7e0f0ca59d74c97e6d2eb[m
+Author: Michael Muli <mikemuliprogrammer@gmail.com>
+Date:   Wed Dec 23 17:41:33 2015 +0800
+
+    merge
+    
+    Fixed the team page so that it has the right margins to be seen on
+    smaller screens ...
+
+[33mcommit b57bebc52fec1c0bc12dab99f69f61272a8db3ee[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Wed Dec 23 17:15:51 2015 +0800
+
+    merge
+
+[33mcommit f20fb7a7b99556995e32694a9547e1d712e2cfa7[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Tue Dec 22 18:52:39 2015 +0800
+
+    merge
+
+[33mcommit 4a380cecf5129772bd6abd1ec3c925f303a8bed6[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Mon Dec 21 17:54:25 2015 +0800
+
+    merge
+
+[33mcommit 67e016a4e4b62b9ed97faa99185087c1c024c658[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Mon Dec 21 17:23:48 2015 +0800
+
+    merge
+
+[33mcommit 9869a957cffc75c1ccc2cd56418efc1c9d3f949c[m
+Author: Nilo <niloufer@logo-design-studio.com>
+Date:   Mon Dec 21 16:33:20 2015 +0800
+
+    testimonials
+    
+    and images
+
+[33mcommit 059683d6a1833bda46a98eff64cba6c5c8ad0227[m
+Author: Nilo <niloufer@logo-design-studio.com>
+Date:   Mon Dec 21 13:54:52 2015 +0800
+
+    testimonials
+    
+    changes made
+
+[33mcommit 81aac9a36b5fdebec4229898cf9a4f8b2be5583d[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Thu Dec 17 18:21:24 2015 +0800
+
+    merge
+
+[33mcommit 8f3f4cd6d3692e1440ca5fd72f1a5849e9c09280[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Wed Dec 16 18:08:33 2015 +0800
+
+    merge
+
+[33mcommit 6af4656ac1b0f25f8f897365d03d0612ca5f5200[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Wed Dec 16 17:39:33 2015 +0800
+
+    Merge
+    
+    # Conflicts:
+    # index.html
+
+[33mcommit e7f9b631c43c6add7558d49ade512a57f845b72a[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Wed Dec 16 16:29:14 2015 +0800
+
+    merge
+
+[33mcommit c77d324d2600e63fa8846c782bfbe98b274a259f[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Wed Dec 16 15:35:30 2015 +0800
+
+    merge
+
+[33mcommit 2ff4d94a34a189345d92b6d97ccc7c4eff6d5fcb[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Wed Dec 16 10:25:59 2015 +0800
+
+    merge
+
+[33mcommit 2b70bcaac5cc17a3893169dac9d181e58abd0b95[m
+Merge: 554d7de 14cd97a
+Author: asianriceballs <niloufer@logo-design-studio.com>
+Date:   Tue Dec 15 16:23:59 2015 +0800
+
+    Merge remote-tracking branch 'origin/Production' into Production
+    
+    # Conflicts:
+    #	index.html
+
+[33mcommit 554d7dea61168cf52a24f5d09981c68d97cc0baa[m
+Author: asianriceballs <niloufer@logo-design-studio.com>
+Date:   Tue Dec 15 16:22:48 2015 +0800
+
+    page-home
+    
+    text shadow and video img bg
+
+[33mcommit 14cd97a06fc5b8a10058db738169904b64dd6c27[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Tue Dec 15 16:14:02 2015 +0800
+
+    merge
+    
+    login morph fix
+
+[33mcommit 669a9d7dd4ccd2bc68262ce443cdd6a3daf451ec[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Tue Dec 15 16:06:55 2015 +0800
+
+    MERGE
+    
+    Fixed the login
+
+[33mcommit f534b41c1538025e1a17831d961bb4d10faec64e[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Tue Dec 15 15:42:24 2015 +0800
+
+    merge
+
+[33mcommit 3bba4ddd8cb265df132fc2babfd9c41111084a01[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Tue Dec 15 15:36:06 2015 +0800
+
+    merge
+
+[33mcommit c08e8f0f7a4ebd2d4dcbf180662850c681ae2448[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Tue Dec 15 14:40:48 2015 +0800
+
+    merge
+    
+    Fixed the em, and closed all the divs that were open ...
+
+[33mcommit 65b3176cac8ac91997c5724407d2252c6790e649[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Tue Dec 15 13:41:06 2015 +0800
+
+    merge
+
+[33mcommit e72ecc9beb3d0055ec22029e88105b0fa8cd28a5[m
+Author: asianriceballs <niloufer@logo-design-studio.com>
+Date:   Tue Dec 15 13:27:48 2015 +0800
+
+    video ISSUE
+    
+    issue  with pages
+
+[33mcommit b1ef16f7a18a18ef0fdea281eb76f171cec59996[m
+Author: asianriceballs <niloufer@logo-design-studio.com>
+Date:   Tue Dec 15 11:38:11 2015 +0800
+
+    icon shadow & 4th pilllar
+    
+    ok
+
+[33mcommit fd6d06fbb4a9389ce9f187128bd05d11fc0fdcac[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Tue Dec 15 11:17:52 2015 +0800
+
+    merge
+
+[33mcommit 8938a395f4a44d6c5a35dd8b1a61313a7f238eee[m
+Author: asianriceballs <niloufer@logo-design-studio.com>
+Date:   Tue Dec 15 11:17:02 2015 +0800
+
+    footer added
+    
+    and some changes made to css for footer
+
+[33mcommit a9d361133a37a97b1d2292f277c5fb45b17cbb35[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Tue Dec 15 11:13:00 2015 +0800
+
+    Merge
+
+[33mcommit 3e09d68da2c04a03b7937c62656ffcaa605045f2[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Mon Dec 14 18:03:29 2015 +0800
+
+    merge
+
+[33mcommit 8ebc0736c2fb633b5c8cb781bc23a99f5e4f5831[m
+Merge: 94b60e7 32312e5
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Mon Dec 14 16:57:36 2015 +0800
+
+    Merge
+
+[33mcommit 94b60e741e28b1f5f8f7b5507b275f91b821b9a5[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Mon Dec 14 16:43:55 2015 +0800
+
+    Merge
+
+[33mcommit 32312e5d0af2eab4e35a708178c70d045b8f13cd[m
+Author: asianriceballs <niloufer@logo-design-studio.com>
+Date:   Mon Dec 14 16:36:18 2015 +0800
+
+    icon
+    
+    for 4th piller
+
+[33mcommit 941318f5f621c01e84af040db4323d5f254e849f[m
+Author: asianriceballs <niloufer@logo-design-studio.com>
+Date:   Mon Dec 14 16:22:10 2015 +0800
+
+    changes to 4 pillars
+    
+    some css also changed
+
+[33mcommit 6cef736e2e326f0db56aab9ecf39c745f0021e79[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Mon Dec 14 11:19:01 2015 +0800
+
+    Merge
+    
+    Fixed the positioning issues from the last error...
+
+[33mcommit 6f8d16c41d27b357ad1d609666c3d6a217fd657e[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Mon Dec 14 10:48:01 2015 +0800
+
+    merge
+
+[33mcommit f815abc4e9c38b9cbb7b28ec6e04bb94d72bd993[m
+Merge: bf51d04 202e428
+Author: asianriceballs <niloufer@logo-design-studio.com>
+Date:   Mon Dec 14 10:34:59 2015 +0800
+
+    Merge remote-tracking branch 'refs/remotes/origin/master' into Production
+    
+    # Conflicts:
+    #	index.html
+
+[33mcommit bf51d04f2c14eeebe457f4761aa14e4f943c4705[m
+Author: asianriceballs <niloufer@logo-design-studio.com>
+Date:   Fri Dec 11 18:57:48 2015 +0800
+
+    ingredients addition
+    
+    added content
+
+[33mcommit ec585485c6bc6bbf8a61eee7d6d6f9e324f13269[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Fri Dec 11 18:39:08 2015 +0800
+
+    Merge
+    
+    Fixed the down arrow, and also added the drop function for the page
+    animations.
+
+[33mcommit 202e4285fc5ff2c9f5bd140242cdba305264dbc4[m
+Merge: 3823b87 aab9831
+Author: asianriceballs <niloufer@logo-design-studio.com>
+Date:   Fri Dec 11 16:12:55 2015 +0800
+
+    Merge remote-tracking branch 'origin/master'
+    
+    # Conflicts:
+    #	index.html
+
+[33mcommit 3823b873a34a01f8e547285c9d18b15c0550fa3a[m
+Author: asianriceballs <niloufer@logo-design-studio.com>
+Date:   Fri Dec 11 16:12:03 2015 +0800
+
+    changes forced me to upload
+    
+    not sure what i am doing
+
+[33mcommit aab98317ecda9a4632f2b02677a70fb50d2212e6[m
+Merge: c1d3200 e8929e3
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Fri Dec 11 16:08:43 2015 +0800
+
+    Merge remote-tracking branch 'refs/remotes/origin/Production'
+
+[33mcommit e8929e3c15efa5f21282628ac9023727ba5eed4f[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Fri Dec 11 16:04:42 2015 +0800
+
+    merge
+
+[33mcommit f313999c3c29d45d39fe6b97854a3465c251c6ce[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Thu Dec 10 17:44:40 2015 +0800
+
+    Merge
+
+[33mcommit 8b776992a6478050f9a6b277e1ccc375c0312b8a[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Tue Dec 8 18:21:30 2015 +0800
+
+    Merge
+
+[33mcommit c1d32002d9fdb24ad3824aff65b35a54bed41f24[m
+Merge: a32a09e fd1a6cb
+Author: asianriceballs <niloufer@logo-design-studio.com>
+Date:   Mon Dec 7 18:24:50 2015 +0800
+
+    Merge remote-tracking branch 'refs/remotes/origin/Production'
+
+[33mcommit ed0fb627cafd77fcfc05ae814cfe641f9ffc8734[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Mon Dec 7 18:00:46 2015 +0800
+
+    merge
+
+[33mcommit 119c6192e01aebb439c441d138b4cbbe4b4e8c31[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Mon Dec 7 17:49:40 2015 +0800
+
+    merge
+
+[33mcommit be3835f94897dbc904267d5fe08a283420a48afa[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Fri Dec 4 11:23:40 2015 +0800
+
+    Merge
+
+[33mcommit 0ed4621cb15306cfbfe69f0574219d6657ff541f[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Thu Dec 3 18:39:33 2015 +0800
+
+    Merge
+
+[33mcommit 6e944a6c708fed63569c2b03e2220fdbe5cc5419[m
+Merge: fd1a6cb a32a09e
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Thu Dec 3 18:36:03 2015 +0800
+
+    Merge remote-tracking branch 'refs/remotes/origin/master' into Production
+
+[33mcommit a32a09e2b9949dc205e3bda4afb7fe59f06ff343[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Thu Dec 3 18:33:30 2015 +0800
+
+    Merge
+
+[33mcommit fd1a6cb607d2559e8ba42610d752b85f581258ae[m
+Merge: 5a67caf 9aeac3e
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Wed Dec 2 10:57:44 2015 +0800
+
+    Merge remote-tracking branch 'refs/remotes/origin/master' into Production
+
+[33mcommit 9aeac3ed9269b0fa1428b2ad7e555e746b9a2861[m
+Author: asianriceballs <niloufer@logo-design-studio.com>
+Date:   Wed Dec 2 10:47:10 2015 +0800
+
+    merge
+    
+    added in second page and changed background for 1st page
+
+[33mcommit 757cb6d331d21cafd518cfba2220682ae7dd5b36[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Tue Dec 1 17:48:47 2015 +0800
+
+    Merge
+    
+    Changes to the dots in the Dot.js, also in the animate.css and also the
+    Login Morph Form.
+
+[33mcommit 5a67cafbf5b8f10e48b282acebdbf5a5ebff1d23[m
+Merge: db5ffba 08613b6
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Mon Nov 30 18:34:51 2015 +0800
+
+    Merge remote-tracking branch 'refs/remotes/origin/master' into Production
+
+[33mcommit 08613b65ab07b338f67a471f6aeecd342ea6a52f[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Mon Nov 30 18:33:55 2015 +0800
+
+    Merge
+
+[33mcommit 4c05ed4e47d6b880234082530bec17408e7cddd7[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Thu Nov 26 18:36:32 2015 +0800
+
+    Merge
+    
+    Many changes with the html, and more importantly adding the animations.
+
+[33mcommit ca35a2351268915d13bc190684d9f0575aa9f1f9[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Wed Nov 25 18:30:34 2015 +0800
+
+    Merge
+    
+    Added a CSS Animation library ... Using it to animate the webpages ...
+
+[33mcommit e1fe710cfcd32bd0a322af4925615eee76c2e714[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Wed Nov 25 15:28:40 2015 +0800
+
+    merge
+    
+    Just changed the icon -- Still fixing the bugs.
+
+[33mcommit f38dbeb493b588e32449d74c5a21fcac17fe57dc[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Wed Nov 25 15:12:46 2015 +0800
+
+    Merge
+    
+    Just made changes to the Login button, and added the questions field
+    interaction.
+    Also, Fixed the logo home link ...
+
+[33mcommit 55e662f0628ff8e62500b4d79613c35e7f5d6c72[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Tue Nov 24 18:56:18 2015 +0800
+
+    merge
+
+[33mcommit fd2e3f8b402d13154b53127cec7e4e2146140e07[m
+Author: MikeMuli <mikemuliprogrammer@gmail.com>
+Date:   Tue Nov 24 15:42:53 2015 +0800
+
+    Merge
+    
+    Unnecessary image removal
+
+[33mcommit db5ffba62cd555fa9b43b900aa4dc215fa0e07be[m
+Author: asianriceballs <niloufer@logo-design-studio.com>
+Date:   Tue Nov 24 15:29:46 2015 +0800
+
+    merge
+    
+    initial files for repo
+
+[33mcommit c29d244ed9afcb97b4f7fceefa490cde3bd749db[m
+Author: asianriceballs <niloufer@logo-design-studio.com>
+Date:   Tue Nov 24 15:18:10 2015 +0800
+
+    :octocat: Added .gitattributes & .gitignore files

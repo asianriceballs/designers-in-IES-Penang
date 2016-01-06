@@ -630,6 +630,11 @@ html.js,
 	z-index: 1;
 }
 
+#page-custom .bp-header__title{
+	position: relative;
+	z-index: 10;
+}
+
 /*the team section */
 #page-team {																
 	color: #ffffff;																
@@ -710,7 +715,7 @@ html.js,
 .right-section .info {
 	font-size: 1.3em;
 	max-width: 70%;
-	margin-top: 10em;
+	margin-top: 13em;
 	color: #ffffff;
 	position: relative;
 	z-index: 10;
@@ -745,7 +750,7 @@ html.js,
 .left-section .info {
 	font-size: 1.3em;
 	max-width: 70%;
-	margin-top: 10em;
+	margin-top: 13em;
 	color: #ffffff;
 	position: relative;
 	z-index: 10;
@@ -1317,7 +1322,7 @@ html.js,
 /* Grid item */
 .grid__item {
 	padding: 15px 15px 35px;
-    margin: 0 6px;
+    margin: 0 0px;
     position: relative;
     color: inherit;
     min-height: 300px;
@@ -1334,9 +1339,25 @@ html.js,
     -webkit-justify-content: center;
     justify-content: center;
     width: 23%;
-    -webkit-border-radius: 8px 8px 8px 8px;
-    border-radius: 8px 8px 8px 8px;
+    /*-webkit-border-radius: 8px 8px 8px 8px;
+    border-radius: 8px 8px 8px 8px;*/
     transition: all 0.3 ease-in-out;
+}
+
+#ingredient1 {
+	background: #42c6ee;
+}
+
+#ingredient2 {
+	background: #017e96;
+}
+
+#ingredient3 {
+	background: #01697c;
+}
+
+#ingredient4 {
+	background: #145b69;
 }
 
 /* Grid item "border" */
@@ -1372,6 +1393,11 @@ html.js,
   	-webkit-box-shadow: 2px 2px 10px 0px rgba(153,153,153,1);
     -moz-box-shadow: 2px 2px 10px 0px rgba(153,153,153,1);
     box-shadow: 2px 2px 10px 0px rgba(153,153,153,1);1);
+}
+
+.bullet {
+	font-size: 0.5em;
+	padding-right: 0.6em;
 }
 
 .close-ingredients {
@@ -1428,14 +1454,22 @@ html.js,
 .grid__item p {
 	font-family: 'Lato', sans-serif;
 	color: #d3d3d3;
-	font-size: 1em;
+	font-size: .95em;
 	font-weight: 300;
     line-height: 1.5em;
-    text-align: justify;
+    text-align: left;
     /*Rough hacks*/
     max-height: 180px;
 	margin: 0.9em 0;
     overflow: hidden; 
+}
+
+#ingredient1 p {
+	margin-top: 2.4em;
+}
+
+#ingredient4 p {
+	margin-top: 2.4em;
 }
 
 .grid__item .expand-btn {
@@ -1711,7 +1745,7 @@ html.js,
 }
 
 .ingredient-anime img {
-    width: 70%;
+    width: 99%;
 }
 
 #ingredient2 {
@@ -2336,6 +2370,30 @@ html.js,
 	font-style: normal;
 }
 
+.team-button {
+	display: inline;
+	background: #E97F02;
+	color: #ffffff;
+	font-size: 0.5em;
+	letter-spacing: 0.1em;
+	margin: 2.2em 1em 0;
+	padding: 0.8em 3.6em;
+	text-transform: uppercase;
+	border: none;
+	/* Radius */
+	-webkit-border-radius: 36px;
+	-moz-border-radius: 36px;
+	border-radius: 36px;
+	position: relative;
+	z-index: 10;
+}
+
+#team_desc {
+	margin: 0.5em 0 0 0;
+	font-weight: 500;
+	font-size: 1em;
+}
+
 /* using the team names */
 #leefong {
 	margin-top: 9em;
@@ -2390,6 +2448,26 @@ html.js,
 #lisa {
 	margin-top: 27em;
     margin-left: 1em;
+}
+
+#fp-nav ul li a span, 
+.fp-slidesNav ul li a span {
+    background: #fff !important;
+    width: 8px;
+    height: 8px;
+    margin: -4px 0 0 -4px;
+}
+      
+#fp-nav ul li a.active span, 
+.fp-slidesNav ul li a.active span, 
+#fp-nav ul li:hover a.active span, 
+.fp-slidesNav ul li:hover a.active span {
+    width: 16px;
+    height: 16px;
+    margin: -8px 0 0 -8px;
+    background: transparent;
+    box-sizing: border-box;
+    border: 1px solid #fff !important;
 }
 
 @media screen and (max-width: 60em) {

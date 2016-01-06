@@ -208,13 +208,7 @@
 		logo.addEventListener('click', function(ev) {
 			var pageid = logo.getAttribute('href').slice(1);
 				ev.preventDefault();
-				openPage(pageid);
-		});
-
-		// Click on Down arrow
-		arrow.addEventListener('click', function( ev ) {
-			ev.preventDefault();
-			openNextPage();
+				
 		});
 		
 		// the rotating dots
@@ -432,8 +426,6 @@
 	function openMenu() {
 		// toggle the menu button
 		classie.add(menuCtrl, 'menu-button--open');
-		// stack gets the class "pages-stack--open" to add the transitions
-		classie.add(stack, 'pages-stack--open');
 		// reveal the menu
 		classie.add(nav, 'pages-nav--open');
 		//hide the background of the header
@@ -443,11 +435,12 @@
 
 		// now set the page transforms
 		var stackPagesIdxs = getStackPagesIdxs();
-		for(var i = 0, len = stackPagesIdxs.length; i < len; ++i) {
+		//for(var i = 0, len = stackPagesIdxs.length; i < len; ++i) {
+			var i;
 			var page = pages[stackPagesIdxs[i]];
 			page.style.WebkitTransform = 'translate3d(0, 75%, ' + parseInt(-1 * 200 - 50*i) + 'px)'; // -200px, -230px, -260px
 			page.style.transform = 'translate3d(0, 75%, ' + parseInt(-1 * 200 - 50*i) + 'px)';
-		}
+		//}
 	}
 
 	function openAnim(id) {
@@ -474,9 +467,9 @@
 	// opens a page
 	function openPage(id) {
 	
-		var futurePage = id ? document.getElementById(id) : pages[current],
+		/*var futurePage = id ? document.getElementById(id) : pages[current],
 			futureCurrent = pages.indexOf(futurePage),
-			stackPagesIdxs = getStackPagesIdxs(futureCurrent);
+			stackPagesIdxs = getStackPagesIdxs(futureCurrent);*/
 
 		// set transforms for the new current page
 		futurePage.style.WebkitTransform = 'translate3d(0, 0, 0)';
@@ -484,7 +477,7 @@
 		futurePage.style.opacity = 1;
 		
 	
-		// set transforms for the other items in the stack
+		/* set transforms for the other items in the stack
 		for(var i = 0, len = stackPagesIdxs.length; i < len; ++i) {
 			var page = pages[stackPagesIdxs[i]];
 			page.style.WebkitTransform = 'translate3d(0,100%,0)';
@@ -496,7 +489,7 @@
 		// set current
 		if( id ) {
 			current = futureCurrent;
-		}
+		}*/
 		
 		// close menu..
 		classie.remove(menuCtrl, 'menu-button--open');
@@ -506,27 +499,12 @@
 		//Transition the content
 		onEndTransition(futurePage, function() {
 			//buildStack();
-			showArrow();
-			classie.remove(stack, 'pages-stack--open');
+			//showArrow();
+			//classie.remove(stack, 'pages-stack--open');
 			isMenuOpen = false;
 		});
 	}
 	
-	
-	function openNextPage() {
-		for(var i = 0; i < 2; ++i) {
-			var page = pages[i];
-			var pageid = page.getAttribute('id');
-			classie.add(arrow, 'hide');
-		}	
-	}
-	
-	function showArrow() {
-		var i;
-		if (i == 1) {
-			classie.remove (arrow,'hide');
-		}
-	}
 	
 	/*function openPreviousPage() {
 		var i = current-1;
