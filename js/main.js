@@ -433,7 +433,7 @@
 
 		//classie.add(head, 'hide');
 
-		// now set the page transforms
+		/* now set the page transforms
 		var stackPagesIdxs = getStackPagesIdxs();
 		//for(var i = 0, len = stackPagesIdxs.length; i < len; ++i) {
 			var i;
@@ -452,8 +452,8 @@
 			page.style.transform = 'translate3d(0, 75%, ' + parseInt(-1 * 200 - 50*i) + 'px)';
 			/*
 			-webkit-transition-duration: '1.2s';
-    		transition-duration: '1.2s'; */
-		}
+    		transition-duration: '1.2s'; 
+		}*/
 	}
 	
 	// function for the animation of the pages when transitioning the page
@@ -471,7 +471,7 @@
 			futureCurrent = pages.indexOf(futurePage),
 			stackPagesIdxs = getStackPagesIdxs(futureCurrent);*/
 
-		// set transforms for the new current page
+		/* set transforms for the new current page
 		futurePage.style.WebkitTransform = 'translate3d(0, 0, 0)';
 		futurePage.style.transform = 'translate3d(0, 0, 0)';
 		futurePage.style.opacity = 1;
@@ -495,14 +495,15 @@
 		classie.remove(menuCtrl, 'menu-button--open');
 		classie.remove(nav, 'pages-nav--open');
 		classie.remove(bghead, 'bhck');
-
-		//Transition the content
-		onEndTransition(futurePage, function() {
+		isMenuOpen = false;
+		
+		/*Transition the content
+		onEndTransition(, function() {
 			//buildStack();
 			//showArrow();
 			//classie.remove(stack, 'pages-stack--open');
 			isMenuOpen = false;
-		});
+		});*/
 	}
 	
 	
