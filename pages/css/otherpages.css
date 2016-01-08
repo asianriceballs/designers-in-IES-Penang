@@ -630,6 +630,19 @@ header .header-content .header-content-inner p {
 	font-size: 16px !important;
 }
 
+.feature-box {
+	margin: 50px auto 0;
+    max-width: 400px;
+	/*height: 300px;
+	padding: 10px 10px 25px;
+    border: 1px solid rgba(255,255,255,0.2);*/
+}
+
+.feature-box p {
+	font-size: 16px !important;
+	text-align: justify;
+}
+
 @media(min-width:992px) {
     .service-box {
         margin: 20px auto 0;
