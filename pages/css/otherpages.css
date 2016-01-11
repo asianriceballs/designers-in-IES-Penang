@@ -3,7 +3,7 @@
  */
  
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900,900italic);
-@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 html,
 body {
@@ -46,7 +46,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-family: 'montserrat', 'Segoe UI', Helvetica, Arial, sans-serif;
 }
 
 h1 {

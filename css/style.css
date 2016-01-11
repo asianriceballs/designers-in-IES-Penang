@@ -844,12 +844,12 @@ html.js,
 /*Video*/
 .bg-video {
 	position: absolute;
-	bottom: 0;
-	margin: 0 -10%;
-	min-width: 120%;
-	max-height: 120%;
-	/* opacity fix */
-	opacity: 0.6; 
+    bottom: 0;
+    margin: 0 -15%;
+    min-width: 130%;
+    max-height: 130%;
+    opacity: 0.6;
+    top: 0;
 }
 
 .smaller-image {
