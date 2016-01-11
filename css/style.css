@@ -73,7 +73,7 @@ body {
 	margin: 0;
 	font-weight: 300;
 	color: #000000;
-	background: #74b452;
+	background: #6ed27f;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -135,6 +135,8 @@ a:hover {
 .bhck {
 	background: transparent !important;
 	border-bottom:none !important;
+	box-shadow: !important;
+    -webkit-box-shadow: none !important;
 }
 
 /* Blueprint header */
@@ -454,7 +456,7 @@ html.js,
 
 .js .pages-nav {
 	position: absolute;
-	top: 2em;
+	top: 10em;
 	left: 0;
 	width: 100%;
 	height: 35vh;
@@ -483,7 +485,7 @@ html.js,
 }
 
 .js .pages-nav__item {
-	padding: 0 10%;
+	padding: 2% 5%;
 }
 
 .pages-nav .pages-nav__item--social {
@@ -506,11 +508,10 @@ html.js,
 }
 
 .link {
-	font-size: 1em;
-	position: relative;
-	letter-spacing: 0.1em;
-	/*font-weight: bold;*/
-	text-transform: uppercase;
+	font-size: 1.7em;
+    position: relative;
+    letter-spacing: 1px;
+	text-transform: capitalize;
 }
 
 .link:hover,
@@ -522,8 +523,9 @@ html.js,
 
 .link--page {
 	display: block;
-	font-weight: 300;/* Font weight smallest */
-	color: #fff;
+	font-family: 'montserrat', sans-serif;
+	font-weight: 700;/* Font weight smallest */
+	color: #000000;
 	transition: all 0.2s ease;
 }
 
@@ -682,7 +684,7 @@ html.js,
 
 /* The ingredients horizontally placed */
 .hpg {
-	background: #eeeded;
+	background: #fff;
 	display: none;
 	float: left;
 	/*position: absolute;*/
@@ -824,7 +826,7 @@ html.js,
 }
 
 .darkblur {
-	background: rgba( 0,0,0,0.7 );
+	background: rgba(0,0,0,0.5);
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1359,19 +1361,19 @@ html.js,
 }
 
 #ingredient1 {
-	background: #42c6ee;
+	border-right: 1px solid rgba(255,255,255,0.1);
 }
 
 #ingredient2 {
-	background: #017e96;
+	border-right: 1px solid rgba(255,255,255,0.1);
 }
 
 #ingredient3 {
-	background: #01697c;
+	border-right: 1px solid rgba(255,255,255,0.1);
 }
 
 #ingredient4 {
-	background: #145b69;
+	border: none;
 }
 
 /* Grid item "border" */
@@ -1390,7 +1392,7 @@ html.js,
 }
 
 .grid__item:hover {
-	border: 1px solid rgba(97, 217, 240, 0.8) !important;
+	/*border: 1px solid rgba(97, 217, 240, 0.8) !important;*/
 }
 
 .article-icon {
@@ -1467,28 +1469,26 @@ html.js,
 
 .grid__item p {
 	font-family: 'Lato', sans-serif;
-	color: #d3d3d3;
-	font-size: .95em;
-	font-weight: 300;
+    color: #c1e1e7;
+    font-size: .95em;
+    font-weight: 300;
     line-height: 1.5em;
     text-align: inherit;
-    /*Rough hacks*/
-    max-height: 180px;
-	margin: 0.9em 0;
-    overflow: hidden; 
+	height: 8.4em;
+    max-height: 8.5em;
+    margin: 0.9em 0;
+    overflow: hidden;
 }
 
 #ingredient1 p {
-	margin-top: 2.4em;
 }
 
 #ingredient4 p {
-	margin-top: 2.4em;
 }
 
 .grid__item .expand-btn {
-	background: #015869;
-    color: #6dbfcf;
+	background: rgba(255,255,255,0.3);
+    color: #0b778b;
 	font-size: 0.7em;
 	font-weight: 800;
 	cursor: pointer;
@@ -1506,8 +1506,8 @@ html.js,
 }
 
 .grid__item .expand-btn:hover {
-	color: #ffffff;
-	border: 1px solid rgba(97, 217, 240, 0.8);
+	background: #ffffff;
+	color: #0b778b;
 }
 
 
@@ -1756,13 +1756,20 @@ html.js,
 	background: #0093af;
 }
 
-#page-ingredients .bp-header__title, #page-ingredients .bp-header__desc {
+#page-ingredients .bp-header__title {
 	color: #ffffff;
 }
+ 
+#page-ingredients .bp-header__desc {
+	color: #c1e1e7;
+}
+
 
 #page-ingredients .grid__item h2 {
 	font-family: 'montserrat', sans-serif;
 	color: #ffffff;
+	/* Size */
+	height: 2em; 
 }
 
 #page-ingredients .bg-image {
@@ -1774,11 +1781,11 @@ html.js,
 }
 
 #ingredient2 {
-    padding-bottom: 2.2em;
+    /*padding-bottom: 2.2em;*/
 }
 
 #ingredient3 {
-    padding-bottom: 3.5em;
+    /*padding-bottom: 3.5em;*/
 }
 
 
@@ -1800,6 +1807,12 @@ html.js,
 	border-radius: 36px;
 	position: relative;
 	z-index: 10;
+	/*transition*/
+	transition: All 0.3s ease;
+}
+
+.dg:hover {
+	background: #2a913b;
 }
 
 /* lG */
@@ -2412,6 +2425,12 @@ html.js,
 	border-radius: 36px;
 	position: relative;
 	z-index: 10;
+	/*transition*/
+	transition: All 0.3s ease;
+}
+
+.team-button:hover {
+	background: #d4801d;
 }
 
 #team_desc {
@@ -2452,27 +2471,27 @@ html.js,
 }
 
 #desmond {
-	margin-top: 27em;
+	margin-top: 30em;
 	margin-left: 59em;
 }
 
 #nilo {
-	margin-top: 27em;
+	margin-top: 29em;
     margin-left: 44em;
 }
 
 #waihong {
-	margin-top: 27em;
+	margin-top: 30em;
     margin-left: 26em;
 }
 
 #jacky {
-	margin-top: 27em;
+	margin-top: 29em;
     margin-left: 14em;
 }
 
 #lisa {
-	margin-top: 27em;
+	margin-top: 30em;
     margin-left: 1em;
 }
 

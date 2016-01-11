@@ -38,6 +38,8 @@
 		current = 0,
 		// menu button
 		menuCtrl = document.querySelector('button.menu-button'),
+		// the menu on the home page
+		menuCtrl2 = document.querySelector('#mnbtn2'),
 		// the navigation wrapper
 		nav = document.querySelector('.pages-nav'),
 		// the menu nav items
@@ -142,6 +144,8 @@
 		
 		// menu button click
 		menuCtrl.addEventListener('click', toggleMenu);
+		// home menu button click
+		menuCtrl2.addEventListener('click', toggleMenu);
 		/*  navigation menu clicks
 		navItems.forEach(function(item) {
 			// which page to open?
@@ -426,12 +430,14 @@
 	function openMenu() {
 		// toggle the menu button
 		classie.add(menuCtrl, 'menu-button--open');
+		// toggle the menu button
+		classie.add(menuCtrl2, 'menu-button--open');
 		// reveal the menu
 		classie.add(nav, 'pages-nav--open');
 		//hide the background of the header
 		classie.add(bghead, 'bhck');
-
-		//classie.add(head, 'hide');
+		// show the menu
+		classie.add(stack, 'hide');
 
 		/* now set the page transforms
 		var stackPagesIdxs = getStackPagesIdxs();
@@ -493,8 +499,10 @@
 		
 		// close menu..
 		classie.remove(menuCtrl, 'menu-button--open');
+		classie.remove(menuCtrl2, 'menu-button--open');
 		classie.remove(nav, 'pages-nav--open');
 		classie.remove(bghead, 'bhck');
+		classie.remove(stack, 'hide');
 		isMenuOpen = false;
 		
 		/*Transition the content

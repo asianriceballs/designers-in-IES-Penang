@@ -60,13 +60,14 @@
 	UIMorphingButton.prototype._initEvents = function() {
 		var self = this;
 		var bghead = document.querySelector('.header');
+		var bghead2 = document.querySelector('#hd-home');
 		// open
-		this.button.addEventListener( 'click', function() { self.toggle(); classie.addClass(bghead, 'heightfix')} );
+		this.button.addEventListener( 'click', function() { self.toggle(); classie.addClass(bghead, 'heightfix'); classie.add(bghead2, 'heightfix')} );
 		// close
 		if( this.options.closeEl !== '' ) {
 			var closeEl = this.el.querySelector( this.options.closeEl );
 			if( closeEl ) {
-				closeEl.addEventListener( 'click', function() { self.toggle(); classie.removeClass(bghead, 'heightfix') });	
+				closeEl.addEventListener( 'click', function() { self.toggle(); classie.removeClass(bghead, 'heightfix'); classie.removeClass(bghead2, 'heightfix') });	
 			}
 		}
 	}
