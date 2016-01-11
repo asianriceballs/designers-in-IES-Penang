@@ -53,8 +53,8 @@
 		<div class="page" id="page-ingredients" data-anchor="ingredients">
 			<div id="og" class="slide">
 				<header class="bp-header cf content">
-				<h5 class="bp-header__desc anims slideInDown">You don't need a shopping cart that can do everything. What you do want is one that fits what your business needs.</h5>
-					<h1 class="bp-header__title animf slideInDown">InstanteStore provides you the platform and tools that will make your store a success.</h1>
+				<h1 class="bp-header__title anims slideInDown">You don't need a shopping cart that can do everything. What you do want is one that fits what your business needs.</h1>
+					<p class="bp-header__desc animf slideInDown">InstanteStore provides you the platform and tools that will make your store a success.</p>
 					<!--<p class="bp-header__desc anims slideInDown">InstanteStore provides you the platform and tools that will make your store a success</p>-->
 						<div class="theGrid mt3" class="main">
 							<section class="grid">
@@ -119,9 +119,9 @@
 							<h3>Facebook, Twitter, Pinterest, and Social Bookmarking</h3>
 							<p>Our product pages are integrated with social buttons to make it easy for your customers to let their friends know about your products.</p>
 						</div>
-						<div class="par-left sanim8 slideInUp">
-							<button class="learn-more sanim9 slideInUp">Learn More</button>
-						</div>
+						<!--<div class="par-left sanim8 slideInUp">
+							<button class="dg sanim9 slideInUp">Learn More</button>
+						</div>-->
 					</div>
 				</header>
 			</div>
@@ -164,7 +164,6 @@
 							<p>Beyond all of the many features that InstanteStore already provides, if you're looking for an extra edge, here it is: Retaily integration. Retaily provides all the tools you need to optimize your store's conversion and retention. Retaily uses product recommendations, urgency and scarcity messages, remarketing via ads and email, and much more to boost your store's conversion both before and even after a potential customer has left your store.</p>
 							<img src="images/page-content/retaily_logo_250.png" alt="" />
 						</div>
-					<button class="learn-more sanim5 slideInUp">Learn More</button>
 					</div>
 				</header>
 			</div>
@@ -188,9 +187,6 @@
 							<img src="images/page-content/bulk.png" alt="" />
 							<h3>Cross-sell on Final Payment</h3>
 							<p>Whether it's for customers with preferential pricing or bulk buyers, our wholesale features have you covered. You can easily set our wholesale module up to offer volume discounts or tiered discounts, giving customers an easy incentive to buy multiple units of your products.</p>
-						</div>
-						<div class="par-left sanim8 slideInUp">
-							<button class="learn-more sanim9 slideInUp">Learn More</button>
 						</div>
 					</div>
 				</header>
@@ -216,7 +212,6 @@
 							<h3>Newsletters/Discount Coupons</h3>
 							<p>Constantly reach out to your customers to keep them up-to-date on your store’s latest offerings with our Newsletter Management and Broadcast tools. Combining our discount coupons with your newsletters is a potentially interesting way to stimulate repeat business.</p>
 						</div>
-					<button class="learn-more sanim5 slideInUp">Learn More</button>
 					</div>
 				</header>
 			</div>
@@ -231,7 +226,7 @@
 						<span class="bullet"><i class="fa fa-chevron-right"></i></span>Are you looking to supplement your income with your own online store?<br />
 						<span class="bullet"><i class="fa fa-chevron-right"></i></span>Are you looking for an alternative to your 9-to-5 job where you can be your own boss?<br />
 						<span class="bullet"><i class="fa fa-chevron-right"></i></span>Are you a small business?</p>
-					<button class="dg sanim5 slideInUp" onclick="window.location.href='pages/businesses.html#growing'">Learn More about our Vibrant Small Businesses</button>
+					<button class="dg sanim5 slideInUp" onclick="window.location.href='pages/businesses.html#growing'">Learn More about our <br />Vibrant Small Businesses</button>
 					<span class="darkblur"></span>
 					<img class="bg-image animated fadeInUp" src="images/page-content/plans/growing-2.jpg" alt="growing" />
 				</div>
@@ -241,7 +236,7 @@
 						<span class="bullet"><i class="fa fa-chevron-right"></i></span>Are you an established brick and mortar store looking to have an online presence?<br />
 						<span class="bullet"><i class="fa fa-chevron-right"></i></span>Are you a successful online business looking to expand further?
 					</p>
-					<button class="dg sanim5-5 slideInDown" onclick="window.location.href='pages/businesses.html#enterprise'">Learn More about our Larger Enterprise Stores</button>
+					<button class="dg sanim5-5 slideInDown" onclick="window.location.href='pages/businesses.html#enterprise'">Learn More about our <br />Larger Enterprise Stores</button>
 					<span class="darkblur"></span>
 					<img class="bg-image animated fadeInDown" src="images/page-content/plans/enterprise-2.jpg" alt="enterprise" />
 				</div>
@@ -251,7 +246,6 @@
 		<!-- Team -->
 		<div class="page" id="page-team" data-anchor="team">
 			<header class="bp-header cf content">
-				<!--<h1 class="bp-header__title animated slideInDown">Our Team</h1>-->
 				<div class="team">
 				<div id="leefong" class="team-dot animated fadeInDown">
 					<span class="tooltip-dot">
@@ -433,8 +427,33 @@
 	</div>
 	<!-- /pages-stack -->
 	<!-- Header -->
-	<div class="header animated slideInDown">
+	<div class="header real-fast slideInDown" id="primary-header">
 		<a href="#page-home" id="logo" class="ies-logo animated fadeIn"><img src="images/logo.png" alt="" /></a>
+		<a class="mn-lnk1" href="pages/pricing.html">Pricing</a>
+		<a class="mn-lnk2" href="pages/contact.html">Contact Us</a>
+		<!--<span class="login">Login</span>-->
+					<div class="login-btn morph-button morph-button-modal morph-button-modal-2 morph-button-fixed animated fadeIn">
+						<button type="button" id="ieslogin">Login</button>
+							<div class="morph-content">
+								<div>
+									<div class="content-style-form content-style-form-1">
+										<span id="iclose" class="icon icon-close">Close the dialog</span>
+										<h2>Login</h2>
+										<form>
+											<p><label>Username</label><input type="text" placeholder="mike@ies" /></p>
+											<p><label>Password</label><input type="password" placeholder="123..." /></p>
+											<p><button>Login</button></p>
+										</form>
+									</div>
+								</div>
+							</div>
+					</div><!-- morph-button -->
+		<div class="free-trial animated fadeIn">Free trial</div>
+		<button class="menu-button animated fadeIn"><span>Menu</span></button>
+	</div>
+	
+	<div class="header real-fast slideInDown hide" id="hd-home">
+		<a href="#page-home" id="logo" class="ies-logo animated fadeIn"><img src="images/logo-white.png" alt="" /></a>
 		<a class="mn-lnk1" href="pages/pricing.html">Pricing</a>
 		<a class="mn-lnk2" href="pages/contact.html">Contact Us</a>
 		<!--<span class="login">Login</span>-->
@@ -528,16 +547,22 @@
 
 				var el = document.querySelector('.click-to-learn-more');
 				var logo = document.querySelector('#logo');
+				var primaryheader = document.querySelector('#primary-header');
+				var homeheader = document.querySelector('#hd-home');
 				
 				var loadedSection = this;
 
 				//using index
 				if(anchorLink != 'home'){
 					addClass(el, 'hide');
+					addClass(homeheader, 'hide');
+					removeClass(primaryheader,'hide');
 				}
 				else {
 					removeClass(el, 'hide');
-				}
+					addClass(primaryheader,'hide');
+					removeClass(homeheader, 'hide');
+				}	
 				
 				el.addEventListener('click', function(ev) {
 					fullpage.moveTo(2);
