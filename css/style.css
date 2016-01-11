@@ -1746,6 +1746,10 @@ html.js,
 	color: #E0F2F1;
 }
 
+#page-showcase .dg {
+	margin: -2em 1em 0;
+}
+
 #page-question-1 {
 	background: #44153C;
 	color: #ffffff;
@@ -1955,7 +1959,7 @@ html.js,
 
 .showcase-grid {
 	position: relative;
-	padding: 2em 0;
+	padding: 1em 0 0;
 }
 
 .lgd-item {
@@ -1967,7 +1971,6 @@ html.js,
   cursor: pointer;
   text-align: center;
   display: -webkit-inline-flex;
-  display: -webkit-inline-flex;
   display: inline-flex;
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
@@ -1976,7 +1979,7 @@ html.js,
   flex-direction: column;
   -webkit-justify-content: center;
   justify-content: center;
-  width: 28%; 
+  width: 25%; 
   overflow: hidden;
 }
 
