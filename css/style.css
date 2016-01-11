@@ -715,7 +715,7 @@ html.js,
 	right: 0;
 	top: 0;
 	min-height: 100vh;
-	max-width: 51%;
+	width: 50vw;
 }
 
 .right-section .bg-image {
@@ -750,7 +750,7 @@ html.js,
 	left: 0;
 	top: 0;
 	min-height: 100vh;
-	max-width: 51%;
+	width: 50vw;
 }
 
 .left-section .bg-image {
@@ -850,7 +850,7 @@ html.js,
     margin: 0 -15%;
     min-width: 130%;
     max-height: 130%;
-    opacity: 0.6;
+    opacity: 0.7;
     top: 0;
 }
 
