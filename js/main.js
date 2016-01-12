@@ -38,6 +38,8 @@
 		current = 0,
 		// menu button
 		menuCtrl = document.querySelector('button.menu-button'),
+		// the menu on the home page
+		menuCtrl2 = document.querySelector('#mnbtn2'),
 		// the navigation wrapper
 		nav = document.querySelector('.pages-nav'),
 		// the menu nav items
@@ -142,6 +144,8 @@
 		
 		// menu button click
 		menuCtrl.addEventListener('click', toggleMenu);
+		// home menu button click
+		menuCtrl2.addEventListener('click', toggleMenu);
 		/*  navigation menu clicks
 		navItems.forEach(function(item) {
 			// which page to open?
@@ -208,13 +212,7 @@
 		logo.addEventListener('click', function(ev) {
 			var pageid = logo.getAttribute('href').slice(1);
 				ev.preventDefault();
-				openPage(pageid);
-		});
-
-		// Click on Down arrow
-		arrow.addEventListener('click', function( ev ) {
-			ev.preventDefault();
-			openNextPage();
+				
 		});
 		
 		// the rotating dots
@@ -432,22 +430,23 @@
 	function openMenu() {
 		// toggle the menu button
 		classie.add(menuCtrl, 'menu-button--open');
-		// stack gets the class "pages-stack--open" to add the transitions
-		classie.add(stack, 'pages-stack--open');
+		// toggle the menu button
+		classie.add(menuCtrl2, 'menu-button--open');
 		// reveal the menu
 		classie.add(nav, 'pages-nav--open');
 		//hide the background of the header
 		classie.add(bghead, 'bhck');
+		// show the menu
+		classie.add(stack, 'hide');
 
-		//classie.add(head, 'hide');
-
-		// now set the page transforms
+		/* now set the page transforms
 		var stackPagesIdxs = getStackPagesIdxs();
-		for(var i = 0, len = stackPagesIdxs.length; i < len; ++i) {
+		//for(var i = 0, len = stackPagesIdxs.length; i < len; ++i) {
+			var i;
 			var page = pages[stackPagesIdxs[i]];
 			page.style.WebkitTransform = 'translate3d(0, 75%, ' + parseInt(-1 * 200 - 50*i) + 'px)'; // -200px, -230px, -260px
 			page.style.transform = 'translate3d(0, 75%, ' + parseInt(-1 * 200 - 50*i) + 'px)';
-		}
+		//}
 	}
 
 	function openAnim(id) {
@@ -459,8 +458,8 @@
 			page.style.transform = 'translate3d(0, 75%, ' + parseInt(-1 * 200 - 50*i) + 'px)';
 			/*
 			-webkit-transition-duration: '1.2s';
-    		transition-duration: '1.2s'; */
-		}
+    		transition-duration: '1.2s'; 
+		}*/
 	}
 	
 	// function for the animation of the pages when transitioning the page
@@ -474,17 +473,17 @@
 	// opens a page
 	function openPage(id) {
 	
-		var futurePage = id ? document.getElementById(id) : pages[current],
+		/*var futurePage = id ? document.getElementById(id) : pages[current],
 			futureCurrent = pages.indexOf(futurePage),
-			stackPagesIdxs = getStackPagesIdxs(futureCurrent);
+			stackPagesIdxs = getStackPagesIdxs(futureCurrent);*/
 
-		// set transforms for the new current page
+		/* set transforms for the new current page
 		futurePage.style.WebkitTransform = 'translate3d(0, 0, 0)';
 		futurePage.style.transform = 'translate3d(0, 0, 0)';
 		futurePage.style.opacity = 1;
 		
 	
-		// set transforms for the other items in the stack
+		/* set transforms for the other items in the stack
 		for(var i = 0, len = stackPagesIdxs.length; i < len; ++i) {
 			var page = pages[stackPagesIdxs[i]];
 			page.style.WebkitTransform = 'translate3d(0,100%,0)';
@@ -496,37 +495,25 @@
 		// set current
 		if( id ) {
 			current = futureCurrent;
-		}
+		}*/
 		
 		// close menu..
 		classie.remove(menuCtrl, 'menu-button--open');
+		classie.remove(menuCtrl2, 'menu-button--open');
 		classie.remove(nav, 'pages-nav--open');
 		classie.remove(bghead, 'bhck');
-
-		//Transition the content
-		onEndTransition(futurePage, function() {
+		classie.remove(stack, 'hide');
+		isMenuOpen = false;
+		
+		/*Transition the content
+		onEndTransition(, function() {
 			//buildStack();
-			showArrow();
-			classie.remove(stack, 'pages-stack--open');
+			//showArrow();
+			//classie.remove(stack, 'pages-stack--open');
 			isMenuOpen = false;
-		});
+		});*/
 	}
 	
-	
-	function openNextPage() {
-		for(var i = 0; i < 2; ++i) {
-			var page = pages[i];
-			var pageid = page.getAttribute('id');
-			classie.add(arrow, 'hide');
-		}	
-	}
-	
-	function showArrow() {
-		var i;
-		if (i == 1) {
-			classie.remove (arrow,'hide');
-		}
-	}
 	
 	/*function openPreviousPage() {
 		var i = current-1;
