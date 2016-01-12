@@ -175,6 +175,10 @@ aside {
     background-color: transparent;
 }
 
+.navbar-nav>li {
+	font-family: 'montserrat', sans-serif;
+}
+
 /*Footer Section*/
 
 footer {

@@ -152,7 +152,8 @@ a:hover {
 .bp-header__title {
 	font-size: 2em;
 	font-family: 'montserrat', sans-serif;
-	font-weight: 400;
+	font-weight: 700;
+	/*font-weight: 300;*/
 	line-height: 1.1;
 	margin: 0.2em 0 0 0;
 	color: #fff;
@@ -588,6 +589,7 @@ html.js,
 }
 
 .js .page {
+	display: none; /* this is just a test to get the animations to show up */
 	position: relative;
 	z-index: 5;
 	overflow: hidden;
@@ -599,8 +601,7 @@ html.js,
 }
 
 .js #page-home {
-	background: #ffffff;
-	height: 78vh;
+	background: #000000;
 }
 
 .js #page-home .bp-header{ 
@@ -1057,7 +1058,7 @@ html.js,
 .click-to-learn-more {
 	position: absolute;
 	z-index: 1000;
-	bottom: 25vh;
+	bottom: 0vh;
 	margin: 0 44.6%;
 	padding: 0.1em 0.5em 1em;
 	width: 9em;
@@ -1341,7 +1342,6 @@ html.js,
 	padding: 15px 15px 35px;
     margin: 0 0px;
     position: relative;
-	background: #fff;
     color: inherit;
     min-height: 300px;
     text-align: center;
@@ -1358,9 +1358,6 @@ html.js,
     /*-webkit-border-radius: 8px 8px 8px 8px;
     border-radius: 8px 8px 8px 8px;*/
     transition: all 0.3 ease-in-out;
-	/* Box shadow */
-	-webkit-box-shadow: 2px 4px 6px 3px #D9D9D9;
-	box-shadow: 2px 4px 6px 3px #D9D9D9;
 }
 
 #ingredient1 {
@@ -1737,7 +1734,7 @@ html.js,
 
 /* Page Showcase */
 #page-showcase {
-	background: #1C869E;
+	background: #00897B;
 	color: #ffffff;
 }
 
@@ -1760,29 +1757,23 @@ html.js,
 
 /* Page Ingredients */
 #page-ingredients {
-	/*background: #0093af;*/
-	background: #eeeeee;
+	background: #0093af;
 }
 
 #page-ingredients .bp-header__title {
-	color: #333;
-	
+	color: #ffffff;
 }
  
 #page-ingredients .bp-header__desc {
-	color: #555555
+	color: #c1e1e7;
 }
 
 
 #page-ingredients .grid__item h2 {
 	font-family: 'montserrat', sans-serif;
-	color: #333;
+	color: #ffffff;
 	/* Size */
 	height: 2em; 
-}
-
-#page-ingredients .grid__item p { 
-	color: #555555;
 }
 
 #page-ingredients .bg-image {
