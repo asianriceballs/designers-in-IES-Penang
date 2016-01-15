@@ -143,7 +143,7 @@ a:hover {
 /* Blueprint header */
 
 .bp-header {
-	padding: 8em 8vw 2em;
+	padding: 15vh 8vw 2em;
 	text-align: center;
 	position: relative;
 	z-index: 1;
@@ -590,16 +590,15 @@ html.js,
 .js .page {
 	position: relative;
 	z-index: 5;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	width: 100%;
 	height: 100vh;
 	pointer-events: auto;
 	background: #eeeded;
-	box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
 }
 
 .js #page-home {
-	background: #ffffff;
+	background: #eeeeee;
 	height: 78vh;
 }
 
@@ -638,6 +637,11 @@ html.js,
 	color: #ffffff;
 }
 
+.page-last .bp-header {
+	width: 100%;
+	height: 100vh;
+}
+
 .js #page-last .bp-header__title {
 	color: #ffffff !important;
 }
@@ -645,6 +649,7 @@ html.js,
 /* the page with the right and left split  */
 #page-custom .bp-header {
 	padding: 8em 0 2em;
+	height: 100vh;
 	text-align: center;
 	position: relative;
 	z-index: 1;
@@ -655,10 +660,22 @@ html.js,
 	z-index: 10;
 }
 
+#page-custom .dg {
+	position: absolute;
+	margin: 0 -12vw;
+    bottom: 30vh;
+    border: 5px solid #fff;
+} 
+
 /*the team section */
 #page-team {																
-	color: #ffffff;																
+	color: #ffffff;					
 	/*overflow-y: hidden !important;*/	
+}
+
+#page-team .bp-header {
+	width: 100%;
+    height: 100vh;
 }
 
 #page-team .bp-header__title {
@@ -675,7 +692,7 @@ html.js,
 /* Page Team */																																						
 #page-team .bg-image {
 	top: 0;
-	padding-top: 3em;
+	padding-top: 1em;
 	min-width: 100%;
 	max-height: 140% !important; 
 	width: 100%;
@@ -712,10 +729,11 @@ html.js,
 
 .right-section {
 	position: absolute;
-	right: 0;
-	top: 0;
-	min-height: 100vh;
-	width: 50vw;
+    right: 0;
+    top: 0;
+    min-height: 100vh;
+    width: 50vw;
+    max-width: 50vw;
 }
 
 .right-section .bg-image {
@@ -729,12 +747,18 @@ html.js,
 }
 
 .right-section .info {
-	font-size: 1.2em;
-	max-width: 70%;
-	margin-top: 13em;
-	color: #ffffff;
-	position: relative;
-	z-index: 10;
+	background: rgba(255,255,255,0.9);
+    font-size: 1.1em;
+    color: #555555;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 13em;
+    padding: 15px 30px 30px;
+    max-width: 70%;
+    position: relative;
+    z-index: 10;
+    float: left;
+
 }
 
 .right-section .info em {
@@ -747,10 +771,11 @@ html.js,
 
 .left-section {
 	position: absolute;
-	left: 0;
-	top: 0;
-	min-height: 100vh;
-	width: 50vw;
+    left: 0;
+    top: 0;
+    min-height: 100vh;
+    width: 50vw;
+    max-width: 50vw;
 }
 
 .left-section .bg-image {
@@ -764,12 +789,17 @@ html.js,
 }
 
 .left-section .info {
-	font-size: 1.2em;
-	max-width: 70%;
-	margin-top: 13em;
-	color: #ffffff;
-	position: relative;
-	z-index: 10;
+	background: rgba(255,255,255,01);
+    font-size: 1.1em;
+    font-weight: 300;
+    text-align: left;
+    color: #555555;
+    margin-top: 13em;
+    padding: 15px 30px 30px;
+    max-width: 70%;
+    position: relative;
+    z-index: 10;
+    float: right;
 }
 
 .left-section .info em {
@@ -778,6 +808,10 @@ html.js,
     font-style: normal;
     letter-spacing: 0.1em;
     text-transform: capitalize;
+}
+
+.left-section .darkblur {
+	background: rgba(55, 86, 60, 0.2);
 }
 
 .js .pages-stack--open .page {
@@ -850,7 +884,7 @@ html.js,
     margin: 0 auto;
     width: 100%;
 	height: auto;
-    top: 0;
+    top: -3em;
 }
 
 .smaller-image {
@@ -1044,7 +1078,7 @@ html.js,
 
 /* Down Arrow */
 .dwn-arrow {	
-	margin: 0 46%;
+	margin: 0 41.5%;
 	display: block;
 	background-image: url(../images/icon-down-arrow.svg);
 	background-repeat: no-repeat;
@@ -1057,7 +1091,7 @@ html.js,
 .click-to-learn-more {
 	position: absolute;
 	z-index: 1000;
-	bottom: 25vh;
+	bottom: 27vh;
 	margin: 0 44.6%;
 	padding: 0.1em 0.5em 1em;
 	width: 9em;
@@ -1355,28 +1389,41 @@ html.js,
     -webkit-justify-content: center;
     justify-content: center;
     width: 23%;
+	top: 0;
     /*-webkit-border-radius: 8px 8px 8px 8px;
     border-radius: 8px 8px 8px 8px;*/
-    transition: all 0.3 ease-in-out;
+    transition: all 0.8s ease-in-out;
 	/* Box shadow */
 	-webkit-box-shadow: 2px 4px 6px 3px #D9D9D9;
 	box-shadow: 2px 4px 6px 3px #D9D9D9;
 }
 
 #ingredient1 {
+	background: #F8D3AE;
 	border-right: 1px solid rgba(255,255,255,0.1);
 }
 
 #ingredient2 {
+	background: #aebfff;
 	border-right: 1px solid rgba(255,255,255,0.1);
 }
 
 #ingredient3 {
+	background: #f5c799;
 	border-right: 1px solid rgba(255,255,255,0.1);
 }
 
 #ingredient4 {
+	background: #9cb0fc;
 	border: none;
+}
+
+/* the ingredient 1 first screen */
+.fstop {
+	z-index: 20;
+    top: -42vh;
+	box-shadow: none !important;
+	-webkit-box-shadow: !important;
 }
 
 /* Grid item "border" */
@@ -1739,6 +1786,10 @@ html.js,
 #page-showcase {
 	background: #1C869E;
 	color: #ffffff;
+}
+
+#page-showcase .bp-header {
+	padding-top: 5vh !important;
 }
 
 #page-showcase .bp-header__title {
