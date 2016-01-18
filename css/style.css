@@ -80,7 +80,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: #e8ea40;
+	color: #8bbd5c;
 	outline: none;
 }
 
@@ -2415,7 +2415,7 @@ html.js,
 
 /* Last Page */
 .lst-pg {
-	background: rgba(10,96,96,0.9);
+	/*background: rgba(10,96,96,0.9);*/
 	color: #ffffff;
     width: 22em;
     margin: 1em auto 0 auto;
@@ -2428,10 +2428,13 @@ html.js,
 }
 
 .lst-pg .learn-more {
-	padding: 1em 2em !important;
+	padding: .8em 6em !important;
 	font-size: 0.6em !important;
 	margin: 0 auto !important;
 	display: block;
+	background: #e8ea40 !important;
+	color: #000;
+	font-weight: 900;
 }
 
 .lst-pg .sml {
