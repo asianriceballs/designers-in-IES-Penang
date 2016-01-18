@@ -123,7 +123,7 @@ a:hover {
 }
 
 #hd-home .morph-button-modal-2 > button { color: #ffffff !important; font-family: 'montserrat', sans-serif;}
-
+.morph-button-modal-2 > button { font-family: 'montserrat', sans-serif;}
 
 .header a:hover {
 	color: #599149;
@@ -368,7 +368,7 @@ footer {
 	background: #2a2a2a;
 	display: inline-block;
 	z-index: 500;
-	padding: 0px 15% 15px 15%;
+	padding: 0px 15% 70px 15%;
 }
 
 .footer-stuff {
@@ -644,6 +644,7 @@ html.js,
 
 .js #page-last .bp-header__title {
 	color: #ffffff !important;
+	font-size: 3em;
 }
 
 /* the page with the right and left split  */
@@ -1091,7 +1092,7 @@ html.js,
 .click-to-learn-more {
 	position: absolute;
 	z-index: 1000;
-	bottom: 27vh;
+	bottom: 33vh;
 	margin: 0 44.6%;
 	padding: 0.1em 0.5em 1em;
 	width: 9em;
@@ -1590,7 +1591,7 @@ html.js,
 	/*transition*/
 	transition: all 0.3s ease;
 	/*border*/
-	border: none;
+	border: 1px solid;
     border-radius: 19px;
 	-webkit-border-radius: 19px;
     -moz-border-radius: 19px;
@@ -1607,6 +1608,7 @@ html.js,
 	background: #8bbd5c;
 	color: #ffffff;
 	font-size: 0.6em;
+	font-family: 'montserrat', sans-serif;
 	font-weight: 700;
 	letter-spacing: 0.2em;
 	margin: 9em auto 0 auto;
@@ -1901,7 +1903,7 @@ html.js,
 	background: #e8ea40;
 	color: #000;
 	font-weight: 900;
-
+	font-family: 'montserrat', sans-serif;
 	font-size: 0.8em;
 	letter-spacing: 0.1em;
 	margin: 2em 1em 0;
@@ -1920,6 +1922,7 @@ html.js,
 
 .dg:hover {
 	background: #2a913b;
+	color: #ffffff;
 }
 
 /* lG */
@@ -2481,11 +2484,17 @@ html.js,
 }
 
 .lst-pg .sml {
-	font-size: 0.6em;
+	font-size: 0.7em;
+	display: block;
+    padding-top: 1em;
 }
 
 .lst-pg span {
 	letter-spacing: 1px;
+}
+
+.lst-pg  .bp-header__desc a {
+	font-weight: bold;
 }
 
 /* The newer box for the names */
@@ -2521,11 +2530,12 @@ html.js,
 	display: inline;
 	background: #E97F02;
 	color: #ffffff;
+	font-family: 'montserrat', sans-serif;
 	font-size: 0.6em;
 	font-weight: 700;
 	letter-spacing: 0.3em;
 	margin: 2.8em 1em 0;
-	padding: 0.8em 3.6em;
+	padding: 1em 3.6em;
 	text-transform: uppercase;
 	border: none;
 	/* Radius */
@@ -2539,7 +2549,7 @@ html.js,
 }
 
 .team-button:hover {
-	background: #d4801d;
+	background: #3d3d3d;
 }
 
 #team_desc {
