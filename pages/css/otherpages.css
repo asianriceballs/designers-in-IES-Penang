@@ -647,6 +647,172 @@ header .header-content .header-content-inner p {
 	text-align: justify;
 }
 
+/*1st pillar page*/
+.header-image1 {
+    top: 0px;
+    height: 490px;
+    width: 100%;
+    background: url('../img/top-1st.png') no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 15em 0 0 0;
+    z-index: -10;
+}
+
+.header-text {
+    color: #fff;
+    margin: 0 20% 0 20%;
+}
+
+.btn-p1 {
+    color: #5064ae !important;
+    background: #fff;
+    padding: 10px 42px;
+    margin-top: 1em;
+}
+
+.bannertop {
+    position: relative;
+    z-index: -5;
+    top: -300px;
+}
+
+.parts {
+    padding: 5% 0 2% 0;
+}
+
+.parts img {
+    margin: 0 0 0 1em;
+}
+
+.margintop {
+    margin-top: 2em !important;
+}
+
+.pillar1 {
+    background: url('../img/pillar1-bg.png') repeat;
+}
+
+.bottom-buttons {
+    padding: 5% 28% 5% 28%;
+}
+
+.dg {
+    display: inline;
+    background:  #FCFF00;
+    color: #000;
+    font-size: 0.8em;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    margin: 3em 0 3em;
+    padding: 1em 6em;
+    text-transform: uppercase;
+    border: none;
+    /* Radius */
+    -webkit-border-radius: 36px;
+    -moz-border-radius: 36px;
+    border-radius: 36px;
+    position: relative;
+    z-index: 10;
+    /*transition*/
+    transition: All 0.3s ease;
+}
+
+.dg:hover {
+    background: #5663a6;
+}
+
+.find {
+        margin-top: 3em;
+}
+
+.rightsp {
+    margin-right: 10%;
+}
+
+.leftsp {
+    margin-left: 10%;
+}
+
+/*piller 2*/
+
+.pillar2 {
+    /*background: url('../img/pillar1-bg.png') repeat;*/
+}
+
+.header-image2 {
+    top: 0px;
+    height: 490px;
+    width: 100%;
+    background: url('../img/top-1st.png') no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 15em 0 0 0;
+    z-index: -10;
+}
+
+.header-text2 {
+    color: #fff;
+    margin: 0 10% 0 10%;
+}
+
+/*pillar 3*/
+
+.header-image3 {
+    top: 0px;
+    height: 490px;
+    width: 100%;
+    background: url('../img/top-3rd.png') no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 15em 0 0 0;
+    z-index: -10;
+}
+
+.header-text3 {
+    color: #fff;
+    margin: 0 15% 0 15%;
+}
+
+.pillar3 {
+    background: url('../img/pillar3-bg.png') repeat;
+}
+
+
+/*pillar 4*/
+
+.header-image4 {
+    top: 0px;
+    height: 490px;
+    width: 100%;
+    background: url('../img/top-4th.png') no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 15em 0 0 0;
+    z-index: -10;
+}
+
+.header-text4 {
+    color: #fff;
+    margin: 0 15% 0 15%;
+}
+
+.pillar4 {
+    background: url('../img/pillar4-bg.png') repeat;
+}
+
+
+
+
+
 @media(min-width:992px) {
     .service-box {
         margin: 20px auto 0;
