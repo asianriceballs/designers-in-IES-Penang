@@ -332,6 +332,36 @@ footer {
 	padding: 0 3px;
 }
 
+/* Growing Businesses Page */
+#growing {
+	
+}
+
+#growing img {
+	float: left;
+	width: 58%;
+	padding-right: 10px;
+}
+
+#growing  p {
+	float: right;
+	font-size: 16px;
+	text-align: left;
+}
+
+#enterprise img {
+	width: 58%;
+	float: right;
+	padding-left: 10px;
+}
+
+#enterprise  p {
+	float: left;
+	font-size: 16px;
+	text-align: left;
+}
+
+
 /* Contact */
 .contact-pic {
 	display: block;
