@@ -1399,24 +1399,61 @@ html.js,
 }
 
 #ingredient1 {
-	background: #F8D3AE;
-	border-right: 1px solid rgba(255,255,255,0.1);
-}
-
-#ingredient2 {
 	background: #aebfff;
 	border-right: 1px solid rgba(255,255,255,0.1);
 }
 
+#ingredient2 {
+	background: #fefefe;
+	border-right: 1px solid rgba(255,255,255,0.1);
+}
+
 #ingredient3 {
-	background: #f5c799;
+	background: #aebfff;
 	border-right: 1px solid rgba(255,255,255,0.1);
 }
 
 #ingredient4 {
-	background: #9cb0fc;
+	background: #fefefe;
 	border: none;
 }
+
+.boxout1 {
+	position: absolute;
+	z-index: 20 !important;
+	margin-top: -32px;
+	margin-left: -19%;
+	width: 50%;
+	max-width: 50%;
+}
+
+
+.boxout2 {
+	position: absolute;
+	z-index: 20 !important;
+	margin-top: -32px;
+	margin-left: 65%;
+	width: 30%;
+	max-width: 30%;
+}
+
+.boxout3 {
+	position: absolute;
+	z-index: 20 !important;
+	margin-left: -15%;
+	width: 40%;
+	max-width: 40%;
+}
+
+.boxout4 {
+	position: absolute;
+	z-index: 20 !important;
+	margin-left: 65%;
+	margin-top: -45px;
+	width: 50%;
+	max-width: 50%;
+}
+
 
 /* the ingredient 1 first screen */
 .fstop {
@@ -1857,8 +1894,10 @@ html.js,
 /* dG */
 .dg {
 	display: inline;
-	background: #76be33;
-	color: #ffffff;
+	background: #e8ea40;
+	color: #000;
+	font-weight: 900;
+
 	font-size: 0.8em;
 	letter-spacing: 0.1em;
 	margin: 2em 1em 0;
