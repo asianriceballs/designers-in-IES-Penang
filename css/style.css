@@ -1401,21 +1401,25 @@ html.js,
 #ingredient1 {
 	background: #aebfff;
 	border-right: 1px solid rgba(255,255,255,0.1);
+	cursor: pointer;
 }
 
 #ingredient2 {
 	background: #fefefe;
 	border-right: 1px solid rgba(255,255,255,0.1);
+	cursor: pointer;
 }
 
 #ingredient3 {
 	background: #aebfff;
 	border-right: 1px solid rgba(255,255,255,0.1);
+	cursor: pointer;
 }
 
 #ingredient4 {
 	background: #fefefe;
 	border: none;
+	cursor: pointer;
 }
 
 .boxout1 {
