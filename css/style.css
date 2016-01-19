@@ -13,7 +13,7 @@
 	box-sizing: border-box;
 }
 
-	
+
 /* Helper classes */
 
 .cf:before,
@@ -46,24 +46,24 @@
 ::-webkit-scrollbar {
     width: 12px;
 }
- 
+
 /* Track */
 ::-webkit-scrollbar-track {
     /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
     -webkit-border-radius: 10px;
     border-radius: 10px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background: rgba(211,211,211,0.8); 
+    background: rgba(211,211,211,0.8);
     /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); */
 }
 
 ::-webkit-scrollbar-thumb:window-inactive {
-	background: rgba(211,211,211,0.4); 
+	background: rgba(211,211,211,0.4);
 }
 
 /* Main styles */
@@ -123,7 +123,7 @@ a:hover {
 }
 
 #hd-home .morph-button-modal-2 > button { color: #ffffff !important; font-family: 'montserrat', sans-serif;}
-
+.morph-button-modal-2 > button { font-family: 'montserrat', sans-serif;}
 
 .header a:hover {
 	color: #599149;
@@ -131,7 +131,7 @@ a:hover {
 
 .heightfix {
 	height: 100% !important;
-} 
+}
 
 .bhck {
 	background: transparent !important;
@@ -179,7 +179,7 @@ a:hover {
 	margin: 1em 0;
 	color: #fff;
 	text-align: center;
-	/* text-shadow: 1px 1px 2px #3b3d3b; */ 
+	/* text-shadow: 1px 1px 2px #3b3d3b; */
 }
 
 
@@ -368,7 +368,7 @@ footer {
 	background: #2a2a2a;
 	display: inline-block;
 	z-index: 500;
-	padding: 0px 15% 15px 15%;
+	padding: 0px 15% 70px 15%;
 }
 
 .footer-stuff {
@@ -516,7 +516,7 @@ html.js,
 
 .link:hover,
 .link:focus {
-	color: #fff;
+	color: #cdf8b7;
 	font-weight: bold;
 	transition: all 0.2s ease;
 }
@@ -525,7 +525,7 @@ html.js,
 	display: block;
 	font-family: 'montserrat', sans-serif;
 	font-weight: 700;/* Font weight smallest */
-	color: #000000;
+	color: #ffffff;
 	transition: all 0.2s ease;
 }
 
@@ -602,11 +602,11 @@ html.js,
 	height: 78vh;
 }
 
-.js #page-home .bp-header{ 
+.js #page-home .bp-header{
 	margin-top: 3em;
-} 
+}
 
-.js #page-home .bp-header__title { 
+.js #page-home .bp-header__title {
 	color: #ffffff;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 4em;
@@ -644,6 +644,7 @@ html.js,
 
 .js #page-last .bp-header__title {
 	color: #ffffff !important;
+	font-size: 3em;
 }
 
 /* the page with the right and left split  */
@@ -665,12 +666,18 @@ html.js,
 	margin: 0 -12vw;
     bottom: 30vh;
     border: 5px solid #fff;
-} 
+}
 
 /*the team section */
+<<<<<<< HEAD
 #page-team {																
 	color: #555555;					
 	/*overflow-y: hidden !important;*/	
+=======
+#page-team {
+	color: #ffffff;
+	/*overflow-y: hidden !important;*/
+>>>>>>> origin/Production
 }
 
 #page-team .bp-header {
@@ -679,8 +686,13 @@ html.js,
 }
 
 #page-team .bp-header__title {
+<<<<<<< HEAD
 	color: #555555;
 } 
+=======
+	color: #ffffff;
+}
+>>>>>>> origin/Production
 
 #page-team .bp-header__desc {
     line-height: 0.5em;
@@ -689,20 +701,23 @@ html.js,
     position: relative;
 }
 
-/* Page Team */																																						
+/* Page Team */
 #page-team .bg-image {
 	top: 0;
 	padding-top: 1em;
 	min-width: 100%;
-	max-height: 140% !important; 
+	max-height: 140% !important;
 	width: 100%;
 	min-height: 910px;
 }
+<<<<<<< HEAD
 
 #page-team p{
 	color: #555555;
 	font-weight: 400;
 }													
+=======
+>>>>>>> origin/Production
 
 /* The ingredients horizontally placed */
 .hpg {
@@ -859,9 +874,9 @@ html.js,
 	text-align: left;
 }
 
-.card-block {	
+.card-block {
 	max-width: 80%;
-	margin: 0.5em auto 0 auto; 
+	margin: 0.5em auto 0 auto;
 }
 
 .darkblur {
@@ -996,7 +1011,7 @@ html.js,
 }
 
 /*login*/
-.login {	
+.login {
 	position: absolute;
 	z-index: 1000;
 	top: 25px;
@@ -1017,7 +1032,7 @@ html.js,
 
 
 /* free-trial */
-.free-trial {	
+.free-trial {
 	position: absolute;
 	z-index: 1000;
 	top: 25px;
@@ -1082,7 +1097,7 @@ html.js,
 }
 
 /* Down Arrow */
-.dwn-arrow {	
+.dwn-arrow {
 	margin: 0 41.5%;
 	display: block;
 	background-image: url(../images/icon-down-arrow.svg);
@@ -1096,7 +1111,7 @@ html.js,
 .click-to-learn-more {
 	position: absolute;
 	z-index: 1000;
-	bottom: 27vh;
+	bottom: 33vh;
 	margin: 0 44.6%;
 	padding: 0.1em 0.5em 1em;
 	width: 9em;
@@ -1131,7 +1146,7 @@ html.js,
 	font-size: 0.8em;
 }
 
-.right-arrow {	
+.right-arrow {
 	display: inline-block;
 	background-image: url(../images/icon-right-arrow.svg);
 	background-repeat: no-repeat;
@@ -1167,7 +1182,7 @@ html.js,
 	font-size: 0.8em;
 }
 
-.left-arrow {	
+.left-arrow {
 	display: inline-block;
 	background-image: url(../images/icon-left-arrow.svg);
 	background-repeat: no-repeat;
@@ -1202,7 +1217,7 @@ html.js,
 
 /* Dot Move */
 
-.dotstyle {	
+.dotstyle {
 	position: absolute;
 	z-index: 1000;
 	bottom: 27%;
@@ -1548,9 +1563,9 @@ html.js,
 }
 
 .fa-space-shuttle {
-	-ms-transform: rotate(-20deg); 
-    -webkit-transform: rotate(-20deg); 
-    transform: rotate(-20deg); 
+	-ms-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
 
 }
 
@@ -1595,7 +1610,7 @@ html.js,
 	/*transition*/
 	transition: all 0.3s ease;
 	/*border*/
-	border: none;
+	border: 1px solid;
     border-radius: 19px;
 	-webkit-border-radius: 19px;
     -moz-border-radius: 19px;
@@ -1612,6 +1627,7 @@ html.js,
 	background: #8bbd5c;
 	color: #ffffff;
 	font-size: 0.6em;
+	font-family: 'montserrat', sans-serif;
 	font-weight: 700;
 	letter-spacing: 0.2em;
 	margin: 9em auto 0 auto;
@@ -1863,9 +1879,9 @@ html.js,
 
 #page-ingredients .bp-header__title {
 	color: #333;
-	
+
 }
- 
+
 #page-ingredients .bp-header__desc {
 	color: #555555
 }
@@ -1875,10 +1891,10 @@ html.js,
 	font-family: 'montserrat', sans-serif;
 	color: #333;
 	/* Size */
-	height: 2em; 
+	height: 2em;
 }
 
-#page-ingredients .grid__item p { 
+#page-ingredients .grid__item p {
 	color: #555555;
 }
 
@@ -1906,7 +1922,7 @@ html.js,
 	background: #e8ea40;
 	color: #000;
 	font-weight: 900;
-
+	font-family: 'montserrat', sans-serif;
 	font-size: 0.8em;
 	letter-spacing: 0.1em;
 	margin: 2em 1em 0;
@@ -1925,6 +1941,7 @@ html.js,
 
 .dg:hover {
 	background: #2a913b;
+	color: #ffffff;
 }
 
 /* lG */
@@ -2022,9 +2039,9 @@ html.js,
     font-size: 0.7em;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-} 
+}
 
-.grid-item p { 
+.grid-item p {
 	font-family: 'Lato', serif;
 	z-index: 2;
 	color: #e4fcdd;
@@ -2040,15 +2057,15 @@ html.js,
 }
 
 /* page-custom */
-.fp { 
+.fp {
 	font-family: 'Lato', serif;
 }
 
 /* page-blog */
-#page-blog .article-icon {	
+#page-blog .article-icon {
 	color: #ffffff;
 	background: rgba(255,255,255,0.2);
-	border: none; 
+	border: none;
 	position: relative;
 	z-index: 2;
 }
@@ -2087,7 +2104,7 @@ html.js,
   flex-direction: column;
   -webkit-justify-content: center;
   justify-content: center;
-  width: 25%; 
+  width: 25%;
   overflow: hidden;
 }
 
@@ -2486,11 +2503,17 @@ html.js,
 }
 
 .lst-pg .sml {
-	font-size: 0.6em;
+	font-size: 0.7em;
+	display: block;
+    padding-top: 1em;
 }
 
 .lst-pg span {
 	letter-spacing: 1px;
+}
+
+.lst-pg  .bp-header__desc a {
+	font-weight: bold;
 }
 
 /* The newer box for the names */
@@ -2526,11 +2549,12 @@ html.js,
 	display: inline;
 	background: #E97F02;
 	color: #ffffff;
+	font-family: 'montserrat', sans-serif;
 	font-size: 0.6em;
 	font-weight: 700;
 	letter-spacing: 0.3em;
 	margin: 2.8em 1em 0;
-	padding: 0.8em 3.6em;
+	padding: 1em 3.6em;
 	text-transform: uppercase;
 	border: none;
 	/* Radius */
@@ -2544,7 +2568,7 @@ html.js,
 }
 
 .team-button:hover {
-	background: #d4801d;
+	background: #3d3d3d;
 }
 
 #team_desc {
@@ -2564,7 +2588,7 @@ html.js,
     margin-top: 9em;
 }
 
-#charles { 
+#charles {
 	margin-left: 25em;
     margin-top: 8em;
 }
@@ -2609,17 +2633,17 @@ html.js,
     margin-left: 1em;
 }
 
-#fp-nav ul li a span, 
+#fp-nav ul li a span,
 .fp-slidesNav ul li a span {
     background: #fff !important;
     width: 8px;
     height: 8px;
     margin: -4px 0 0 -4px;
 }
-      
-#fp-nav ul li a.active span, 
-.fp-slidesNav ul li a.active span, 
-#fp-nav ul li:hover a.active span, 
+
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
 .fp-slidesNav ul li:hover a.active span {
     width: 16px;
     height: 16px;
@@ -2636,13 +2660,6 @@ html.js,
 		max-width: 100%;
 	}
 	.bg-image {
-		position: relative;
-		top: auto;
-		left: auto;
-		display: block;
-		/* max-width: 100%; */
-		max-height: 100vh;
-		margin: 0 0 0 50%;
 	}
 	.pages-nav__item {
 		width: 50%;
@@ -2692,6 +2709,135 @@ html.js,
 		font-size: 0.85em;
 	}
 	.bg-image {
-		margin: 1em;
 	}
+}
+
+/* -----------Smartphone View----------- */
+@media only screen and (max-width : 480px)   {
+
+   /* All your smartphone rules go inside here */
+	 .js .pages-nav {
+		 top: 5em;
+	 }
+	 .header {
+		 height: 3.5em;
+	 }
+	 .mn-lnk1 {
+		 display: none;
+	 }
+	 .mn-lnk2 {
+		 display: none;
+	 }
+	 .ies-logo {
+		 top: 0.7em;
+		 left: 0.5em;
+	 }
+	 .ies-logo img {
+		 width: 75%;
+	 }
+	 .free-trial {
+		 	display: none;
+		 	top: 1em;
+    	right: 4em;
+    	padding: 0.5em 1em;
+	 }
+	 #fp-nav { right: 1px !important; }
+	 .js #page-home {
+		 width: 60vh;
+	 }
+	 .bp-header__title {
+		 font-size: 1.5em;
+	 }
+	 .bp-header__desc {
+		 font-size: 1em;
+	 }
+	 .js #page-home .bp-header__title {
+		 font-size: 2.5em;
+	 }
+	 .bg-video {
+		 left: -5em;
+		 width: 230vw;
+	 }
+	 .click-to-learn-more {
+		 display: none;
+	 }
+	 .fstop {
+		 top: -73vh;
+		 width: 48% !important;
+	 }
+	 .theGrid {
+		 margin-top: 1em;
+	 }
+	 .grid__item {
+		 width: 48%;
+		 margin: 3px 0;
+		 min-height: 2em;
+		 width: 42%;
+		 padding: 8px 5px 18px;
+	 }
+	 .ingredient-anime img {
+		 width: 95%;
+	 }
+	 .grid__item h2 {
+		 font-size: 0.6em;
+	 }
+	 .grid__item p {
+		 display: none;
+		 font-size: .8em;
+	 }
+	 .grid__item .expand-btn {
+		 display: none;
+		 padding: .4em 1em;
+	 }
+	 .lgd-item {
+		 width: 60%;
+	 }
+	 #page-custom .bp-header {
+		 padding: 4em 0 2em;
+	 }
+	 .left-section .info {
+		 font-size: 0.9em;
+		 margin-top: 10em;
+		 padding: 10px 15px 30px;
+		 max-width: 90%;
+	 }
+	 .right-section .info {
+		 font-size: 0.9em;
+		 margin-top: 10em;
+		 padding: 10px 15px 30px;
+		 max-width: 90%;
+	 }
+	 .lgd-item p {
+		 font-size: 0.6em;
+	 }
+	 #page-showcase .dg {
+		 padding:0.3em 3em;
+	 }
+	 .team {
+		 display: none;
+	 }
+	 #team_desc {
+		 line-height: 1.3em;
+	 }
+	 #page-team .bg-image {
+		 width: 200%;
+		 min-height: 600px;
+	 }
+	 footer {
+		 display: none;
+	 }
+	 .footer-links li {
+		 line-height: 1.5em;
+	 }
+	 .lst-pg {
+		 width: 100%;
+	 }
+
+}
+
+/* -----------Tablet View----------- */
+@media only screen and (max-width : 650px) and (min-width : 481px)   {
+
+   /* All your tablet rules go inside here */
+
 }
