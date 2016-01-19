@@ -43,9 +43,9 @@
 				</header>
 				<video preload autoplay loop muted class="bg-video" poster="images/videos/introbg.jpg">
 				  <source src="images/videos/00322.mp4" type="video/mp4">
-				  <source src="images/videos/00322.mov" type="video/mov">	
-				  <source src="images/videos/00322.wmv" type="video/wmv">	
-				</video> 
+				  <source src="images/videos/00322.mov" type="video/mov">
+				  <source src="images/videos/00322.wmv" type="video/wmv">
+				</video>
 			</div>
 		</div>
 		<!-- /page -->
@@ -117,7 +117,7 @@
 					<img class="bg-image animated fadeInDown" src="images/page-content/plans/enterprise-2.jpg" alt="enterprise" />
 				</div>
 				<button class="dg sanim5" onclick="window.location.href=''">Start your free trial</button>
-				
+
 			</header>
 		</div>
 		<!-- end BusinessCurve -->
@@ -206,7 +206,7 @@
 					</span>
 					<div class="single morph-button morph-button-modal morph-button-modal-1 morph-button-fixed">
 						<button type="button">Desmond<br/><em>Customer Support</em></button>
-					</div> 
+					</div>
 				</div>
 				<div id="nilo" class="team-dot animated fadeInDown">
 					<span class="tooltip-dot">
@@ -255,7 +255,7 @@
 				<h1 class="bp-header__title animated slideInDown">Start Selling now</h1>
 				<div class="lst-pg animated slideInDown">
 					<!--<span class="ml sanim2 fadeInUp">Click to see what it looks like so far</span>-->
-					<a href="x"><button class="learn-more sanim3 fadeInUp">Try it now</button></a>
+					<button class="learn-more sanim3 fadeInUp">Try it now</button>
 					<span class="bp-header__desc rp sml sanim5 fadeInUp"><a href="x">Sign Up</a> now and we will give an extra 30 days credit.</span>
 				</div>
 			</header>
@@ -330,7 +330,7 @@
 		<div class="free-trial animated fadeIn">Free trial</div>
 		<button class="menu-button animated fadeIn"><span>Menu</span></button>
 	</div>
-	
+
 	<div class="header real-fast slideInDown hide" id="hd-home">
 		<a href="#page-home" id="logo" class="ies-logo animated fadeIn"><img src="images/logo-white.png" alt="" /></a>
 		<a class="mn-lnk1" href="pages/pricing.html">Pricing</a>
@@ -356,7 +356,7 @@
 		<button id="mnbtn2" class="menu-button animated fadeIn"><span>Menu</span></button>
 	</div>
 	<!-- Header end -->
-	
+
 	<a href="#" class="click-to-learn-more animated slideInUp">
 		<span class="dwn-arrow sanim4 slideInDown"></span>
 		<span class="dwn-arrow sanim1 slideInDown"></span>
@@ -377,9 +377,9 @@
 				});
 			} );
 	</script>
-	
+
 	<script type="text/javascript">
-	
+
 				function hasClass(el, className) {
 				  if (el.classList)
 					return el.classList.contains(className)
@@ -401,13 +401,13 @@
 					el.className=el.className.replace(reg, ' ')
 				  }
 				}
-		
+
 		fullpage.initialize('#fullpage', {
 			css3:true,
 			//Accessibility
 			keyboardScrolling: true,
 			animateAnchor: true,
-			//Scrolling 
+			//Scrolling
 			scrollingSpeed: 1000,
 			easing: 'easeInOut',
 			easingcss3: 'ease',
@@ -428,7 +428,7 @@
 				var logo = document.querySelector('#logo');
 				var primaryheader = document.querySelector('#primary-header');
 				var homeheader = document.querySelector('#hd-home');
-				
+
 				var loadedSection = this;
 
 				//using index
@@ -441,50 +441,50 @@
 					removeClass(el, 'hide');
 					addClass(primaryheader,'hide');
 					removeClass(homeheader, 'hide');
-				}	
-		
+				}
+
 				if (anchorLink == 'ingredients') {
 					if(index == 2){
 						var ingredientdesc = document.querySelector('#page-ingredients .bp-header__desc');
-						
+
 						var ingredienthd = document.querySelector('#page-ingredients .bp-header__title');
-						
+
 						addClass(ingredienthd, 'slideInDown');
 						addClass(ingredientdesc,'slideInDown');
 					}
 				}
-				
+
 				el.addEventListener('click', function(ev) {
 					fullpage.moveTo(2);
 				});
-				
+
 				logo.addEventListener('click', function(ev) {
 					fullpage.moveTo(1);
 				});
 			},
 			onLeave: function(index, nextIndex, direction) {
 					var leavingSection = this;
-					
+
 					if( index == 2 && direction == 'down' ) {
 					//Businesscurve
 						var igOne = document.querySelector('#ingredient1');
 						var igTwo = document.querySelector('#ingredient2');
 						var igThree = document.querySelector('#ingredient3');
 						var igFour = document.querySelector('#ingredient4');
-						
+
 						removeClass(igOne, 'fstop');
 						removeClass(igTwo, 'fstop');
 						removeClass(igThree, 'fstop');
 						removeClass(igFour, 'fstop');
 					}
-					
+
 					if( index == 3 && direction == 'down' ) {
 					//Businesscurve
 						var ht = document.querySelector('#page-custom .bp-header__title');
 						var leftinfo = document.querySelector('.left-section .info');
 						var rightinfo = document.querySelector('.right-section .info');
 						var custombtn = document.querySelector('#page-custom .dg');
-						
+
 						addClass(ht, 'slideInDown');
 						addClass(leftinfo, 'fadeInRight');
 						addClass(rightinfo, 'fadeInLeft');
