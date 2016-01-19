@@ -717,6 +717,11 @@ header .header-content .header-content-inner p {
     margin: 0 0 0 1em;
 }
 
+.parts p {
+    color: #555555;
+    font-weight: 300;
+}
+
 .margintop {
     margin-top: 2em !important;
 }
