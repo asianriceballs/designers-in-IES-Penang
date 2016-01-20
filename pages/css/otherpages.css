@@ -63,6 +63,10 @@ h3 {
 	font-size: 18px;
 }
 
+h4 {
+  font-size: 15px;
+}
+
 p {
     margin-bottom: 20px;
     font-size: 18px;
@@ -981,6 +985,45 @@ sp-box {
 
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
         font-size: 22px;
+    }
+}
+
+@media(max-width:480px) {
+    .navbar-default {
+      min-height: 50px;
+    }
+    .navbar-brand {
+      padding: 7px 0;
+    }
+    .navbar-brand img {
+      width: 80%;
+    }
+    .section {
+      padding: 80px 10px;
+    }
+    .navbar-toggle {
+      margin-right: 1px;
+    }
+    .free-trial {
+      top: 0 !important;
+      float: left;
+    }
+    .col-plan {
+      width: 100%;
+    }
+    .pricing-table .plan {
+      padding-bottom: 15px;
+      border-bottom: 1px solid #d0d0d0;
+    }
+    .pricing-table .plan li:last-child.plan-feature {
+      padding-left: 45px;
+    }
+    footer {
+      padding: 15px 5% 15px 5%;
+    }
+    .footer-stuff {
+      width: 100%;
+      float: none;
     }
 }
 
