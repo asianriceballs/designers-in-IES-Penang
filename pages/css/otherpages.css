@@ -1145,7 +1145,42 @@ body {
 }
 
 .text-center ul li {
-    text-decoration: none;
     list-style-type: none;
-    color: rgba(255,255,255,.7
+    color: rgba(0,0,0,.6);
+}
+
+.teeny-text {
+    margin-top: 2em;
+}
+
+.teeny-text p {
+    color: rgba(0,0,0,.6);
+    font-size: .7em;
+}
+
+
+.livechatdl {
+    display: inline;
+    background: #E97F02;
+    color: #ffffff;
+    font-family: 'montserrat', sans-serif;
+    font-size: 0.6em;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    margin: 2.8em 1em 0;
+    padding: 1em 3.6em;
+    text-transform: uppercase;
+    border: none;
+    /* Radius */
+    -webkit-border-radius: 36px;
+    -moz-border-radius: 36px;
+    border-radius: 36px;
+    position: relative;
+    z-index: 10;
+    /*transition*/
+    transition: All 0.3s ease;
+}
+
+.livechatdl:hover {
+    background: #3d3d3d;
 }
