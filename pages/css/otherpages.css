@@ -15,6 +15,7 @@ body {
     font-family: 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
 	font-weight: 400;
 	font-size: 14px;
+  background-color: #eeeeee;
 }
 
 hr {
@@ -73,9 +74,13 @@ p {
     background-color: #8bbd5c;
 }
 
+.bg-light {
+  background-color: #ffffff;
+}
+
 .bg-lightdark {
 	color: #000000;
-	background: #eeeeee;
+	background: #FBFBFB;
 }
 
 .bg-dark {
@@ -96,7 +101,12 @@ p {
 }
 
 section {
-    padding: 100px 0;
+    padding: 80px 0;
+}
+
+/* section hack */
+.pk {
+    padding: 20px 0 100px !important;
 }
 
 .extra {
@@ -530,10 +540,38 @@ i.red{
 	clear: both;
 }
 
+/* Animation HACKS */
+.d1 {
+	-webkit-animation-duration: 1s !important;
+    animation-duration: 1s !important;
+	-webkit-animation-delay: .5s !important; /* Chrome, Safari, Opera */
+    animation-delay: .5s !important;
+}
+.d2 {
+	-webkit-animation-duration: 1s !important;
+    animation-duration: 1s !important;
+	-webkit-animation-delay: 1s !important; /* Chrome, Safari, Opera */
+    animation-delay: 1s !important;
+}
+.d3 {
+	-webkit-animation-duration: 1s !important;
+    animation-duration: 1s !important;
+	-webkit-animation-delay: 1.25s !important; /* Chrome, Safari, Opera */
+    animation-delay: 1.25s !important;
+}
+.d4 {
+	-webkit-animation-duration: 1s !important;
+    animation-duration: 1s !important;
+	-webkit-animation-delay: 1.5s !important; /* Chrome, Safari, Opera */
+    animation-delay: 1.5s !important;
+}
+
 @media(min-width:768px) {
     .navbar-default {
         border-color: rgba(255,255,255,.3);
-		border-bottom: 1px solid #ebebeb;
+    		border-bottom: 1px solid #ebebeb;
+        box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.3);
+        -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.3);
     }
 
     .navbar-default .navbar-header .navbar-brand {
@@ -673,8 +711,12 @@ header .header-content .header-content-inner p {
 	font-size: 16px !important;
 }
 
+.service-box a {
+  color: #222;
+}
+
 .feature-box {
-	margin: 50px auto 0;
+	  margin: 50px auto 0;
     max-width: 400px;
 	/*height: 300px;
 	padding: 10px 10px 25px;
@@ -684,6 +726,17 @@ header .header-content .header-content-inner p {
 .feature-box p {
 	font-size: 16px !important;
 	text-align: justify;
+}
+
+/* Support Box */
+sp-box {
+  margin: 50px auto 0;
+  max-width: 600px;
+}
+
+.sp-box p {
+  font-size: 18px !important;
+  text-align: center;
 }
 
 /*1st pillar page*/
