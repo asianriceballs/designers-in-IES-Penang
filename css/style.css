@@ -129,6 +129,17 @@ a:hover {
 	color: #599149;
 }
 
+.under {
+	text-decoration: underline;
+}
+
+#page-home .bp-header__desc {
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: 500;
+	line-height: 2.2em;
+}
+
 .heightfix {
 	height: 100% !important;
 }
@@ -686,13 +697,12 @@ html.js,
 }
 
 #page-team .bp-header__title {
-<<<<<<< HEAD
+
 	color: #555555;
 } 
-=======
 	color: #ffffff;
 }
->>>>>>> origin/Production
+
 
 #page-team .bp-header__desc {
     line-height: 0.5em;
@@ -2573,7 +2583,7 @@ html.js,
 
 #team_desc {
 	margin: 1em 0 0 0;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.3em;
 }
 

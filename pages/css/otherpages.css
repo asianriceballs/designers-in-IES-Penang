@@ -1136,3 +1136,16 @@ body {
     -ms-transition: background-color 300ms linear;
     transition: background-color 300ms linear;
 }
+
+
+/*live chat*/
+.bullet {
+    font-size: 0.5em;
+    padding-right: 0.6em;
+}
+
+.text-center ul li {
+    text-decoration: none;
+    list-style-type: none;
+    color: rgba(255,255,255,.7
+}
