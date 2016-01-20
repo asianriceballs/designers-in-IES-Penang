@@ -728,6 +728,10 @@ header .header-content .header-content-inner p {
 	text-align: justify;
 }
 
+.feature-box a {
+  color: #222;
+}
+
 /* Support Box */
 sp-box {
   margin: 50px auto 0;
