@@ -1,5 +1,4 @@
 
-
 /* Morph Button: Default Styles */
 
 .morph-button {
@@ -100,7 +99,7 @@
 .morph-button-overlay.open .morph-content,
 .morph-button-sidebar.open .morph-content {
 	-webkit-transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s;
-	transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s;	
+	transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s;
 }
 
 /* Morph Button Style: Overlay */
@@ -425,7 +424,6 @@
 	background: #c8c8c8;
 }
 
-
 /*
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
@@ -545,7 +543,7 @@
 }
 
 .content-style-overlay .icon-close:hover {
-	border-color: #a50a05;	
+	border-color: #a50a05;
 }
 
 /* Style for text modal */
@@ -831,7 +829,7 @@
 
 .morph-button-inflow.open .content-style-social a {
 	-webkit-transform: translateX(0);
-	transform: translateX(0);	
+	transform: translateX(0);
 }
 
 .morph-button-inflow.open .content-style-social a:nth-child(2) {

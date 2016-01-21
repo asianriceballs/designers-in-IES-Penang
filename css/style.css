@@ -113,7 +113,7 @@ a:hover {
 }
 
 #hd-home a {
-	color: #fff !important;
+	color: #fff;
 }
 
 #hd-home .menu-button::before,
@@ -692,14 +692,14 @@ html.js,
 }
 
 #page-team .bp-header__title {
-
 	color: #ffffff;
 }
 
 #page-team .bp-header__desc {
+		background: url(../images/black-transparent-image.png) no-repeat center center;
     line-height: 0.5em;
-	bottom: -25vh;
-	margin: 0;
+		bottom: -25vh;
+		margin: 0;
     position: relative;
 }
 
@@ -714,8 +714,8 @@ html.js,
 }
 
 #page-team p{
-	color: #555555;
-	font-weight: 400;
+	color: #fff;
+	font-weight: 300;
 }
 
 /* The ingredients horizontally placed */
@@ -1060,6 +1060,8 @@ html.js,
     transition: background-color 300ms linear;
 }
 
+.free-trial a { color:#000 !important; }
+
 .free-trial:hover {
 	background-color: #5a9249;
 	color: #ffffff;
@@ -1069,6 +1071,10 @@ html.js,
     -o-transition: background-color 300ms linear;
     -ms-transition: background-color 300ms linear;
     transition: background-color 300ms linear;
+}
+
+.free-trial:hover a {
+	color: #ffffff !important;
 }
 
 .mn-lnk1 {
@@ -1603,7 +1609,7 @@ html.js,
 	font-weight: 800;
 	cursor: pointer;
 	margin: 2em 3.6em;
-    padding: 1em 3em;
+    padding: 1em 2em;
     position: absolute;
 	bottom: -35px;
 	/*transition*/

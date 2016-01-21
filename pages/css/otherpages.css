@@ -74,6 +74,10 @@ p {
 	color: #555555;
 }
 
+.justify {
+  text-align: justify;
+}
+
 .bg-primary {
     background-color: #8bbd5c;
 }
@@ -381,7 +385,7 @@ footer {
 #enterprise  p {
 	float: left;
 	font-size: 16px;
-	text-align: left;
+	text-align: justify;
 }
 
 
@@ -412,9 +416,47 @@ footer {
 	font-size: 30px;
 }
 
+.contact-form .form-group {
+  width: 48%;
+  float: left;
+}
+
+.rck {
+  width: 100% !important;
+  margin-right: 0 !important;
+}
+
+.rck .form-control {
+  /*border-left: 1px solid #ccc !important;
+  border-top: 1px solid #ccc !important;
+  border-right: 1px solid #ccc !important;*/
+}
+
+.contact-form .form-group label {
+  font-weight: 500;
+  font-size: 0.8em;
+}
+
+.contact-form .form-group .form-control {
+  border-left: none !important;
+  border-top: none !important;
+  border-right: none !important;
+}
+
+.contact-form .phk {
+    margin-right:4%;
+}
+
 .contact-form .form-control {
 	min-height: 50px;
 	font-size: 20px;
+}
+
+.contact-form .form-group .input-group-addon {
+  background: none !important;
+  border-right: none !important;
+  border-top: none !important;
+  border-left: none !important;
 }
 
 /* Featured Stories */
@@ -740,6 +782,12 @@ header .header-content .header-content-inner p {
 sp-box {
   margin: 50px auto 0;
   max-width: 600px;
+}
+.sp-box h4 {
+  font-weight: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
 }
 
 .sp-box p {
@@ -1198,6 +1246,7 @@ body {
 
 .dlapp {
     margin-bottom: 1em;
+    line-height: 1.3em;
 }
 
 .service-box p {
@@ -1300,6 +1349,9 @@ body {
     .pricing-table .plan li:last-child.plan-feature {
       padding-left: 45px;
     }
+    .icon-dwn {
+      padding:10px 0;
+    }
     footer {
       padding: 15px 5% 15px 5%;
     }
@@ -1308,4 +1360,3 @@ body {
       float: none;
     }
 }
-
