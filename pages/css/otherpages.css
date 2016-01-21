@@ -1112,7 +1112,6 @@ body {
     -ms-transition: background-color 300ms linear;
     transition: background-color 300ms linear;
 }
-
 .free-trial:hover {
     background-color: #5a9249;
     color: #ffffff;
@@ -1123,29 +1122,22 @@ body {
     -ms-transition: background-color 300ms linear;
     transition: background-color 300ms linear;
 }
-
-
 /*live chat*/
 .bullet {
     font-size: 0.5em;
     padding-right: 0.6em;
 }
-
 .text-center ul li {
     list-style-type: none;
     color: rgba(0,0,0,.6);
 }
-
 .teeny-text {
     margin-top: 2em;
 }
-
 .teeny-text p {
     color: rgba(0,0,0,.6);
     font-size: .7em;
 }
-
-
 .livechatdl {
     display: inline;
     background: #E97F02;
@@ -1167,12 +1159,9 @@ body {
     /*transition*/
     transition: All 0.3s ease;
 }
-
 .livechatdl:hover {
     background: #3d3d3d;
 }
-
-<<<<<<< HEAD
 /* Gateway Payment Methods */
 .payment-method-list {
   text-align: left;
@@ -1201,10 +1190,14 @@ body {
   color: #006dcc;
   font-weight: 600;
 }
-@media(min-width:992px) {
-    .service-box {
-        margin: 20px auto 0;
-    }
+
+/*mobile app*/
+#mobile-features {
+    background: #fff;
+}
+
+.dlapp {
+    margin-bottom: 1em;
 }
 
 .service-box p {
@@ -1261,6 +1254,12 @@ body {
     opacity: 1;
 }
 
+@media(min-width:992px) {
+    .service-box {
+        margin: 20px auto 0;
+    }
+}
+
 @media(min-width:768px) {
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
         font-size: 16px;
@@ -1309,18 +1308,4 @@ body {
       float: none;
     }
 }
-=======
-/*mobile app*/
-#mobile-features {
-    background: #fff;
-}
 
-.dlapp {
-    margin-bottom: 1em;
-}
-
-.row {
-    width: 100%;
-    max-width: 100%;
-}
->>>>>>> origin/Production
