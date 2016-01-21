@@ -680,29 +680,21 @@ html.js,
 }
 
 /*the team section */
-<<<<<<< HEAD
-#page-team {																
-	color: #555555;					
-	/*overflow-y: hidden !important;*/	
-=======
+
 #page-team {
-	color: #ffffff;
+	color: #555555;
 	/*overflow-y: hidden !important;*/
->>>>>>> origin/Production
 }
 
 #page-team .bp-header {
 	width: 100%;
-    height: 100vh;
+  height: 100vh;
 }
 
 #page-team .bp-header__title {
 
-	color: #555555;
-} 
 	color: #ffffff;
 }
-
 
 #page-team .bp-header__desc {
     line-height: 0.5em;
@@ -725,7 +717,7 @@ html.js,
 #page-team p{
 	color: #555555;
 	font-weight: 400;
-}													
+}
 =======
 >>>>>>> origin/Production
 
@@ -1474,7 +1466,7 @@ html.js,
 .boxout3 {
 	position: absolute;
 	z-index: 20 !important;
-	margin-left: -15%;
+	margin-left: -18%;
 	width: 40%;
 	max-width: 40%;
 }
@@ -1613,8 +1605,8 @@ html.js,
 	font-size: 0.7em;
 	font-weight: 800;
 	cursor: pointer;
-	margin: 2em 5em;
-    padding: .4em 1em;
+	margin: 2em 3.6em;
+    padding: 1em 3em;
     position: absolute;
 	bottom: -35px;
 	/*transition*/
@@ -1627,8 +1619,8 @@ html.js,
 }
 
 .grid__item .expand-btn:hover {
-	background: #ffffff;
-	color: #0b778b;
+	background: #0b778b;
+    color: #fff;
 }
 
 
