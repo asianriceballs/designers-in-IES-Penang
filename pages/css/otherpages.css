@@ -877,6 +877,31 @@ sp-box {
     background: #5663a6;
 }
 
+.dg2 {
+    display: inline;
+    background:  #FCFF00;
+    color: #000;
+    font-size: 0.8em;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    margin: 3em 0 3em;
+    padding: 1em 2.5em;
+    text-transform: uppercase;
+    border: none;
+    /* Radius */
+    -webkit-border-radius: 36px;
+    -moz-border-radius: 36px;
+    border-radius: 36px;
+    position: relative;
+    z-index: 10;
+    /*transition*/
+    transition: All 0.3s ease;
+}
+
+.dg2:hover {
+    background: #5663a6;
+}
+
 .find {
         margin-top: 3em;
 }
@@ -1240,6 +1265,20 @@ body {
 }
 
 /*mobile app*/
+
+.app-up {
+  display: inline-block;
+  margin-bottom: 2em;
+  padding-left: 7em;
+  padding-right: 7em;
+}
+
+.app-up-dl {
+  float:left;
+  margin: 0 2em;
+}
+
+
 #mobile-features {
     background: #fff;
 }
