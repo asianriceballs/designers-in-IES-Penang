@@ -392,7 +392,7 @@ footer {
 /* Contact */
 .contact-pic {
 	display: block;
-	background: url(../img/contact.jpg) no-repeat;
+	background: url(../images/contact.jpg) no-repeat;
 	min-width: 1344px;
 	width: 100%;
 	min-height: 400px;
@@ -671,7 +671,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../img/header.jpg);
+    background-image: url(../images/header.jpg);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -800,7 +800,7 @@ sp-box {
     top: 0px;
     height: 490px;
     width: 100%;
-    background: url('../img/top-1st.png') no-repeat;
+    background: url('../images/top-1st.png') no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -845,7 +845,7 @@ sp-box {
 }
 
 .pillar1 {
-    background: url('../img/pillar1-bg.png') repeat;
+    background: url('../images/pillar1-bg.png') repeat;
 }
 
 .bottom-buttons {
@@ -917,14 +917,14 @@ sp-box {
 /*piller 2*/
 
 .pillar2 {
-    /*background: url('../img/pillar1-bg.png') repeat;*/
+    /*background: url('../images/pillar1-bg.png') repeat;*/
 }
 
 .header-image2 {
     top: 0px;
     height: 490px;
     width: 100%;
-    background: url('../img/top-1st.png') no-repeat;
+    background: url('../images/top-1st.png') no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -944,7 +944,7 @@ sp-box {
     top: 0px;
     height: 490px;
     width: 100%;
-    background: url('../img/top-3rd.png') no-repeat;
+    background: url('../images/top-3rd.png') no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -959,7 +959,7 @@ sp-box {
 }
 
 .pillar3 {
-    background: url('../img/pillar3-bg.png') repeat;
+    background: url('../images/pillar3-bg.png') repeat;
 }
 
 
@@ -969,7 +969,7 @@ sp-box {
     top: 0px;
     height: 490px;
     width: 100%;
-    background: url('../img/top-4th.png') no-repeat;
+    background: url('../images/top-4th.png') no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -984,7 +984,7 @@ sp-box {
 }
 
 .pillar4 {
-    background: url('../img/pillar4-bg.png') repeat;
+    background: url('../images/pillar4-bg.png') repeat;
 }
 
 .call-to-action h2 {
