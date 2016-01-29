@@ -16,9 +16,41 @@
 	<link rel="stylesheet" type="text/css" href="css/animate.css" />
 	<link rel="stylesheet" type="text/css" href="css/javascript.fullPage.css" />
 	<script src="js/modernizr-custom.js"></script>
+	<style>
+		.restricter {
+			overflow-x: hidden !important;
+			max-width: 100vw;
+		}
+		.bg-video {
+			width: 100vw;
+		}
+		#page-showcase {
+			height: 230vh;
+		}
+		.left-section .info {
+			max-height: 200vh;
+		}
+		.right-section .info {
+			max-height: 200vh;
+		}
+		.right-section .bg-image {
+			min-height: 200vh;
+		}
+		.left-section .bg-image {
+			min-height: 200vh;
+			width: 50vw;
+		}
+		.right-section .bg-image {
+			min-height: 200vh;
+			width: 50vw;
+		}
+		#page-custom .dg {
+			bottom: -60vh;
+		}
+	</style>
 </head>
 
-<body class="animated fadeIn">
+<body class="restricter animated fadeIn">
 	<!-- navigation -->
 	<nav class="pages-nav">
 		<div class="pages-nav__item"><a class="link link--page" href="index.html">Home</a></div>
@@ -32,7 +64,7 @@
 	</nav>
 	<!-- /navigation-->
 	<!-- pages stack -->
-	<div class="pages-stack" id="fullpage">
+	<div class="pages-stack mobile" id="fullpage">
 		<!-- page -->
 		<div class="page" id="page-home" data-anchor="home">
 			<div class="content">
@@ -367,11 +399,6 @@
 	<script src="js/uiMorphingButton_fixed.js"></script>
 	<script type="text/javascript" src="js/javascript.fullPage.js"></script>
 	<script type="text/javascript">
-	<!--
-		if (screen.width <= 699) {
-			document.location = "index-mobile.html";
-		}
-	//-->
 	</script>
 
 	<script>
@@ -407,7 +434,7 @@
 					el.className=el.className.replace(reg, ' ')
 				  }
 				}
-				
+
 				fullpage.initialize('#fullpage', {
 						css3:true,
 						//Accessibility
@@ -417,7 +444,10 @@
 						scrollingSpeed: 800,
 						easing: 'easeInOut',
 						easingcss3: 'ease',
+						autoScrolling: false,
 						scrollOverflow: false,
+						normalScrollElements: '#page-custom',
+						normalScrollElementTouchThreshold: 2,
 						//Custom selectors
 						sectionSelector: '.page',
 						slideSelector: '.slide',
