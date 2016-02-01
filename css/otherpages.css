@@ -1399,6 +1399,12 @@ body {
     .icon-dwn {
       padding:10px 0;
     }
+	.par-left .dg {
+		 float: left;
+		 width: 60vw;
+		 padding: 1em 6em;
+		 margin: 3em 0 3em -4em;
+	}
     footer {
       padding: 15px 5% 15px 5%;
     }

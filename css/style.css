@@ -2758,7 +2758,7 @@ html.js,
 	 .login-btn { display: none !important; }
 	 #fp-nav { right: 1px !important; }
 	 .js #page-home {
-		 width: 60vh;
+		 width: 100vh;
 	 }
 	 .bp-header__title {
 		 font-size: 1.5em;
@@ -2807,7 +2807,9 @@ html.js,
 	 .lgd-item {
 		 width: 60%;
 	 }
- .mobile #page-custom { height: 200vh; }
+	.mobile #page-custom { 
+		height: 200vh;
+	}
 	 #page-custom .bp-header {
 		 padding: 2em 0 2em;
 	 }
