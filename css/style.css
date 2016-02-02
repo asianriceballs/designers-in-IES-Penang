@@ -135,7 +135,8 @@ a:hover {
 
 #page-home .bp-header__desc {
 	color: #ffffff;
-	font-size: 1.4em;
+	/* font-size:1.4em; */
+	font-size: 24px;
 	font-weight: 700;
 	line-height: 1.5em;
 	letter-spacing: 1px;
@@ -156,14 +157,15 @@ a:hover {
 /* Blueprint header */
 
 .bp-header {
-	padding: 15vh 8vw 2em;
+	padding: 13vh 8vw 2em;
 	text-align: center;
 	position: relative;
 	z-index: 1;
 }
 
 .bp-header__title {
-	font-size: 2em;
+	font-size: 30px;
+	/* font-size: 2em; */
 	font-family: 'montserrat', sans-serif;
 	font-weight: 400;
 	line-height: 1.1;
@@ -197,7 +199,8 @@ a:hover {
 
 
 .bp-header__desc {
-	font-size: 1.2em;
+	font-size: 18px;
+	/* font-size: 1.2em; */
 	font-weight: 300;
 	line-height: 1.2em;
 	margin: 0.5em 0 1em;
@@ -615,13 +618,14 @@ html.js,
 
 .js #page-home .bp-header{
 	margin-top: 3em;
-	padding: 9vh 8vw 2em;
+	padding: 10vh 8vw 2em;
 }
 
 .js #page-home .bp-header__title {
 	color: #ddff3b;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 4em;
+	/*font-size: 4em;*/
+	font-size: 56px;
 	font-weight: 700;
 	line-height: 1em;
 	text-shadow: 2px 2px 5px rgba(0,0,0,0.1);
@@ -661,7 +665,8 @@ html.js,
 
 /* the page with the right and left split  */
 #page-custom .bp-header {
-	padding: 8em 0 2em;
+	/*padding: 8em 0 2em;*/
+	padding: 8vh 0 2em;
 	height: 100vh;
 	text-align: center;
 	position: relative;
@@ -675,9 +680,9 @@ html.js,
 
 #page-custom .dg {
 	position: absolute;
-	width: 80%;
-	margin-left: -40%;
-  bottom: -30vh;
+	width: 25vw;
+	margin: 0 -13vw;
+  	bottom: 12vh;
 	border: 5px solid #fff;
 }
 
@@ -699,17 +704,19 @@ html.js,
 }
 
 #page-team .bp-header__desc {
-		background: url(../images/black-transparent-image.png) no-repeat center center;
+	background: url(../images/black-transparent-image.png) no-repeat center center;
     line-height: 0.5em;
-		bottom: -25vh;
-		margin: 0;
+	bottom: -25vh;
+	margin: 0;
     position: relative;
+    z-index: 3;
 }
 
 /* Page Team */
 #page-team .bg-image {
 	top: 0;
-	padding-top: 1em;
+	/*padding-top: 1em;*/
+	margin-top: -4vh;
 	min-width: 100%;
 	max-height: 140% !important;
 	width: 100%;
@@ -770,18 +777,18 @@ html.js,
 
 .right-section .info {
 	background: rgba(255,255,255,0.9);
-    font-size: 1.1em;
+    font-size: 16px;
     color: #555555;
     font-weight: 300;
     text-align: left;
-    margin-top: 13em;
+    margin-top: 20vh;
     padding: 15px 30px 30px;
-    max-width: 70%;
-		max-height: 46vh;
+    max-width: 80%;
+	max-height: 60vh;
+	height: 60vh;
     position: relative;
     z-index: 10;
     float: left;
-
 }
 
 .right-section .info em {
@@ -813,14 +820,17 @@ html.js,
 
 .left-section .info {
 	background: rgba(255,255,255,01);
-    font-size: 1.1em;
+    font-size: 16px;
+    /* font-size: 1.1em; */
     font-weight: 300;
     text-align: left;
     color: #555555;
-    margin-top: 13em;
-    padding: 15px 30px 30px;
-    max-width: 70%;
-		max-height: 46vh;
+    margin-top: 20vh;
+    /* margin-top: 13em; */
+    padding: 15px 30px 10px;
+    max-width: 80%;
+	max-height: 60vh;
+	height: 60vh;
     position: relative;
     z-index: 10;
     float: right;
@@ -866,7 +876,7 @@ html.js,
 
 .left-section div, .right-section div {
 	font-size: 1em;
-	line-height: 1.6em;
+	line-height: 4vh;
 	max-width: 50%;
 	margin-top: 3em;
 	margin-left: auto;
@@ -1118,8 +1128,8 @@ html.js,
 	background-repeat: no-repeat;
     background-position: top left;
     background-size: 16px 8px;
-    width: 16px;
-    height: 8px;
+    width: 1.2vw;/* width: 16px; */
+    height: 1.2vh;/* height: 8px; */
 }
 
 .click-to-learn-more {
@@ -1411,6 +1421,7 @@ html.js,
     position: relative;
 	background: #fff;
     color: inherit;
+    max-height: 55vh;
     min-height: 300px;
     text-align: center;
     display: -webkit-inline-flex;
@@ -1422,7 +1433,8 @@ html.js,
     flex-direction: column;
     -webkit-justify-content: center;
     justify-content: center;
-    width: 23%;
+    width: 19vw;
+    /* width: 23%; */
 	top: 0;
     /*-webkit-border-radius: 8px 8px 8px 8px;
     border-radius: 8px 8px 8px 8px;*/
@@ -1584,7 +1596,8 @@ html.js,
 }
 
 .grid__item h2 {
-	font-size: 1.2em;
+	/*font-size: 1.2em;*/
+	font-size: 20px;
     font-weight: 500;
     /* letter-spacing: 0.2em; */
 	margin: 0.8em 0 0.3em 0;
@@ -1595,9 +1608,11 @@ html.js,
 .grid__item p {
 	font-family: 'Lato', sans-serif;
     color: #c1e1e7;
-    font-size: .95em;
+    /* font-size: .95em; */
+    font-size: 16px;
     font-weight: 400;
-    line-height: 1.5em;
+    /*line-height: 1.5em;*/
+    line-height: 3.6vh;
     text-align: inherit;
 	height: 8.4em;
     max-height: 8.5em;
@@ -2118,11 +2133,14 @@ html.js,
   flex-direction: column;
   -webkit-justify-content: center;
   justify-content: center;
-  width: 25%;
+  /* width: 25%; */
+  width: 20vw;
   overflow: hidden;
 }
 
 .lgd-item p {
+	font-size: 16px;
+	line-height: 2.8vh;
 	/*color: #E0F2F1;*/
 }
 
@@ -2133,7 +2151,7 @@ html.js,
 }
 
 .lgd-item img {
-	width: 100%;
+	width: 16vw;
 }
 
 .lgd-item a {
@@ -2142,10 +2160,13 @@ html.js,
 
 /* lgd thumb */
 .thumb {
-	height: 100%;
-    max-width: 112px;
+	height: 17vh;
+	/* Height: 100%; */
+	/* max-width: 112px; */
+    max-width: 17vh;
     display: block;
-    margin: -3.1em auto 0 auto;
+    margin: -11vh auto 0 auto;
+    /* margin: -3.1em auto 0 auto ; */
 }
 
 #page-questions .rp {
@@ -2591,60 +2612,68 @@ html.js,
     font-size: 1.3em;
 }
 
+/* Team Description */
+.team  {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	z-index: 2;
+}
+
 /* using the team names */
 #leefong {
-	margin-top: 9em;
-	margin-left: 4em;
+	margin-top: 18vh;/* 9em */
+	margin-left: 6vw;/* 8em */
 }
 
 #suisim {
-	margin-left: 16em;
-    margin-top: 9em;
+	margin-left: 20vw;/* 16em */
+    margin-top: 18vh;/* 9em */
 }
 
 #charles {
-	margin-left: 25em;
-    margin-top: 8em;
+	margin-left: 30vw;/* 25em */
+    margin-top: 10vh;/* 8em */
 }
 
 #michael {
-	margin-top: 8em;
-    margin-left: 38em;
+	margin-top: 16vh;/* 8em */
+    margin-left: 48vw;/* 38em */
 }
 
 #terry {
-	margin-top: 9em;
-	margin-left: 50em;
+	margin-top: 18vh;/* 9em */
+	margin-left: 60vw;/* 50em */
 }
 
 #ryan {
-	margin-top: 8em;
-    margin-left: 62em;
+	margin-top: 20vh;/* 8em */
+    margin-left: 74vw;/* 62em */
 }
 
 #desmond {
-	margin-top: 30em;
-	margin-left: 59em;
+	margin-top: 64vh;/* 30em */
+	margin-left: 72vw;/* 59em */
 }
 
 #nilo {
-	margin-top: 29em;
-    margin-left: 44em;
+	margin-top: 62vh;/* 29em */
+    margin-left: 54vw;/* 44em */
 }
 
 #waihong {
-	margin-top: 30em;
-    margin-left: 26em;
+	margin-top: 60vh;/* 30em */
+    margin-left: 33vw;/* 26em */
 }
 
 #jacky {
-	margin-top: 29em;
-    margin-left: 14em;
+	margin-top: 65vh;/* 29em */
+    margin-left: 18vw;/* 14em */
 }
 
 #lisa {
-	margin-top: 30em;
-    margin-left: 1em;
+	margin-top: 60vh;/* 30em */
+    margin-left: 1vw;/* 1em */
 }
 
 #fp-nav ul li a span,

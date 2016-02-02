@@ -54,7 +54,7 @@
 				<h1 class="bp-header__title anims">Every successful online business is built on 4 pillars.</h1>
 					<p class="bp-header__desc animf">Take advantage of InstanteStore’s full range of features to make full use of the best techniques from each pillar to build your own success story.</p>
 					<!--<p class="bp-header__desc anims slideInDown">InstanteStore provides you the platform and tools that will make your store a success</p>-->
-						<div class="theGrid mt3" class="main">
+						<div class="theGrid mt2" class="main">
 							<section class="grid">
 								<div class="grid__item fstop sanim1 fadeInDown" id="ingredient1" onclick="window.location.href='first.html'">
 									<img src="images/icons/glasses.png" class="img-responsive boxout1">
@@ -471,6 +471,17 @@
 						},
 						onLeave: function(index, nextIndex, direction) {
 								var leavingSection = this;
+								if ( index == 2 && direction == 'up' ) {
+									var igOne = document.querySelector('#ingredient1');
+									var igTwo = document.querySelector('#ingredient2');
+									var igThree = document.querySelector('#ingredient3');
+									var igFour = document.querySelector('#ingredient4');
+
+									addClass(igOne, 'fstop');
+									addClass(igTwo, 'fstop');
+									addClass(igThree, 'fstop');
+									addClass(igFour, 'fstop');
+								}
 
 								if( index == 2 && direction == 'down' ) {
 								//Businesscurve
