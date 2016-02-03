@@ -37,6 +37,10 @@
 	display: none;
 }
 
+.view-fix {
+	overflow-y: visible !important;
+	overflow-x: hidden !important;
+}
 /*show*/
 .show {
 	display: inherit;
@@ -133,6 +137,10 @@ a:hover {
 	text-decoration: underline;
 }
 
+#primary-header {
+	position: fixed;
+}
+
 #page-home .bp-header__desc {
 	color: #ffffff;
 	/* font-size:1.4em; */
@@ -164,7 +172,7 @@ a:hover {
 }
 
 .bp-header__title {
-	font-size: 30px;
+	font-size: 32px;
 	/* font-size: 2em; */
 	font-family: 'montserrat', sans-serif;
 	font-weight: 400;
@@ -720,7 +728,7 @@ html.js,
 	min-width: 100%;
 	max-height: 140% !important;
 	width: 100%;
-	min-height: 910px;
+	min-height: 960px;
 }
 
 #page-team p{
@@ -1421,7 +1429,7 @@ html.js,
     position: relative;
 	background: #fff;
     color: inherit;
-    max-height: 55vh;
+    max-height: 63vh;
     min-height: 300px;
     text-align: center;
     display: -webkit-inline-flex;
@@ -1612,11 +1620,11 @@ html.js,
     font-size: 16px;
     font-weight: 400;
     /*line-height: 1.5em;*/
-    line-height: 3.6vh;
+    line-height: 3.2vh;
     text-align: inherit;
-	height: 8.4em;
-    max-height: 8.5em;
-    margin: 0.9em 0;
+	height: 12.5em;
+    max-height: 15em;
+    margin: 1.5em 0 0;
     overflow: hidden;
 }
 
@@ -1880,7 +1888,7 @@ html.js,
 }
 
 #page-showcase .bp-header {
-	padding-top: 5vh !important;
+	padding-top: 10vh !important;
 }
 
 #page-showcase .bp-header__title {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en" class="no-js view-fix">
 
 <head>
 	<meta charset="UTF-8" />
@@ -126,9 +126,9 @@
 		<!-- Show Showcase -->
 		<div class="page" id="page-showcase" data-anchor="showcase">
 			<header class="bp-header cf content">
-				<h1 class="bp-header__title animated slideInDown">Success Stories</h1>
-				<p class="bp-header__desc animf slideInDown">InstanteStore has helped thousands of businesses over the years. <br/>Here are some of our top success stories and great friends and supporters:</p>
-				<ul class="showcase-grid">
+				<h1 class="bp-header__title animated">Success Stories</h1>
+				<p class="bp-header__desc animf">InstanteStore has helped thousands of businesses over the years. <br/>Here are some of our top success stories and great friends and supporters:</p>
+				<ul class="showcase-grid hide">
 					<li class="lgd-item">
 						<a href="featuredstories.html"><img class="anims slideInUp" src="images/page-content/showcase/testi-clipons.png" alt="crazy4clipons website" /></a>
 						<img class="thumb sanim1 slideInUp" src="images/page-content/showcase/1st-thumb.png" alt="" />
@@ -137,7 +137,7 @@
 					<li class="lgd-item">
 						<a href="featuredstories.html"><img class="sanim1 slideInUp" src="images/page-content/showcase/testi-cvcoffee.png" alt="cvcoffee website" /></a>
 						<img class="thumb sanim3 slideInUp" src="images/page-content/showcase/2nd-thumb.png" alt="" />
-						<p class="sanim4 slideInUp">"We have successfully sold and processed over $35 million dollars of products related to our e-commerce properties.  ... One of the best business decisions we ever made was going with InstanteStore over competitive solutions."<br><em>Preston Humphries</em><br><em><a href="www.cvcoffee.com">cvcoffee.com</a></em></p>
+						<p class="sanim4 slideInUp">"We have successfully sold over $35 million dollars of products. The best business decision we ever made was going with InstanteStore over competitive solutions."<br><em>Preston Humphries</em><br><em><a href="www.cvcoffee.com">cvcoffee.com</a></em></p>
 					</li>
 					<li class="lgd-item">
 						<a href="featuredstories.html"><img class="sanim2 slideInUp" src="images/page-content/showcase/testi-ezparty.png" alt="ezypartyzone website" /></a>
@@ -152,7 +152,7 @@
 		<!-- Team -->
 		<div class="page" id="page-team" data-anchor="team">
 			<header class="bp-header cf content">
-				<div class="team">
+				<div class="team hide">
 				<div id="leefong" class="team-dot animated fadeInDown">
 					<span class="tooltip-dot">
 						<i class="fa fa-circle-o-notch"></i>
@@ -242,9 +242,9 @@
 					</div>
 				</div>
 				</div>
-				<div class="bp-header__desc anims fadeInDown"><h1 class="bp-header__title animated slideInDown">Our Team</h1>
-					<p id="team_desc">Real People with Years of Experience Who Want You to Succeed</p>
-					<button class="team-button sanim5-5 slideInDown" onclick="window.location.href='team.html'">Learn More About Our Team</button>
+				<div class="bp-header__desc anims"><h1 class="bp-header__title animated slideInDown">Our Team</h1>
+					<p id="team_desc sanim1">Real People with Years of Experience Who Want You to Succeed</p>
+					<button class="team-button sanim5-5" onclick="window.location.href='team.html'">Learn More About Our Team</button>
 				</div>
 			</header>
 			<img class="bg-image" src="images/team.jpg" alt="teampic" />
@@ -253,8 +253,8 @@
 		<!-- Last Page -->
 		<div class="page" id="page-last" data-anchor="contact">
 			<header class="bp-header cf">
-				<h1 class="bp-header__title animated slideInDown">Start Selling now</h1>
-				<div class="lst-pg animated slideInDown">
+				<h1 class="bp-header__title animated">Start Selling now</h1>
+				<div class="lst-pg hide animated slideInDown">
 					<!--<span class="ml sanim2 fadeInUp">Click to see what it looks like so far</span>-->
 					<button class="learn-more sanim3 fadeInUp" onclick="window.location.href='get-started.html'">Try it now</button>
 					<span class="bp-header__desc rp sml sanim5 fadeInUp"><a href="get-started.html">Sign Up</a> now and we will give an extra 30 days credit.</span>
@@ -418,6 +418,10 @@
 						easing: 'easeInOut',
 						easingcss3: 'ease',
 						scrollOverflow: false,
+						autoScrolling: false,
+						fitToSection: true,
+						fitToSectionDelay: 1500,
+						normalScrollElementTouchThreshold: 2, 
 						//Custom selectors
 						sectionSelector: '.page',
 						slideSelector: '.slide',
@@ -437,7 +441,33 @@
 							var homeheader = document.querySelector('#hd-home');
 
 							var loadedSection = this;
-
+							
+							// Variable
+								// Ingredients
+ 								var igOne = document.querySelector('#ingredient1');
+								var igTwo = document.querySelector('#ingredient2');
+								var igThree = document.querySelector('#ingredient3');
+								var igFour = document.querySelector('#ingredient4');
+								var ingredientdesc = document.querySelector('#page-ingredients .bp-header__desc');
+								var ingredienthd = document.querySelector('#page-ingredients .bp-header__title');
+								// Business Curve
+								var bizhd = document.querySelector('#page-custom .bp-header__title');
+								var bizleftinfo = document.querySelector('#page-custom .left-section .info');
+								var bizrightinfo = document.querySelector('#page-custom .right-section .info');
+								var bizbtn = document.querySelector('#page-custom .dg');
+								// Showcase
+								var showcasedesc = document.querySelector('#page-showcase .bp-header__desc');
+								var showcasehd = document.querySelector('#page-showcase .bp-header__title');
+								var showcasegrid = document.querySelector('#page-showcase .showcase-grid');
+								// Team
+								var teamdots = document.querySelector('#page-team .team');
+								var teamdesc = document.querySelector('#page-team .bp-header__desc');
+								var teamhd = document.querySelector('#page-team .bp-header__title');
+								var teambtn = document.querySelector('#page-team .team-button');
+								// Contact
+								var contacthd = document.querySelector('#page-last .bp-header__title');
+								var lstpg = document.querySelector('#page-last .lst-pg');
+								
 							//using index
 							if(anchorLink != 'home'){
 								addClass(el, 'hide');
@@ -450,17 +480,6 @@
 								removeClass(homeheader, 'hide');
 							}
 
-							if (anchorLink == 'ingredients') {
-								if(index == 2){
-									var ingredientdesc = document.querySelector('#page-ingredients .bp-header__desc');
-
-									var ingredienthd = document.querySelector('#page-ingredients .bp-header__title');
-
-									addClass(ingredienthd, 'slideInDown');
-									addClass(ingredientdesc,'slideInDown');
-								}
-							}
-
 							el.addEventListener('click', function(ev) {
 								fullpage.moveTo(2);
 							});
@@ -468,46 +487,52 @@
 							logo.addEventListener('click', function(ev) {
 								fullpage.moveTo(1);
 							});
+							
+							if( anchorLink == 'business curve' ) {
+									addClass(bizhd, 'fadeInDown');
+									addClass(bizleftinfo, 'fadeInDown');
+									addClass(bizrightinfo, 'fadeInUp');
+									addClass(bizbtn, 'fadeInUp');
+							}
+							
+							if ( anchorLink == 'showcase' ) {
+									addClass(ingredienthd, 'fadeInDown');
+									addClass(ingredientdesc,'fadeInDown');
+									removeClass(showcasegrid, 'hide');
+							}
+							
+							if ( anchorLink == 'team' ) {
+									addClass(teamhd, 'fadeIn');
+									addClass(teamdesc, 'fadeIn');
+									addClass(teambtn, 'fadeIn');
+									removeClass(teamdots, 'hide');
+							}	
+							
+							if ( anchorLink == 'contact' ) {
+									addClass(contacthd, 'fadeInDown');
+									removeClass(lstpg, 'hide');
+							}
+							
 						},
 						onLeave: function(index, nextIndex, direction) {
 								var leavingSection = this;
-								if ( index == 2 && direction == 'up' ) {
-									var igOne = document.querySelector('#ingredient1');
-									var igTwo = document.querySelector('#ingredient2');
-									var igThree = document.querySelector('#ingredient3');
-									var igFour = document.querySelector('#ingredient4');
-
-									addClass(igOne, 'fstop');
-									addClass(igTwo, 'fstop');
-									addClass(igThree, 'fstop');
-									addClass(igFour, 'fstop');
-								}
-
+								// Variables
+								var igOne = document.querySelector('#ingredient1');
+								var igTwo = document.querySelector('#ingredient2');
+								var igThree = document.querySelector('#ingredient3');
+								var igFour = document.querySelector('#ingredient4');
+								var ingredientdesc = document.querySelector('#page-ingredients .bp-header__desc');
+								var ingredienthd = document.querySelector('#page-ingredients .bp-header__title');
+								
 								if( index == 2 && direction == 'down' ) {
-								//Businesscurve
-									var igOne = document.querySelector('#ingredient1');
-									var igTwo = document.querySelector('#ingredient2');
-									var igThree = document.querySelector('#ingredient3');
-									var igFour = document.querySelector('#ingredient4');
-
 									removeClass(igOne, 'fstop');
 									removeClass(igTwo, 'fstop');
 									removeClass(igThree, 'fstop');
 									removeClass(igFour, 'fstop');
+									addClass(ingredienthd, 'slideInDown');
+									addClass(ingredientdesc,'slideInDown');
 								}
-
-								if( index == 3 && direction == 'down' ) {
-								//Businesscurve
-									var ht = document.querySelector('#page-custom .bp-header__title');
-									var leftinfo = document.querySelector('.left-section .info');
-									var rightinfo = document.querySelector('.right-section .info');
-									var custombtn = document.querySelector('#page-custom .dg');
-
-									addClass(ht, 'slideInDown');
-									addClass(leftinfo, 'fadeInRight');
-									addClass(rightinfo, 'fadeInLeft');
-									addClass(custombtn, 'slideInUp');
-								}
+								
 							}
 					});
 	</script>
