@@ -37,32 +37,40 @@
 			height: 195vh;
 		}
 		.mobile #page-custom .dg {
-			bottom: -90vh;
+			width: 60vw;
+			bottom: -70vh;
+			display: block;
+			margin: 0 20%;
 		}
 		.mobile .left-section .info {
-			height: 150vh;
+			height: 130vh;
 		}
 		.mobile .left-section .info ul, .mobile .right-section .info ul {
 			padding-left: 0;
 		}
 		.mobile .right-section .info {
-			height: 150vh;
+			height: 130vh;
 		}
 		.mobile .darkblur {
 			height: 150vh;
 		}		
+		.mobile .lgd-item img {
+			width: 40vw;
+		}
 		.mobile #page-team, .mobile #page-last, .mobile #page-home {
 			max-width: 100vw !important;
 			overflow: hidden;
 		}
 		.mobile #page-team .bg-image {
-			width: 240%;
+			height: 100vw;
+			min-height: 200vw;
+			width: auto;
 			margin-left: -25%;
 		}
 		.bg-video {
 		}
 		.mobile #page-showcase {
-			height: 270vh;
+			height: 230vh;
 		}
 		.left-section .info {
 			max-height: 200vh;
@@ -122,6 +130,35 @@
 			}
 			.mobile #page-showcase {
 				height: 320vh;
+			}
+		}
+		/* Portrait */
+		@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+			.js .mobile #page-home .bp-header {
+				margin-top: 1em;
+			}
+			.mobile .left-section .info {
+				height: 140vh;
+			}
+			.mobile .right-section .info {
+				height: 140vh; 
+			}
+			.mobile #page-custom .dg {
+				width: 70vw;
+				bottom: -80vh;
+				margin: 0 15%;
+			}
+		}
+		/* Landscape */
+		@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+			#page-ingredients {
+				height: 275vh;
+			}
+			.left-section .info {
+				font-size: 14px;
+			}
+			.right-section .info {
+				font-size: 14px;
 			}
 		}
 		@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) {
@@ -222,10 +259,13 @@
 				padding: 3em 0 2em;
 			}
 			.mobile #page-custom .dg {
-				bottom: -195vh;
+				bottom: -150vh;
 			}
 			.mobile #page-showcase {
 				height: 190vh;
+			}
+			.mobile #page-showcase .lgd-item p {
+				line-height: 4vh;
 			}
 			#page-team .team {
 				display: none; 
@@ -252,18 +292,22 @@
 				min-height: 300vh;
 			}
 			.left-section .info {
-				height: 222vh !important;
+				height: 170vh !important;
 				max-height: 222vh;
+				margin-top: 44vh !important; 
+				line-height: 7vh;
 			}
 			.right-section .info {
-				height: 222vh !important;
+				height: 170vh !important;
 				max-height: 222vh;
+				margin-top: 44vh !important;
+				line-height: 7vh;
 			}
 			#page-team .bg-image {
 				padding-top: 0;
 			}
 			.mobile #page-team .bg-image {
-				width: 180%;
+				width: 240vw;
 			}
 			.mobile #page-team p {
 				line-height: 1.1em;
@@ -672,6 +716,7 @@
 						easingcss3: 'ease',
 						autoScrolling: false,
 						scrollOverflow: false,
+						fitToSection: false,
 						normalScrollElements: '#page-custom',
 						normalScrollElementTouchThreshold: 2,
 						//Custom selectors

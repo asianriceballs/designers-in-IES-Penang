@@ -54,20 +54,19 @@
 /* Track */
 ::-webkit-scrollbar-track {
     /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
+	background: rgba(231,231,231,1);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background: rgba(211,211,211,0.8);
+    background: rgba(63,63,63,1);
     /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); */
 }
 
 ::-webkit-scrollbar-thumb:window-inactive {
-	background: rgba(211,211,211,0.4);
+	background: rgba(231,231,231,0.4);
 }
 
 /* Main styles */
@@ -2900,4 +2899,12 @@ html.js,
 
    /* All your tablet rules go inside here */
 
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+/* Styles */
+	#page-home .bp-header {
+		font-size: 62px;
+	}
 }
