@@ -1,442 +1,368 @@
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en" class="no-js view-fix">
 
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>InstanteStore</title>
-	<meta name="description" content="InstanteStore: Complete solution comes with store builder, shopping cart, payment integration, and MUCH more." />
-	<meta name="keywords" content="InstanteStore, store builder, shopping cart, shopping, payment, complete, solution" />
+	<title>Ecommerce Solutions & Shopping Cart Software - InstanteStore</title>
+	<meta name="description" content="Complete solution comes with store builder, shopping cart, payment integration, and MUCH more." />
+	<meta name="keywords" content="InstanteStore, store builder, shopping cart, shopping, payment, complete, ecommerce solution" />
 	<meta name="author" content="InstanteStore" />
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/overlay-morph.css" />
 	<link rel="stylesheet" type="text/css" href="css/animate.css" />
-	<link rel="stylesheet" type="text/css" href="css/javascript.fullPage.css" />
+	<!--link rel="stylesheet" type="text/css" href="css/javascript.fullPage.css" /-->
 	<script src="js/modernizr-custom.js"></script>
 </head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<!--<div id="freetrialbox" class="mainbox col-md-4 col-md-offset-3 col-sm-6 col-sm-offset-3" role="dialog"><! modal fade (extra class items)--> 
+<div id="logo"><span class="logoimg"></span></div>                 
+<!--<div class="panel panel-info" >
+<iframe src="https://www.instantestore.com/free_trial_dropdown.cfm" seamless id="myiframe" scrolling="no" style="width:100%;height:340px;background-color:white;border-radius:5px;border:0px;"></iframe>
+</div>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closefreetrial();"><span aria-hidden="true">&times;</span></button>
+</div>
+<div id="bg-over"></div>
+<script language="javascript">
+function freetrial(){
+$( "#myiframe" ).css("display","block");
+//var ShowForm = new TweenLite("#myiframe", 0.4, {top:"0px",position:"fixed"});
+$( "#bg-over" ).css("display","block");
+  $( "#freetrialbox" ).animate({
+    top: "460px",
+  }, 200, function() {
+    // Animation complete.
+  });
+}
+function closefreetrial(){
+  $( "#freetrialbox" ).animate({
+    top: "-800px",
+  }, 200, function() {
+    $( "#bg-over" ).css("display","none");
+  });
+}
 
+</script>-->
 <body class="animated fadeIn">
 	<!-- navigation -->
 	<nav class="pages-nav">
-		<div class="pages-nav__item"><a class="link link--page" href="index.html">Home</a></div>
-		<div class="pages-nav__item"><a class="link link--page" href="pages/features.html">All Features</a></div>
-		<div class="pages-nav__item"><a class="link link--page" href="pages/pricing.html">Pricing</a></div>
-		<div class="pages-nav__item"><a class="link link--page" href="#">Templates</a></div>
-		<div class="pages-nav__item"><a class="link link--page" href="pages/featuredstories.html">Featured Stories</a></div>
-		<div class="pages-nav__item"><a class="link link--page" href="pages/mobile.html">Mobile App</a></div>
-		<div class="pages-nav__item"><a class="link link--page" href="#">Payment Gateways</a></div>
-		<div class="pages-nav__item"><a class="link link--page" href="#">Logo Design</a></div>
-		<div class="pages-nav__item"><a class="link link--page" href="#">Free Live Chat</a></div>
-		<div class="pages-nav__item"><a class="link link--page" href="pages/contact.html">Contact Us</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="default.cfm">Home</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="features.cfm">All Features</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="pricing.cfm">Pricing</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="mobile.cfm">Mobile App</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="payment-methods.cfm">Payment Gateways</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="logo-design-studio.com/ecom.cfm">Logo Design</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="livechat.cfm">Free Live Chat</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="contact.cfm">Contact Us</a></div>
 	</nav>
 	<!-- /navigation-->
 	<!-- pages stack -->
 	<div class="pages-stack" id="fullpage">
 		<!-- page -->
-		<div class="page section" id="page-home">
-			<div class="content">
+		<div class="page" id="page-home" data-anchor="home">
+			<div class="col-md-6 content">
 				<header class="bp-header cf wr">
-					<h1 class="bp-header__title anims fadeInUp">Get the <em>online store</em> <br/>that<em> fits </em>your<em><br>business needs</em></h1>
+					<h1 class="bp-header__title">The <em><span class="under">right</span> online store</em> <br/>for your<em> business</em></h1>
+					<p class="bp-header__desc">proven, first-class features for all your ecommerce needs</p>
 				</header>
-				<video class="bg-video" width="120%" poster="images/videos/introbg.jpg" preload autoplay loop muted>
-				  <source src="images/videos/00322.mp4" type="video/mp4">
-				  <source src="images/videos/00322.mov" type="video/mov">	
-				  <source src="images/videos/00322.wmv" type="video/wmv">	
-				</video> 
+			</div>
+			<div class="col-md-6">
+				<img CLASS="img-responsive topfoldscreen" src="images/videos/topfold.png" alt="">
 			</div>
 		</div>
 		<!-- /page -->
-		<div class="page section" id="page-ingredients">
-			<div id="og" class="slide">
+		<div class="page" id="page-ingredients" data-anchor="ingredients">
+			<div id="og">
 				<header class="bp-header cf content">
-				<h5 class="bp-header__desc anims slideInDown">You don't need a shopping cart that can do everything. What you do want is one that fits what your business needs.</h5>
-					<h1 class="bp-header__title animf slideInDown">InstanteStore provides you the platform and tools that will make your store a success.</h1>
-					<p class="bp-header__desc anims slideInDown">InstanteStore provides you the platform and tools that will make your store a success</p>
-						<div class="theGrid mt3" class="main">
+				<h1 class="bp-header__title">Every successful online business is built on 4 pillars.</h1>
+					<p class="bp-header__desc">Take advantage of InstanteStore’s full range of features to make full use of the best techniques from each pillar to build your own success story.</p>
+					<!--<p class="bp-header__desc anims slideInDown">InstanteStore provides you the platform and tools that will make your store a success</p>-->
+						<div class="theGrid mt2" class="main">
 							<section class="grid">
-								<a class="grid__item sanim1 fadeInRight" id="ingredient1" href="#page-first">
-									<span class="ingredient-anime"><img src="images/page-content/1st.gif"></span>
-									<h2 class="title title--preview">Bring In Visitors</h2>
-									<p class="top-intro">Getting traffic from potential customers is crucial. Good use of inbound and outbound
-marketing will increase your chances of being found.</p>
-									<button class="expand-btn">Learn More</button>
-								</a>
-								<a class="grid__item sanim2 fadeInRight" id="ingredient2" href="#page-second">
-									<span class="ingredient-anime"><img src="images/page-content/2nd.gif"></span>
-									<h2 class="title title--preview">Convert Visitors into paying Customers</h2>
-									<p>Every visitor is a potential customer. Higher your conversion rate, translates to higher revenue.</p>
-									<button class="expand-btn less-info">Learn More</button>
-								</a>
-								<a class="grid__item sanim3 fadeInRight" id="ingredient3" href="#page-third">
-									<span class="ingredient-anime"><img src="images/page-content/3rd.gif"></span>
-									<h2 class="title title--preview">Increase Customer Order Value</h2>
-									<p>Offering deals and cross-selling other products maximizes each customer's value to your store.</p>
-									<button class="expand-btn less-info">Learn More</button>
-								</a>
-								<a class="grid__item sanim4 fadeInRight" id="ingredient4" href="#page-fourth">
-									<span class="ingredient-anime"><img src="images/page-content/4th.gif"></span>
+								<div class="grid__item fstop" id="ingredient1" onclick="window.location.href='first.cfm'">
+									<img src="images/icons/glasses.png" class="img-responsive boxout1">
+									<span class="ingredient-anime"><img class="img-responsive" src="images/icons/pillar1.png"></span>
+									<h2 class="title title--preview">Attract Visitors</h2>
+									<p class="top-intro">Make it easy for customers to find you with fully optimized pages and links to your store from everywhere: marketplaces, Facebook, Twitter, and much more.</p>
+									<button class="expand-btn" onclick="window.location.href='first.cfm'">Show Me How</button>
+								</div>
+								<div class="grid__item fstop" id="ingredient2" onclick="window.location.href='second.cfm'">
+									<img src="images/icons/lemon1.png" class="img-responsive boxout2">
+									<span class="ingredient-anime"><img class="img-responsive" src="images/icons/pillar2img.png"></span>
+									<h2 class="title title--preview">​Convert Visitors into Paying Customers</h2>
+									<p>Show visitors the right message at the right time to convert them into paying customers. The more you convert, the more you make.</p>
+									<button class="expand-btn less-info" onclick="window.location.href='second.cfm'">Show Me How</button>
+								</div>
+								<div class="grid__item fstop" id="ingredient3" onclick="window.location.href='third.cfm'">
+									<span class="ingredient-anime"><img class="img-responsive" src="images/icons/pillar3img.png"></span>
+									<h2 class="title title--preview">​Increase Customer Order Value</h2>
+									<p>Get the most out of paying customers by offering them irresistible deals and other products that they’ll want so that they’ll buy more.</p>
+									<button class="expand-btn less-info" onclick="window.location.href='third.cfm'">Show Me How</button>
+									<img src="images/icons/pinkplanet.png" class="img-responsive boxout3">
+								</div>
+								<div class="grid__item fstop" id="ingredient4" onclick="window.location.href='fourth.cfm'">
+									<span class="ingredient-anime"><img class="img-responsive" src="images/icons/pillar4img.png"></span>
 									<h2 class="title title--preview">Customer Repeat Orders</h2>
-									<p>Your customers are your greatest resource - instead of paying more for new visitors - keep them coming back for more!</p>
-									<button class="expand-btn">Learn More</button>
-								</a>
+									<p>Customer retention is key to growing your business. Previous customers are much more likely to shop with you again. Engage them and keep them coming back for more.</p>
+									<button class="expand-btn" onclick="window.location.href='fourth.cfm'">Show Me How</button>
+									<img src="images/icons/letter.png" class="img-responsive boxout4">
+								</div>
 							</section>
 						</div>
 				</header>
 			</div>
-			<!-- First Ingredient -->
-			<div class="hpg slide">
-				<header class="content">
-					<div class="ov">
-						<div class="par-left anims slideInUp">
-							<span class="article-icon"><i class="fa fa-flag"></i></span>
-							<h3>Bring In Visitors</h3>
-							<p class="top-intro">InstanteStore has a variety of tools to help you analyze, test, and optimize your store to bring in visitors.</p>
-						</div>
-						<span class="separator anims slideInUp"></span>
-						<div class="par-left sanim1 slideInUp">
-							<h3>Google Analytics Integration</h3>
-							<p>Easily integrate with Google's Universal Analytics (with eCommerce Tracking) so that you can see who your visitors are and where they're coming from. This will enable you to optimize your store to meet their needs.</p>
-							<img src="images/page-content/analytics.png" alt="" />
-						</div>
-						<span class="separator sanim2 slideInUp"></span>
-						<div class="par-right sanim3 slideInUp">
-							<img src="images/page-content/google-search-2.png" alt="" />
-							<h3>SEO Wizard</h3>
-							<p>Our SEO Wizard will guide you as you set up your product, category, and page content to best optimize your pages for search engines.</p>
-						</div>
-						<span class="separator sanim4 slideInUp"></span>
-						<div class="par-left sanim5 slideInUp">
-							<h3>Google Shopping &<br>Other Marketplace Integration</h3>
-							<p>InstanteStore is integrated with Google Shopping (and the XML Schema) and other marketplaces such as Shopzilla, Shopping.com and more. This provides you with alternative ways for potential customers to discover your products and your store.</p>
-							<img src="images/page-content/google-search.png" alt="" />
-						</div>
-						<span class="separator sanim6 slideInUp"></span>
-						<div class="par-right sanim7 slideInUp">
-							<img src="images/page-content/socialbuttons.png" alt="" />
-							<h3>Facebook, Twitter, Pinterest, and Social Bookmarking</h3>
-							<p>Our product pages are integrated with social buttons to make it easy for your customers to let their friends know about your products.</p>
-						</div>
-						<div class="par-left sanim8 slideInUp">
-							<button class="learn-more sanim9 slideInUp">Learn More</button>
-						</div>
-					</div>
-				</header>
-			</div>
-			<!-- Second Ingredient -->
-			<div class="hpg slide">
-				<header class="content">
-						<div class="ov">
-						<div class="par-left anims slideInUp">
-							<span class="article-icon"><i class="fa fa-space-shuttle"></i></span>
-							<h3>Convert Visitors Into Paying Customers</h3>
-							<p class="top-intro">All visitors to your store are potential customers!</p>
-						</div>
-						<span class="separator anims slideInUp"></span>
-						<div class="par-left sanim1 slideInUp">
-							<h3>Split Tests</h3>
-							<p>The most successful sales funnels are a product of continuous testing and optimization. Our template split test feature lets you try out different variations of your store templates (a different color, perhaps, or a different banner on the left side, etc.) so that you can compare how each variation performs. You can then keep testing the "winning" split tests and keep improving your store's conversion rates.</p>
-							<img src="images/page-content/split.png" alt="" />
-						</div>
-						<span class="separator sanim2 slideInUp"></span>
-						<div class="par-right sanim3 slideInUp">
-							<img src="images/page-content/discount.png" alt="" />
-							<h3>Discount Coupons</h3>
-							<p>If price is a factor, then discount coupons could give your potential customer just enough of an incentive to get them buying.</p>
-						</div>
-						<span class="separator anims slideInUp"></span>
-						<div class="par-left sanim1 slideInUp">
-							<h3>Sales</h3>
-							<p>The right sale at the right time could entice a customer to make a purchase.</p>
-							<img id="sale" src="images/page-content/sale.png" alt="" />
-						</div>
-						<span class="separator sanim2 slideInUp"></span>
-						<div class="par-right sanim3 slideInUp">
-							<img src="images/page-content/abort.png" alt="" />
-							<h3>Aborted Order Handling</h3>
-							<p>If a customer adds one of your products to their shopping cart and goes through checkout, but stops short of buying, there's likely a good reason for it, and more importantly, a compelling deal that you could offer to get them to change their minds. Our Aborted Order Handling feature lets you easily get in touch with almost-customers like these to make them offers they can't refuse.</p>
-						</div>
-						<span class="separator anims slideInUp"></span>
-						<div class="par-left sanim1 slideInUp">
-							<h3>Retaily Integration!</h3>
-							<p>Beyond all of the many features that InstanteStore already provides, if you're looking for an extra edge, here it is: Retaily integration. Retaily provides all the tools you need to optimize your store's conversion and retention. Retaily uses product recommendations, urgency and scarcity messages, remarketing via ads and email, and much more to boost your store's conversion both before and even after a potential customer has left your store.</p>
-							<img src="images/page-content/retaily_logo_250.png" alt="" />
-						</div>
-					<button class="learn-more sanim5 slideInUp">Learn More</button>
-					</div>
-				</header>
-			</div>
-			<!-- 3rd ingredient -->
-			<div class="hpg slide">
-				<header class="content">
-					<div class="ov">
-						<div class="par-left anims slideInUp">
-							<span class="article-icon"><i class="fa fa-bus"></i></span>
-							<h3>Increase Customer Value</h3>
-							<p class="top-intro">It's simple: the more each customer buys, the more value you'll get out of your traffic spending.</p>
-						</div>
-						<span class="separator anims slideInUp"></span>
-						<div class="par-left sanim1 slideInUp">
-							<h3>Cross-sell</h3>
-							<p>Some products lend themselves naturally to being cross-sold: if you buy a pair of shoes, you're likely to also be interested in some comfortable matching socks. Offering related products that make sense to a customer increases the chances of them making a larger order.</p>
-							<img src="images/page-content/cross.png" alt="" />
-						</div>
-						<span class="separator sanim2 slideInUp"></span>
-						<div class="par-right sanim3 slideInUp">
-							<img src="images/page-content/bulk.png" alt="" />
-							<h3>Cross-sell on Final Payment</h3>
-							<p>Whether it's for customers with preferential pricing or bulk buyers, our wholesale features have you covered. You can easily set our wholesale module up to offer volume discounts or tiered discounts, giving customers an easy incentive to buy multiple units of your products.</p>
-						</div>
-						<div class="par-left sanim8 slideInUp">
-							<button class="learn-more sanim9 slideInUp">Learn More</button>
-						</div>
-					</div>
-				</header>
-			</div>
-			<!-- 4th ingredients -->
-			<div class="hpg slide">
-				<header class="content">
-					<div class="ov">
-						<div class="par-left anims slideInUp">
-							<span class="article-icon"><i class="fa fa-mobile"></i></span>
-							<h3>Customer Repeat Orders</h3>
-							<p class="top-intro">Customer loyalty goes beyond simply getting more value out of each customer. Repeat customers are more likely to return to your store and also to refer you to their friends, giving you a great source of new potential customers.</p>
-						</div>
-						<span class="separator anims slideInUp"></span>
-						<div class="par-left sanim1 slideInUp">
-							<h3>Points system</h3>
-							<p>Reward customers for their purchases by awarding them points based on the value of products that they have bought. You can award the same number of points for all products or even award more (or less) points for specific products that you want to promote. This encourages customers to spend more so that they can redeem products with their points.</p>
-							<img src="images/page-content/points.png" alt="" />
-						</div>
-						<span class="separator sanim2 slideInUp"></span>
-						<div class="par-right sanim3 slideInUp">
-							<img src="images/page-content/news.png" alt="" />
-							<h3>Newsletters/Discount Coupons</h3>
-							<p>Constantly reach out to your customers to keep them up-to-date on your store’s latest offerings with our Newsletter Management and Broadcast tools. Combining our discount coupons with your newsletters is a potentially interesting way to stimulate repeat business.</p>
-						</div>
-					<button class="learn-more sanim5 slideInUp">Learn More</button>
-					</div>
-				</header>
-			</div>
 		</div>
 		<!-- BusinessCurve -->
-		<div class="page section" id="page-custom">
-			<header class="bp-header cf">
-				<div class="left-section">
-					<p class="info fp sanim4 slideInUp">
-						<em>A young, growing venture</em><br><br>
-						Are you looking to supplement your income with your own online store?
-						Are you looking for an alternative to your 9-to-5 job where you can be your own boss?
-						Are you a small business? Individuals and small businesses have been a great driving force within the InstanteStore community from Day One.</p>
-					<button class="lg sanim5 slideInUp">Learn more</button>
+		<div class="page" id="page-custom" data-anchor="businesscurve">
+			<header class="bp-header cf content">
+				<h1 class="bp-header__title">InstanteStore is a great fit for your business <br />whether you’re:</h1>
+						<div class="left-section">
+							<div class="info">
+								<h3><em>A young, growing venture</em></h3>
+								<ul>
+									<li><span class="bullet"><i class="fa fa-chevron-right"></i></span>Are you looking to supplement your income with your own online store?<li>
+									<li><span class="bullet"><i class="fa fa-chevron-right"></i></span>Are you looking for an alternative to your 9-to-5 job where you can be your own boss?<li>
+									<li><span class="bullet"><i class="fa fa-chevron-right"></i></span>Are you a small business?<li>
+								</ul>
+								<p>Individuals and small businesses have been a great driving force within the InstanteStore community from Day One. We’ve helped hundreds of budding eCommerce businesses at various stages of their businesses.<br /><a href="businesses.cfm#growing">View more</a></p>
+								<span class="darkblur"></span>
+							</div>
+							<img class="bg-image animated fadeInUp" src="images/page-content/plans/growing-2.jpg" alt="growing" />
+						</div>
+						<div class="right-section">
+							<div class="info">
+								<h3><em>A mature, thriving enterprise</em></h3>
+								<ul>
+									<li><span class="bullet"><i class="fa fa-chevron-right"></i></span>Are you an established brick and mortar store looking to have an online presence?</li>
+									<li><span class="bullet"><i class="fa fa-chevron-right"></i></span>Are you a successful online business looking to expand further?</li>
+								</ul>
+								<p>Some of our most successful stores are larger enterprises that have very heavy traffic and hundreds to thousands of daily orders. Our experience with highly successful online businesses means that we’re well aware of what’s necessary for your business to continue expanding and thriving.<br /><a href="businesses.cfm#enterprise">View more</a></p>
+							<!--<span class="darkblur"></span>-->
+						</div>
+						<img class="bg-image animated fadeInDown" src="images/page-content/plans/enterprise-2.jpg" alt="enterprise" />
+					</div>
 					<span class="darkblur"></span>
-					<img class="bg-image animated fadeInUp" src="images/page-content/plans/growing-2.jpg" alt="growing" />
-				</div>
-				<div class="right-section">
-					<p class="info fp sanim4 slideInDown">
-						<em>A mature, thriving enterprise</em><br><br>
-						Are you an established brick and mortar store looking to have an online presence?
-						Are you a successful online business looking to expand further?
-						While growing businesses make up a large part of our client base, some of our most successful stores are larger enterprises that have very heavy traffic and who have hundreds to thousands of daily orders.
-					</p>
-					<button class="dg sanim5-5 slideInDown">Learn more</button>
-					<span class="darkblur"></span>
-					<img class="bg-image animated fadeInDown" src="images/page-content/plans/enterprise-2.jpg" alt="enterprise" />
-				</div>
-			</header>
+					<button class="dg sanim5" onclick="freetrial();">Start your free trial</button>
+				</header>
 		</div>
 		<!-- end BusinessCurve -->
-		<!-- Team -->
-		<div class="page section" id="page-team">
+		<!-- Show Showcase -->
+		<div class="page" id="page-showcase" data-anchor="showcase">
 			<header class="bp-header cf content">
-				<!--<h1 class="bp-header__title animated slideInDown">Our Team</h1>-->
+				<h1 class="bp-header__title">Success Stories</h1>
+				<p class="bp-header__desc">InstanteStore has helped thousands of businesses over the years. <br/>Here are some of our top success stories and great friends and supporters:</p>
+				<ul class="showcase-grid">
+					<li class="lgd-item">
+						<a href="http://www.crazy4clipons.com" target="_blank"><img class="anims" src="images/page-content/showcase/testi-clipons.png" alt="crazy4clipons website" /></a>
+						<img class="thumb" src="images/page-content/showcase/1st-thumb.png" alt="" />
+						<p class="sanim2 slideInUp">"My decision was correct! InstanteStore provides me the perfect web platform with all the technical complexities."<br><em>Barbara Young</em><br><em><a href="http://www.crazy4clipons.com" target="_blank">crazy4clipons.com</a></em></p>
+					</li>
+					<li class="lgd-item">
+						<a href="http://www.cvcoffee.com" target="_blank"><img class="sanim1" src="images/page-content/showcase/testi-cvcoffee.png" alt="cvcoffee website" /></a>
+						<img class="thumb" src="images/page-content/showcase/2nd-thumb.png" alt="" />
+						<p class="sanim4 slideInUp">"We have successfully sold over $35 million dollars of products. The best business decision we ever made was going with InstanteStore over competitive solutions."<br><em>Preston Humphries</em><br><em><a href="http://www.cvcoffee.com" target="_blank">cvcoffee.com</a></em></p>
+					</li>
+					<li class="lgd-item">
+						<a href="http://www.ezpartyzone.com" target="_blank"><img class="sanim2" src="images/page-content/showcase/testi-ezparty.png" alt="ezypartyzone website" /></a>
+						<img class="thumb" src="images/page-content/showcase/3rd-thumb.png" alt="" />
+						<p class="sanim5 slideInUp">“Not Simply a Product or Service, InstanteStore is a Business Partnership To be Cherished…”<br><em>Maura Celik, Owner of Party Zones Inc.</em><br><em><a href="http://www.ezpartyzone.com" target="_blank">ezpartyzone.com</a></em></p>
+					</li>
+				</ul>
+				<div class="wehavemore" onclick="location.href='featuredstores.cfm';">More Success Stories</div>
+			</header>
+			<!--/* Get rid of image */ <img class="bg-image" src="images/4.jpg" alt="img04" />-->
+		</div>
+		<!-- end Show Showcase -->
+		<!-- Team -->
+		<div class="page" id="page-team" data-anchor="team">
+			<header class="bp-header cf content">
 				<div class="team">
-				<div id="leefong" class="team-dot animated fadeInDown">
+				<div id="leefong" class="team-dot animated">
 					<span class="tooltip-dot">
-						<i class="fa fa-plus"></i>
+						<i class="fa fa-circle-o-notch"></i>
 					</span>
 					<div class="single morph-button morph-button-modal morph-button-modal-1 morph-button-fixed">
 						<button type="button">Lee Fong<br/><em>Technical Development</em></button>
 					</div><!-- morph-button -->
 				</div>
-				<div id="suisim" class="team-dot animated fadeInDown">
+				<div id="suisim" class="team-dot animated">
 					<span class="tooltip-dot">
-						<i class="fa fa-plus"></i>
+						<i class="fa fa-circle-o-notch"></i>
 					</span>
 					<div class="single morph-button morph-button-modal morph-button-modal-1 morph-button-fixed">
-						<button type="button">Sui Sim<br/><em>Customer Support & Operations</em></button>
+						<button type="button">Sui Sim<br/><em>Customer Support</em></button>
 					</div><!-- morph-button -->
 				</div>
-				<div id="charles" class="team-dot animated fadeInDown">
+				<div id="charles" class="team-dot animated">
 					<span class="tooltip-dot">
-						<i class="fa fa-plus"></i>
+						<i class="fa fa-circle-o-notch"></i>
 					</span>
 					<div class="single morph-button morph-button-modal morph-button-modal-1 morph-button-fixed">
 						<button type="button">Charles<br/><em>Founder/CEO</em></button>
 					</div>
 				</div>
-				<div id="michael" class="team-dot animated fadeInDown">
+				<div id="michael" class="team-dot animated">
 					<span class="tooltip-dot">
-						<i class="fa fa-plus"></i>
+						<i class="fa fa-circle-o-notch"></i>
 					</span>
 					<div class="single morph-button morph-button-modal morph-button-modal-1 morph-button-fixed">
-						<button type="button">Michael<br/><em>Website & Graphic Design</em></button>
+						<button type="button">Michael<br/><em>Design</em></button>
 					</div>
 				</div>
-				<div id="terry" class="team-dot animated fadeInDown">
+				<div id="terry" class="team-dot animated">
 					<span class="tooltip-dot">
-						<i class="fa fa-plus"></i>
+						<i class="fa fa-circle-o-notch"></i>
 					</span>
 					<div class="single morph-button morph-button-modal morph-button-modal-1 morph-button-fixed">
-						<button type="button">Terry<br/><em>Development & Tech Support</em></button>
+						<button type="button">Terry<br/><em>Tech Development/Support</em></button>
 					</div>
 				</div>
-				<div id="ryan" class="team-dot animated fadeInDown">
+				<div id="ryan" class="team-dot animated">
 					<span class="tooltip-dot">
-						<i class="fa fa-plus"></i>
+						<i class="fa fa-circle-o-notch"></i>
 					</span>
 					<div class="single morph-button morph-button-modal morph-button-modal-1 morph-button-fixed">
 						<button type="button">Ryan<br/><em>Technical Development</em></button>
 					</div>
 				</div>
-				<div id="desmond" class="team-dot animated fadeInDown">
+				<div id="desmond" class="team-dot animated">
 					<span class="tooltip-dot">
-						<i class="fa fa-plus"></i>
+						<i class="fa fa-circle-o-notch"></i>
 					</span>
 					<div class="single morph-button morph-button-modal morph-button-modal-1 morph-button-fixed">
-						<button type="button">Desmond<br/><em>Customer Support & Marketing</em></button>
-					</div> 
-				</div>
-				<div id="nilo" class="team-dot animated fadeInDown">
-					<span class="tooltip-dot">
-						<i class="fa fa-plus"></i>
-					</span>
-					<div class="single morph-button morph-button-modal morph-button-modal-1 morph-button-fixed">
-						<button type="button">Nilo<br/><em>Website & Graphic Design</em></button>
+						<button type="button">Desmond<br/><em>Customer Support</em></button>
 					</div>
 				</div>
-				<div id="waihong" class="team-dot animated fadeInDown">
+				<div id="nilo" class="team-dot animated">
 					<span class="tooltip-dot">
-						<i class="fa fa-plus"></i>
+						<i class="fa fa-circle-o-notch"></i>
 					</span>
 					<div class="single morph-button morph-button-modal morph-button-modal-1 morph-button-fixed">
-						<button type="button">Waihong<br/><em>Technical Development</em></button>
+						<button type="button">Nilo<br/><em>Design</em></button>
 					</div>
 				</div>
-				<div id="jacky" class="team-dot animated fadeInDown">
+				<div id="waihong" class="team-dot animated">
 					<span class="tooltip-dot">
-						<i class="fa fa-plus"></i>
+						<i class="fa fa-circle-o-notch"></i>
+					</span>
+					<div class="single morph-button morph-button-modal morph-button-modal-1 morph-button-fixed">
+						<button type="button">Waihoong<br/><em>Technical Development</em></button>
+					</div>
+				</div>
+				<div id="jacky" class="team-dot animated">
+					<span class="tooltip-dot">
+						<i class="fa fa-circle-o-notch"></i>
 					</span>
 					<div class="single morph-button morph-button-modal morph-button-modal-1 morph-button-fixed">
 						<button type="button">Jacky<br/><em>Technical Development</em></button>
 					</div>
 				</div>
-				<div id="lisa" class="team-dot animated fadeInDown">
+				<div id="lisa" class="team-dot animated">
 					<span class="tooltip-dot">
-						<i class="fa fa-plus"></i>
+						<i class="fa fa-circle-o-notch"></i>
 					</span>
 					<div class="single morph-button morph-button-modal morph-button-modal-1 morph-button-fixed">
-						<button type="button">Lisa<br/><em>Customer Support & Marketing</em></button>
+						<button type="button">Lisa<br/><em>Marketing</em></button>
 					</div>
 				</div>
 				</div>
-				<div class="bp-header__desc anims slideInDown"><p>When you get in touch with us, no matter the system or method,  </p>
-				<p>it’s a real person with years of </p>
-				<p>experience in the eCommerce industry who you'll be communicating with</p>
+				<div class="bp-header__desc"><h1 class="bp-header__title">Our Team</h1>
+					<p id="team_desc sanim1">Real People with Years of Experience Who Want You to Succeed</p>
+					<button class="team-button sanim5-5" onclick="window.location.href='team.cfm'">Learn More About Our Team</button>
 				</div>
 			</header>
 			<img class="bg-image" src="images/team.jpg" alt="teampic" />
 		</div>
 		<!-- end Team -->
-		<!-- Show Showcase -->
-		<div class="page section" id="page-showcase">
-			<header class="bp-header cf">
-				<h1 class="bp-header__title animated slideInDown">Success Stories</h1>
-				<p class="bp-header__desc animf slideInDown">InstanteStore has helped thousands of businesses over the years. <br/>Here are some of our top success stories and great friends and supporters:</p>
-				<ul class="showcase-grid">
-					<li class="lgd-item">
-						<a href="www.crazy4clipons.com"><img class="anims slideInUp" src="images/page-content/showcase/testi-clipons.png" alt="crazy4clipons website" /></a>
-						<img class="thumb sanim1 slideInUp" src="images/page-content/showcase/1st-thumb.png" alt="" />
-						<p class="sanim2 slideInUp">"My decision was correct! InstanteStore provides me the perfect web platform with all the technical complexities."<br><em>Barbara Young</em><br><em><a href="www.crazy4clipons.com">crazy4clipons.com</a></em></p>
-					</li>
-					<li class="lgd-item">
-						<a href="www.cvcoffee.com"><img class="sanim1 slideInUp" src="images/page-content/showcase/testi-cvcoffee.png" alt="cvcoffee website" /></a>
-						<img class="thumb sanim3 slideInUp" src="images/page-content/showcase/2nd-thumb.png" alt="" />
-						<p class="sanim4 slideInUp">"My decision was correct! InstanteStore provides me the perfect web platform with all the technical complexities."<br><em>Preston Humphries</em><br><em><a href="www.cvcoffee.com">cvcoffee.com</a></em></p>
-					</li>
-					<li class="lgd-item">
-						<a href="www.ezpartyzone.com"><img class="sanim2 slideInUp" src="images/page-content/showcase/testi-ezparty.png" alt="ezypartyzone website" /></a>
-						<img class="thumb sanim4 slideInUp" src="images/page-content/showcase/3rd-thumb.png" alt="" />
-						<p class="sanim5 slideInUp">“Not Simply a Product or Service, InstanteStore is a Business Partnership To be Cherished…”<br><em>Maura Celik, Owner of Party Zones Inc.</em><br><em><a href="www.ezpartyzone.com">ezpartyzone.com</a></em></p>
-					</li>
-				</ul>
-			</header>
-			<!--/* Get rid of image */ <img class="bg-image" src="images/4.jpg" alt="img04" />-->
-		</div>
-		<!-- end Show Showcase -->
 		<!-- Last Page -->
-		<div class="page section" id="page-last">
+		<div class="page" id="page-last" data-anchor="contact">
 			<header class="bp-header cf">
-				<h1 class="bp-header__title animated slideInDown">Write your own eCommerce success story</h1>
-				<div class="lst-pg animated slideInDown">
-					<span class="ml sanim2 fadeInUp">Your InstanteStore is waiting for you right now</span>
-					<a href="x"><button class="learn-more sanim3 fadeInUp">Click to see what it looks like so far</button></a>
-					<span class="bp-header__desc rp sml sanim5 fadeInUp"><a href="x">Sign Up</a> now and we will give an extra 30 days credit.</span>
+				<h1 class="bp-header__title">Start Selling now</h1>
+				<div class="lst-pg">
+					<!--<span class="ml sanim2 fadeInUp">Click to see what it looks like so far</span>-->
+					<button class="learn-more" onclick="freetrial();">Try it now</button>
+					<!--span class="bp-header__desc rp sml sanim5 fadeInUp"><a href="signup.cfm">Sign Up</a> now and we will give an extra 30 days credit.</span-->
 				</div>
 			</header>
-			<footer class="animated slideInUp">
-					<div class="footer-stuff">
-						<h5>ABOUT OUR SITE</h5>
-							<div class="footer-links">
-								<li><a href="x">Shopping Cart Features</a></li>
-								<li><a href="x">Plans & Pricing</a></li>
-								<li><a href="x">See What our Clients Say</a></li>
-								<li><a href="x">15-Day Free Trial</a></li>
-								<li><a href="x">Sign Up Now!</a></li>
-								<li><a href="x">Payment Gateways</a></li>
-								<li><a href="x">FREE Live Chat Software</a></li>
-							</div>
-					</div>
-					<div class="footer-stuff">
-						<h5>OUR LINKS</h5>
-							<div class="footer-links">
-								<li><a href="x">Merchant Login</a></li>
-								<li><a href="x">Sign Up Now</a></li>
-								<li><a href="x">Free Trial</a></li>
-								<li><a href="x">Logo Design Studio</a></li>
-								<li><a href="x">Retaily</a></li>
-								<li><a href="x">Shopping Cart Portal</a></li>
-							</div>
-					</div>
-					<div class="footer-stuff">
-						<h5>CONTACT US</h5>
-							<div class="footer-links">
-								<li>USA : +1-619-866-4188<br>Australia : +61-3-9015-9790<br>International : +60-4-2280704</li>
-								<li><a href="x">Contact Us</a></li>
-								<li><a href="x">Chat With Us Live</a></li>
-								<li><a href="x">Support Ticket System</a></li>
-							</div>
-					</div>
-					<div class="footer-stuff">
-						<h5>SOCIALIZE WITH US</h5>
-							<div class="footer-links">
-								<a href="https://www.facebook.com/instantestore"><img src="images/fb.png" alt="fb"></a>
-								<a href="https://twitter.com/instantestore"><img src="images/twitter.png" alt="twitter"></a>
-							</div>
-					</div>
-			</footer>
+			
+			<footer>
+<div class="footer-stuff">
+	<h5>ABOUT OUR SITE</h5>
+	<div class="footer-links">
+	<li><a href="features.cfm">Shopping Cart Features</a></li>
+	<li><a href="pricing.cfm">Plans & Pricing</a></li>
+	<li><a href="javascript:void(0);" onclick="freetrial();">15-Day Free Trial</a></li>
+	<li><a href="payment-methods.cfm">Payment Gateways</a></li>
+	<li><a href="livechat.cfm">FREE Live Chat Software</a></li>
+	</div>
+</div>
+<div class="footer-stuff">
+	<h5>OUR LINKS</h5>
+	<div class="footer-links">
+	
+	<li><a href="signup.cfm">Sign Up Now</a></li>
+	<li><a href="javascript:void(0);" onclick="freetrial();">Free Trial</a></li>
+	<li><a href="http://www.logo-design-studio.com/" target="_blank">Logo Design Studio</a></li>
+	<li><a href="http://retai.ly/" target="_blank">Retaily</a></li>
+	<li><a href="http://www.shopsafehere.com/" target="_blank">Shopping Cart Portal</a></li>
+	<li><a href="http://ecommerce.instantestore.com/" target="_blank">Ecommerce Blog</a></li>
+	</div>
+</div>
+<div class="footer-stuff">
+	<h5>CONTACT US</h5>
+	<div class="footer-links">
+	<li>USA : +1-619-866-4188<br>Australia : +61-3-9015-9790<br>International : +60-4-2280704</li>
+	<li><a href="contact.cfm">Contact Us</a></li>
+	<li><a href="http://livechat.iestorechat.com/clients/charlestang77/?ky=57D9D053B760B89318DB04AC3A9C5108" target="_blank">Chat With Us Live</a></li>
+	<li><a href="https://ticket.instantestore.com/" target="_blank">Support Ticket System</a></li>
+	</div>
+	</div>
+	<div class="footer-stuff">
+	<h5>SOCIALIZE WITH US</h5>
+	<div class="footer-links">
+	<a href="https://www.facebook.com/instantestore"><img src="images/fb.png" alt="fb"></a>
+	<a href="https://twitter.com/instantestore"><img src="images/twitter.png" alt="twitter"></a>
+	</div>
+	</div>
+</footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-30565-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+			
+			
 			<img class="bg-image" src="images/last-pg.jpg" alt="img04" />
 		</div>
 		<!-- end Last Page -->
 	</div>
 	<!-- /pages-stack -->
 	<!-- Header -->
-	<div class="header animated slideInDown">
+	
+<div class="header real-fast slideInDown" id="primary-header">
 		<a href="#page-home" id="logo" class="ies-logo animated fadeIn"><img src="images/logo.png" alt="" /></a>
-		<a class="mn-lnk1" href="pages/pricing.html">Pricing</a>
-		<a class="mn-lnk2" href="pages/contact.html">Contact Us</a>
+		<a class="mn-lnk1" href="pricing.cfm">Pricing</a>
+		<a class="mn-lnk2" href="http://ecommerce.instantestore.com/" target="_blank">Blog</a>
+		<a class="mn-lnk3" href="contact.cfm">Contact Us</a>
+		<a class="mn-lnk4" href="signup.cfm">Sign Up</a>
 		<!--<span class="login">Login</span>-->
 					<div class="login-btn morph-button morph-button-modal morph-button-modal-2 morph-button-fixed animated fadeIn">
 						<button type="button" id="ieslogin">Login</button>
@@ -445,32 +371,60 @@ marketing will increase your chances of being found.</p>
 									<div class="content-style-form content-style-form-1">
 										<span id="iclose" class="icon icon-close">Close the dialog</span>
 										<h2>Login</h2>
-										<form>
-											<p><label>Username</label><input type="text" placeholder="mike@ies" /></p>
-											<p><label>Password</label><input type="password" placeholder="123..." /></p>
-											<p><button>Login</button></p>
-										</form>
+										<iframe src="https://www.instantestore.com/merchant_login_simple.cfm" seamless id="myiframelogin" style="width:100%;height:370px;background-color:white;border-radius:5px;overflow-y:scroll;overflow-x:hidden;border:0px;"></iframe>
 									</div>
 								</div>
 							</div>
 					</div><!-- morph-button -->
-		<div class="free-trial animated fadeIn">Free trial</div>
+		<div class="free-trial animated fadeIn" onclick="freetrial();"><a href="javascript:void(0);">Free trial</a></div>
 		<button class="menu-button animated fadeIn"><span>Menu</span></button>
 	</div>
+
+	<!--div class="header real-fast slideInDown" id="hd-home">
+		<a href="#page-home" id="logo" class="ies-logo animated fadeIn"><img src="images/logo-white.png" alt="" /></a>
+		<a class="mn-lnk1" href="pricing.cfm">Pricing</a>
+		<a class="mn-lnk2" href="http://ecommerce.instantestore.com/" target="_blank">Blog</a>
+		<a class="mn-lnk3" href="contact.cfm">Contact Us</a>
+		<a class="mn-lnk4" href="signup.cfm">Sign Up</a>
+		<!<span class="login">Login</span>>
+					
+					<div class="login-btn morph-button morph-button-modal morph-button-modal-2 morph-button-fixed animated fadeIn">
+						<button type="button" id="ieslogin">Login</button>
+							<div class="morph-content">
+								<div>
+									<div class="content-style-form content-style-form-1">
+										<span id="iclose" class="icon icon-close">Close the dialog</span>
+										<h2>Login</h2>
+										<iframe src="https://www.instantestore.com/merchant_login_simple.cfm" seamless id="myiframelogin" style="width:100%;height:370px;background-color:white;border-radius:5px;overflow-y:scroll;overflow-x:hidden;border:0px;"></iframe>
+									</div>
+								</div>
+							</div>
+					</div><! morph-button >
+		<div class="free-trial animated fadeIn" onclick="freetrial();"><a href="javascript:void(0);">Free trial</a></div>
+		<button id="mnbtn2" class="menu-button animated fadeIn"><span>Menu</span></button>
+	</div-->
+
 	<!-- Header end -->
-	
-	<a href="#" class="click-to-learn-more animated slideInUp">
-		<p class="anims1 fadeInUp">Click to view next page</p>
-		<span class="dwn-arrow sanim1 fadeInUp"></span>
+
+	<a href="#" class="click-to-learn-more animated slideInUp" style="display:none;">
+		<span class="dwn-arrow sanim4 slideInDown"></span>
+		<span class="dwn-arrow sanim1 slideInDown"></span>
 	</a>
 
 	<script src="js/classie.js"></script>
 	<script src="js/main.js"></script>
-	<!--<script src="js/dots.js"></script>-->
+	<script src="js/dots.js"></script>
 	<script src="js/uiMorphingButton_fixed.js"></script>
 	<script type="text/javascript" src="js/javascript.fullPage.js"></script>
+	<script type="text/javascript">
+	<!--
+		if (screen.width <= 699) {
+			document.location = "index-mobile.cfm";
+		}
+	//-->
+	</script>
 
-	<script>
+	<!--script>
 			[].slice.call( document.querySelectorAll( '.dotstyle > ul' ) ).forEach( function( nav ) {
 				new DotNav( nav, {
 					callback : function( idx ) {
@@ -478,57 +432,160 @@ marketing will increase your chances of being found.</p>
 					}
 				});
 			} );
-	</script>
-	
-	<script type="text/javascript">
-		fullpage.initialize('#fullpage', {
-			css3:true,
-			//Accessibility
-			keyboardScrolling: true,
-			animateAnchor: true,
-			    //Navigation
-			lockAnchors: false,
-			navigation: true,
-			navigationTooltips: ['firstSlide', 'secondSlide', 'firstSlide', 'secondSlide', 'firstSlide', 'secondSlide'],
-			navigationPosition: 'right',
-			slidesNavigation: true,
-			showActiveTooltip: true,
+	</script-->
 
-			/*'afterLoad': function(anchorLink, index){
-					if (index == 1) {
-						document.body.querySelector('.page').addClass('show');
-					}
-					if (index == 2) {
-						document.body.querySelector('.page').addClass('show');
-					}
-					if (index == 3) {
-						document.body.querySelector('.page').addClass('show');
-					}
-					if (index == 4) {
-						document.body.querySelector('.page').addClass('show');
-					}
-					if (index == 5) {
-						document.body.querySelector('.page').addClass('show');
-					}
-					if (index == 6) {
-						document.body.querySelector('.page').addClass('show');
-					}
-					if (index == 7) {
-						document.body.querySelector('.page').addClass('show');
-					}
-					if (index == 8) {
-						document.body.querySelector('.page').addClass('show');
-					}
-					if (index == 9) {
-						document.body.querySelector('.page').addClass('show');
-					}
-					if (index == 10) {
-						document.body.querySelector('.page').addClass('show');
-					}
-			},*/
-		});
+	<script type="text/javascript">
+
+				function hasClass(el, className) {
+				  if (el.classList)
+					return el.classList.contains(className)
+						else
+					return !!el.className.match(new RegExp('(\\s|^)' + className + '(\\s|$)'))
+				}
+
+				function addClass(el, className) {
+					if (el.classList)
+						el.classList.add(className)
+					else if (!hasClass(el, className)) el.className += " " + className
+				}
+
+				function removeClass(el, className) {
+					if (el.classList)
+						el.classList.remove(className)
+					else if (hasClass(el, className)) {
+						var reg = new RegExp('(\\s|^)' + className + '(\\s|$)')
+					el.className=el.className.replace(reg, ' ')
+				  }
+				}
+				
+				fullpage.initialize('#fullpage', {
+						css3:true,
+						//Accessibility
+						keyboardScrolling: true,
+						animateAnchor: true,
+						//Scrolling
+						scrollingSpeed: 800,
+						easing: 'easeInOut',
+						easingcss3: 'ease',
+						scrollOverflow: false,
+						autoScrolling: false,
+						fitToSection: false,
+						normalScrollElementTouchThreshold: 2, 
+						//Custom selectors
+						sectionSelector: '.page',
+						slideSelector: '.slide',
+						//Navigation
+						lockAnchors: false,
+						navigation: true,
+						anchors: ['home', 'ingredients', 'businesscurve', 'showcase', 'team', 'contact'],
+						//navigationTooltips: ['Home', 'Ingredients', 'Business Curve', 'Success Stories', 'Team', 'Contact'],
+						//navigationPosition: 'right',
+						showActiveTooltip: false,
+						responsiveWidth: 900,
+						afterLoad: function(anchorLink, index){
+
+							var el = document.querySelector('.click-to-learn-more');
+							var logo = document.querySelector('#logo');
+							var primaryheader = document.querySelector('#primary-header');
+							var homeheader = document.querySelector('#hd-home');
+
+							var loadedSection = this;
+							
+							// Variable
+								// Ingredients
+ 								var igOne = document.querySelector('#ingredient1');
+								var igTwo = document.querySelector('#ingredient2');
+								var igThree = document.querySelector('#ingredient3');
+								var igFour = document.querySelector('#ingredient4');
+								var ingredientdesc = document.querySelector('#page-ingredients .bp-header__desc');
+								var ingredienthd = document.querySelector('#page-ingredients .bp-header__title');
+								// Business Curve
+								var bizhd = document.querySelector('#page-custom .bp-header__title');
+								var bizleftinfo = document.querySelector('#page-custom .left-section .info');
+								var bizrightinfo = document.querySelector('#page-custom .right-section .info');
+								var bizbtn = document.querySelector('#page-custom .dg');
+								// Showcase
+								var showcasedesc = document.querySelector('#page-showcase .bp-header__desc');
+								var showcasehd = document.querySelector('#page-showcase .bp-header__title');
+								var showcasegrid = document.querySelector('#page-showcase .showcase-grid');
+								// Team
+								var teamdots = document.querySelector('#page-team .team');
+								var teamdesc = document.querySelector('#page-team .bp-header__desc');
+								var teamhd = document.querySelector('#page-team .bp-header__title');
+								var teambtn = document.querySelector('#page-team .team-button');
+								// Contact
+								var contacthd = document.querySelector('#page-last .bp-header__title');
+								var lstpg = document.querySelector('#page-last .lst-pg');
+								
+							//using index 
+							if(anchorLink != 'home'){
+								addClass(el, 'hide');
+								addClass(homeheader, 'hide');
+								//removeClass(primaryheader,'hide');
+							}
+							else {
+								removeClass(el, 'hide');
+								//addClass(primaryheader,'hide');
+								//removeClass(homeheader, 'hide');
+							}
+
+							el.addEventListener('click', function(ev) {
+								fullpage.moveTo(2);
+							});
+
+							logo.addEventListener('click', function(ev) {
+								fullpage.moveTo(1);
+							});
+							
+							if( anchorLink == 'businesscurve' ) {
+									addClass(bizhd, 'fadeInDown');
+									addClass(bizleftinfo, 'fadeInDown');
+									addClass(bizrightinfo, 'fadeInDown');
+									addClass(bizbtn, 'fadeInUp');
+							}
+							
+							if ( anchorLink == 'showcase' ) {
+									addClass(ingredienthd, 'fadeInDown');
+									addClass(ingredientdesc,'fadeInDown');
+									removeClass(showcasegrid, 'hide');
+							}
+							
+							if ( anchorLink == 'team' ) {
+									addClass(teamhd, 'fadeIn');
+									addClass(teamdesc, 'fadeIn');
+									addClass(teambtn, 'fadeIn');
+									removeClass(teamdots, 'hide');
+							}	
+							
+							if ( anchorLink == 'contact' ) {
+									addClass(contacthd, 'fadeInDown');
+									removeClass(lstpg, 'hide');
+							}
+							
+						},
+						onLeave: function(index, nextIndex, direction) {
+								var leavingSection = this;
+								// Variables
+								var igOne = document.querySelector('#ingredient1');
+								var igTwo = document.querySelector('#ingredient2');
+								var igThree = document.querySelector('#ingredient3');
+								var igFour = document.querySelector('#ingredient4');
+								var ingredientdesc = document.querySelector('#page-ingredients .bp-header__desc');
+								var ingredienthd = document.querySelector('#page-ingredients .bp-header__title');
+								
+								if( index == 2 && direction == 'down' ) {
+									removeClass(igOne, 'fstop');
+									removeClass(igTwo, 'fstop');
+									removeClass(igThree, 'fstop');
+									removeClass(igFour, 'fstop');
+									addClass(ingredienthd, 'slideInDown');
+									addClass(ingredientdesc,'slideInDown');
+								}
+								
+							}
+					});
 	</script>
-	<script>
+	<!--script>
 			(function() {
 				var docElem = window.document.documentElement, didScroll, scrollPosition;
 
@@ -586,12 +643,7 @@ marketing will increase your chances of being found.</p>
 						}
 					} );
 				} );
-				/*
-				[].slice.call( document.querySelectorAll( 'form button' ) ).forEach( function( bttn ) { 
-					bttn.addEventListener( 'click', function( ev ) { ev.preventDefault(); } );
-				} );*/
 			})();
-		</script>
+		</script-->
 </body>
-
 </html>

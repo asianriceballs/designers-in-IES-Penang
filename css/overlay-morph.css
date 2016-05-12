@@ -1,5 +1,4 @@
 
-
 /* Morph Button: Default Styles */
 
 .morph-button {
@@ -100,7 +99,7 @@
 .morph-button-overlay.open .morph-content,
 .morph-button-sidebar.open .morph-content {
 	-webkit-transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s;
-	transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s;	
+	transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s;
 }
 
 /* Morph Button Style: Overlay */
@@ -425,7 +424,6 @@
 	background: #c8c8c8;
 }
 
-
 /*
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
@@ -545,7 +543,7 @@
 }
 
 .content-style-overlay .icon-close:hover {
-	border-color: #a50a05;	
+	border-color: #a50a05;
 }
 
 /* Style for text modal */
@@ -661,6 +659,36 @@
 	color: #e75854;
 }
 
+.login-page {
+	background: url(../images/background.jpg) no-repeat;
+}
+
+.login-page .morph-content {
+	pointer-events: visible;
+}
+
+.login-page .morph-button-modal {
+	width: 40%;
+    margin: 20vh auto;
+	z-index: 10;
+    position: relative
+}
+
+.login-page .content-style-form button {
+	margin-bottom: 3em;
+}
+
+.login-page .content-style-form-1 h2,
+.login-page .content-style-form-1 p,
+.login-page .content-style-form-1 .icon-close {
+	font-family: 'montserrat', sans-serif;
+	opacity: 1 !important;
+	-webkit-transition: opacity 0.2s 0.35s, -webkit-transform 0.2s 0.35s;
+	transition: opacity 0.2s 0.35s, transform 0.2s 0.35s;
+	-webkit-transform: scale(0.85);
+	transform: scale(0.85);
+}
+
 .js .content-style-form-1 h2,
 .js .content-style-form-1 p,
 .js .content-style-form-1 .icon-close {
@@ -670,6 +698,7 @@
 	-webkit-transform: scale(0.85);
 	transform: scale(0.85);
 }
+
 
 .content-style-form-1 p:first-child {
 	-webkit-transition-delay: 0.4s;
@@ -831,7 +860,7 @@
 
 .morph-button-inflow.open .content-style-social a {
 	-webkit-transform: translateX(0);
-	transform: translateX(0);	
+	transform: translateX(0);
 }
 
 .morph-button-inflow.open .content-style-social a:nth-child(2) {
@@ -961,6 +990,12 @@
 /* Media Queries */
 
 @media screen and (max-width: 600px) {
+	.login-page .morph-button-modal {
+		width: 85%;	
+	}
+	.login-page .content-style-form form {
+		padding: 10px 15px;
+	}
 	.morph-button-modal.open .morph-content {
 		top: 0% !important;
 		left: 0% !important;
