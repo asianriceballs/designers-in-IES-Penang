@@ -1,3 +1,11 @@
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en" class="no-js view-fix">
 
@@ -5,83 +13,110 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>InstanteStore</title>
-	<meta name="description" content="InstanteStore: Complete solution comes with store builder, shopping cart, payment integration, and MUCH more." />
-	<meta name="keywords" content="InstanteStore, store builder, shopping cart, shopping, payment, complete, solution" />
+	<title>Ecommerce Solutions & Shopping Cart Software - InstanteStore</title>
+	<meta name="description" content="Complete solution comes with store builder, shopping cart, payment integration, and MUCH more." />
+	<meta name="keywords" content="InstanteStore, store builder, shopping cart, shopping, payment, complete, ecommerce solution" />
 	<meta name="author" content="InstanteStore" />
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/overlay-morph.css" />
 	<link rel="stylesheet" type="text/css" href="css/animate.css" />
-	<link rel="stylesheet" type="text/css" href="css/javascript.fullPage.css" />
+	<!--link rel="stylesheet" type="text/css" href="css/javascript.fullPage.css" /-->
 	<script src="js/modernizr-custom.js"></script>
 </head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<!--<div id="freetrialbox" class="mainbox col-md-4 col-md-offset-3 col-sm-6 col-sm-offset-3" role="dialog"><! modal fade (extra class items)--> 
+<div id="logo"><span class="logoimg"></span></div>                 
+<!--<div class="panel panel-info" >
+<iframe src="https://www.instantestore.com/free_trial_dropdown.cfm" seamless id="myiframe" scrolling="no" style="width:100%;height:340px;background-color:white;border-radius:5px;border:0px;"></iframe>
+</div>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closefreetrial();"><span aria-hidden="true">&times;</span></button>
+</div>
+<div id="bg-over"></div>
+<script language="javascript">
+function freetrial(){
+$( "#myiframe" ).css("display","block");
+//var ShowForm = new TweenLite("#myiframe", 0.4, {top:"0px",position:"fixed"});
+$( "#bg-over" ).css("display","block");
+  $( "#freetrialbox" ).animate({
+    top: "460px",
+  }, 200, function() {
+    // Animation complete.
+  });
+}
+function closefreetrial(){
+  $( "#freetrialbox" ).animate({
+    top: "-800px",
+  }, 200, function() {
+    $( "#bg-over" ).css("display","none");
+  });
+}
 
+</script>-->
 <body class="animated fadeIn">
 	<!-- navigation -->
 	<nav class="pages-nav">
-		<div class="pages-nav__item"><a class="link link--page" href="index.html">Home</a></div>
-		<div class="pages-nav__item"><a class="link link--page" href="features.html">All Features</a></div>
-		<div class="pages-nav__item"><a class="link link--page" href="pricing.html">Pricing</a></div>
-		<div class="pages-nav__item"><a class="link link--page" href="mobile.html">Mobile App</a></div>
-		<div class="pages-nav__item"><a class="link link--page" href="payment-methods.html">Payment Gateways</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="default.cfm">Home</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="features.cfm">All Features</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="pricing.cfm">Pricing</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="mobile.cfm">Mobile App</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="payment-methods.cfm">Payment Gateways</a></div>
 		<div class="pages-nav__item"><a class="link link--page" href="logo-design-studio.com/ecom.cfm">Logo Design</a></div>
-		<div class="pages-nav__item"><a class="link link--page" href="livechat.html">Free Live Chat</a></div>
-		<div class="pages-nav__item"><a class="link link--page" href="contact.html">Contact Us</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="livechat.cfm">Free Live Chat</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="contact.cfm">Contact Us</a></div>
 	</nav>
 	<!-- /navigation-->
 	<!-- pages stack -->
 	<div class="pages-stack" id="fullpage">
 		<!-- page -->
 		<div class="page" id="page-home" data-anchor="home">
-			<div class="content">
+			<div class="col-md-6 content">
 				<header class="bp-header cf wr">
-					<h1 class="bp-header__title anims fadeInDown">The <em><span class="under">right</span> online store</em> <br/>for your<em> business</em></h1>
-					<p class="bp-header__desc sanim1 fadeInDown">proven, first-class features for all your ecommerce needs</p>
+					<h1 class="bp-header__title">The <em><span class="under">right</span> online store</em> <br/>for your<em> business</em></h1>
+					<p class="bp-header__desc">proven, first-class features for all your ecommerce needs</p>
 				</header>
-				<video preload autoplay loop muted class="bg-video" poster="images/videos/introbg.jpg">
-				  <source src="images/videos/00322.mp4" type="video/mp4">
-				  <source src="images/videos/00322.mov" type="video/mov">
-				  <source src="images/videos/00322.wmv" type="video/wmv">
-				</video>
+			</div>
+			<div class="col-md-6">
+				<img CLASS="img-responsive topfoldscreen" src="images/videos/topfold.png" alt="">
 			</div>
 		</div>
 		<!-- /page -->
 		<div class="page" id="page-ingredients" data-anchor="ingredients">
 			<div id="og">
 				<header class="bp-header cf content">
-				<h1 class="bp-header__title anims">Every successful online business is built on 4 pillars.</h1>
-					<p class="bp-header__desc animf">Take advantage of InstanteStore’s full range of features to make full use of the best techniques from each pillar to build your own success story.</p>
+				<h1 class="bp-header__title">Every successful online business is built on 4 pillars.</h1>
+					<p class="bp-header__desc">Take advantage of InstanteStore’s full range of features to make full use of the best techniques from each pillar to build your own success story.</p>
 					<!--<p class="bp-header__desc anims slideInDown">InstanteStore provides you the platform and tools that will make your store a success</p>-->
 						<div class="theGrid mt2" class="main">
 							<section class="grid">
-								<div class="grid__item fstop sanim1 fadeInDown" id="ingredient1" onclick="window.location.href='first.html'">
+								<div class="grid__item fstop" id="ingredient1" onclick="window.location.href='first.cfm'">
 									<img src="images/icons/glasses.png" class="img-responsive boxout1">
 									<span class="ingredient-anime"><img class="img-responsive" src="images/icons/pillar1.png"></span>
 									<h2 class="title title--preview">Attract Visitors</h2>
 									<p class="top-intro">Make it easy for customers to find you with fully optimized pages and links to your store from everywhere: marketplaces, Facebook, Twitter, and much more.</p>
-									<button class="expand-btn" onclick="window.location.href='first.html'">Show Me How</button>
+									<button class="expand-btn" onclick="window.location.href='first.cfm'">Show Me How</button>
 								</div>
-								<div class="grid__item fstop sanim2 fadeInDown" id="ingredient2" onclick="window.location.href='second.html'">
+								<div class="grid__item fstop" id="ingredient2" onclick="window.location.href='second.cfm'">
 									<img src="images/icons/lemon1.png" class="img-responsive boxout2">
 									<span class="ingredient-anime"><img class="img-responsive" src="images/icons/pillar2img.png"></span>
 									<h2 class="title title--preview">​Convert Visitors into Paying Customers</h2>
 									<p>Show visitors the right message at the right time to convert them into paying customers. The more you convert, the more you make.</p>
-									<button class="expand-btn less-info" onclick="window.location.href='second.html'">Show Me How</button>
+									<button class="expand-btn less-info" onclick="window.location.href='second.cfm'">Show Me How</button>
 								</div>
-								<div class="grid__item fstop sanim3 fadeInDown" id="ingredient3" onclick="window.location.href='third.html'">
+								<div class="grid__item fstop" id="ingredient3" onclick="window.location.href='third.cfm'">
 									<span class="ingredient-anime"><img class="img-responsive" src="images/icons/pillar3img.png"></span>
 									<h2 class="title title--preview">​Increase Customer Order Value</h2>
 									<p>Get the most out of paying customers by offering them irresistible deals and other products that they’ll want so that they’ll buy more.</p>
-									<button class="expand-btn less-info" onclick="window.location.href='third.html'">Show Me How</button>
+									<button class="expand-btn less-info" onclick="window.location.href='third.cfm'">Show Me How</button>
 									<img src="images/icons/pinkplanet.png" class="img-responsive boxout3">
 								</div>
-								<div class="grid__item fstop sanim4 fadeInDown" id="ingredient4" onclick="window.location.href='fourth.html'">
+								<div class="grid__item fstop" id="ingredient4" onclick="window.location.href='fourth.cfm'">
 									<span class="ingredient-anime"><img class="img-responsive" src="images/icons/pillar4img.png"></span>
 									<h2 class="title title--preview">Customer Repeat Orders</h2>
 									<p>Customer retention is key to growing your business. Previous customers are much more likely to shop with you again. Engage them and keep them coming back for more.</p>
-									<button class="expand-btn" onclick="window.location.href='fourth.html'">Show Me How</button>
+									<button class="expand-btn" onclick="window.location.href='fourth.cfm'">Show Me How</button>
 									<img src="images/icons/letter.png" class="img-responsive boxout4">
 								</div>
 							</section>
@@ -92,59 +127,60 @@
 		<!-- BusinessCurve -->
 		<div class="page" id="page-custom" data-anchor="businesscurve">
 			<header class="bp-header cf content">
-				<h1 class="bp-header__title sanim4">InstanteStore is a great fit for your business <br />whether you’re:</h1>
+				<h1 class="bp-header__title">InstanteStore is a great fit for your business <br />whether you’re:</h1>
 						<div class="left-section">
-							<div class="info fp sanim4">
+							<div class="info">
 								<h3><em>A young, growing venture</em></h3>
 								<ul>
 									<li><span class="bullet"><i class="fa fa-chevron-right"></i></span>Are you looking to supplement your income with your own online store?<li>
 									<li><span class="bullet"><i class="fa fa-chevron-right"></i></span>Are you looking for an alternative to your 9-to-5 job where you can be your own boss?<li>
 									<li><span class="bullet"><i class="fa fa-chevron-right"></i></span>Are you a small business?<li>
 								</ul>
-								<p>Individuals and small businesses have been a great driving force within the InstanteStore community from Day One. We’ve helped hundreds of budding eCommerce businesses at various stages of their businesses.<br /><a href="businesses.html#growing">View more</a></p>
+								<p>Individuals and small businesses have been a great driving force within the InstanteStore community from Day One. We’ve helped hundreds of budding eCommerce businesses at various stages of their businesses.<br /><a href="businesses.cfm#growing">View more</a></p>
 								<span class="darkblur"></span>
 							</div>
 							<img class="bg-image animated fadeInUp" src="images/page-content/plans/growing-2.jpg" alt="growing" />
 						</div>
 						<div class="right-section">
-							<div class="info fp sanim4">
+							<div class="info">
 								<h3><em>A mature, thriving enterprise</em></h3>
 								<ul>
 									<li><span class="bullet"><i class="fa fa-chevron-right"></i></span>Are you an established brick and mortar store looking to have an online presence?</li>
 									<li><span class="bullet"><i class="fa fa-chevron-right"></i></span>Are you a successful online business looking to expand further?</li>
 								</ul>
-								<p>Some of our most successful stores are larger enterprises that have very heavy traffic and hundreds to thousands of daily orders. Our experience with highly successful online businesses means that we’re well aware of what’s necessary for your business to continue expanding and thriving.<br /><a href="businesses.html#enterprise">View more</a></p>
+								<p>Some of our most successful stores are larger enterprises that have very heavy traffic and hundreds to thousands of daily orders. Our experience with highly successful online businesses means that we’re well aware of what’s necessary for your business to continue expanding and thriving.<br /><a href="businesses.cfm#enterprise">View more</a></p>
 							<!--<span class="darkblur"></span>-->
 						</div>
 						<img class="bg-image animated fadeInDown" src="images/page-content/plans/enterprise-2.jpg" alt="enterprise" />
 					</div>
 					<span class="darkblur"></span>
-					<button class="dg sanim5" onclick="window.location.href=''">Start your free trial</button>
+					<button class="dg sanim5" onclick="freetrial();">Start your free trial</button>
 				</header>
 		</div>
 		<!-- end BusinessCurve -->
 		<!-- Show Showcase -->
 		<div class="page" id="page-showcase" data-anchor="showcase">
 			<header class="bp-header cf content">
-				<h1 class="bp-header__title animated">Success Stories</h1>
-				<p class="bp-header__desc animf">InstanteStore has helped thousands of businesses over the years. <br/>Here are some of our top success stories and great friends and supporters:</p>
-				<ul class="showcase-grid hide">
+				<h1 class="bp-header__title">Success Stories</h1>
+				<p class="bp-header__desc">InstanteStore has helped thousands of businesses over the years. <br/>Here are some of our top success stories and great friends and supporters:</p>
+				<ul class="showcase-grid">
 					<li class="lgd-item">
-						<a href="featuredstories.html"><img class="anims slideInUp" src="images/page-content/showcase/testi-clipons.png" alt="crazy4clipons website" /></a>
-						<img class="thumb sanim1 slideInUp" src="images/page-content/showcase/1st-thumb.png" alt="" />
-						<p class="sanim2 slideInUp">"My decision was correct! InstanteStore provides me the perfect web platform with all the technical complexities."<br><em>Barbara Young</em><br><em><a href="http://www.crazy4clipons.com">crazy4clipons.com</a></em></p>
+						<a href="http://www.crazy4clipons.com" target="_blank"><img class="anims" src="images/page-content/showcase/testi-clipons.png" alt="crazy4clipons website" /></a>
+						<img class="thumb" src="images/page-content/showcase/1st-thumb.png" alt="" />
+						<p class="sanim2 slideInUp">"My decision was correct! InstanteStore provides me the perfect web platform with all the technical complexities."<br><em>Barbara Young</em><br><em><a href="http://www.crazy4clipons.com" target="_blank">crazy4clipons.com</a></em></p>
 					</li>
 					<li class="lgd-item">
-						<a href="featuredstories.html"><img class="sanim1 slideInUp" src="images/page-content/showcase/testi-cvcoffee.png" alt="cvcoffee website" /></a>
-						<img class="thumb sanim3 slideInUp" src="images/page-content/showcase/2nd-thumb.png" alt="" />
-						<p class="sanim4 slideInUp">"We have successfully sold over $35 million dollars of products. The best business decision we ever made was going with InstanteStore over competitive solutions."<br><em>Preston Humphries</em><br><em><a href="www.cvcoffee.com">cvcoffee.com</a></em></p>
+						<a href="http://www.cvcoffee.com" target="_blank"><img class="sanim1" src="images/page-content/showcase/testi-cvcoffee.png" alt="cvcoffee website" /></a>
+						<img class="thumb" src="images/page-content/showcase/2nd-thumb.png" alt="" />
+						<p class="sanim4 slideInUp">"We have successfully sold over $35 million dollars of products. The best business decision we ever made was going with InstanteStore over competitive solutions."<br><em>Preston Humphries</em><br><em><a href="http://www.cvcoffee.com" target="_blank">cvcoffee.com</a></em></p>
 					</li>
 					<li class="lgd-item">
-						<a href="featuredstories.html"><img class="sanim2 slideInUp" src="images/page-content/showcase/testi-ezparty.png" alt="ezypartyzone website" /></a>
-						<img class="thumb sanim4 slideInUp" src="images/page-content/showcase/3rd-thumb.png" alt="" />
-						<p class="sanim5 slideInUp">“Not Simply a Product or Service, InstanteStore is a Business Partnership To be Cherished…”<br><em>Maura Celik, Owner of Party Zones Inc.</em><br><em><a href="http://www.ezpartyzone.com">ezpartyzone.com</a></em></p>
+						<a href="http://www.ezpartyzone.com" target="_blank"><img class="sanim2" src="images/page-content/showcase/testi-ezparty.png" alt="ezypartyzone website" /></a>
+						<img class="thumb" src="images/page-content/showcase/3rd-thumb.png" alt="" />
+						<p class="sanim5 slideInUp">“Not Simply a Product or Service, InstanteStore is a Business Partnership To be Cherished…”<br><em>Maura Celik, Owner of Party Zones Inc.</em><br><em><a href="http://www.ezpartyzone.com" target="_blank">ezpartyzone.com</a></em></p>
 					</li>
 				</ul>
+				<div class="wehavemore" onclick="location.href='featuredstores.cfm';">More Success Stories</div>
 			</header>
 			<!--/* Get rid of image */ <img class="bg-image" src="images/4.jpg" alt="img04" />-->
 		</div>
@@ -152,8 +188,8 @@
 		<!-- Team -->
 		<div class="page" id="page-team" data-anchor="team">
 			<header class="bp-header cf content">
-				<div class="team hide">
-				<div id="leefong" class="team-dot animated fadeInDown">
+				<div class="team">
+				<div id="leefong" class="team-dot animated">
 					<span class="tooltip-dot">
 						<i class="fa fa-circle-o-notch"></i>
 					</span>
@@ -161,7 +197,7 @@
 						<button type="button">Lee Fong<br/><em>Technical Development</em></button>
 					</div><!-- morph-button -->
 				</div>
-				<div id="suisim" class="team-dot animated fadeInDown">
+				<div id="suisim" class="team-dot animated">
 					<span class="tooltip-dot">
 						<i class="fa fa-circle-o-notch"></i>
 					</span>
@@ -169,7 +205,7 @@
 						<button type="button">Sui Sim<br/><em>Customer Support</em></button>
 					</div><!-- morph-button -->
 				</div>
-				<div id="charles" class="team-dot animated fadeInDown">
+				<div id="charles" class="team-dot animated">
 					<span class="tooltip-dot">
 						<i class="fa fa-circle-o-notch"></i>
 					</span>
@@ -177,7 +213,7 @@
 						<button type="button">Charles<br/><em>Founder/CEO</em></button>
 					</div>
 				</div>
-				<div id="michael" class="team-dot animated fadeInDown">
+				<div id="michael" class="team-dot animated">
 					<span class="tooltip-dot">
 						<i class="fa fa-circle-o-notch"></i>
 					</span>
@@ -185,7 +221,7 @@
 						<button type="button">Michael<br/><em>Design</em></button>
 					</div>
 				</div>
-				<div id="terry" class="team-dot animated fadeInDown">
+				<div id="terry" class="team-dot animated">
 					<span class="tooltip-dot">
 						<i class="fa fa-circle-o-notch"></i>
 					</span>
@@ -193,7 +229,7 @@
 						<button type="button">Terry<br/><em>Tech Development/Support</em></button>
 					</div>
 				</div>
-				<div id="ryan" class="team-dot animated fadeInDown">
+				<div id="ryan" class="team-dot animated">
 					<span class="tooltip-dot">
 						<i class="fa fa-circle-o-notch"></i>
 					</span>
@@ -201,7 +237,7 @@
 						<button type="button">Ryan<br/><em>Technical Development</em></button>
 					</div>
 				</div>
-				<div id="desmond" class="team-dot animated fadeInDown">
+				<div id="desmond" class="team-dot animated">
 					<span class="tooltip-dot">
 						<i class="fa fa-circle-o-notch"></i>
 					</span>
@@ -209,7 +245,7 @@
 						<button type="button">Desmond<br/><em>Customer Support</em></button>
 					</div>
 				</div>
-				<div id="nilo" class="team-dot animated fadeInDown">
+				<div id="nilo" class="team-dot animated">
 					<span class="tooltip-dot">
 						<i class="fa fa-circle-o-notch"></i>
 					</span>
@@ -217,15 +253,15 @@
 						<button type="button">Nilo<br/><em>Design</em></button>
 					</div>
 				</div>
-				<div id="waihong" class="team-dot animated fadeInDown">
+				<div id="waihong" class="team-dot animated">
 					<span class="tooltip-dot">
 						<i class="fa fa-circle-o-notch"></i>
 					</span>
 					<div class="single morph-button morph-button-modal morph-button-modal-1 morph-button-fixed">
-						<button type="button">Waihong<br/><em>Technical Development</em></button>
+						<button type="button">Waihoong<br/><em>Technical Development</em></button>
 					</div>
 				</div>
-				<div id="jacky" class="team-dot animated fadeInDown">
+				<div id="jacky" class="team-dot animated">
 					<span class="tooltip-dot">
 						<i class="fa fa-circle-o-notch"></i>
 					</span>
@@ -233,7 +269,7 @@
 						<button type="button">Jacky<br/><em>Technical Development</em></button>
 					</div>
 				</div>
-				<div id="lisa" class="team-dot animated fadeInDown">
+				<div id="lisa" class="team-dot animated">
 					<span class="tooltip-dot">
 						<i class="fa fa-circle-o-notch"></i>
 					</span>
@@ -242,9 +278,9 @@
 					</div>
 				</div>
 				</div>
-				<div class="bp-header__desc anims"><h1 class="bp-header__title animated slideInDown">Our Team</h1>
+				<div class="bp-header__desc"><h1 class="bp-header__title">Our Team</h1>
 					<p id="team_desc sanim1">Real People with Years of Experience Who Want You to Succeed</p>
-					<button class="team-button sanim5-5" onclick="window.location.href='team.html'">Learn More About Our Team</button>
+					<button class="team-button sanim5-5" onclick="window.location.href='team.cfm'">Learn More About Our Team</button>
 				</div>
 			</header>
 			<img class="bg-image" src="images/team.jpg" alt="teampic" />
@@ -253,62 +289,80 @@
 		<!-- Last Page -->
 		<div class="page" id="page-last" data-anchor="contact">
 			<header class="bp-header cf">
-				<h1 class="bp-header__title animated">Start Selling now</h1>
-				<div class="lst-pg hide animated slideInDown">
+				<h1 class="bp-header__title">Start Selling now</h1>
+				<div class="lst-pg">
 					<!--<span class="ml sanim2 fadeInUp">Click to see what it looks like so far</span>-->
-					<button class="learn-more sanim3 fadeInUp" onclick="window.location.href='get-started.html'">Try it now</button>
-					<span class="bp-header__desc rp sml sanim5 fadeInUp"><a href="get-started.html">Sign Up</a> now and we will give an extra 30 days credit.</span>
+					<button class="learn-more" onclick="freetrial();">Try it now</button>
+					<!--span class="bp-header__desc rp sml sanim5 fadeInUp"><a href="signup.cfm">Sign Up</a> now and we will give an extra 30 days credit.</span-->
 				</div>
 			</header>
-			<footer class="animated slideInUp">
-					<div class="footer-stuff">
-						<h5>ABOUT OUR SITE</h5>
-							<div class="footer-links">
-								<li><a href="features.html">Shopping Cart Features</a></li>
-								<li><a href="pricing.html">Plans & Pricing</a></li>
-								<li><a href="x">15-Day Free Trial</a></li>
-								<li><a href="payment-methods.html">Payment Gateways</a></li>
-								<li><a href="livechat.html">FREE Live Chat Software</a></li>
-							</div>
-					</div>
-					<div class="footer-stuff">
-						<h5>OUR LINKS</h5>
-							<div class="footer-links">
-								<li><a href="login.html">Merchant Login</a></li>
-								<li><a href="get-started.html">Sign Up Now</a></li>
-								<li><a href="get-started.html">Free Trial</a></li>
-								<li><a href="http://www.logo-design-studio.com/">Logo Design Studio</a></li>
-								<li><a href="http://retai.ly/">Retaily</a></li>
-								<li><a href="http://www.shopsafehere.com/">Shopping Cart Portal</a></li>
-							</div>
-					</div>
-					<div class="footer-stuff">
-						<h5>CONTACT US</h5>
-							<div class="footer-links">
-								<li>USA : +1-619-866-4188<br>Australia : +61-3-9015-9790<br>International : +60-4-2280704</li>
-								<li><a href="contact.html">Contact Us</a></li>
-								<li><a href="http://livechat.iestorechat.com/clients/charlestang77/?ky=57D9D053B760B89318DB04AC3A9C5108">Chat With Us Live</a></li>
-								<li><a href="ticket.instantestore.com/">Support Ticket System</a></li>
-							</div>
-					</div>
-					<div class="footer-stuff">
-						<h5>SOCIALIZE WITH US</h5>
-							<div class="footer-links">
-								<a href="https://www.facebook.com/instantestore"><img src="images/fb.png" alt="fb"></a>
-								<a href="https://twitter.com/instantestore"><img src="images/twitter.png" alt="twitter"></a>
-							</div>
-					</div>
-			</footer>
+			
+			<footer>
+<div class="footer-stuff">
+	<h5>ABOUT OUR SITE</h5>
+	<div class="footer-links">
+	<li><a href="features.cfm">Shopping Cart Features</a></li>
+	<li><a href="pricing.cfm">Plans & Pricing</a></li>
+	<li><a href="javascript:void(0);" onclick="freetrial();">15-Day Free Trial</a></li>
+	<li><a href="payment-methods.cfm">Payment Gateways</a></li>
+	<li><a href="livechat.cfm">FREE Live Chat Software</a></li>
+	</div>
+</div>
+<div class="footer-stuff">
+	<h5>OUR LINKS</h5>
+	<div class="footer-links">
+	
+	<li><a href="signup.cfm">Sign Up Now</a></li>
+	<li><a href="javascript:void(0);" onclick="freetrial();">Free Trial</a></li>
+	<li><a href="http://www.logo-design-studio.com/" target="_blank">Logo Design Studio</a></li>
+	<li><a href="http://retai.ly/" target="_blank">Retaily</a></li>
+	<li><a href="http://www.shopsafehere.com/" target="_blank">Shopping Cart Portal</a></li>
+	<li><a href="http://ecommerce.instantestore.com/" target="_blank">Ecommerce Blog</a></li>
+	</div>
+</div>
+<div class="footer-stuff">
+	<h5>CONTACT US</h5>
+	<div class="footer-links">
+	<li>USA : +1-619-866-4188<br>Australia : +61-3-9015-9790<br>International : +60-4-2280704</li>
+	<li><a href="contact.cfm">Contact Us</a></li>
+	<li><a href="http://livechat.iestorechat.com/clients/charlestang77/?ky=57D9D053B760B89318DB04AC3A9C5108" target="_blank">Chat With Us Live</a></li>
+	<li><a href="https://ticket.instantestore.com/" target="_blank">Support Ticket System</a></li>
+	</div>
+	</div>
+	<div class="footer-stuff">
+	<h5>SOCIALIZE WITH US</h5>
+	<div class="footer-links">
+	<a href="https://www.facebook.com/instantestore"><img src="images/fb.png" alt="fb"></a>
+	<a href="https://twitter.com/instantestore"><img src="images/twitter.png" alt="twitter"></a>
+	</div>
+	</div>
+</footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-30565-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+			
+			
 			<img class="bg-image" src="images/last-pg.jpg" alt="img04" />
 		</div>
 		<!-- end Last Page -->
 	</div>
 	<!-- /pages-stack -->
 	<!-- Header -->
-	<div class="header real-fast slideInDown" id="primary-header">
+	
+<div class="header real-fast slideInDown" id="primary-header">
 		<a href="#page-home" id="logo" class="ies-logo animated fadeIn"><img src="images/logo.png" alt="" /></a>
-		<a class="mn-lnk1" href="pricing.html">Pricing</a>
-		<a class="mn-lnk2" href="contact.html">Contact Us</a>
+		<a class="mn-lnk1" href="pricing.cfm">Pricing</a>
+		<a class="mn-lnk2" href="http://ecommerce.instantestore.com/" target="_blank">Blog</a>
+		<a class="mn-lnk3" href="contact.cfm">Contact Us</a>
+		<a class="mn-lnk4" href="signup.cfm">Sign Up</a>
 		<!--<span class="login">Login</span>-->
 					<div class="login-btn morph-button morph-button-modal morph-button-modal-2 morph-button-fixed animated fadeIn">
 						<button type="button" id="ieslogin">Login</button>
@@ -317,24 +371,23 @@
 									<div class="content-style-form content-style-form-1">
 										<span id="iclose" class="icon icon-close">Close the dialog</span>
 										<h2>Login</h2>
-										<form>
-											<p><label>Username</label><input type="text" placeholder="mike@ies" /></p>
-											<p><label>Password</label><input type="password" placeholder="123..." /></p>
-											<p><button>Login</button></p>
-										</form>
+										<iframe src="https://www.instantestore.com/merchant_login_simple.cfm" seamless id="myiframelogin" style="width:100%;height:370px;background-color:white;border-radius:5px;overflow-y:scroll;overflow-x:hidden;border:0px;"></iframe>
 									</div>
 								</div>
 							</div>
 					</div><!-- morph-button -->
-		<div class="free-trial animated fadeIn"><a href="get-started.html">Free trial</a></div>
+		<div class="free-trial animated fadeIn" onclick="freetrial();"><a href="javascript:void(0);">Free trial</a></div>
 		<button class="menu-button animated fadeIn"><span>Menu</span></button>
 	</div>
 
-	<div class="header real-fast slideInDown hide" id="hd-home">
+	<!--div class="header real-fast slideInDown" id="hd-home">
 		<a href="#page-home" id="logo" class="ies-logo animated fadeIn"><img src="images/logo-white.png" alt="" /></a>
-		<a class="mn-lnk1" href="pricing.html">Pricing</a>
-		<a class="mn-lnk2" href="contact.html">Contact Us</a>
-		<!--<span class="login">Login</span>-->
+		<a class="mn-lnk1" href="pricing.cfm">Pricing</a>
+		<a class="mn-lnk2" href="http://ecommerce.instantestore.com/" target="_blank">Blog</a>
+		<a class="mn-lnk3" href="contact.cfm">Contact Us</a>
+		<a class="mn-lnk4" href="signup.cfm">Sign Up</a>
+		<!<span class="login">Login</span>>
+					
 					<div class="login-btn morph-button morph-button-modal morph-button-modal-2 morph-button-fixed animated fadeIn">
 						<button type="button" id="ieslogin">Login</button>
 							<div class="morph-content">
@@ -342,21 +395,18 @@
 									<div class="content-style-form content-style-form-1">
 										<span id="iclose" class="icon icon-close">Close the dialog</span>
 										<h2>Login</h2>
-										<form>
-											<p><label>Username</label><input type="text" placeholder="mike@ies" /></p>
-											<p><label>Password</label><input type="password" placeholder="123..." /></p>
-											<p><button>Login</button></p>
-										</form>
+										<iframe src="https://www.instantestore.com/merchant_login_simple.cfm" seamless id="myiframelogin" style="width:100%;height:370px;background-color:white;border-radius:5px;overflow-y:scroll;overflow-x:hidden;border:0px;"></iframe>
 									</div>
 								</div>
 							</div>
-					</div><!-- morph-button -->
-		<div class="free-trial animated fadeIn"><a href="get-started.html">Free trial</a></div>
+					</div><! morph-button >
+		<div class="free-trial animated fadeIn" onclick="freetrial();"><a href="javascript:void(0);">Free trial</a></div>
 		<button id="mnbtn2" class="menu-button animated fadeIn"><span>Menu</span></button>
-	</div>
+	</div-->
+
 	<!-- Header end -->
 
-	<a href="#" class="click-to-learn-more animated slideInUp">
+	<a href="#" class="click-to-learn-more animated slideInUp" style="display:none;">
 		<span class="dwn-arrow sanim4 slideInDown"></span>
 		<span class="dwn-arrow sanim1 slideInDown"></span>
 	</a>
@@ -369,12 +419,12 @@
 	<script type="text/javascript">
 	<!--
 		if (screen.width <= 699) {
-			document.location = "index-mobile.html";
+			document.location = "index-mobile.cfm";
 		}
 	//-->
 	</script>
 
-	<script>
+	<!--script>
 			[].slice.call( document.querySelectorAll( '.dotstyle > ul' ) ).forEach( function( nav ) {
 				new DotNav( nav, {
 					callback : function( idx ) {
@@ -382,7 +432,7 @@
 					}
 				});
 			} );
-	</script>
+	</script-->
 
 	<script type="text/javascript">
 
@@ -427,9 +477,9 @@
 						//Navigation
 						lockAnchors: false,
 						navigation: true,
-						anchors: ['home', 'ingredients', 'business curve', 'showcase', 'team', 'contact'],
-						navigationTooltips: ['Home', 'Ingredients', 'Business Curve', 'Success Stories', 'Team', 'Contact'],
-						navigationPosition: 'right',
+						anchors: ['home', 'ingredients', 'businesscurve', 'showcase', 'team', 'contact'],
+						//navigationTooltips: ['Home', 'Ingredients', 'Business Curve', 'Success Stories', 'Team', 'Contact'],
+						//navigationPosition: 'right',
 						showActiveTooltip: false,
 						responsiveWidth: 900,
 						afterLoad: function(anchorLink, index){
@@ -467,16 +517,16 @@
 								var contacthd = document.querySelector('#page-last .bp-header__title');
 								var lstpg = document.querySelector('#page-last .lst-pg');
 								
-							//using index
+							//using index 
 							if(anchorLink != 'home'){
 								addClass(el, 'hide');
 								addClass(homeheader, 'hide');
-								removeClass(primaryheader,'hide');
+								//removeClass(primaryheader,'hide');
 							}
 							else {
 								removeClass(el, 'hide');
-								addClass(primaryheader,'hide');
-								removeClass(homeheader, 'hide');
+								//addClass(primaryheader,'hide');
+								//removeClass(homeheader, 'hide');
 							}
 
 							el.addEventListener('click', function(ev) {
@@ -487,7 +537,7 @@
 								fullpage.moveTo(1);
 							});
 							
-							if( anchorLink == 'business curve' ) {
+							if( anchorLink == 'businesscurve' ) {
 									addClass(bizhd, 'fadeInDown');
 									addClass(bizleftinfo, 'fadeInDown');
 									addClass(bizrightinfo, 'fadeInDown');
@@ -535,7 +585,7 @@
 							}
 					});
 	</script>
-	<script>
+	<!--script>
 			(function() {
 				var docElem = window.document.documentElement, didScroll, scrollPosition;
 
@@ -594,7 +644,6 @@
 					} );
 				} );
 			})();
-		</script>
+		</script-->
 </body>
-
 </html>
